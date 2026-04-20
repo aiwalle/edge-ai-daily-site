@@ -128,6 +128,22 @@ th{background:#edf8f5}
   background:var(--surface-soft);
   transition:.15s ease;
 }
+.item-title{
+  display:block;
+  font-weight:700;
+  margin-top:2px;
+}
+.focus{
+  display:block;
+  margin-top:8px;
+  font-size:.92rem;
+  color:#37524c;
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
 .list a.item:hover{
   transform:translateY(-1px);
   box-shadow:0 8px 18px rgba(15,118,110,.09);
@@ -157,7 +173,7 @@ th{background:#edf8f5}
 <h1>端智能日报</h1>
 <blockquote>每日自动汇总端智能方向关键动态，含来源、摘要与值得关注的原因。</blockquote>
 <ul class="list">
-  <li><a class="item" href="news/2026-04-20.html"><span class="date">2026-04-20</span>端智能日报 2026-04-20</a></li>
+  <li><a class="item" href="news/2026-04-20.html"><span class="date">2026-04-20</span><span class="item-title">端智能日报 2026-04-20</span><span class="focus">本期聚焦：Google 三线发力端侧 LLM 基础设施（Gemma 4 + LiteRT-LM + Firebase 混合推理 API）、Meta 三项端侧工程更新（ExecuTorch v1.2.0 / EUPE 视觉编码器 / State of Union 报告）、端侧 CTR 与用户建模论文、Qualcomm 硬件趋势。</span></a></li>
 </ul>
 <p class="footer">由私有仓库自动构建并发布。</p>
 
