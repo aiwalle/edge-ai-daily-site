@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端智能日报 2026-04-20</title>
+  <style>
+:root{
+  --bg:#f4faf8;
+  --surface:#ffffff;
+  --surface-soft:#f8fcfb;
+  --text:#1f2f2b;
+  --muted:#5e726b;
+  --accent:#0f766e;
+  --accent-soft:#dcf2ee;
+  --border:#d8e8e2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #e9f7f2 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, #e5f4ef 0%, transparent 28%),
+    var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.8;
+}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px 56px}
+.top{
+  margin-bottom:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+}
+.brand{
+  margin:0;
+  font-size:14px;
+  letter-spacing:.08em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.back{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px 28px 20px;
+  box-shadow:0 10px 30px rgba(15,118,110,.08);
+}
+h1,h2,h3{line-height:1.35;margin:1.1em 0 .45em}
+h1{font-size:2rem;margin-top:.15em}
+h2{font-size:1.32rem}
+h3{font-size:1.08rem}
+p,li{font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+blockquote{
+  margin:1rem 0;
+  padding:.72rem .95rem;
+  background:var(--surface-soft);
+  border-left:4px solid var(--accent);
+  color:#28433d;
+  border-radius:8px;
+}
+hr{
+  border:none;
+  border-top:1px dashed var(--border);
+  margin:1.3rem 0;
+}
+code{
+  background:#eef7f5;
+  border:1px solid #d7e9e4;
+  color:#1f4f49;
+  border-radius:6px;
+  padding:.14em .42em;
+  font-size:.92em;
+}
+pre{
+  background:#0f1f1d;
+  color:#e9f4f2;
+  border-radius:12px;
+  overflow:auto;
+  padding:14px;
+}
+pre code{
+  background:transparent;
+  border:none;
+  color:inherit;
+  padding:0;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  overflow:hidden;
+  border-radius:12px;
+}
+th,td{
+  border:1px solid var(--border);
+  padding:.6rem .7rem;
+  text-align:left;
+  vertical-align:top;
+}
+th{background:#edf8f5}
+.footer{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:.88rem;
+}
+.list{
+  list-style:none;
+  margin:1rem 0 0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.list a.item{
+  display:block;
+  padding:14px 15px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-soft);
+  transition:.15s ease;
+}
+.list a.item:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(15,118,110,.09);
+  text-decoration:none;
+}
+.date{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  margin-bottom:2px;
+}
+@media (max-width:700px){
+  .wrap{padding:20px 12px 40px}
+  .card{padding:20px 16px 16px;border-radius:14px}
+  h1{font-size:1.62rem}
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <p class="brand">Edge AI Daily</p>
+      <a class="back" href="../index.html">← 返回目录</a>
+    </div>
+    <article class="card">
+      <h1>端智能日报 2026-04-20</h1>
+<blockquote>
+<p>本期聚焦：Google 三线发力端侧 LLM 基础设施（Gemma 4 + LiteRT-LM + Firebase 混合推理 API）、Meta 三项端侧工程更新（ExecuTorch v1.2.0 / EUPE 视觉编码器 / State of Union 报告）、端侧 CTR 与用户建模论文、Qualcomm 硬件趋势。</p>
+</blockquote>
+<hr />
+<h2>1. 【Google 发布 LiteRT-LM：端侧 LLM 生产级推理框架正式开源】</h2>
+<ul>
+<li><strong>来源</strong>：Google Developers Blog（<a href="https://developers.googleblog.com/on-device-genai-in-chrome-chromebook-plus-and-pixel-watch-with-litert-lm/">原文</a>）| <a href="https://github.com/google-ai-edge/LiteRT-LM">GitHub</a> | 2026-04-07</li>
+<li><strong>摘要</strong>：LiteRT-LM 是 TFLite 的 LLM 继任者，支持 Android/iOS/Web/桌面/IoT，内存占用低至 1.5 GB，延迟 &lt;100ms，已在 Chrome、Pixel Watch、Chromebook Plus 量产落地；支持 Gemma/Llama/Phi-4/Qwen，提供 GPU/NPU 硬件加速与结构化输出。</li>
+<li><strong>值得关注的原因</strong>：这是 Google 将端侧 LLM 推理能力产品化的里程碑，直接替代 TFLite 成为 Android 端模型部署新标准；流媒体 App 若要做端侧 CTR 预估或意图识别，LiteRT-LM 是优先评估的运行时框架。</li>
+</ul>
+<hr />
+<h2>2. 【Google Gemma 4 E2B/E4B：首个支持视觉+音频+函数调用的端侧多模态开源模型】</h2>
+<ul>
+<li><strong>来源</strong>：Google DeepMind（<a href="https://deepmind.google/models/gemma/gemma-4/">官方页面</a>）| <a href="https://www.edge-ai-vision.com/2026/04/google-pushes-multimodal-ai-further-onto-edge-devices-with-gemma-4/">Edge AI &amp; Vision Alliance 解读</a> | 2026-04-02</li>
+<li><strong>摘要</strong>：Gemma 4 Edge 系列（E2B/E4B）支持图像、音频、文本多模态输入及结构化函数调用，E2B 仅需 1.5 GB 内存，在 Qualcomm IQ8 NPU 上达 31 token/s；通过 per-layer embedding 设计显著提升参数效率；Apache 2.0 可商用。</li>
+<li><strong>值得关注的原因</strong>：音频理解 + 函数调用 + 端侧运行直接对应内容流媒体平台的用户意图理解场景；E2B 内存占用已达旗舰机可接受范围，可作为端侧广告意图识别模型的技术选型参考。</li>
+</ul>
+<hr />
+<h2>3. 【Meta ExecuTorch v1.2.0：新增实时语音推理与 Qwen3.5 导出支持】</h2>
+<ul>
+<li><strong>来源</strong>：<a href="https://github.com/pytorch/executorch/releases">ExecuTorch GitHub Releases</a> | <a href="https://newsroom.arm.com/news/executorch-1-0-ga-release-edge-ai">Arm Newsroom</a> | 2026-04-01</li>
+<li><strong>摘要</strong>：ExecuTorch v1.2.0 新增 Voxtral Realtime（流式语音推理）、NVIDIA NeMo Sortformer（说话人分离）、Silero VAD，支持 Qwen3.5 与 Parakeet 导出；Cortex-M 晋升为一级嵌入式目标；二进制体积进一步压缩；已在 Instagram、WhatsApp、Facebook 亿级规模生产部署。</li>
+<li><strong>值得关注的原因</strong>：支持 12+ 硬件后端（Apple/Qualcomm/Arm/MediaTek/Vulkan），是目前覆盖最广的跨平台端侧推理框架；实时语音能力对内容 App 的语音广告理解场景有直接价值。</li>
+</ul>
+<hr />
+<h2>4. 【Meta 发布 EUPE：86M 参数视觉编码器通过三阶段蒸馏超越专家模型】</h2>
+<ul>
+<li><strong>来源</strong>：MarkTechPost（<a href="https://www.marktechpost.com/2026/04/06/meta-ai-releases-eupe-a-compact-vision-encoder-family-under-100m-parameters-that-rivals-specialist-models-across-image-understanding-dense-prediction-and-vlm-tasks/">报道</a>）| <a href="https://arxiv.org/html/2603.22387v1">arXiv 2603.22387</a> | 2026-04-06</li>
+<li><strong>摘要</strong>：EUPE（Efficient Universal Perception Encoder）通过三阶段蒸馏将 PEcore-G、PElang-G、DINOv3-H+ 三类专家大模型知识压缩至 86M ViT-B，在图像理解（IN1k-KNN 84.1）、密集预测（ADE20k 52.4 mIoU）、VLM（RealworldQA 55.5）三类任务上均超越同规模专家模型；iPhone 15 Pro 上 ViT-T 仅 6.8ms（ExecuTorch）。</li>
+<li><strong>值得关注的原因</strong>：三阶段蒸馏方法论可迁移至广告模型压缩流程；对广告素材理解（封面 CTR 视觉特征提取）有直接工程参考意义。</li>
+</ul>
+<hr />
+<h2>5. 【arxiv 2602.13971 DAIAN：触发式推荐场景的意图感知 CTR 预估网络】</h2>
+<ul>
+<li><strong>来源</strong>：arXiv（<a href="https://arxiv.org/html/2602.13971">2602.13971</a>）| 2026-02</li>
+<li><strong>摘要</strong>：DAIAN（Deep Adaptive Intent-Aware Network）将用户意图建模与 CTR 预估融合，通过分析用户点击 item 与触发 item 的相关性提取个性化意图表征，在触发式推荐场景下显著提升排序效果，支持端侧轻量化部署。</li>
+<li><strong>值得关注的原因</strong>：触发式推荐与移动端广告重排逻辑高度相似（触发 item 即广告上下文），DAIAN 的意图感知设计可直接迁移到广告 rerank 模块，是本期最具业务参考价值的论文。</li>
+</ul>
+<hr />
+<h2>6. 【arxiv 2602.06622 R2LED：语义 ID 赋能终身用户行为序列 CTR 预估】</h2>
+<ul>
+<li><strong>来源</strong>：arXiv（<a href="https://arxiv.org/abs/2602.06622">2602.06622</a>）| 2026-02</li>
+<li><strong>摘要</strong>：R2LED 在终身用户行为序列建模中引入语义 ID（Semantic IDs），结合检索（Retrieval）和精化（Refinement）两阶段设计，解决长序列 CTR 预估中的检索效率与精度问题，冷启动场景优于传统 ID embedding。</li>
+<li><strong>值得关注的原因</strong>：长序列用户建模是移动端广告的核心挑战；Retrieval+Refinement 两阶段设计天然适合端云协同——端侧轻量精化、云侧语义检索，降低存储与计算成本。</li>
+</ul>
+<hr />
+<h2>7. 【arxiv 2604.04988：Prune→INT8 QAT→蒸馏有序压缩流水线实现最优延迟-精度权衡】</h2>
+<ul>
+<li><strong>来源</strong>：arXiv（<a href="https://arxiv.org/abs/2604.04988">2604.04988</a>）| 2026-04-05</li>
+<li><strong>摘要</strong>：论文提出以"实测延迟"为优化目标的压缩流水线：先做无结构剪枝降低容量，再做 INT8 量化感知训练（主导运行时收益），最后用知识蒸馏恢复精度；实验验证该顺序在延迟-精度曲线上优于其他排列组合。</li>
+<li><strong>值得关注的原因</strong>：直接给出"工程实用"的压缩顺序结论，可作为对广告重排模型进行端侧压缩时的标准化 SOP；与 ICLR 2026 同期论文（<a href="https://arxiv.org/abs/2603.18426">2603.18426</a>）形成互补，值得一起读。</li>
+</ul>
+<hr />
+<h2>8. 【arxiv 2601.22543 SCaLRec：云侧语义缓存+端侧校准解决端侧重排语义过期问题】</h2>
+<ul>
+<li><strong>来源</strong>：arXiv（<a href="https://arxiv.org/abs/2601.22543">2601.22543</a>）| 2026-01-30</li>
+<li><strong>摘要</strong>：SCaLRec 提出云端协同推荐框架：云侧大模型生成用户语义向量并缓存到设备，设备端轻量校准模块在每次请求时利用最新交互修正缓存向量，无需每次调用云侧 LLM，在多个真实数据集上显著优于缓存复用基线。</li>
+<li><strong>值得关注的原因</strong>：精准命中"端侧重排 + 用户建模"核心痛点——云侧语义过期；SCaLRec 的校准机制可直接借鉴，用极低额外开销保持语义向量时效性。</li>
+</ul>
+<hr />
+<h2>9. 【Google Firebase 推出混合推理 API：端侧与云端 Gemini 统一路由，应用无缝切换】</h2>
+<ul>
+<li><strong>来源</strong>：Android Developers Blog（<a href="https://android-developers.googleblog.com/2026/04/Hybrid-inference-and-new-AI-models-are-coming-to-Android.html">原文</a>）| 2026-04-17</li>
+<li><strong>摘要</strong>：Firebase AI Logic 新增实验性混合推理 API，通过简单规则路由（PREFER_ON_DEVICE / PREFER_IN_CLOUD）在设备端 Gemini Nano 与云端 Gemini 之间动态切换，统一 API 封装屏蔽底层差异；端侧当前支持单轮文本/图像输入，云端可调用完整 Gemini 能力；Google 同期发布 Nano Banana 图像生成模型供 Android 应用调用。</li>
+<li><strong>值得关注的原因</strong>：端云协同推理的工程接口正在标准化——对移动广告链路直接可用：实时竞价（低延迟，端侧优先）与复杂内容理解（精度优先，云侧兜底）可通过同一 API 按策略路由，降低多推理路径维护成本。</li>
+</ul>
+<hr />
+<h2>10. 【Qualcomm：Edge AI 进入"混合智能"工程化阶段，NPU 已成手机标配】</h2>
+<ul>
+<li><strong>来源</strong>：Edge AI San Diego 2026 大会 / Qualcomm 主题演讲（<a href="https://learn.mkme.org/2026/04/07/edge-ai-at-scale-from-models-to-real-world-systems-durga-malladi-qualcomm/">会议摘要</a>）| 2026-04-07</li>
+<li><strong>摘要</strong>：Qualcomm EVP Durga Malladi 指出端侧 AI 正从"能否运行"转向"如何工程化"，核心趋势是芯片+OS+云的混合智能架构，sub-10B 参数专属微调模型在垂直场景超越大型云端模型，Snapdragon NPU 已在主流旗舰机全面普及。</li>
+<li><strong>值得关注的原因</strong>：为端侧广告算法选型提供硬件基准——旗舰 Android 设备已具备 NPU 加速能力，端侧 CTR 预估的延迟优化策略应优先考虑 NPU delegate 路径（LiteRT-LM 已原生支持）。</li>
+</ul>
+<hr />
+<p><em>数据截止：2026-04-20 | 下期关注：Google I/O 2026（5月19-20日）端侧 AI 正式发布、ICLR 2026 端侧压缩论文集、Apple WWDC 2026 预热动态、MLPerf Inference v6.0 基准数据解读</em></p>
+    </article>
+  </div>
+</body>
+</html>
