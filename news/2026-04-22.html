@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端智能日报 2026-04-22</title>
+  <style>
+:root{
+  --bg:#f4faf8;
+  --surface:#ffffff;
+  --surface-soft:#f8fcfb;
+  --text:#1f2f2b;
+  --muted:#5e726b;
+  --accent:#0f766e;
+  --accent-soft:#dcf2ee;
+  --border:#d8e8e2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #e9f7f2 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, #e5f4ef 0%, transparent 28%),
+    var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.8;
+}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px 56px}
+.top{
+  margin-bottom:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+}
+.brand{
+  margin:0;
+  font-size:14px;
+  letter-spacing:.08em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.back{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px 28px 20px;
+  box-shadow:0 10px 30px rgba(15,118,110,.08);
+}
+h1,h2,h3{line-height:1.35;margin:1.1em 0 .45em}
+h1{font-size:2rem;margin-top:.15em}
+h2{font-size:1.32rem}
+h3{font-size:1.08rem}
+p,li{font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+blockquote{
+  margin:1rem 0;
+  padding:.72rem .95rem;
+  background:var(--surface-soft);
+  border-left:4px solid var(--accent);
+  color:#28433d;
+  border-radius:8px;
+}
+hr{
+  border:none;
+  border-top:1px dashed var(--border);
+  margin:1.3rem 0;
+}
+code{
+  background:#eef7f5;
+  border:1px solid #d7e9e4;
+  color:#1f4f49;
+  border-radius:6px;
+  padding:.14em .42em;
+  font-size:.92em;
+}
+pre{
+  background:#0f1f1d;
+  color:#e9f4f2;
+  border-radius:12px;
+  overflow:auto;
+  padding:14px;
+}
+pre code{
+  background:transparent;
+  border:none;
+  color:inherit;
+  padding:0;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  overflow:hidden;
+  border-radius:12px;
+}
+th,td{
+  border:1px solid var(--border);
+  padding:.6rem .7rem;
+  text-align:left;
+  vertical-align:top;
+}
+th{background:#edf8f5}
+.footer{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:.88rem;
+}
+.list{
+  list-style:none;
+  margin:1rem 0 0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.list a.item{
+  display:block;
+  padding:14px 15px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-soft);
+  transition:.15s ease;
+}
+.item-title{
+  display:block;
+  font-weight:700;
+  margin-top:2px;
+}
+.focus{
+  display:block;
+  margin-top:8px;
+  font-size:.92rem;
+  color:#37524c;
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.list a.item:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(15,118,110,.09);
+  text-decoration:none;
+}
+.date{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  margin-bottom:2px;
+}
+@media (max-width:700px){
+  .wrap{padding:20px 12px 40px}
+  .card{padding:20px 16px 16px;border-radius:14px}
+  h1{font-size:1.62rem}
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <p class="brand">Edge AI Daily</p>
+      <a class="back" href="../index.html">← 返回目录</a>
+    </div>
+    <article class="card">
+      <h1>端智能日报 2026-04-22</h1>
+<blockquote>
+<p><strong>本期聚焦</strong>：ICLR 2026 里约今日开幕，端侧压缩技术迎来集中发表；与此同时，Meta 三月底公开的"广告排序 LLM 化"工程实践（Instagram CTR +5%）显示云侧广告系统已率先完成 LLM-scale 转型——两条轨迹正形成"云端 LLM 化拉动、端侧压缩跟进"的广告 AI 演进路径。</p>
+</blockquote>
+<hr />
+<h2>1. 【Meta Adaptive Ranking Model：LLM 量级广告排序在 Instagram 落地，CTR +5%，O(100ms) 有界延迟】</h2>
+<ul>
+<li><strong>评分</strong>：广告相关度 A 5/5 · 影响力 I 5/5 · 综合 S 15</li>
+<li><strong>优先级</strong>：P0</li>
+<li><strong>业务价值类型</strong>：收入提升</li>
+<li><strong>来源</strong>：Engineering at Meta | <a href="https://engineering.fb.com/2026/03/31/ml-applications/meta-adaptive-ranking-model-bending-the-inference-scaling-curve-to-serve-llm-scale-models-for-ads/">原文链接</a> | 2026-03-31</li>
+</ul>
+<p><strong>内容总结（157字）</strong>：
+Meta 在 Instagram 推出 Adaptive Ranking Model，首次将等效 O(10 GFLOPs/token) 的 LLM 级复杂度引入实时广告排序，同时保持 O(100ms) 有界延迟——比标准 LLM 推理快约一个数量级。三大核心创新：①<strong>推理高效扩展</strong>：自适应计算使不同请求走不同算力路径，而非固定 FLOPs；②<strong>模型-系统协同</strong>：FP8 择层部署（micro-benchmark 引导选层），MFU 达 <strong>35%</strong>，跨多种硬件保持高利用率；③<strong>Request-Oriented Optimization</strong>：用户高密度信号仅计算一次/请求（而非每个广告候选一次），消除冗余。Instagram 目标用户群 CTR <strong>+5%</strong>，目前为 Meta 广告 LLM 化第一阶段，Facebook Feed/Reels 后续跟进。</p>
+<p><strong>一句话价值</strong>：
+这个技术可以让我们在广告精排场景下以 LLM 级理解能力实现毫秒级响应，在不增加整体服务成本的前提下直接提升 CTR。</p>
+<p><strong>适配性判断</strong>：
+- <strong>可借鉴思路</strong>：Request-Oriented Optimization（用户特征一次计算 + 多候选复用）可直接迁移到精排服务架构，减少重复嵌入计算；FP8 择层量化策略（micro-benchmark 引导选层，而非全模型统一）是云侧排序模型 FP8 迁移的实战参考；自适应计算路由思路适合按广告价值/流量分层差异化配置算力。</p>
+<hr />
+<h2>2. 【腾讯&amp;清华 GPR：端到端生成式广告推荐，单模型统一召回-精排，在线部署微信视频号/朋友圈】</h2>
+<ul>
+<li><strong>评分</strong>：广告相关度 A 5/5 · 影响力 I 4/5 · 综合 S 14</li>
+<li><strong>优先级</strong>：P0</li>
+<li><strong>业务价值类型</strong>：收入提升</li>
+<li><strong>来源</strong>：腾讯广告技术 / 知乎 | <a href="https://zhuanlan.zhihu.com/p/1981851472271528281">知乎解读</a> | 2025 Q4–2026 Q1（已在线部署）</li>
+</ul>
+<p><strong>内容总结（196字）</strong>：
+GPR（Generative Pre-trained Recommender）是腾讯广告与清华合作开发的首个端到端生成式广告推荐框架，以单一生成模型替代传统多阶段级联（召回→粗排→精排）。核心是<strong>异构分层解码器（HHD）</strong>：HSD 模块建模用户兴趣序列、PTD 模块基于用户画像 token 化生成广告候选、HTE 模块同步评估广告价值，三模块解耦"理解"与"生成"。训练策略为 MTP 预训练 → VAFT 监督微调 → HEPO 强化学习三阶段，实现兴趣-价值-策略端到端对齐。推理阶段采用<strong>基于价值的 Trie-tree 束搜索</strong>：将 CVR/value 预估融入前缀剪枝，早期淘汰低价值候选路径，显著降低毫秒级延迟压力。当前在线部署于微信视频号广告、朋友圈广告场景。已知挑战：工业级动态词表引发训练/推理双重成本膨胀；毫秒延迟与巨量算力的矛盾尚待解决。</p>
+<p><strong>一句话价值</strong>：
+这个技术可以让我们在广告全链路中用单模型消除召回-精排信息隔断，直接以生成范式提升候选质量和 CTR。</p>
+<p><strong>适配性判断</strong>：
+- <strong>可借鉴思路</strong>：价值引导的 Trie-tree 束搜索可迁移到广告 rerank 阶段——在解码过程中同步注入 CVR/bid value，减少低价值候选进入精排层的比例；HHD 解耦设计（理解模块与生成模块分离参数）也可作为下一代广告大模型架构的参考起点。</p>
+<hr />
+<h2>3. 【KernelEvolve：Meta AI Agent 自主优化广告推理内核，吞吐提升 60%，数小时完成人工需数周的任务】</h2>
+<ul>
+<li><strong>评分</strong>：广告相关度 A 3/5 · 影响力 I 4/5 · 综合 S 10</li>
+<li><strong>优先级</strong>：P1</li>
+<li><strong>业务价值类型</strong>：成本优化</li>
+<li><strong>来源</strong>：Engineering at Meta | <a href="https://engineering.fb.com/2026/04/02/developer-tools/kernelevolve-how-metas-ranking-engineer-agent-optimizes-ai-infrastructure/">原文链接</a> | 2026-04-02</li>
+</ul>
+<p><strong>内容总结（156字）</strong>：
+KernelEvolve 是 Meta 第一个生产级 AI 自主内核优化系统，集成在广告排序 Ranking Engineer Agent（REA）中。其核心思路是将内核优化建模为搜索问题：自主遍历数百种 Triton 内核实现方案，找到对应最优性能的版本。已在生产环境持续运行，支持 NVIDIA GPU、AMD GPU 和 Meta 自研 MTIA 芯片，每日服务千亿级推理请求。实测：广告模型推理吞吐量提升 <strong>60%</strong>，人工专家需数周的内核优化任务在数小时内完成。论文入选 ISCA 2026（第53届计算机体系结构国际会议）。姊妹博文《Capacity Efficiency at Meta》（2026-04-16）进一步描述了用统一 AI Agent 做超大规模性能回归检测的完整闭环。</p>
+<p><strong>一句话价值</strong>：
+这个技术可以让我们在广告模型推理基础设施上用 AI 驱动的内核搜索实现 60% 吞吐提升，将数周的手工调优压缩到数小时。</p>
+<p><strong>适配性判断</strong>：
+- <strong>暂不适用</strong>：KernelEvolve 依赖 Meta 量级的内核工程积累（Triton 自动生成 + MTIA 自定义芯片生态），当前更适合中小广告系统依赖 <code>torch.compile</code> / vLLM / TensorRT 等上层框架的自动优化路径。但其"AI 搜索最优内核实现"的方法论值得跟踪——若 vLLM 或 TorchInductor 社区推出类似开放工具链，届时直接可用。</p>
+<hr />
+<h2>4. 【UniQL（ICLR 2026）：统一量化+低秩压缩框架，4–5.7× 内存节省，2.7–3.4× 吞吐提升，跨 Transformer/SSM/混合架构通用】</h2>
+<ul>
+<li><strong>评分</strong>：广告相关度 A 3/5 · 影响力 I 4/5 · 综合 S 10</li>
+<li><strong>优先级</strong>：P1</li>
+<li><strong>业务价值类型</strong>：成本优化</li>
+<li><strong>来源</strong>：arXiv / ICLR 2026 | <a href="https://arxiv.org/abs/2512.03383">arXiv 2512.03383</a> | 2026-04-22（ICLR 2026 今日发表）</li>
+</ul>
+<p><strong>内容总结（176字）</strong>：
+UniQL 是 ICLR 2026 收录的端侧 LLM 统一压缩框架，将 PTQ 量化与低秩（SVD）剪枝联合优化，一次性同时完成两类压缩。三项核心创新：①<strong>量化感知 SVD</strong>（QA-SVD）：在奇异值分解时直接考虑量化误差，最小化"分解+量化"组合损失；②<strong>结构化权重排序</strong>：加速计算 <strong>20×</strong>，并兼容 RoPE 融合 Kernel；③<strong>SSM 感知排序</strong>：专为 Mamba2 等状态空间模型设计，扩展到混合架构（Nemotron-H、Bamba-v2）。支持设备端运行时可配置剪枝率，适配不同内存预算的边缘机型。实测（Llama3/Qwen2.5/Mamba2/混合模型）：内存减少 <strong>4–5.7×</strong>，token 吞吐提升 <strong>2.7–3.4×</strong>，15% 剪枝率下精度损失 <strong>&lt;5%</strong>。</p>
+<p><strong>一句话价值</strong>：
+这个技术可以让我们在端侧广告模型部署时以单一框架完成量化+剪枝，将模型压缩到原来 1/4–1/5 内存并提升 2–3× 推理吞吐，直接降低旗舰机以下机型的部署门槛。</p>
+<p><strong>适配性判断</strong>：
+- <strong>可直接应用</strong>：广告/推荐模型的端侧压缩流程。UniQL 统一 PTQ+低秩压缩方案可替代"先量化、再剪枝"的手工两步流程；设备端可配置剪枝率设计与移动端碎片化机型适配需求高度吻合（旗舰/中端/低端机差异化配置），可与 04-20 报道的 arXiv 2604.04988 压缩流水线和 04-21 报道的 SDFT 性能恢复方案配合使用。</p>
+<hr />
+<h2>5. 【CAR-LoRA（ICLR 2026）：单一 LoRA Adapter 跨量化配置通用，消除端侧个性化因压缩变化需重训的工程痛点】</h2>
+<ul>
+<li><strong>评分</strong>：广告相关度 A 3/5 · 影响力 I 3/5 · 综合 S 9</li>
+<li><strong>优先级</strong>：P1</li>
+<li><strong>业务价值类型</strong>：成本优化</li>
+<li><strong>来源</strong>：OpenReview / ICLR 2026 | <a href="https://openreview.net/forum?id=5GimteSrgW">论文链接</a> | 2026-04-22（ICLR 2026 今日发表）</li>
+</ul>
+<p><strong>内容总结（162字）</strong>：
+CAR-LoRA 解决端侧 LLM 部署中的"适配器碎片化"问题：为某一量化配置（如 INT4）训练的 LoRA adapter 无法迁移到另一配置（INT8/FP8），且基础模型版本升级后 adapter 性能退化。CAR-LoRA 在训练阶段同时模拟多种量化方案（量化前向传播构建噪声抵抗力 + 全精度反向传播保持训练稳定性），生成对量化方案变化具有通用鲁棒性的 adapter。关键结果：单一 CAR-LoRA adapter 可跨 INT4/INT8/FP8 等不同量化家族保持接近 SOTA 的推理性能，无需为每种配置重训；同时对模型版本升级具有鲁棒性。工程价值：一次训练，全系列设备复用，大幅降低 adapter 维护成本。</p>
+<p><strong>一句话价值</strong>：
+这个技术可以让我们在端侧广告个性化模型部署时用单一 adapter 适配全系列旗舰/中端设备的不同量化配置，节省多倍 LoRA 训练和维护成本。</p>
+<p><strong>适配性判断</strong>：
+- <strong>可借鉴思路</strong>：端侧 CTR/用户建模模型的个性化 adapter 管理。若计划为 INT8/INT4/FP8 NPU 不同机型部署差异化个性化模块，CAR-LoRA 的"量化感知训练 + 通用 adapter"范式可大幅简化版本管理——结合 04-21 报道的 MobiEdit BP-free 编辑方案，可构成完整的"跨设备通用 adapter + 端侧无反传个性化更新"工程链路。</p>
+<hr />
+<h3>其他观察</h3>
+<p>Meta 在 3 月底至 4 月中旬密集发布 3 篇广告 AI 工程文章（Adaptive Ranking Model 3/31 → KernelEvolve 4/2 → Capacity Efficiency 4/16），形成"模型 LLM 化扩展 → AI 自动化内核优化 → 容量回归检测"的完整工程闭环，表明大型广告系统的 LLM 化改造正在全链路推进。今日起 ICLR 2026 里约同期开幕，端侧压缩（UniQL、CAR-LoRA）与端侧个性化（MobiEdit，昨日已报）类论文扎堆发表，方法论密度为近年最高。</p>
+<h3>近期关注</h3>
+<ul>
+<li><strong>ICLR 2026（4/22–4/26，里约热内卢）</strong>：今日开幕，UniQL、CAR-LoRA、MobiEdit 等端侧 LLM 压缩/个性化论文今日起进入报告阶段，建议关注 <a href="https://iclr.cc/virtual/2026/papers.html">ICLR 2026 Papers</a></li>
+<li><strong>Embedded Vision Summit（5/11–5/13，Santa Clara）</strong>：ENERZAi 等 2026 年度大奖得主将正式颁奖，端侧 AI 工程化案例集中发布</li>
+<li><strong>Google I/O 2026（5/19–5/20）</strong>：LiteRT-LM 生产级更新与 Gemini Nano 新能力预计有重要发布</li>
+</ul>
+<hr />
+<p><em>数据截止：2026-04-22 | 已排除 04-21 覆盖内容（MobiEdit、FedUTR、SDFT、ENERZAi、Qwen3.6-35B-A3B）及 04-20 覆盖内容（LiteRT-LM、Gemma 4、ExecuTorch v1.2.0、EUPE、Firebase 混合推理、SCaLRec、DAIAN、R2LED、arXiv 2604.04988）</em></p>
+    </article>
+  </div>
+</body>
+</html>
