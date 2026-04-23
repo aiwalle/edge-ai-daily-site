@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端智能日报 2026-04-23</title>
+  <style>
+:root{
+  --bg:#f4faf8;
+  --surface:#ffffff;
+  --surface-soft:#f8fcfb;
+  --text:#1f2f2b;
+  --muted:#5e726b;
+  --accent:#0f766e;
+  --accent-soft:#dcf2ee;
+  --border:#d8e8e2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #e9f7f2 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, #e5f4ef 0%, transparent 28%),
+    var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.8;
+}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px 56px}
+.top{
+  margin-bottom:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+}
+.brand{
+  margin:0;
+  font-size:14px;
+  letter-spacing:.08em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.back{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px 28px 20px;
+  box-shadow:0 10px 30px rgba(15,118,110,.08);
+}
+h1,h2,h3{line-height:1.35;margin:1.1em 0 .45em}
+h1{font-size:2rem;margin-top:.15em}
+h2{font-size:1.32rem}
+h3{font-size:1.08rem}
+p,li{font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+blockquote{
+  margin:1rem 0;
+  padding:.72rem .95rem;
+  background:var(--surface-soft);
+  border-left:4px solid var(--accent);
+  color:#28433d;
+  border-radius:8px;
+}
+hr{
+  border:none;
+  border-top:1px dashed var(--border);
+  margin:1.3rem 0;
+}
+code{
+  background:#eef7f5;
+  border:1px solid #d7e9e4;
+  color:#1f4f49;
+  border-radius:6px;
+  padding:.14em .42em;
+  font-size:.92em;
+}
+pre{
+  background:#0f1f1d;
+  color:#e9f4f2;
+  border-radius:12px;
+  overflow:auto;
+  padding:14px;
+}
+pre code{
+  background:transparent;
+  border:none;
+  color:inherit;
+  padding:0;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  overflow:hidden;
+  border-radius:12px;
+}
+th,td{
+  border:1px solid var(--border);
+  padding:.6rem .7rem;
+  text-align:left;
+  vertical-align:top;
+}
+th{background:#edf8f5}
+.footer{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:.88rem;
+}
+.list{
+  list-style:none;
+  margin:1rem 0 0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.list a.item{
+  display:block;
+  padding:14px 15px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-soft);
+  transition:.15s ease;
+}
+.item-title{
+  display:block;
+  font-weight:700;
+  margin-top:2px;
+}
+.focus{
+  display:block;
+  margin-top:8px;
+  font-size:.92rem;
+  color:#37524c;
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.list a.item:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(15,118,110,.09);
+  text-decoration:none;
+}
+.date{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  margin-bottom:2px;
+}
+@media (max-width:700px){
+  .wrap{padding:20px 12px 40px}
+  .card{padding:20px 16px 16px;border-radius:14px}
+  h1{font-size:1.62rem}
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <p class="brand">Edge AI Daily</p>
+      <a class="back" href="../index.html">← 返回目录</a>
+    </div>
+    <article class="card">
+      <h1>端智能日报 2026-04-23</h1>
+<blockquote>
+<p><strong>本期聚焦</strong>：ICLR 2026 今日里约正式开幕，端侧推理基础设施在会场内外同步演进——从"序列推荐模型端侧压缩落地"到"LLM 自动生成移动 Kernel"，学术前沿与工程交付之间的距离正在缩短；与此同时，中国大厂在 2026Q1 完成从"模型竞赛"到"Token 效率竞赛"的范式迁移，字节豆包 AI 眼镜加速出货，端侧硬件入口争夺正式进入规模化阶段。</p>
+</blockquote>
+<hr />
+<h2>1. 【OD-LLM（WSDM 2026）：首个端侧 LLM 序列推荐压缩框架，模型减半精度不降，推理速度 3× 快于 GPTQ】</h2>
+<ul>
+<li><strong>评分</strong>：A 4/5 · I 3/5 · S=11 · P1 · 价值类型：新能力探索 / 用户体验</li>
+<li><strong>来源</strong>：arXiv | <a href="https://arxiv.org/abs/2601.09306">arXiv 2601.09306</a> | 发表于 WSDM 2026（2026-02-22~26，博伊西）</li>
+</ul>
+<p><strong>内容总结（120字）</strong>：
+OD-LLM 是首个专为端侧序列推荐场景设计的 LLM 任务自适应压缩框架，针对传统量化（GPTQ/SparseGPT）在推荐任务上精度损失大、推理慢的问题提出新路径。核心两步：① <strong>低秩 SVD 结构压缩</strong>（配合 tokenization normalization 提升分解稳定性，保留序列行为信号）；② <strong>逐层渐进对齐</strong>（progressive alignment，减少层间误差积累）。实测结果：模型大小缩减 50% 时精度与原模型持平；推理延迟比 GPTQ 快约 3×；压缩阶段本身也显著快于 SparseGPT。部署场景：完全离线，用户数据留设备，隐私保护天然符合合规要求。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在端侧内容推荐/广告候选召回场景中用 LLM 级用户理解能力，同时满足离线推理的延迟和内存约束，无需额外隐私合规成本。<strong>可直接应用</strong>：将 OD-LLM 压缩策略（SVD+逐层对齐）迁移到端侧序列广告推荐模型（如端侧精排小模型）的压缩流水线，与 04-22 报道的 UniQL（量化+低秩联合框架）形成互补——UniQL 做统一压缩、OD-LLM 提供推荐任务专属的对齐策略。</p>
+<hr />
+<h2>2. 【MediaTek Dimensity 9500 + LiteRT（MWC 2026）：Gemma 3n E2B 端侧 NPU 实测 1600+ tokens/s Prefill，28 tokens/s Decode】</h2>
+<ul>
+<li><strong>评分</strong>：A 3/5 · I 4/5 · S=10 · P1 · 价值类型：成本优化 / 新能力探索</li>
+<li><strong>来源</strong>：Google Developers Blog | <a href="https://developers.googleblog.com/mediatek-npu-and-litert-powering-the-next-generation-of-on-device-ai/">MediaTek NPU and LiteRT</a> | MWC 2026（2026-03）</li>
+</ul>
+<p><strong>内容总结（130字）</strong>：
+Google 与 MediaTek 联合发布 Dimensity 9500 NPU 与 LiteRT 深度集成方案，在 MWC 2026 完成工程验证并公开性能数据。关键指标：Gemma 3n E2B（约 2B 参数，设计面向手机端）在 Dimensity 9500 NPU 上达到 <strong>prefill &gt;1600 tokens/s、decode 28 tokens/s</strong>（4K 上下文），内存占用 &lt;1.5 GB。框架路径：LiteRT 后端对接 MediaTek APU，支持 INT4/INT8 混合量化，与 Google AICore 链路对齐，可通过标准 Android API 调用。结合 TransAI Meeting Notetaker 等现有落地案例，该方案已从实验室进入主流 Android 旗舰机的生产集成阶段。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在搭载 Dimensity 9500 的中高端 Android 机型上以 &lt;1.5 GB 内存部署 2B 量级广告素材理解模型（图文多模态），实现素材相关性本地打分，减少云端调用频次和隐私暴露面。<strong>可直接应用</strong>：以 LiteRT + APU 路径替代当前 CPU 推理方案；关注 Gemma 3n E4B（约 4B）在相同链路上的表现——若 decode 速度满足广告展现窗口（通常 &lt;300ms），可直接推进素材端侧评分 PoC。</p>
+<hr />
+<h2>3. 【MobileKernelBench（ICLR 2026）：LLM 能自动写高效移动端推理 Kernel 吗？MoKA Agent 编译成功率 93.7%，27.4% 实现可测速度提升】</h2>
+<ul>
+<li><strong>评分</strong>：A 2/5 · I 4/5 · S=8 · P2 · 价值类型：成本优化</li>
+<li><strong>来源</strong>：arXiv / ICLR 2026 | <a href="https://arxiv.org/abs/2603.11935">arXiv 2603.11935</a> | 2026-04-23（ICLR 2026 今日发表）</li>
+</ul>
+<p><strong>内容总结（120字）</strong>：
+MobileKernelBench 是 ICLR 2026 收录的首个专为<strong>移动端推理框架</strong>设计的 LLM 内核生成评测基准，覆盖 TFLite/LiteRT、ExecuTorch 等主流框架。测试发现：标准 LLM（含微调版本）在移动内核生成上编译失败率超 <strong>54%</strong>，性能收益接近 0（因 hallucination 和领域知识缺乏）。为此提出 <strong>MoKA（Mobile Kernel Agent）</strong>：三智能体协作（代码生成 Agent + 编译验证 Agent + 性能优化 Agent），多轮 plan-execute 范式，最终在 benchmark 上实现 <strong>93.7% 编译成功率</strong>、<strong>27.4%</strong> 用例获得可测量性能提升，建立 SOTA。支持平台：Android NPU、iOS Metal、跨框架算子层。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在端侧模型推理框架优化阶段用 LLM Agent 自动生成或优化算子内核，替代依赖 ML 系统工程师手工调优的传统路径，加速广告模型在 NPU 上的部署周期。<strong>可借鉴思路</strong>：MoKA 的"多 Agent 分工验证"架构可迁移到内部模型量化/算子融合的自动化 CI 流程——编译+精度验证+延迟对比三个 Agent 并行，建立端侧模型回归检测闭环，与 04-22 报道的 KernelEvolve（Meta GPU 内核优化 Agent）形成移动端 vs 云端的对照参考。</p>
+<hr />
+<h2>4. 【中国大厂 2026Q1：Token 效率竞赛开启，日均调用量突破 140 万亿，字节/阿里/腾讯从"模型军备"转向"系统竞争"】</h2>
+<ul>
+<li><strong>评分</strong>：A 3/5 · I 4/5 · S=10 · P2 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：新浪财经 / OFweek AI | <a href="https://finance.sina.com.cn/wm/2026-04-22/doc-inhvkcsk4382170.shtml">新浪财经报道</a> | 2026-04-22</li>
+</ul>
+<p><strong>内容总结（130字）</strong>：
+2026年4月22日多家媒体集中报道：中国互联网大厂已完成"模型竞赛"阶段，进入以 Token 效率为核心指标的系统竞争阶段。关键数据：中国日均 Token 调用量从 2024 年初 <strong>1000 亿</strong>，激增至 2025 年底 <strong>100 万亿</strong>，2026 年 3 月突破 <strong>140 万亿</strong>——18 个月增长 1400 倍。腾讯汤道生提出"Harness 时代"：竞争焦点从模型本身转移到代码+配置+执行逻辑+反馈闭环的完整体系；字节 ArkClaw Agent 体系支持多模态复杂任务闭环执行；阿里明确 5 年内云+AI 商业化收入目标突破 1000 亿美元。端侧方面，字节豆包手机助手在 App 侧和系统级同步布局，AI 入口争夺全面升温。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在判断端云协同投入优先级时有更清晰的行业坐标——当 Token 调用成本在云侧急剧降低（规模效应）、同时端侧隐私合规压力持续上升，广告系统的最优架构将在"端侧轻量用户建模 + 云侧高精度精排"双轨之间动态平衡。<strong>可借鉴思路</strong>：关注腾讯"Harness 时代"框架——广告系统向 LLM-Native 架构迁移的核心不仅是换更大的模型，而是重构执行-反馈-优化闭环，这与 04-22 报道的 GPR（端到端生成式推荐）和 Meta Adaptive Ranking 的演进路径高度一致。</p>
+<hr />
+<h2>5. 【字节豆包 AI 眼镜加速量产：无屏版 Q1 出货，搭载自研空间算法芯片，50g 以内，&lt;2000 元起步】</h2>
+<ul>
+<li><strong>评分</strong>：A 2/5 · I 4/5 · S=8 · P2 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：财联社 / 36氪 | <a href="https://www.cls.cn/detail/2247833">财联社报道</a> | 2026-01~04（持续更新）</li>
+</ul>
+<p><strong>内容总结（110字）</strong>：
+字节跳动豆包 AI 眼镜正式进入出货准备阶段：无屏版（无显示功能）规划 Q1 2026 率先发布，有屏版（带显示）预计 Q4 问世；第一代总规划量约 <strong>10 万台</strong>。硬件参数：自研空间算法芯片、重量 &lt;50g、支持拍照（可选配置）；起步价控制在 <strong>2000 元以内</strong>。配套软件：豆包大模型以 AI Agent 形态嵌入，连接端侧感知（音频/视觉输入）与云侧推理。同期，字节与中兴努比亚合作的豆包手机（Nubia M153）首发 3 万台即售罄，系统级 AI Agent 深度集成，可在底层调用端侧豆包模型执行任务。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在前瞻性广告渠道规划中，将 AI 眼镜作为"持续在线 + 空间感知"的新型广告触点纳入研究——眼镜侧的视觉意图识别（正在看什么？）结合音频上下文，可生成比手机更细粒度的实时兴趣信号，驱动端侧个性化广告推荐。<strong>暂不适用</strong>：规模量（10 万台初期）远未达到广告系统可感知的流量门槛，但技术路径值得在 2026 Q3-Q4 追踪——若有屏版出货顺利，可启动"眼镜端侧意图识别 × 广告定向"概念验证。</p>
+<hr />
+<h3>其他观察</h3>
+<p>ICLR 2026（4/23-27，里约）本周是今年端侧 AI 研究最密集的发布窗口之一：除今日 MobileKernelBench 外，会议期间仍有大量 Poster 尚未被检索到，建议持续关注 <a href="https://www.paperdigest.org/2026/04/iclr-2026-papers-with-code-data/">ICLR 2026 Papers with Code</a> 和 OpenReview 的每日更新。OD-LLM + UniQL + CAR-LoRA 三篇的组合，已初步构成"端侧推荐模型压缩 → 适配器通用化 → 推理加速"的完整工程路线图，可作为下半年端侧广告小模型项目的技术选型参考。</p>
+<h3>近期关注</h3>
+<ul>
+<li><strong>Google I/O 2026</strong>（预期 5 月中旬）：Gemma 4 E-系列进一步端侧能力公布、LiteRT 路线图、Android AI Core 更新——对移动端广告推理基础设施影响最直接</li>
+<li><strong>WWDC 2026</strong>（预期 6 月）：Apple Foundation Models / Apple Intelligence 新功能、iOS 27 端侧 AI API 变化——影响 iOS 广告 SDK 的隐私设计</li>
+<li><strong>KDD 2026</strong>（预期 8 月，华盛顿 DC）：工业界广告/推荐论文集中发布，端侧广告系统落地案例最多的学术会议之一</li>
+</ul>
+<hr />
+<p><em>数据截止：2026-04-23 | 已排除 04-20~04-22 覆盖内容（Meta Adaptive Ranking、腾讯 GPR、KernelEvolve、UniQL、CAR-LoRA、ENERZAi、FedUTR、MobiEdit、SDFT、Qwen3.6、LiteRT-LM、Gemma 4、ExecuTorch v1.2.0、EUPE、Firebase 混合推理、SCaLRec、DAIAN、R2LED、arXiv 2604.04988）</em></p>
+    </article>
+  </div>
+</body>
+</html>
