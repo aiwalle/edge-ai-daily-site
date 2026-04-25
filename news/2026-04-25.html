@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端智能日报 2026-04-25</title>
+  <style>
+:root{
+  --bg:#f4faf8;
+  --surface:#ffffff;
+  --surface-soft:#f8fcfb;
+  --text:#1f2f2b;
+  --muted:#5e726b;
+  --accent:#0f766e;
+  --accent-soft:#dcf2ee;
+  --border:#d8e8e2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #e9f7f2 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, #e5f4ef 0%, transparent 28%),
+    var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.8;
+}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px 56px}
+.top{
+  margin-bottom:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+}
+.brand{
+  margin:0;
+  font-size:14px;
+  letter-spacing:.08em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.back{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px 28px 20px;
+  box-shadow:0 10px 30px rgba(15,118,110,.08);
+}
+h1,h2,h3{line-height:1.35;margin:1.1em 0 .45em}
+h1{font-size:2rem;margin-top:.15em}
+h2{font-size:1.32rem}
+h3{font-size:1.08rem}
+p,li{font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+blockquote{
+  margin:1rem 0;
+  padding:.72rem .95rem;
+  background:var(--surface-soft);
+  border-left:4px solid var(--accent);
+  color:#28433d;
+  border-radius:8px;
+}
+hr{
+  border:none;
+  border-top:1px dashed var(--border);
+  margin:1.3rem 0;
+}
+code{
+  background:#eef7f5;
+  border:1px solid #d7e9e4;
+  color:#1f4f49;
+  border-radius:6px;
+  padding:.14em .42em;
+  font-size:.92em;
+}
+pre{
+  background:#0f1f1d;
+  color:#e9f4f2;
+  border-radius:12px;
+  overflow:auto;
+  padding:14px;
+}
+pre code{
+  background:transparent;
+  border:none;
+  color:inherit;
+  padding:0;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  overflow:hidden;
+  border-radius:12px;
+}
+th,td{
+  border:1px solid var(--border);
+  padding:.6rem .7rem;
+  text-align:left;
+  vertical-align:top;
+}
+th{background:#edf8f5}
+.footer{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:.88rem;
+}
+.list{
+  list-style:none;
+  margin:1rem 0 0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.list a.item{
+  display:block;
+  padding:14px 15px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-soft);
+  transition:.15s ease;
+}
+.item-title{
+  display:block;
+  font-weight:700;
+  margin-top:2px;
+}
+.focus{
+  display:block;
+  margin-top:8px;
+  font-size:.92rem;
+  color:#37524c;
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.list a.item:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(15,118,110,.09);
+  text-decoration:none;
+}
+.date{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  margin-bottom:2px;
+}
+@media (max-width:700px){
+  .wrap{padding:20px 12px 40px}
+  .card{padding:20px 16px 16px;border-radius:14px}
+  h1{font-size:1.62rem}
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <p class="brand">Edge AI Daily</p>
+      <a class="back" href="../index.html">← 返回目录</a>
+    </div>
+    <article class="card">
+      <h1>端智能日报 2026-04-25</h1>
+<blockquote>
+<p><strong>本期聚焦</strong>：ICLR 2026（里约，第三天）持续输出端侧压缩技术——ParoQuant 以 INT4 轮转量化将推理 LLM 精度超越 AWQ 2.4%；ONNX Runtime 1.25.0 同日（4/22）发布，为 Qualcomm QNN SDK 2.37 和 ARM64 INT4 提供生产级支持；Apple 在会场展示 M5 芯片 + MLX 端侧 LLM 完整离线推理能力。框架、量化算法、芯片三条线同步演进，端侧广告推理的部署基础设施正在快速闭环。</p>
+</blockquote>
+<hr />
+<h2>1. 【ONNX Runtime 1.25.0 发布：QNN SDK 2.37 集成、ARM64 非对称 INT4 MatMulNBits、ArmNN EP 正式退出】</h2>
+<ul>
+<li><strong>评分</strong>：A 3/5 · I 4/5 · S=10 · P1 · 价值类型：成本优化 / 新能力探索</li>
+<li><strong>来源</strong>：Microsoft / GitHub | <a href="https://github.com/microsoft/onnxruntime/releases/tag/v1.25.0">github.com/microsoft/onnxruntime/releases/tag/v1.25.0</a> | 2026-04-22</li>
+</ul>
+<p><strong>内容总结（140 字）</strong>：
+ONNX Runtime 1.25.0 于 2026-04-22 正式发布，移动端关键工程变化：① <strong>QNN SDK 2.37 集成</strong>——针对支持 SME2（Scalable Matrix Extension v2）的 Qualcomm 硬件增强 SGEMM、IGEMM、Dynamic Quantized MatMul 算子性能，Conv2D 在 Hexagon NPU 上效率显著提升；② <strong>ARM64 非对称 4-bit MatMulNBits</strong>——DQ→MatMulNBits 算子融合扩展至量化 LLM 的 CPU 推理路径，覆盖更广泛 ARM 设备（含 KleidiAI BF16 SME2 内核）；③ <strong>CUDA Plugin EP</strong>——首次允许第三方 GPU 后端作为动态加载插件接入，无需重新编译 ORT；④ <strong>ArmNN EP 正式移除</strong>，用户须迁移至 MLAS/KleidiAI CPU EP 或 QNN EP。C++20 编译环境、CUDA 12.0+ 为新强制要求。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在 Qualcomm 骁龙旗舰设备（Hexagon NPU）上以 ONNX Runtime 原生路径部署广告 CTR/CVR 模型，QNN SDK 2.37 的 Conv2D NPU 加速可直接降低图文素材多模态编码延迟。<strong>可直接应用</strong>：升级至 ORT 1.25.0 + QNN SDK 2.37，将当前 CPU 推理路径迁移至 Hexagon NPU；ArmNN EP 存量用户需立即规划迁移至 QNN EP，否则无法跟进后续 ORT 版本的性能迭代。</p>
+<hr />
+<h2>2. 【ParoQuant（ICLR 2026）：INT4 成对轮转量化超越 AWQ 2.4%，原生支持 Apple Silicon MLX 和 NVIDIA vLLM】</h2>
+<ul>
+<li><strong>评分</strong>：A 3/5 · I 3/5 · S=9 · P1 · 价值类型：成本优化</li>
+<li><strong>来源</strong>：Z Lab / ICLR 2026 | <a href="https://arxiv.org/abs/2511.10645">arxiv.org/abs/2511.10645</a> | 2026-04-25（ICLR 2026 Poster 展示）</li>
+</ul>
+<p><strong>内容总结（140 字）</strong>：
+ParoQuant（Pairwise Rotation Quantization）是 ICLR 2026 收录的 INT4 权重后训练量化（weight-only PTQ）方法。核心技术：<strong>Scaled Pairwise Rotation</strong>——通过可学习的独立 Givens 轮转变换配合逐通道缩放，将权重矩阵的通道离群值均匀分散，使标准 INT4 量化不再受离群值"拉高 scale"影响，同时保持硬件友好性，推理速度接近 AWQ。主要优势：在推理型 LLM（Qwen3-4B、DeepSeek-R1 等）上，AWQ 4-bit 因推理链路误差累积在 MMLU-Pro 上损失约 3%，ParoQuant 以相近速度消弭此差距，平均精度超越 AWQ <strong>2.4%</strong>。开源支持：<strong>NVIDIA GPU</strong>（vLLM / Transformers）和 <strong>Apple Silicon</strong>（MLX），已提交 MLX-LM 集成 PR（#977），代码开源于 <a href="https://github.com/z-lab/paroquant">github.com/z-lab/paroquant</a>。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在 iOS 平台（iPhone A 系芯片 + MLX）以更高精度部署 4-bit 量化广告意图识别或用户兴趣 LLM 模型，相比 AWQ 在推理任务上提升 2.4% 精度，对广告相关性判断直接有收益。<strong>可直接应用</strong>：在端侧 LLM 量化管线中将 AWQ 替换为 ParoQuant（尤其涉及推理步骤的意图理解任务），Apple Silicon MLX 和 Android vLLM 两条路径均有官方支持，无需额外适配工作。</p>
+<hr />
+<h2>3. 【Apple at ICLR 2026：M5 Max MacBook + MLX 完整本地 LLM 推理 Demo，ParaRNN 获 Oral（训练加速 665×）】</h2>
+<ul>
+<li><strong>评分</strong>：A 2/5 · I 4/5 · S=8 · P2 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：Apple Machine Learning Research | <a href="https://machinelearning.apple.com/updates/apple-at-iclr-2026">machinelearning.apple.com/updates/apple-at-iclr-2026</a> | 2026-04-23（ICLR 2026 展示中）</li>
+</ul>
+<p><strong>内容总结（130 字）</strong>：
+Apple 在 ICLR 2026 现场展示两项端侧推理能力：① <strong>MacBook Pro（M5 Max）+ MLX</strong>：在 Xcode 原生开发环境中运行量化前沿编程模型（frontier coding model）的<strong>完整本地离线推理</strong>，展示 M5 Max 统一内存架构的 LLM 推理上限；② <strong>SHARP + iPad Pro（M5）</strong>：图像输入至 3D Gaussian 点云生成的全流程端侧实时运行，体现多模态推理能力。学术成果：<strong>ParaRNN</strong>（Oral）提出非线性 RNN 并行训练方案，比传统顺序方法加速 <strong>665×</strong>，首次实现 RNN 的大规模语言模型训练，可作为比 Transformer 更节省 KV cache 的端侧序列建模架构候选。MLX 官方已支持 M5 Neural Accelerator GPU。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们预判 Apple Intelligence / iOS 27 将进一步开放本地 LLM 调用能力——若量化 coding-class 模型已在 M5 Max 本地跑通，iPhone 的广告意图推理端侧化路线将加速。<strong>暂不适用</strong>：当前展示为 MacBook 形态，手机端落地时间线待 WWDC 2026；但 ParaRNN 的轻量序列架构值得跟踪，作为未来 CTR 序列模型端侧候选（相比 Transformer 在自回归推理时无 KV cache 开销优势）。</p>
+<hr />
+<h2>4. 【Qualcomm AI Hub 近期更新：Galaxy S25 上线、DLC 原生编译支持、QNN FP32/FP16 输入自动对齐】</h2>
+<ul>
+<li><strong>评分</strong>：A 2/5 · I 3/5 · S=7 · P2 · 价值类型：成本优化 / 新能力探索</li>
+<li><strong>来源</strong>：Qualcomm AI Hub | <a href="https://workbench.aihub.qualcomm.com/docs/hub/release_notes.html">workbench.aihub.qualcomm.com/docs/hub/release_notes.html</a> | 2026-04（持续更新）</li>
+</ul>
+<p><strong>内容总结（110 字）</strong>：
+Qualcomm AI Hub 发布多项工程更新：① <strong>Samsung Galaxy S25 系列</strong>正式加入可部署设备列表，开发者可直接在 Hub 完成 compile / profile / inference 三步工作流，无需本地设备；② <strong>DLC（Deep Learning Container）原生支持</strong>——可提交 .dlc 格式模型用于 Qualcomm NPU 编译与性能基准，省去 ONNX 转换中间环节；③ <strong>QNN FP16 I/O 兼容 FP32 输入</strong>——量化 QNN 模型推理时传入 FP32 数据自动无缝转换，降低集成复杂度。配合平台已有 Llama 3.2、Gemma 系列优化模型，整体部署流程更短。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们以 AI Hub 作为广告端侧模型的"性能 CI 平台"——每次模型更新，自动在 Galaxy S25（骁龙 8 Elite）等多款旗舰机型上运行 latency + accuracy 基准测试，代替手动设置开发环境，缩短端侧模型验证周期至分钟级。<strong>可借鉴思路</strong>：将 AI Hub 纳入广告端侧模型 CI/CD 流水线，DLC 路径与 ORT 1.25.0 QNN 路径形成互补——前者面向 Qualcomm 深度优化，后者面向跨平台兼容。</p>
+<hr />
+<h3>其他观察</h3>
+<p>ICLR 2026 第三天量化技术整体向"任务感知 + 硬件协同"方向演进：ParoQuant 针对推理 LLM 的误差累积特性定制轮转变换，ORT 1.25.0 在框架层同步落地 QNN SDK 2.37 和 ARM64 INT4 基础算子，Apple 则以 MLX + M5 demo 展示 Apple Silicon 端侧 LLM 工程化已进入生产就绪阶段。三者合力预示：2026 年下半年端侧 INT4 LLM 推理将从实验室走向广告 SDK 的主流部署路径。</p>
+<h3>近期关注</h3>
+<ul>
+<li><strong>ICLR 2026 最终日（4/25-4/27，里约）</strong>：Poster Session 仍有未被检索的论文，建议关注 <a href="https://iclr.cc/virtual/2026/papers.html">ICLR 2026 Papers</a> 最终更新</li>
+<li><strong>Google I/O 2026</strong>（预期 5 月中旬）：LiteRT 路线图、Gemma 4 端侧能力公布、Android AI Core 新 API——对移动广告推理基础设施影响最直接</li>
+<li><strong>WWDC 2026</strong>（预期 6 月）：Apple Foundation Models 新版本、iOS 27 端侧 AI API——影响 iOS 广告 SDK 隐私架构及 MLX 调用能力开放程度</li>
+</ul>
+<hr />
+<p><em>数据截止：2026-04-25 | 已排除近期已报道内容（SIREN、NANOMIND、腾讯混元 3.0、MobileIPL、Expedera Origin Evolution、OD-LLM、MediaTek Dimensity 9500 + LiteRT、MobileKernelBench、中国大厂 Token 效率竞争、豆包 AI 眼镜、Meta Adaptive Ranking、腾讯 GPR、KernelEvolve、UniQL、CAR-LoRA、ENERZAi、FedUTR、MobiEdit、SDFT、Qwen3.6、LiteRT-LM、Gemma 4、ExecuTorch v1.2.0、EUPE、Firebase 混合推理、SCaLRec、DAIAN、R2LED）</em></p>
+    </article>
+  </div>
+</body>
+</html>
