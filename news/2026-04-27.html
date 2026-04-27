@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端智能日报 2026-04-27</title>
+  <style>
+:root{
+  --bg:#f4faf8;
+  --surface:#ffffff;
+  --surface-soft:#f8fcfb;
+  --text:#1f2f2b;
+  --muted:#5e726b;
+  --accent:#0f766e;
+  --accent-soft:#dcf2ee;
+  --border:#d8e8e2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #e9f7f2 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, #e5f4ef 0%, transparent 28%),
+    var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.8;
+}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px 56px}
+.top{
+  margin-bottom:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+}
+.brand{
+  margin:0;
+  font-size:14px;
+  letter-spacing:.08em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.back{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px 28px 20px;
+  box-shadow:0 10px 30px rgba(15,118,110,.08);
+}
+h1,h2,h3{line-height:1.35;margin:1.1em 0 .45em}
+h1{font-size:2rem;margin-top:.15em}
+h2{font-size:1.32rem}
+h3{font-size:1.08rem}
+p,li{font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+blockquote{
+  margin:1rem 0;
+  padding:.72rem .95rem;
+  background:var(--surface-soft);
+  border-left:4px solid var(--accent);
+  color:#28433d;
+  border-radius:8px;
+}
+hr{
+  border:none;
+  border-top:1px dashed var(--border);
+  margin:1.3rem 0;
+}
+code{
+  background:#eef7f5;
+  border:1px solid #d7e9e4;
+  color:#1f4f49;
+  border-radius:6px;
+  padding:.14em .42em;
+  font-size:.92em;
+}
+pre{
+  background:#0f1f1d;
+  color:#e9f4f2;
+  border-radius:12px;
+  overflow:auto;
+  padding:14px;
+}
+pre code{
+  background:transparent;
+  border:none;
+  color:inherit;
+  padding:0;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  overflow:hidden;
+  border-radius:12px;
+}
+th,td{
+  border:1px solid var(--border);
+  padding:.6rem .7rem;
+  text-align:left;
+  vertical-align:top;
+}
+th{background:#edf8f5}
+.footer{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:.88rem;
+}
+.list{
+  list-style:none;
+  margin:1rem 0 0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.list a.item{
+  display:block;
+  padding:14px 15px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-soft);
+  transition:.15s ease;
+}
+.item-title{
+  display:block;
+  font-weight:700;
+  margin-top:2px;
+}
+.focus{
+  display:block;
+  margin-top:8px;
+  font-size:.92rem;
+  color:#37524c;
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.list a.item:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(15,118,110,.09);
+  text-decoration:none;
+}
+.date{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  margin-bottom:2px;
+}
+@media (max-width:700px){
+  .wrap{padding:20px 12px 40px}
+  .card{padding:20px 16px 16px;border-radius:14px}
+  h1{font-size:1.62rem}
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <p class="brand">Edge AI Daily</p>
+      <a class="back" href="../index.html">← 返回目录</a>
+    </div>
+    <article class="card">
+      <h1>端智能日报 2026-04-27</h1>
+<blockquote>
+<p><strong>本期聚焦</strong>：ICLR 2026 闭幕周叠加 Meta 基础设施连发，端云协同"分工-路由-优化"三角正在系统化成型：CDA4Rec 提出双智能体推荐分工范式（端侧摘要+云侧规划），UniRoute 将 LLM 路由泛化至 30+ 动态模型池，BitNet 经 ExecuTorch Vulkan 后端首次在旗舰手机实现 1.58-bit 实时推理——端侧能力下限正在快速拉升，广告系统的"端云切换点"判断比以往更紧迫。</p>
+</blockquote>
+<hr />
+<h2>1. 【CDA4Rec：Cloud-Device 双智能体序列推荐框架——端侧摘要 + 云侧规划，多数据集精度/效率双优】</h2>
+<ul>
+<li><strong>评分</strong>：A5 · I3 · S=13 · P1 · 价值类型：新能力探索/用户体验</li>
+<li><strong>来源</strong>：多机构（arXiv） | <a href="https://arxiv.org/abs/2509.01551">arxiv.org/abs/2509.01551</a> | 2025-09</li>
+</ul>
+<p><strong>内容总结（100-150 字）</strong>：
+CDA4Rec 是首个将 Cloud LLM Agent + Device SLM Agent 双智能体用于序列推荐的端云协同框架。架构分工：设备端轻量 SLM 实时将用户交互历史凝练为结构化自然语言摘要；云端强 LLM 接收摘要后生成个性化执行策略，支持部分并行执行以降低延迟。关键创新：Strategy Planning 机制允许云端 Agent 根据摘要动态决定调用哪些子模块，而非固定流水线。通信优化：端侧仅上传文本摘要（而非原始行为序列），传输量大幅压缩，天然降低隐私风险。在多个真实推荐数据集上优于传统端云协同基线，精度和效率双赢。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在端侧用户建模中采用"设备生成兴趣摘要 token → 云端广告排序利用摘要做精排"的轻量协同架构，在不上传原始行为的前提下获得 LLM 级个性化质量，直接提升广告相关性并降低数据传输合规风险。<strong>可借鉴思路</strong>：将 CDA4Rec 的"端侧上下文摘要"模块迁移到广告触发式推荐——用户端实时生成"近期意图摘要"，上传至云侧 CTR 模型作为语义特征，替代原始序列拼接，兼顾效率与隐私。</p>
+<hr />
+<h2>2. 【UniRoute（ICLR 2026）：通用 LLM 路由泛化至 30+ 未见模型池，无需重训路由器】【进展更新】</h2>
+<ul>
+<li><strong>评分</strong>：A4 · I3 · S=11 · P1 · 价值类型：成本优化</li>
+<li><strong>来源</strong>：Google 等 / ICLR 2026 | <a href="https://arxiv.org/abs/2502.08773">arxiv.org/abs/2502.08773</a> | 2026-02（ICLR 2026 收录）</li>
+<li>相较 2026-04-26 报道的 RPRA（Meta 端侧模型路由 LLM-Judge 分数）<strong>新增</strong>：UniRoute 将路由问题泛化至"测试时动态出现新 LLM"场景，支持 30+ 未见模型路由，且给出超额风险的理论上界。</li>
+</ul>
+<p><strong>内容总结（100-150 字）</strong>：
+UniRoute 解决动态环境下"新 LLM 上线时无需重训路由器"的核心痛点。核心思路：用一组代表性 prompt 的预测结果向量作为每个 LLM 的特征表示（Model Fingerprint），通过聚类路由或可学习聚类映射实现对未见 LLM 的泛化路由。在 30+ 未见 LLM 的多基准测试上超越现有路由基线，理论上证明了特征路由是最优贝叶斯路由的近似。工程信息：路由推断开销极低（特征向量相似度查询），可嵌入任何 serving 层；无需额外标注，仅需目标 LLM 在代表性 prompt 上跑一次前向即可完成特征注册。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在端云协同广告推理中动态选择"最小可满足需求的 LLM"而非固定调用大模型，当新版大模型上线时路由器自动适配、无需重训，Token 消费成本可降低 20–40%（估算）。<strong>可借鉴思路</strong>：UniRoute 的 Model Fingerprint 方法可作为广告系统"模型版本自动选择器"——新模型灰度上线时，通过特征距离自动决策是否切换，替代人工 A/B 评估流程。</p>
+<hr />
+<h2>3. 【BitNet ExecuTorch via Vulkan（ICLR 2026 Poster）：1.58-bit 三元权重 LLM 首次在旗舰手机 GPU 实时推理，15–140 tok/s】</h2>
+<ul>
+<li><strong>评分</strong>：A3 · I4 · S=10 · P1 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：Collabora / Samsung GPU Team | <a href="https://www.collabora.com/news-and-blog/blog/2026/04/17/bringing-bitnet-to-executorch-via-vulkan/">collabora.com/news-and-blog/blog/2026/04/17/bringing-bitnet-to-executorch-via-vulkan/</a> | 2026-04-17（ICLR 2026 Poster 展示）</li>
+</ul>
+<p><strong>内容总结（100-150 字）</strong>：
+Collabora 联合三星 GPU 团队将 BitNet b1.58（三元权重 w∈{-1,0,+1}，理论位宽 1.58-bit）集成至 ExecuTorch Vulkan 后端，首次实现在普通 Android/iOS 旗舰手机 GPU 上的加速推理。核心技术：Vulkan compute shader 实现 packed 三元权重算子，利用位打包大幅降低显存带宽消耗。实测关键指标：edge GPU 相比 CPU <strong>2.1–11.3× 加速</strong>；Samsung S25、Google Pixel 9、iPhone 16 上实时推理达 <strong>15–140 tok/s</strong>；三星 GPU 团队已提交上游优化 PR。工程成熟度：代码已合入 ExecuTorch 上游，任何 Vulkan-capable 设备可直接使用，无需厂商定制。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在主流旗舰 Android 机型上以 &lt;1 GB 存储内嵌 1–2B BitNet 模型做实时意图识别，彻底消除广告 SDK 的网络依赖和冷启动延迟。<strong>可借鉴思路</strong>：BitNet + ExecuTorch Vulkan 是当前最轻量的"真端侧 LLM"路径之一，适用于触发式广告的端侧 query 理解和用户实时意图分类；三星 GPU 专项优化意味着覆盖了国内最大 Android 用户群的设备，落地门槛低。</p>
+<hr />
+<h2>4. 【Meta Capacity Efficiency：统一 AI Agent 实现超大规模广告推理性能"主动寻优 + 被动回归检测"闭环】</h2>
+<ul>
+<li><strong>评分</strong>：A3 · I4 · S=10 · P1 · 价值类型：成本优化</li>
+<li><strong>来源</strong>：Engineering at Meta | <a href="https://engineering.fb.com/2026/04/16/developer-tools/capacity-efficiency-at-meta-how-unified-ai-agents-optimize-performance-at-hyperscale/">engineering.fb.com/2026/04/16/developer-tools/capacity-efficiency-at-meta-how-unified-ai-agents-optimize-performance-at-hyperscale/</a> | 2026-04-16</li>
+</ul>
+<p><strong>内容总结（100-150 字）</strong>：
+Meta 披露 KernelEvolve（04-22 已报）的系统级闭环：统一 AI Agent 框架同时承担"Offense（主动寻优）"和"Defense（回归防御）"双角色。Offense 模块持续搜索更优内核配置，一次实验数小时内可完成人工需数周的优化；Defense 模块在每次模型或内核更新后自动 bisect 定位性能回归根因，并生成修复建议。两者共享同一 Agent 基础设施，跨 NVIDIA GPU、Meta MTIA、AMD 等异构硬件运行。生产环境：每日千亿推理请求体量；系统已产生可量化的容量效率提升（具体数字未披露）。工程成熟度：Meta 内部生产部署，配套论文入选 ISCA 2026。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们把广告模型推理的性能监控从人工 oncall 模式升级为 AI 自动化闭环——新模型上线或内核更新后，Agent 自动检测 p99 延迟劣化并提交 profiling 报告，大幅降低推理回归的平均修复时间。<strong>可借鉴思路</strong>：双模（Offense+Defense）Agent 架构可参照实现：Offense 用 torch.compile 自动配置搜索，Defense 用线上推理 metric 监控 + 自动根因分析，对中等规模广告推理系统同样适用。</p>
+<hr />
+<h2>5. 【Google AI Edge Eloquent：Gemma 驱动的端侧离线语音 iOS App——端云混合 ASR 参考实现】</h2>
+<ul>
+<li><strong>评分</strong>：A2 · I4 · S=8 · P2 · 价值类型：用户体验</li>
+<li><strong>来源</strong>：Google / TechCrunch | <a href="https://techcrunch.com/2026/04/07/google-quietly-releases-an-offline-first-ai-dictation-app-on-ios/">techcrunch.com/2026/04/07/google-quietly-releases-an-offline-first-ai-dictation-app-on-ios/</a> | 2026-04-07</li>
+</ul>
+<p><strong>内容总结（100-150 字）</strong>：
+Google 悄然在 iOS 上线 AI Edge Eloquent——首个以 Gemma 系列端侧模型驱动的离线语音转写 App。离线模式：ASR 全程设备本地处理，零音频上传；云端增强模式（可选）：Gemini 接管文本润色（如缩写为 Key Points 或转 Formal 风格）。工程信息：模型下载后完全离线，iPhone 13 以上流畅运行；支持实时转写+波形可视化；自动过滤填充词（um/ah）；Android 版即将发布。Gemma ASR 模型尺寸未公开，但首次以公开 App 形式验证了 Gemma 在端侧 ASR 任务上的生产可用性。值得注意：该 App 以极低调的方式发布，无官方 PR，是 Google AI Edge 战略的工程信号。</p>
+<p><strong>业务价值与适配性</strong>：
+暂不适用于直接广告业务。<strong>可借鉴思路</strong>：Eloquent 的"端侧 ASR + 选择性云端润色"模式，是我们评估"音频广告理解/语音意图识别是否可端侧化"的重要工程参考——Gemma ASR 在 iPhone 13+ 实时运行意味着旗舰机语音广告归因可完全离线，规避音频数据合规风险。关注 Android 版是否开放 LiteRT 模型下载，届时可评估在广告 SDK 中嵌入轻量 ASR 的可行性。</p>
+<hr />
+<h3>其他观察</h3>
+<p>今日三条主线汇聚同一信号：<strong>端云协同的粒度正在从"是否上云"演进为"哪个决策层切换、用什么路由器切换"</strong>。CDA4Rec 的双智能体分工（端侧摘要/云侧规划）与 UniRoute 的动态模型路由，从不同维度共同指向"端侧轻量感知 + 云侧重型决策"的标准两阶段架构；BitNet ExecuTorch 则持续拉低端侧算力门槛，让更多决策可下沉到端。Google AI Edge Eloquent 的低调发布，暗示 Gemma 端侧能力验证已从 benchmark 进入产品化阶段，值得持续关注 Android 版本的 API 开放情况。</p>
+<h3>近期关注</h3>
+<ul>
+<li><strong>Google I/O 2026</strong>（预期 5 月中旬）：LiteRT 路线图更新、Android AI Core 新 API、Gemma 端侧版本——对移动广告推理基础设施影响最直接；AI Edge Eloquent 可能在此正式官宣 Android 版</li>
+<li><strong>WWDC 2026</strong>（预期 6 月）：Apple Foundation Models 新版本，iOS 27 端侧 AI API 开放程度——影响 iOS 广告 SDK 隐私架构及 MLX 端侧调用能力</li>
+<li><strong>KDD 2026</strong>（预期 8 月）：工业界推荐/广告系统论文密集期，端云协同 CTR/CVR 预估的工程落地案例将集中出现</li>
+</ul>
+<hr />
+<p><em>数据截止：2026-04-27 | 已排除近期已报道内容（SIREN、NANOMIND、腾讯混元 3.0、MobileIPL、Expedera Origin Evolution、OD-LLM、MediaTek Dimensity 9500 + LiteRT、MobileKernelBench、中国大厂 Token 效率竞争、豆包 AI 眼镜、Meta Adaptive Ranking、腾讯 GPR、KernelEvolve、UniQL、CAR-LoRA、ENERZAi、FedUTR、MobiEdit、SDFT、Qwen3.6、LiteRT-LM、Gemma 4、ExecuTorch v1.2.0、EUPE、Firebase 混合推理、SCaLRec、DAIAN、R2LED、ParoQuant、ONNX Runtime 1.25.0、Apple M5 MLX ICLR Demo、Qualcomm AI Hub、Kuaishou OneRec、RPRA Meta、XPerT、Vikas Chandra On-Device LLMs）</em></p>
+    </article>
+  </div>
+</body>
+</html>
