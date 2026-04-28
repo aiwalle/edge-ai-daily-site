@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端智能日报 2026-04-28</title>
+  <style>
+:root{
+  --bg:#f4faf8;
+  --surface:#ffffff;
+  --surface-soft:#f8fcfb;
+  --text:#1f2f2b;
+  --muted:#5e726b;
+  --accent:#0f766e;
+  --accent-soft:#dcf2ee;
+  --border:#d8e8e2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #e9f7f2 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, #e5f4ef 0%, transparent 28%),
+    var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.8;
+}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px 56px}
+.top{
+  margin-bottom:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+}
+.brand{
+  margin:0;
+  font-size:14px;
+  letter-spacing:.08em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.back{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px 28px 20px;
+  box-shadow:0 10px 30px rgba(15,118,110,.08);
+}
+h1,h2,h3{line-height:1.35;margin:1.1em 0 .45em}
+h1{font-size:2rem;margin-top:.15em}
+h2{font-size:1.32rem}
+h3{font-size:1.08rem}
+p,li{font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+blockquote{
+  margin:1rem 0;
+  padding:.72rem .95rem;
+  background:var(--surface-soft);
+  border-left:4px solid var(--accent);
+  color:#28433d;
+  border-radius:8px;
+}
+hr{
+  border:none;
+  border-top:1px dashed var(--border);
+  margin:1.3rem 0;
+}
+code{
+  background:#eef7f5;
+  border:1px solid #d7e9e4;
+  color:#1f4f49;
+  border-radius:6px;
+  padding:.14em .42em;
+  font-size:.92em;
+}
+pre{
+  background:#0f1f1d;
+  color:#e9f4f2;
+  border-radius:12px;
+  overflow:auto;
+  padding:14px;
+}
+pre code{
+  background:transparent;
+  border:none;
+  color:inherit;
+  padding:0;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  overflow:hidden;
+  border-radius:12px;
+}
+th,td{
+  border:1px solid var(--border);
+  padding:.6rem .7rem;
+  text-align:left;
+  vertical-align:top;
+}
+th{background:#edf8f5}
+.footer{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:.88rem;
+}
+.list{
+  list-style:none;
+  margin:1rem 0 0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.list a.item{
+  display:block;
+  padding:14px 15px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-soft);
+  transition:.15s ease;
+}
+.item-title{
+  display:block;
+  font-weight:700;
+  margin-top:2px;
+}
+.focus{
+  display:block;
+  margin-top:8px;
+  font-size:.92rem;
+  color:#37524c;
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.list a.item:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(15,118,110,.09);
+  text-decoration:none;
+}
+.date{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  margin-bottom:2px;
+}
+@media (max-width:700px){
+  .wrap{padding:20px 12px 40px}
+  .card{padding:20px 16px 16px;border-radius:14px}
+  h1{font-size:1.62rem}
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <p class="brand">Edge AI Daily</p>
+      <a class="back" href="../index.html">← 返回目录</a>
+    </div>
+    <article class="card">
+      <h1>端智能日报 2026-04-28</h1>
+<blockquote>
+<p><strong>本期聚焦</strong>：WWW 2026 两篇 CTR 精排论文同日浮出——SparseCTR/EvoAttention 在线 A/B 实测 +1.72% CTR、推理提速 8.9×，GenCI 以生成式群体意图建模破解兴趣漂移；同期 Liquid AI LFM2.5-VL-450M 将端侧 VLM 推向 sub-250ms 实用门槛，Google LiteRT 以三个 NPU 生产案例（Google Meet 25× 大模型、Epic Games 30 FPS、Argmax 语音 AOT）宣告端侧算力全面进入收获期——广告精排"端云算力分工点"的判断比以往更紧迫。</p>
+</blockquote>
+<hr />
+<h2>1. 【SparseCTR / EvoAttention（WWW 2026）：时间感知稀疏注意力用于长期行为 CTR 预估——A/B 实测 +1.72% CTR / +1.41% CPM，推理加速 8.9×】</h2>
+<ul>
+<li><strong>评分</strong>：A5 · I3 · S=13 · P0 · 价值类型：收入提升</li>
+<li><strong>来源</strong>：多机构 | <a href="https://arxiv.org/abs/2601.17836">arxiv.org/abs/2601.17836</a> · <a href="https://github.com/laiweijiang/SparseCTR">github.com/laiweijiang/SparseCTR</a> | WWW 2026（2026-04-13 ～ 17，迪拜）</li>
+</ul>
+<p><strong>内容总结（130 字）</strong>：
+EvoAttention（进化式稀疏自注意力）是 SparseCTR 的核心算子，解决长期用户行为序列全注意力的计算瓶颈。创新点：① TimeChunking 按用户行为时间间隔个性化分块；② 三分支注意力（Global / Transition / Local）分别建模长期兴趣、兴趣迁移与短期兴趣；③ 稀疏计算图降低显存同时实现 8.9× 推理加速，AUC 全面超越标准全注意力。在线 A/B 测试：CTR +1.72%、CPM +1.41%；跨 3 个数量级 FLOPs 展现 scaling law。代码已开源。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告精排模型中用 SparseCTR 替换已有全注意力长行为序列模块，以近零 AUC 代价换取 8× 推理效率提升，直接释放线上实验吞吐配额。<strong>可直接应用</strong>：EvoAttention 的 TimeChunking + 三分支结构可 drop-in 替换现有 DIN/DIEN 注意力层；在线 A/B 数据（+1.72% CTR）提供了明确的迁移预期，是近期最值得快速跟进验证的精排优化方向。</p>
+<hr />
+<h2>2. 【GenCI（WWW 2026）：生成式用户兴趣迁移建模——群体意图学习（Cohort-based Intent Learning）驱动 CTR 预估，破解兴趣漂移难题】</h2>
+<ul>
+<li><strong>评分</strong>：A5 · I3 · S=13 · P1 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：多机构 | <a href="https://arxiv.org/abs/2601.18251">arxiv.org/abs/2601.18251</a> | WWW 2026（2026-04-13 ～ 17，迪拜）</li>
+</ul>
+<p><strong>内容总结（130 字）</strong>：
+GenCI 以生成式建模替代传统判别式 CTR 范式，核心洞察：传统模型对历史强势特征过拟合，无法适应用户兴趣的快速迁移。架构：① 生成模块以 NTP（next-item prediction）目标训练，产出候选无关（candidate-agnostic）的当前意图兴趣群组（interest cohorts）；② 分层候选感知网络通过 cross-attention 将兴趣群组与目标 item 动态对齐，注入排序阶段；③ 端到端训练，生成器与排序头联合优化。在三个真实推荐数据集上全面超越判别式基线，无公开 A/B 数据。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告精排场景引入"候选无关意图向量"作为额外排序特征，避免模型被历史高频行为带偏，对冷广告素材的点击率估计更准确。<strong>可借鉴思路</strong>：GenCI 的 NTP 意图群组机制可迁移至广告召回阶段——生成用户当前意图语义向量再做 ANN 检索，天然支持意图迁移；与 SparseCTR 形成互补：GenCI 提升意图表征质量，EvoAttention 提升序列计算效率，可联合评估。</p>
+<hr />
+<h2>3. 【LFM2.5-VL-450M（Liquid AI）：450M 参数端侧视觉语言模型——bounding box 预测 + 多语言 + function calling，sub-250ms 端侧推理】</h2>
+<ul>
+<li><strong>评分</strong>：A3 · I3 · S=9 · P1 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：Liquid AI / MarkTechPost | <a href="https://www.marktechpost.com/2026/04/11/liquid-ai-releases-lfm2-5-vl-450m-a-450m-parameter-vision-language-model-with-bounding-box-prediction-multilingual-support-and-sub-250ms-edge-inference/">marktechpost.com/2026/04/11/liquid-ai-releases-lfm2-5-vl-450m-...</a> | 2026-04-11</li>
+</ul>
+<p><strong>内容总结（120 字）</strong>：
+LFM2.5-VL-450M 是 Liquid AI 端侧 VLM 的新一代版本，450M 参数专为边缘硬件设计，sub-250ms 完成视觉推理。新增核心能力：① bounding box 预测（RefCOCO-M 81.28，视觉定位能力显著提升）；② 增强多语言理解；③ function calling 支持（可构建端侧 agentic 视觉推理循环）。设计目标聚焦数据抽取与端侧 agentic 闭环，比上代 LFM2-VL 在指令跟随和视觉接地上有明确提升。工程信息：专为端侧优化，LFM2.5-1.2B-Instruct 在 MMLU Pro 达 44.35。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在端侧广告素材理解场景中部署 LFM2.5-VL-450M 做图文对齐判断和视觉元素定位，sub-250ms 意味着对广告曝光做实时"素材质量评分"在端侧可行，无需上云。<strong>可借鉴思路</strong>：bounding box 预测能力可直接用于端侧广告素材热区分析（主体/logo 位置检测）；function calling 支持使其可嵌入端侧广告策略调用链；是当前参数量最小的具备视觉定位能力的端侧 VLM，可作为素材理解基础模块的优先评估对象。</p>
+<hr />
+<h2>4. 【Building Real-World On-Device AI with LiteRT and NPU（Google Developers Blog）：Google Meet 25× 大模型上 NPU、Epic Games 30 FPS MetaHuman、Argmax 语音 AOT 编译——NPU 生产落地案例三连】</h2>
+<ul>
+<li><strong>评分</strong>：A2 · I4 · S=8 · P2 · 价值类型：成本优化</li>
+<li><strong>来源</strong>：Google Developers Blog | <a href="https://developers.googleblog.com/building-real-world-on-device-ai-with-litert-and-npu/">developers.googleblog.com/building-real-world-on-device-ai-with-litert-and-npu/</a> | 2026-04-23</li>
+</ul>
+<p><strong>内容总结（130 字）</strong>：
+Google 发布 LiteRT NPU 生产落地综述，三个典型案例：① Google Meet 用 NPU 部署了比前版 <strong>25× 更大</strong>的 Ultra-HD 分割模型，功耗保持不变且留有热余量；② Epic Games 通过 LiteRT NPU 在 Android 支持设备上实现 MetaHuman 实时动画 <strong>30 FPS</strong>；③ Argmax 用 LiteRT <strong>AOT（Ahead-Of-Time）编译</strong>将 NVIDIA Parakeet TDT 0.6B v2 语音模型部署到端侧，达业界领先延迟。博客标志着 LiteRT NPU 后端从实验特性正式进入生产栈，覆盖 Android / iOS / macOS / Windows / Linux / Web。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告 SDK 中参照 Google Meet 路径，用 NPU 在不增加功耗的前提下部署更高质量的视觉理解模型（如广告素材分割）。<strong>可借鉴思路</strong>：AOT 编译 + NPU 是广告 SDK 首次集成 LiteRT 的最佳实践路径——Argmax 的语音 AOT 案例可参照用于端侧音频广告归因；25× 模型规模提升而功耗不变的案例是说服业务侧推动 NPU 接入的最有力数据支撑。</p>
+<hr />
+<h3>其他观察</h3>
+<p>SparseCTR 与 GenCI 同出 WWW 2026，标志精排优化正从"特征工程"转向"结构化效率（稀疏注意力）+ 生成式意图表征"两个维度并行演进，二者方法论互补、可联合应用于广告精排链路。LFM2.5-VL-450M 将端侧 VLM 推进到 sub-250ms、可做 bounding box 定位的实用级别，与 LiteRT NPU 生产化趋势一起，说明"端侧多模态广告素材理解"的工程落地窗口正在打开——从研究跑通到广告 SDK 集成的距离正在以月为单位缩短。</p>
+<h3>近期关注</h3>
+<ul>
+<li><strong>Google I/O 2026（5 月 19–20 日，已确认）</strong>：LiteRT 路线图更新、Android 17 AI Core 新 API、Gemma 端侧新版本——本次预告已有 LiteRT-LM 动态 context、NPU 加速毕业等议题，对移动广告推理基础设施影响最直接，建议提前跟进 Sessions 列表</li>
+<li><strong>WWDC 2026（预期 6 月）</strong>：Apple Foundation Models 新版本、iOS 27 端侧 AI API——影响 iOS 广告 SDK 隐私架构及 CoreML/MLX 端侧 LLM 调用能力</li>
+<li><strong>KDD 2026（预期 8 月）</strong>：工业界推荐/广告端云协同工程落地论文密集期，GenCI、SparseCTR 类方法在大厂生产环境的 follow-up 论文将集中出现</li>
+</ul>
+<hr />
+<p><em>数据截止：2026-04-28 | 已排除近期已报道内容（SIREN、NANOMIND、腾讯混元 3.0、MobileIPL、Expedera Origin Evolution、OD-LLM、MediaTek Dimensity 9500 + LiteRT、MobileKernelBench、中国大厂 Token 效率竞争、豆包 AI 眼镜、Meta Adaptive Ranking、腾讯 GPR、KernelEvolve、UniQL、CAR-LoRA、ENERZAi、FedUTR、MobiEdit、SDFT、Qwen3.6、LiteRT-LM、Gemma 4、ExecuTorch v1.2.0、EUPE、Firebase 混合推理、SCaLRec、DAIAN、R2LED、ParoQuant、ONNX Runtime 1.25.0、Apple M5 MLX ICLR Demo、Qualcomm AI Hub、Kuaishou OneRec、RPRA Meta、XPerT、Vikas Chandra On-Device LLMs、CDA4Rec、UniRoute、BitNet ExecuTorch Vulkan、Meta Capacity Efficiency、Google AI Edge Eloquent、SqueezeBits Yetter）</em></p>
+    </article>
+  </div>
+</body>
+</html>
