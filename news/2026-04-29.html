@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端智能日报 2026-04-29</title>
+  <style>
+:root{
+  --bg:#f4faf8;
+  --surface:#ffffff;
+  --surface-soft:#f8fcfb;
+  --text:#1f2f2b;
+  --muted:#5e726b;
+  --accent:#0f766e;
+  --accent-soft:#dcf2ee;
+  --border:#d8e8e2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #e9f7f2 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, #e5f4ef 0%, transparent 28%),
+    var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.8;
+}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px 56px}
+.top{
+  margin-bottom:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+}
+.brand{
+  margin:0;
+  font-size:14px;
+  letter-spacing:.08em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.back{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px 28px 20px;
+  box-shadow:0 10px 30px rgba(15,118,110,.08);
+}
+h1,h2,h3{line-height:1.35;margin:1.1em 0 .45em}
+h1{font-size:2rem;margin-top:.15em}
+h2{font-size:1.32rem}
+h3{font-size:1.08rem}
+p,li{font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+blockquote{
+  margin:1rem 0;
+  padding:.72rem .95rem;
+  background:var(--surface-soft);
+  border-left:4px solid var(--accent);
+  color:#28433d;
+  border-radius:8px;
+}
+hr{
+  border:none;
+  border-top:1px dashed var(--border);
+  margin:1.3rem 0;
+}
+code{
+  background:#eef7f5;
+  border:1px solid #d7e9e4;
+  color:#1f4f49;
+  border-radius:6px;
+  padding:.14em .42em;
+  font-size:.92em;
+}
+pre{
+  background:#0f1f1d;
+  color:#e9f4f2;
+  border-radius:12px;
+  overflow:auto;
+  padding:14px;
+}
+pre code{
+  background:transparent;
+  border:none;
+  color:inherit;
+  padding:0;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  overflow:hidden;
+  border-radius:12px;
+}
+th,td{
+  border:1px solid var(--border);
+  padding:.6rem .7rem;
+  text-align:left;
+  vertical-align:top;
+}
+th{background:#edf8f5}
+.footer{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:.88rem;
+}
+.list{
+  list-style:none;
+  margin:1rem 0 0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.list a.item{
+  display:block;
+  padding:14px 15px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-soft);
+  transition:.15s ease;
+}
+.item-title{
+  display:block;
+  font-weight:700;
+  margin-top:2px;
+}
+.focus{
+  display:block;
+  margin-top:8px;
+  font-size:.92rem;
+  color:#37524c;
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.list a.item:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(15,118,110,.09);
+  text-decoration:none;
+}
+.date{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  margin-bottom:2px;
+}
+@media (max-width:700px){
+  .wrap{padding:20px 12px 40px}
+  .card{padding:20px 16px 16px;border-radius:14px}
+  h1{font-size:1.62rem}
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <p class="brand">Edge AI Daily</p>
+      <a class="back" href="../index.html">← 返回目录</a>
+    </div>
+    <article class="card">
+      <h1>端智能日报 2026-04-29</h1>
+<blockquote>
+<p><strong>本期聚焦</strong>：LLM-HYPER 以 LLM 作为 hypernetwork 直接生成广告 CTR 冷启动参数（A5），是近期广告算法领域最值得快速评估的新范式；SAGER 提出每用户独立演化策略技能，补足当前推荐 Agent 最后一块短板；MNN 3.5.0 重磅更新以 TurboQuant + Vulkan LLM 夯实中文移动端推理基础设施，Samsung 旗舰机 multi-LoRA 一体化模型量产则将"端侧多任务切换"从理论推向商业落地。</p>
+</blockquote>
+<hr />
+<h2>1. 【LLM-HYPER：LLM 作为 Hypernetwork 直接生成 CTR 预估参数，无训练解决广告冷启动问题】</h2>
+<ul>
+<li><strong>评分</strong>：A5 · I3 · S=13 · P0 · 价值类型：收入提升</li>
+<li><strong>来源</strong>：Walmart Global Tech | <a href="https://arxiv.org/abs/2604.12096">arxiv.org/abs/2604.12096</a> | 2026-04-13</li>
+</ul>
+<p><strong>内容总结（130 字）</strong>：
+LLM-HYPER 针对广告冷启动场景（新广告缺乏用户反馈）提出 training-free 解法：LLM 不做推理输出，而是作为 <strong>hypernetwork</strong> 直接生成线性 CTR 预估器的逐特征权重。流程：① 用 CLIP embedding 从历史广告库中检索语义相似的历史投放案例；② 将案例与目标广告的多模态内容（文本 + 图像）格式化为 few-shot CoT prompt 输入 LLM；③ LLM 推理用户意图、特征影响力和内容相关性，输出 CTR 权重向量；④ 加入归一化与校准确保生产级分布一致性。零训练开销，全流程推理时完成个性化权重生成。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在新广告素材上线前 24 小时内无需等待 warm-up 数据即获得初始 CTR 估计，冷启动 RPM 损失有望大幅压缩。<strong>可直接应用</strong>：CLIP 语义检索历史投放案例 + LLM CoT 权重生成可直接作为现有 CTR 冷启动模块的即插即用替代方案；端侧实现路径：CLIP embedding 索引本地化 + SLM 替代 LLM 做权重生成，可实现隐私保护的端侧冷启动。</p>
+<hr />
+<h2>2. 【SAGER：每用户独立"策略技能"文档 + 自演化推荐 Agent——解决 LLM 推荐 Agent 的决策逻辑个性化短板】</h2>
+<ul>
+<li><strong>评分</strong>：A4 · I3 · S=11 · P1 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：多机构 | <a href="https://arxiv.org/abs/2604.14972">arxiv.org/abs/2604.14972</a> | 2026-04-16</li>
+</ul>
+<p><strong>内容总结（130 字）</strong>：
+SAGER 指出当前 LLM 推荐 Agent 的核心矛盾：记忆（用户偏好）已个性化，但<strong>推理逻辑（system prompt）对所有用户共享且固化</strong>——当推荐失败时，Agent 只更新"知道了什么"，而不追问"为什么这样决策"。SAGER 为每个用户维护一份结构化自然语言 <strong>Policy Skill 文档</strong>，编码个性化决策原则（如"该用户拒绝推荐时通常是因为类型重复而非价格"）。失败时，Agent 以反事实归因自动更新该文档；文档通过蒸馏可被轻量化后下推至端侧。架构：Policy Skill + Memory 双轨并行，联合驱动推荐决策。多数据集上优于共享策略基线。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在端侧广告推荐 Agent 中为每个用户维护一份轻量"广告策略偏好文档"（如"该用户对重复品类广告有强负反馈"），驱动端侧排序/过滤决策，无需上传原始行为即可实现个性化策略优化。<strong>可借鉴思路</strong>：Policy Skill 的"失败 → 归因 → 策略文档更新"闭环，可迁移为广告 SDK 的端侧负反馈学习机制；与 CDA4Rec（04-27 报道）的端侧摘要方案互补——SAGER 管"怎么推"，CDA4Rec 管"推什么"。</p>
+<hr />
+<h2>3. 【MNN 3.5.0（阿里巴巴）：Vulkan LLM 推理 + TurboQuant TQ3/TQ4 KV Cache 量化 + QNN/RISC-V 后端——移动端推理框架里程碑更新】</h2>
+<ul>
+<li><strong>评分</strong>：A3 · I4 · S=10 · P1 · 价值类型：成本优化</li>
+<li><strong>来源</strong>：阿里巴巴 / GitHub | <a href="https://github.com/alibaba/MNN/releases">github.com/alibaba/MNN/releases</a> | 2026-04 发布</li>
+</ul>
+<p><strong>内容总结（140 字）</strong>：
+阿里巴巴 MNN 3.5.0 围绕三条主线重磅更新：① <strong>多后端 LLM 推理扩展</strong>：Vulkan 后端新增完整 LLM 推理支持（扩大安卓 GPU 覆盖）；摩尔线程 MUSA 后端接入；QNN 后端新增 Attention 算子与更多 LLM 算子支持；RISC-V RVV 向量扩展落地（覆盖 RISC-V 边缘设备）。② <strong>高性能量化与采样优化</strong>：全新 <strong>TurboQuant TQ3/TQ4</strong> KV Cache 量化方案（对标 Google TurboQuant 路线，可将 KV Cache 显存压缩至约 4-bit 级别）；Sampler 重构为 Pipeline 架构；多轮对话 Prompt Cache 支持。③ <strong>端侧语音交互增强</strong>：异步 3 阶段 Token2Wav 流水线（DiT ∥ Vocoder）；AEC 智能打断。MNN 作为国内最成熟的移动端推理引擎（已覆盖淘宝、支付宝等亿级 DAU 应用），3.5.0 是 LLM 时代最重要的框架基础更新之一。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告 SDK 的 Android 端直接基于 MNN 3.5.0 Vulkan 后端部署端侧 LLM（意图识别、素材理解），TurboQuant TQ4 对长上下文用户行为序列推理的内存占用有直接帮助。<strong>可直接应用</strong>：MNN 是国内广告 SDK 最常用的推理框架之一；TQ4 KV Cache 量化可将 1-2B 模型的上下文缓存减半，对资源受限旗舰机之外的中端机型推全尤为关键；建议在下次 SDK 推理模块升级时优先评估 MNN 3.5.0。</p>
+<hr />
+<h2>4. 【三星 Galaxy S24/S25 multi-LoRA 一体化端侧 LLM（arXiv 2604.18655）：INT4 量化 + DS2D 投机解码，4-6× 内存/延迟改善，9 语言 8 任务量产】</h2>
+<ul>
+<li><strong>评分</strong>：A3 · I4 · S=10 · P1 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：Samsung / 多机构 | <a href="https://arxiv.org/abs/2604.18655">arxiv.org/abs/2604.18655</a> | 2026-04（月内）</li>
+</ul>
+<p><strong>内容总结（130 字）</strong>：
+本文披露三星在 Galaxy S24（Qualcomm SM8650）和 S25（SM8750）上量产部署的 multi-LoRA 一体化 LLaMA 基础模型方案。核心工程亮点：① <strong>multi-LoRA 动态任务切换</strong>——将各应用场景（邮件、翻译、摘要等）的 LoRA 作为运行时输入注入单一冻结推理图，无需重编译或额外显存；② <strong>DS2D（Dynamic Self-Speculative Decoding）</strong>——树状结构预测未来 token，无需 draft 模型，decode 时间提速 <strong>2.3×</strong>；③ <strong>多流解码</strong>——单次前向同时生成多种风格（正式/礼貌等），延迟压缩 <strong>6×</strong>；④ INT4 量化结合架构优化，整体内存/延迟改善 <strong>4-6×</strong>，9 语言、8 任务精度保持。工程成熟度：已在量产机型上部署。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们借鉴三星路径——将广告 SDK 的多个模型（意图识别、素材评分、CTR 初排）合并为一个 base + 多 LoRA 的端侧一体化模型，显著降低内存占用和冷加载延迟。<strong>可借鉴思路</strong>：multi-LoRA 运行时动态切换是广告端侧多任务部署的关键使能技术，DS2D 的无 draft-model 投机解码方案可作为端侧广告意图生成的低开销加速选项；三星-高通的联合优化路径也表明 Snapdragon 旗舰机已具备承载 1-3B 多任务 LLM 的生产能力。</p>
+<hr />
+<h2>5. 【Qualcomm Matrix Extensions（QMX）：移动端 CPU 上 Llama 推理加速——官方技术博客披露指令集级优化细节】</h2>
+<ul>
+<li><strong>评分</strong>：A2 · I4 · S=8 · P2 · 价值类型：成本优化</li>
+<li><strong>来源</strong>：Qualcomm Developer Blog | <a href="https://www.qualcomm.com/developer/blog/2026/04/llama-models-acceleration-on-cpu-qmx">qualcomm.com/developer/blog/2026/04/llama-models-acceleration-on-cpu-qmx</a> | 2026-04</li>
+</ul>
+<p><strong>内容总结（120 字）</strong>：
+高通官方博客披露 Qualcomm Matrix Extensions（QMX）在移动端 CPU（Oryon 架构）上加速 Llama 推理的完整技术路径。QMX 是高通对 ARM SME/SVE 指令集的进一步扩展，专为矩阵乘法密集型 LLM 推理设计：在 Snapdragon X Elite/Snapdragon 8 Elite CPU 上，QMX 通过扩展寄存器宽度和 outer-product 累加单元大幅提升 GEMM 吞吐。具体 speedup 数字：Llama 3.2 1B/3B CPU 推理相比 llama.cpp 基准有明显提升（博客内有具体 tok/s 对比）。工程信息：通过 llama.cpp 上游集成，可直接使用；配合 KleidiAI 库覆盖 Snapdragon X 和 Snapdragon 8 系列。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告 SDK 的 CPU fallback 推理路径（覆盖无 NPU 驱动或旧设备）中通过升级 llama.cpp + QMX 支持获得免费提速，扩大端侧 LLM 的设备覆盖范围（中端 Snapdragon 设备同样受益）。<strong>可借鉴思路</strong>：QMX 主要价值是拓宽"无 NPU 支持时的兜底方案"——对非旗舰用户群的广告意图识别提升实时性；结合上条 DS2D 投机解码，CPU 路径下也可达到接近 NPU 的推理效率。</p>
+<hr />
+<h3>其他观察</h3>
+<p>今日三条方法论收敛于同一方向：<strong>LLM 不只是"做推理"，而是作为系统组件生成参数（LLM-HYPER）、管理策略文档（SAGER）、驱动端侧个性化决策</strong>——LLM 的角色正在从"回答者"演变为"元学习者/策略生成者"。同时，三星 multi-LoRA 一体化量产方案与 MNN 3.5.0 基础设施更新的叠加，使"1-3B 多任务端侧 LLM 广告 SDK"从技术可行跨越到工程可落地的临界点，时间窗口约为 2026 Q3-Q4。</p>
+<h3>近期关注</h3>
+<ul>
+<li><strong>Google I/O 2026（5 月 19–20 日，已确认）</strong>：LiteRT 路线图更新、Android 17 AI Core 新 API、Gemma 4 on-device 调用能力扩展——是今年移动广告推理基础设施最重要的外部节点，建议提前锁定 Session 列表中的 AI Edge / LiteRT-LM / Gemma on-device 议题</li>
+<li><strong>WWDC 2026（预期 6 月）</strong>：Apple Foundation Models 下一版、iOS 27 端侧 AI 开放 API——影响 iOS 广告 SDK 的 CoreML/MLX 路线选择</li>
+<li><strong>KDD 2026（预期 8 月）</strong>：工业界广告/推荐端云协同工程论文密集期，LLM-HYPER / SAGER 类方法在大厂生产环境的 follow-up 预计集中出现</li>
+</ul>
+<hr />
+<p><em>数据截止：2026-04-29 | 已排除近期已报道内容（SIREN、NANOMIND、腾讯混元 3.0、MobileIPL、Expedera Origin Evolution、OD-LLM、MediaTek Dimensity 9500 + LiteRT、MobileKernelBench、中国大厂 Token 效率竞争、豆包 AI 眼镜、Meta Adaptive Ranking、腾讯 GPR、KernelEvolve、UniQL、CAR-LoRA、ENERZAi、FedUTR、MobiEdit、SDFT、Qwen3.6、LiteRT-LM、Gemma 4、ExecuTorch v1.2.0、EUPE、Firebase 混合推理、SCaLRec、DAIAN、R2LED、ParoQuant、ONNX Runtime 1.25.0、Apple M5 MLX ICLR Demo、Qualcomm AI Hub、Kuaishou OneRec、RPRA Meta、XPerT、Vikas Chandra On-Device LLMs、CDA4Rec、UniRoute、BitNet ExecuTorch Vulkan、Meta Capacity Efficiency、Google AI Edge Eloquent、SqueezeBits Yetter、SparseCTR/EvoAttention、GenCI、LFM2.5-VL-450M、LiteRT NPU 生产案例）</em></p>
+    </article>
+  </div>
+</body>
+</html>
