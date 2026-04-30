@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端智能日报 2026-04-30</title>
+  <style>
+:root{
+  --bg:#f4faf8;
+  --surface:#ffffff;
+  --surface-soft:#f8fcfb;
+  --text:#1f2f2b;
+  --muted:#5e726b;
+  --accent:#0f766e;
+  --accent-soft:#dcf2ee;
+  --border:#d8e8e2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #e9f7f2 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, #e5f4ef 0%, transparent 28%),
+    var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.8;
+}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px 56px}
+.top{
+  margin-bottom:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+}
+.brand{
+  margin:0;
+  font-size:14px;
+  letter-spacing:.08em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.back{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px 28px 20px;
+  box-shadow:0 10px 30px rgba(15,118,110,.08);
+}
+h1,h2,h3{line-height:1.35;margin:1.1em 0 .45em}
+h1{font-size:2rem;margin-top:.15em}
+h2{font-size:1.32rem}
+h3{font-size:1.08rem}
+p,li{font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+blockquote{
+  margin:1rem 0;
+  padding:.72rem .95rem;
+  background:var(--surface-soft);
+  border-left:4px solid var(--accent);
+  color:#28433d;
+  border-radius:8px;
+}
+hr{
+  border:none;
+  border-top:1px dashed var(--border);
+  margin:1.3rem 0;
+}
+code{
+  background:#eef7f5;
+  border:1px solid #d7e9e4;
+  color:#1f4f49;
+  border-radius:6px;
+  padding:.14em .42em;
+  font-size:.92em;
+}
+pre{
+  background:#0f1f1d;
+  color:#e9f4f2;
+  border-radius:12px;
+  overflow:auto;
+  padding:14px;
+}
+pre code{
+  background:transparent;
+  border:none;
+  color:inherit;
+  padding:0;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  overflow:hidden;
+  border-radius:12px;
+}
+th,td{
+  border:1px solid var(--border);
+  padding:.6rem .7rem;
+  text-align:left;
+  vertical-align:top;
+}
+th{background:#edf8f5}
+.footer{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:.88rem;
+}
+.list{
+  list-style:none;
+  margin:1rem 0 0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.list a.item{
+  display:block;
+  padding:14px 15px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-soft);
+  transition:.15s ease;
+}
+.item-title{
+  display:block;
+  font-weight:700;
+  margin-top:2px;
+}
+.focus{
+  display:block;
+  margin-top:8px;
+  font-size:.92rem;
+  color:#37524c;
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.list a.item:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(15,118,110,.09);
+  text-decoration:none;
+}
+.date{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  margin-bottom:2px;
+}
+@media (max-width:700px){
+  .wrap{padding:20px 12px 40px}
+  .card{padding:20px 16px 16px;border-radius:14px}
+  h1{font-size:1.62rem}
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <p class="brand">Edge AI Daily</p>
+      <a class="back" href="../index.html">← 返回目录</a>
+    </div>
+    <article class="card">
+      <h1>端智能日报 2026-04-30</h1>
+<blockquote>
+<p><strong>本期聚焦</strong>：工业级生成式推荐"三连发"——美团、京东同期实现 LLM 驱动生成式排序/重排的大规模线上验证；与此同时，LLM 中间层表示压缩为广告 CTR 模型提供了成本最低的语义增强路径；端侧硬件侧则迎来首个 SSM + RRAM 计算存储一体化的 Nature 级别验证。</p>
+</blockquote>
+<hr />
+<h2>1. 【MRC (arXiv 2604.18146)：发现 LLM 中间层表示优势（MRA），HSIC 压缩框架强化工业 CTR 模型】</h2>
+<ul>
+<li><strong>评分</strong>：A/5 · I/4 · S=14 · P0 · 价值类型：收入提升</li>
+<li><strong>来源</strong>：多机构 | <a href="https://arxiv.org/abs/2604.18146">arxiv.org/abs/2604.18146</a> | 2026-04-20（v2 2026-04-21）</li>
+</ul>
+<p><strong>内容总结（~130 字）</strong>：
+论文揭示"中间层表示优势"（Mid-layer Representation Advantage, MRA）：LLM 中间层特征在下游推荐任务中系统性优于最终层，作者基于模块化理论解释为最终层被迫专注代理任务导致性能退化。提出 Modular Task Decoupling 方法，以 HSIC 约束和信息瓶颈框架将 LLM 中间层表示高效压缩，注入下游 CTR 模型（DCNv2）。规模实验显示更大的 LLM 带来更大收益，并通过线上 A/B 实测验证业务指标改善。<strong>工程要点</strong>：LLM 仅需离线推理一次，提取中间层特征后存入特征系统，不改变在线服务架构，计算成本可接受。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在用户/素材 Embedding 接入 CTR 模型时，将 LLM 特征层的选取从默认"最终层"改为"中间层"，成本几乎为零，可能带来显著精度提升。可直接应用于我们现有 LLM-for-CTR Pipeline 的特征层选取优化，建议一周内跑一次小规模 A/B 验证。</p>
+<hr />
+<h2>2. 【GenRec (arXiv 2604.14878)：京东 App 偏好导向生成式推荐——Page-wise NTP + Token Merger 2× 压缩 + GRPO-SR 强化对齐，月级 A/B 实测 +9.5% 点击 / +8.7% 成交】</h2>
+<ul>
+<li><strong>评分</strong>：A/4 · I/4 · S=12 · P0 · 价值类型：收入提升</li>
+<li><strong>来源</strong>：京东 / arXiv | <a href="https://arxiv.org/abs/2604.14878">arxiv.org/abs/2604.14878</a> | 2026-04-14</li>
+</ul>
+<p><strong>内容总结（~140 字）</strong>：
+针对 decoder-only 生成式推荐三大工程痛点，提出 GenRec：① <strong>Page-wise NTP</strong> 按页整体监督而非逐 item，密化梯度信号，消除一对多歧义；② <strong>非对称线性 Token Merger</strong> 在 Prompt 侧将多 token Semantic ID 压缩约 2× 输入长度，解码侧保持全分辨率，精度损失可忽略；③ <strong>GRPO-SR</strong> 以带 NLL 正则的组相对策略优化做强化对齐，将用户真实行为信号对齐进生成策略。京东 App 真实流量<strong>月级 A/B 测试</strong>：点击量 +9.5%，成交量 +8.7%。参数量级未披露，但 Token Merger 压缩使推理成本贴近非生成式基线。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告精排/重排阶段以可控推理成本部署生成式位序优化模型，并借助 GRPO-SR 将成交/点击等延迟反馈对齐进模型策略。Page-wise NTP 的列表级训练目标设计对广告多位组合优化（如横幅 + 插屏混排）有直接借鉴价值，可在现有重排器升级时纳入方案比较。</p>
+<hr />
+<h2>3. 【NSGR (arXiv 2604.05314)：美团 Next-Scale 树形生成式重排——Coarse-to-Fine 多尺度生成，解决全局/局部失衡与训练-评估目标不一致，已上线】</h2>
+<ul>
+<li><strong>评分</strong>：A/4 · I/4 · S=12 · P0 · 价值类型：收入提升/用户体验</li>
+<li><strong>来源</strong>：美团 / arXiv | <a href="https://arxiv.org/abs/2604.05314">arxiv.org/abs/2604.05314</a> | 2026-04-07</li>
+</ul>
+<p><strong>内容总结（~130 字）</strong>：
+提出"逐尺度生成"新范式 NSGR：不同于自回归（逐 item）或非自回归（一步全出），NSGR 以树状结构从用户兴趣粗粒度到细粒度渐进展开推荐列表。核心组件 Next-Scale Generator（NSG）在每一层级做 beam 扩展，平衡全局多样性与局部相关性。同步引入 evaluator 协同，修复现有生成重排器的 goal inconsistency 问题（generator 与 evaluator 训练目标不一致）。已在<strong>美团食品外卖平台线上部署</strong>，服务亿级用户。推理侧复杂度通过分层 beam-search 可控，硬件需求与当前列表模型相近。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告 Rerank 阶段同时优化列表级指标（如页面整体 GMV）与 item 级 CTR，不依赖超大云模型。NSGR 对"自回归重排器训练-推理 gap"问题的解法可直接借鉴至我们现有广告重排实验：若已在用自回归重排器，goal inconsistency 修复是低成本高价值的改进点。</p>
+<hr />
+<h2>4. 【MBGR (arXiv 2604.02684)：美团多业务生成式推荐——BID 跨域 Tokenization + MBP 多任务预测头 + LDR 标签动态路由，生产上线】</h2>
+<ul>
+<li><strong>评分</strong>：A/4 · I/4 · S=12 · P0 · 价值类型：收入提升</li>
+<li><strong>来源</strong>：美团 / arXiv | <a href="https://arxiv.org/abs/2604.02684">arxiv.org/abs/2604.02684</a> | 2026-04-03</li>
+</ul>
+<p><strong>内容总结（~130 字）</strong>：
+针对多业务场景（外卖/买菜/闪购）共享 Semantic ID 导致的表示混淆（seesaw phenomenon）和 NTP 无法建模跨业务行为的痛点，提出 MBGR 三件套：① <strong>BID（Business-aware Semantic ID）</strong> 感知业务域的 tokenization，保持语义完整性并区分跨域语义；② <strong>MBP（Multi-Business Prediction）</strong> 多任务预测头，提供业务专属解码能力；③ <strong>LDR（Label Dynamic Routing）</strong> 将稀疏多业务标签路由为稠密标签，改善训练信号质量。离线和线上实验均在<strong>美团外卖平台</strong>生产验证，已上线服务。无公开延迟数据，但框架设计保持 NTP 推理范式兼容。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在音频广告"多场景统一排序"（如 podcast 广告 vs 短视频广告 vs 开屏广告）需求下，用 MBGR 的 BID+LDR 方案统一 tokenization 同时维持场景差异性。LDR 的稠密标签路由思路对"多业务稀疏标签导致训练不稳定"这一常见工程痛点有直接参考价值。</p>
+<hr />
+<h2>5. 【Network Edge Inference for LLMs (arXiv 2604.22906)：端侧 LLM 推理综述——系统架构、模型优化、资源调度全景图谱】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/3 · S=9 · P1 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：多机构（英、美、新加坡） / arXiv | <a href="https://arxiv.org/abs/2604.22906">arxiv.org/abs/2604.22906</a> | 2026-04-24</li>
+</ul>
+<p><strong>内容总结（~120 字）</strong>：
+系统综述在网络边缘设备执行 LLM 推理的挑战与方法，覆盖三大模块：① <strong>系统架构</strong>（单设备、协作推理、cloud-edge 分层 pipeline）；② <strong>模型优化</strong>（量化 INT4/INT8/FP8、蒸馏、剪枝、投机解码、KV cache 压缩）；③ <strong>资源管理与调度</strong>（延迟感知调度、能耗约束）。以 70B LLaMA fp16 需 140 GB 为基准量化挑战，对比 INT4（~35 GB）+ 投机解码等主流工程化方案。提交于 2026-04-24，是目前最新的端侧 LLM 工程化综述，作者团队覆盖英、美、新加坡学术机构。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告端云协同架构选型时，使用该综述作为技术路线对比的"地图文件"——特别是在 INT4 vs INT8 量化精度损失、投机解码收益边界等决策节点上有参考基准。当前广告端侧 LLM 推理处于立项调研阶段，暂不适用生产，建议作为立项参考材料。</p>
+<hr />
+<h2>6. 【Michigan/Nature Communications：SSM + RRAM 计算存储一体化——首次将状态空间模型映射至 Resistive RAM 跨阵列，突破端侧实时推理功耗边界】</h2>
+<ul>
+<li><strong>评分</strong>：A/2 · I/4 · S=8 · P1 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：University of Michigan / Nature Communications | <a href="https://www.nature.com/articles/s41467-025-68227-w">nature.com/articles/s41467-025-68227-w</a> | Nature Commun. vol.17, art.1513（2026-04）</li>
+</ul>
+<p><strong>内容总结（~120 字）</strong>：
+首次将状态空间模型（SSM，Transformer 高效替代架构）映射至 RRAM 跨阵列计算存储一体化硬件，利用 RRAM 天然短时记忆衰减模拟 SSM 状态演化，实现"在存储单元中原地计算"。基于标准 65nm CMOS 工艺制造，向量矩阵乘误差仅 4.6 bits（接近理论值）；钨氧化物记忆单元衰减与模型预测高吻合。实时处理连续事件序列（视频流、传感器数据），延迟与功耗均显著优于传统数字硬件。目标部署：手机、助听器、自动驾驶摄像头。报道来源：TechXplore 2026-04。</p>
+<p><strong>业务价值与适配性</strong>：
+与当前广告系统直接关联弱，暂不适用于近期开发。中长期价值：若 SSM + 神经形态硬件路线成熟，端侧用户行为序列建模（长序列 attention 是 CTR 模型的重要瓶颈）的功耗/延迟边界将大幅下降。建议列入 2-3 年技术雷达观察项。</p>
+<hr />
+<h3>其他观察</h3>
+<p>今日最显著趋势是生成式推荐的工业化浪潮：美团和京东在一个月内先后公开 MBGR（多业务统一 Tokenization）、NSGR（树形重排）、GenRec（强化对齐生成）三套系统，意味着生成式精排/重排已进入国内头部平台的稳定生产迭代期。与此同时，MRC 提供的"LLM 离线中间层表示 + CTR 注入"路线成本最低，适合作为短期切入点验证 LLM 对广告 CTR 的增益。</p>
+<h3>近期关注</h3>
+<p><strong>Google I/O 预计 5 月中旬</strong>：历年集中发布 Gemma 新版本、LiteRT/ML Kit SDK 更新及 Android AI 能力路线图，与端侧广告 SDK 直接相关，请关注 5 月初的官方预告。<strong>ICLR 2026 Poster 展示</strong>（5 月 2 日前后，奥地利维也纳）：本期 BitNet ExecuTorch、UniRoute 等论文将现场展示，关注端侧 LLM 新进展。</p>
+<hr />
+<p><em>中文补搜说明：本期执行两轮中文关键词检索（"端侧推理广告推荐 2026年4月"、"端智能端云协同 2026年4月下旬"），72 小时内无新增高质量中文原创内容；美团/京东来源 arXiv 论文已覆盖中国一线工业实践。</em></p>
+<p><em>数据截止：2026-04-30 | 已排除近期已报道内容（SIREN、NANOMIND、腾讯混元 3.0、MobileIPL、ENERZAi、FedUTR、MobiEdit、SDFT、Qwen3.6、LiteRT-LM、Gemma 4、ExecuTorch v1.2.0、EUPE、Firebase 混合推理、SCaLRec、DAIAN、R2LED、ParoQuant、ONNX Runtime 1.25.0、Apple M5 MLX ICLR Demo、Qualcomm AI Hub、Kuaishou OneRec、RPRA Meta、XPerT、CDA4Rec、UniRoute、BitNet ExecuTorch Vulkan、Meta Capacity Efficiency、Google AI Edge Eloquent、SqueezeBits Yetter、SparseCTR/EvoAttention、GenCI、LFM2.5-VL-450M、LiteRT NPU 生产案例、LLM-HYPER、SAGER、MNN 3.5.0、Samsung multi-LoRA S24/S25、Qualcomm QMX 等）</em></p>
+    </article>
+  </div>
+</body>
+</html>
