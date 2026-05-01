@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端智能日报 2026-05-01</title>
+  <style>
+:root{
+  --bg:#f4faf8;
+  --surface:#ffffff;
+  --surface-soft:#f8fcfb;
+  --text:#1f2f2b;
+  --muted:#5e726b;
+  --accent:#0f766e;
+  --accent-soft:#dcf2ee;
+  --border:#d8e8e2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #e9f7f2 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, #e5f4ef 0%, transparent 28%),
+    var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.8;
+}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px 56px}
+.top{
+  margin-bottom:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+}
+.brand{
+  margin:0;
+  font-size:14px;
+  letter-spacing:.08em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.back{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px 28px 20px;
+  box-shadow:0 10px 30px rgba(15,118,110,.08);
+}
+h1,h2,h3{line-height:1.35;margin:1.1em 0 .45em}
+h1{font-size:2rem;margin-top:.15em}
+h2{font-size:1.32rem}
+h3{font-size:1.08rem}
+p,li{font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+blockquote{
+  margin:1rem 0;
+  padding:.72rem .95rem;
+  background:var(--surface-soft);
+  border-left:4px solid var(--accent);
+  color:#28433d;
+  border-radius:8px;
+}
+hr{
+  border:none;
+  border-top:1px dashed var(--border);
+  margin:1.3rem 0;
+}
+code{
+  background:#eef7f5;
+  border:1px solid #d7e9e4;
+  color:#1f4f49;
+  border-radius:6px;
+  padding:.14em .42em;
+  font-size:.92em;
+}
+pre{
+  background:#0f1f1d;
+  color:#e9f4f2;
+  border-radius:12px;
+  overflow:auto;
+  padding:14px;
+}
+pre code{
+  background:transparent;
+  border:none;
+  color:inherit;
+  padding:0;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  overflow:hidden;
+  border-radius:12px;
+}
+th,td{
+  border:1px solid var(--border);
+  padding:.6rem .7rem;
+  text-align:left;
+  vertical-align:top;
+}
+th{background:#edf8f5}
+.footer{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:.88rem;
+}
+.list{
+  list-style:none;
+  margin:1rem 0 0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.list a.item{
+  display:block;
+  padding:14px 15px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-soft);
+  transition:.15s ease;
+}
+.item-title{
+  display:block;
+  font-weight:700;
+  margin-top:2px;
+}
+.focus{
+  display:block;
+  margin-top:8px;
+  font-size:.92rem;
+  color:#37524c;
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.list a.item:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(15,118,110,.09);
+  text-decoration:none;
+}
+.date{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  margin-bottom:2px;
+}
+@media (max-width:700px){
+  .wrap{padding:20px 12px 40px}
+  .card{padding:20px 16px 16px;border-radius:14px}
+  h1{font-size:1.62rem}
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <p class="brand">Edge AI Daily</p>
+      <a class="back" href="../index.html">← 返回目录</a>
+    </div>
+    <article class="card">
+      <h1>端智能日报 2026-05-01</h1>
+<blockquote>
+<p><strong>本期聚焦</strong>：ICLR 2026（维也纳，5/1–5，进行中）现场见证"端侧个性化"三连奏——ZeroQAT 将量化感知训练首次带到旗舰手机上运行，Separable Expert 以可删除用户代理解锁 GDPR/PIPL 合规端侧个性化；工程侧，MTServe 以分层 GPU+RAM KV Cache 突破生成式推荐的显存瓶颈，为大规模线上部署扫清最后一道成本障碍。</p>
+</blockquote>
+<hr />
+<h2>1. 【MTServe：层次化 KV Cache（GPU+RAM 双层）突破生成式推荐服务显存墙——NVIDIA 合作研发，2026-04-24 提交】</h2>
+<ul>
+<li><strong>评分</strong>：A/4 · I/3 · S=11 · P1 · 价值类型：成本优化/收入提升</li>
+<li><strong>来源</strong>：多机构 × NVIDIA | <a href="https://arxiv.org/abs/2604.22881">arxiv.org/abs/2604.22881</a> | 2026-04-24</li>
+</ul>
+<p><strong>内容总结（~130 字）</strong>：
+生成式推荐（GenRec/NSGR/MBGR，参见 04-30 报道）已在美团/京东上线，但其最大工程瓶颈是：每用户长历史序列的 KV Cache 远超 GPU VRAM 容量，制约并发规模和序列长度。MTServe 提出<strong>双层分层 Cache</strong>：GPU VRAM 作热存储，Host RAM 作冷存储；通过三项系统优化打通两层 I/O 带宽差距——① 混合存储布局减少碎片；② 异步数据传输 pipeline 掩盖搬运延迟；③ 局部性驱动置换策略（LRU 变体）精准命中高频用户 Cache。NVIDIA 联合研发，标准服务器 CPU+RAM 即可部署，无需额外硬件采购。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告生成式精排/重排系统上线时，无需裁短用户历史序列即可支持更高并发——更长历史窗口直接带来 AUC 提升，且不升级 GPU 配置。<strong>可借鉴思路</strong>：MTServe 的双层 Cache 与 MNN TurboQuant TQ4（04-29 报道）互补——TQ4 量化 GPU 内热 Cache，MTServe 将冷 Cache 溢出到 RAM；两者可叠加，覆盖"长历史 + 大并发"的完整工程需求。</p>
+<hr />
+<h2>2. 【Separable Expert Architecture（Microsoft AI）：可组合 LoRA + 可删除用户代理，PIPL/GDPR 合规下实现 LLM 端侧个性化】</h2>
+<ul>
+<li><strong>评分</strong>：A/4 · I/3 · S=11 · P1 · 价值类型：新能力探索/用户体验</li>
+<li><strong>来源</strong>：Microsoft AI | <a href="https://arxiv.org/abs/2604.21571">arxiv.org/abs/2604.21571</a> | 2026-04-23</li>
+</ul>
+<p><strong>内容总结（~130 字）</strong>：
+论文提出三层解耦架构，将用户数据与模型权重彻底分离：① <strong>冻结 base model</strong>（共享，无用户数据）；② <strong>4 个领域专家 LoRA 适配器</strong>（共享，按 query 路由选择，无用户数据）；③ <strong>每用户可删除 Proxy</strong>（3 组件：路由偏置 + 个人 LoRA + 对比引导向量），用户数据仅存于 Proxy，从不进入共享权重。<strong>删除 Proxy = 确定性遗忘</strong>，GDPR"被遗忘权"技术上首次在 LLM 个性化中可行。在 Phi-3.5-mini 和 Llama-3.1-8B 上实验验证：Proxy 删除后模型输出回退至基线，跨用户信息污染接近零。Proxy 体量轻小，适合端侧本地存储，推理时注入 base model。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在端侧广告 SDK 中为每用户维护一份轻量可删除 Proxy（存储用户偏好路由偏置 + 兴趣向量），驱动 SLM 端侧个性化意图识别，同时满足 PIPL"用户注销须彻底删除数据"要求——退出即删 Proxy，无需回滚模型权重。<strong>可借鉴思路</strong>：与三星 multi-LoRA 量产方案（04-29）互补，三星解决"一模型多任务"，本文解决"一模型适应每用户"；SAGER 的 Policy Skill 文档可作为 Proxy 的高层自然语言封装。</p>
+<hr />
+<h2>3. 【ZeroQAT（ICLR 2026 正式发表，本周展示中）：前向梯度量化感知训练，6.7B 模型在 OnePlus 12 旗舰手机上完成端侧 QAT 微调】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/4 · S=10 · P1 · 价值类型：成本优化/新能力探索</li>
+<li><strong>来源</strong>：多机构 | <a href="https://arxiv.org/abs/2509.00031">arxiv.org/abs/2509.00031</a> | ICLR 2026 正式发表（维也纳，5/1–5 展示中）</li>
+</ul>
+<p><strong>内容总结（~130 字）</strong>：
+QAT（量化感知训练）比 PTQ（GPTQ/AWQ 等）精度更高，但传统 QAT 依赖反向传播，13B 模型需数百 GB 显存，端侧完全不可行。ZeroQAT 采用<strong>零阶优化（前向梯度估计）</strong>彻底去掉反向传播，同时支持权重 + 激活双量化（INT2–INT4）。关键工程指标：OPT-6.7B 在 <strong>OnePlus 12（旗舰安卓手机）</strong>上完成 QAT 微调，峰值内存 6.4GB，延迟 29.1s/epoch；OPT-2.7B 内存从 8.1GB→2.6GB，延迟降 37%；单张 8GB GPU（RTX 4060 级别）可微调 13B 模型。精度显著优于等比特数 PTQ，ICLR 2026 同行评审确认。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在端侧广告 SDK 中实现"到达设备后持续个性化微调"——新用户前 K 次交互数据驱动 INT4 QAT 更新，数据不出设备，将用户私有数据的价值留在端侧。<strong>可借鉴思路</strong>：ZeroQAT 与 SAGER 策略文档演化互补——SAGER 更新"决策规则"，ZeroQAT 更新"模型权重"；当前广告端侧模型多为 INT4 PTQ 静态部署，ZeroQAT 提供了升级为动态 QAT 同时不增加 GPU 需求的路径。</p>
+<hr />
+<h2>4. 【Preference Heads in LLMs（arXiv 2604.22345）：首次定位 LLM 内部"偏好神经元"，推理时零样本激活干预即可切换个性化偏好】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/2 · S=8 · P2 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：多机构 | <a href="https://arxiv.org/abs/2604.22345">arxiv.org/abs/2604.22345</a> | 2026-04-22</li>
+</ul>
+<p><strong>内容总结（~120 字）</strong>：
+在 LLM 的多头注意力机制中，存在少量特化于用户偏好建模的注意力头（"Preference Heads"），可被识别、隔离并外部调控。论文提供机制解释性框架定位这些偏好头，并验证通过<strong>零样本激活干预</strong>（无需微调，推理时直接调整特定头的激活值）即可切换模型的偏好表达。在推荐场景验证（7B–13B 模型）：干预后用户偏好符合度显著提升，且不影响其他任务性能。工程优势：<strong>无需重训练，无需存储 LoRA，仅存储每用户若干激活偏置向量（KB 级别）</strong>，端侧内存开销接近零。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在端侧广告 SLM 中通过激活干预动态切换用户偏好风格（如"价格敏感型"vs"品质导向型"），无需维护多套 LoRA。<strong>暂不适用于生产</strong>：当前机制解释性验证仅在学术推荐场景，广告场景下偏好干预对 CTR/CVR 的实际增益和副作用尚无工程验证；建议与 Separable Expert（本期第 2 条）对比评估，作为"超轻量个性化"备选路线进入技术预研。</p>
+<hr />
+<h2>5. 【VoxCPM2（面壁智能 × 清华大学）：2B 参数扩散自回归语音基础模型，RT 因子 0.13、30 语种、48kHz 影视级音质，2026-04-30 开源】</h2>
+<ul>
+<li><strong>评分</strong>：A/2 · I/3 · S=7 · P2 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：面壁智能 × OpenBMB × 清华大学 | <a href="https://www.cnblogs.com/OpenCSG/p/archive/2026/04/30">cnblogs.com/OpenCSG/p/archive/2026/04/30</a> | 2026-04-30</li>
+</ul>
+<p><strong>内容总结（~110 字）</strong>：
+面壁智能（MiniCPM 系列团队）联合清华大学发布 VoxCPM2：基于 MiniCPM-4 架构的 2B 参数扩散自回归语音模型，tokenizer-free 设计直接生成连续波形，训练数据 236 万小时（30 语言 + 9 种中文方言）。三大核心能力：① <strong>Voice Design</strong>（自然语言描述创建虚拟音色）；② <strong>可控语音克隆</strong>（保持音色、独立调节情感/语速）；③ <strong>极致克隆</strong>（完美复现参考音频）。工程指标：RTF=0.13（处理 1 秒音频仅 0.13 秒），输出 48kHz 采样率。ModelScope/GitHub 完全开源，Apache-2.0 协议。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在流媒体广告"自适应 TTS 配音"场景中将品牌音色克隆与情感/语速动态调节整合为单一轻量模型（2B @ RTF 0.13）。<strong>暂不适用于直接端侧部署</strong>：尚无 Android/iOS 推理框架适配报告；INT4 量化后约 1–1.5GB，中端机内存可承受，但需等待 MNN/ExecuTorch 适配；近期建议优先作为云侧高质量语音素材生产工具，同步跟踪端侧化进展。</p>
+<hr />
+<h3>其他观察</h3>
+<p>本期最显著的趋势交汇是"个性化 × 隐私合规"双路技术同步成熟：Separable Expert 从架构层确保用户数据可删除，ZeroQAT 从训练层确保用户数据不离设备，Preference Heads 将个性化存储压缩到 KB 级激活偏置——三者共同构成隐私优先的端侧广告个性化技术栈，且均无需大规模 GPU 算力，是国内广告 SDK 的可落地选项。MTServe 提示，生成式推荐工程重心已从"精度提升"转移到"服务成本控制"，KV Cache 分层管理将成为 2026 下半年广告推荐基础设施的关键投入点。</p>
+<h3>近期关注</h3>
+<ul>
+<li><strong>Google I/O 2026（5 月 19–20 日，Mountain View，距今 18 天）</strong>：预计发布 LiteRT 下一代 NPU 加速 API、Gemma 4 AICore 生产能力扩展、Android 17 AI Core 路线图；AI Edge / on-device GenAI Session 列表建议提前锁定，直接影响广告 SDK 推理基础设施选型。</li>
+<li><strong>ICLR 2026（维也纳，5/1–5，进行中）</strong>：本期 ZeroQAT 等端侧训练论文正在展示，更多量化/蒸馏/个性化论文将在本周陆续被报道，建议持续关注 Paper Copilot 和 Hugging Face Papers。</li>
+</ul>
+<hr />
+<p><em>中文补搜说明：本期执行两轮中文关键词检索（"端侧推理 端云协同 广告推荐 2026年5月"、"端智能 端侧模型 2026年4月30日 5月1日"），VoxCPM2（面壁智能）为中文源代表性内容。</em></p>
+<p><em>数据截止：2026-05-01 | 已排除近期已报道内容（MRC、GenRec、NSGR、MBGR、Network Edge Inference Survey、SSM+RRAM、LLM-HYPER、SAGER、MNN 3.5.0、Samsung multi-LoRA DS2D、Qualcomm QMX、SIREN、NANOMIND、腾讯混元 3.0、MobileIPL、ENERZAi、FedUTR、MobiEdit、SDFT、Qwen3.6、LiteRT-LM、Gemma 4、ExecuTorch v1.2.0、EUPE、Firebase 混合推理、SCaLRec、DAIAN、R2LED、ParoQuant、ONNX Runtime 1.25.0、Apple M5 MLX ICLR Demo、Qualcomm AI Hub、Kuaishou OneRec、RPRA Meta、XPerT、CDA4Rec、UniRoute、BitNet ExecuTorch Vulkan、Meta Capacity Efficiency、Google AI Edge Eloquent、SqueezeBits Yetter、SparseCTR/EvoAttention、GenCI、LFM2.5-VL-450M、LiteRT NPU 生产案例 等）</em></p>
+    </article>
+  </div>
+</body>
+</html>
