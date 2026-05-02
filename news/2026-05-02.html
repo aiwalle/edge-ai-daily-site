@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端智能日报 2026-05-02</title>
+  <style>
+:root{
+  --bg:#f4faf8;
+  --surface:#ffffff;
+  --surface-soft:#f8fcfb;
+  --text:#1f2f2b;
+  --muted:#5e726b;
+  --accent:#0f766e;
+  --accent-soft:#dcf2ee;
+  --border:#d8e8e2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #e9f7f2 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, #e5f4ef 0%, transparent 28%),
+    var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.8;
+}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px 56px}
+.top{
+  margin-bottom:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+}
+.brand{
+  margin:0;
+  font-size:14px;
+  letter-spacing:.08em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.back{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px 28px 20px;
+  box-shadow:0 10px 30px rgba(15,118,110,.08);
+}
+h1,h2,h3{line-height:1.35;margin:1.1em 0 .45em}
+h1{font-size:2rem;margin-top:.15em}
+h2{font-size:1.32rem}
+h3{font-size:1.08rem}
+p,li{font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+blockquote{
+  margin:1rem 0;
+  padding:.72rem .95rem;
+  background:var(--surface-soft);
+  border-left:4px solid var(--accent);
+  color:#28433d;
+  border-radius:8px;
+}
+hr{
+  border:none;
+  border-top:1px dashed var(--border);
+  margin:1.3rem 0;
+}
+code{
+  background:#eef7f5;
+  border:1px solid #d7e9e4;
+  color:#1f4f49;
+  border-radius:6px;
+  padding:.14em .42em;
+  font-size:.92em;
+}
+pre{
+  background:#0f1f1d;
+  color:#e9f4f2;
+  border-radius:12px;
+  overflow:auto;
+  padding:14px;
+}
+pre code{
+  background:transparent;
+  border:none;
+  color:inherit;
+  padding:0;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  overflow:hidden;
+  border-radius:12px;
+}
+th,td{
+  border:1px solid var(--border);
+  padding:.6rem .7rem;
+  text-align:left;
+  vertical-align:top;
+}
+th{background:#edf8f5}
+.footer{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:.88rem;
+}
+.list{
+  list-style:none;
+  margin:1rem 0 0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.list a.item{
+  display:block;
+  padding:14px 15px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-soft);
+  transition:.15s ease;
+}
+.item-title{
+  display:block;
+  font-weight:700;
+  margin-top:2px;
+}
+.focus{
+  display:block;
+  margin-top:8px;
+  font-size:.92rem;
+  color:#37524c;
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.list a.item:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(15,118,110,.09);
+  text-decoration:none;
+}
+.date{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  margin-bottom:2px;
+}
+@media (max-width:700px){
+  .wrap{padding:20px 12px 40px}
+  .card{padding:20px 16px 16px;border-radius:14px}
+  h1{font-size:1.62rem}
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <p class="brand">Edge AI Daily</p>
+      <a class="back" href="../index.html">← 返回目录</a>
+    </div>
+    <article class="card">
+      <h1>端智能日报 2026-05-02</h1>
+<blockquote>
+<p><strong>本期聚焦</strong>：ICLR 2026（维也纳，5/1–5，进行中）连放两张 KV Cache 与 4-bit 量化新牌——KVTC 以变换编码实现 20–40× 显存压缩、ZipperQuant 以 GPU+CPU 异构量化达成 3× 推理提速，共同拓宽端云 LLM 部署的成本边界；与此同时，高通 Q2 财报首次将字节跳动 Doubao 列为"Agentic 智能机"行业标杆，广告大厂 OS 级 AI 代理走向量产的战略路径正式明确。</p>
+</blockquote>
+<hr />
+<h2>1. 【高通 Q2 FY26 财报 + 字节跳动/ZTE Doubao Agentic 智能机量产路线：中国最大广告公司深嵌 OS 层端侧 AI 代理，二代机 2026 年底落地】</h2>
+<ul>
+<li><strong>评分</strong>：A/4 · I/4 · S=12 · P0 · 价值类型：新能力探索/平台演化</li>
+<li><strong>来源</strong>：The Register / SCMP | <a href="https://www.theregister.com/2026/05/01/qualcomm_q2_fy_26">The Register 2026-05-01</a> | 2026-05-01</li>
+</ul>
+<p><strong>内容总结（~140 字）</strong>：
+高通 Q2 FY26 财报（4/29 电话会，5/1 媒体报道）营收 $106 亿超预期，CEO 阿蒙首次将字节跳动 Doubao + ZTE 合作机型列为"Agentic 智能机"行业示范：一代 ZTE Nubia M153（搭载 Snapdragon 8 Elite Gen 5，NPU 较上代提升 39%）已将 Doubao AI 代理内嵌 OS 层，可跨应用执行多步骤任务（比价、下单、编辑照片等）；SCMP 确认二代 Doubao Phone 2.0 将于 2026 年底发布，字节主导 AI 软件层，OS 整合更深，目标向第三方手机扩展。同日数据：Snapdragon 8 Elite Gen 5 上逾 56 个 LiteRT 模型运行延迟 &lt;5ms，仅 13 个在 CPU 上达到同等水平，NPU 对 CPU 加速比高达 100×。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告 SDK 设计时提前布局"代理层广告"场景——Doubao OS 代理在比价、导购等环节具备天然的广告插入点，且持有跨应用行为数据构成的超强意图信号（优于单一 App 埋点）。<strong>可借鉴思路</strong>：短期关注巨量引擎如何通过 Doubao 代理层赋能广告主；中期将广告 SDK 意图识别模块适配 Snapdragon 8 Elite Gen 5 NPU（&lt;5ms 基线已确立），并测试 LiteRT 量化模型在 Galaxy S26 上的工程表现。</p>
+<hr />
+<h2>2. 【KVTC（ICLR 2026）：KV Cache 变换编码——PCA 去相关 + 自适应量化 + 熵编码，20–40× 压缩比，长上下文精度无损，正在维也纳展示中】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/3 · S=9 · P1 · 价值类型：成本优化</li>
+<li><strong>来源</strong>：多机构 | <a href="https://arxiv.org/abs/2511.01815">arxiv.org/abs/2511.01815</a> | ICLR 2026 正式接受（5/1–5 维也纳展示中）</li>
+</ul>
+<p><strong>内容总结（~130 字）</strong>：
+KVTC 是轻量变换编码器，针对 LLM KV Cache 的结构冗余，以三步流水压缩：① <strong>PCA 特征去相关</strong>，对 Key/Value 向量做主成分旋转消除通道相关性；② <strong>自适应量化</strong>，按通道重要性动态分配 bit 数；③ <strong>熵编码</strong>，进一步压缩符号熵。无需修改注意力计算或模型权重，仅需简短校准，与现有服务架构完全兼容。在 Llama 3、Mistral NeMo、R1-Qwen 2.5 上验证：<strong>20× 压缩</strong>维持 AIME25、GSM8K、MMLU、LongBench 精度无显著下降；<strong>40× 压缩</strong>在特定短上下文场景可用。与 token 驱逐、SVD 等基线相比，在相同压缩比下精度更高；与 MTServe（05-01 报道的分层 KV Cache 溢出方案）<strong>正交可叠加</strong>。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告生成式精排服务中将用户长历史序列 KV Cache 的 GPU 显存占用压缩至原来的 1/20–1/40，在同等硬件下支持 10–20× 并发量提升，直接降低每次用户 session 的服务成本。<strong>可借鉴思路</strong>：KVTC 与 MTServe 可组合部署——KVTC 先在 GPU 内 20× 压缩热 Cache，MTServe 再将低频 Cache 溢出到 RAM；两层叠加理论上释放 &gt;95% 显存，建议在内部生成式推荐 POC 中纳入联合工程测试。</p>
+<hr />
+<h2>3. 【ZipperQuant（ICLR 2026）：GPU+CPU 异构 4-bit 量化——离群值高位比特卸载至 CPU AVX2 查表加速，3.01× 推理提速，近 FP16 精度】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/3 · S=9 · P1 · 价值类型：成本优化</li>
+<li><strong>来源</strong>：多机构 | <a href="https://openreview.net/forum?id=eHb35nP5zC">openreview.net/forum?id=eHb35nP5zC</a> | ICLR 2026 正式接受（5/1–5 维也纳展示中）</li>
+</ul>
+<p><strong>内容总结（~130 字）</strong>：
+4-bit 量化的核心难题是离群值权重（outliers）——少量通道数值远大于均值，强制 INT4 精度损失集中于此。ZipperQuant 以"比特层位分离"范式解决：① <strong>GPU 执行低阶比特</strong>（所有 inliers + outliers 低位），走标准 INT4 计算路径；② <strong>CPU 仅处理 outliers 高阶比特</strong>，通过预计算 LUT（查表）替代乘法，配合 Intel AVX2 向量指令消除反量化开销。实测：RTX 4090 上相比 W4A16 基线加速 <strong>3.01×</strong>，精度接近 FP16。CPU 端只需标准 Intel AVX2 支持，任何配备 Intel CPU + GPU 的服务器无需额外硬件即可部署，适合现有广告推理机群的 drop-in 升级。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告云侧 LLM 排序/改写服务中通过 ZipperQuant 将现有 W4A16 推理吞吐提升 3×，在不新增 GPU 机器的前提下承载 3× 的广告请求量，或将同等请求量的服务成本压缩至 1/3。<strong>可借鉴思路</strong>：ZipperQuant 与 ZeroQAT（05-01 报道，端侧量化感知训练）互补——ZeroQAT 确保 INT4 权重精度，ZipperQuant 确保 INT4 推理速度；两者结合构成"高精度 INT4 训练 + 高速 INT4 服务"的完整云侧 LLM 量化栈。</p>
+<hr />
+<h2>4. 【LittleLamb（Multiverse Computing，HuggingFace，2026-04-28）：量子启发张量网络压缩——0.3B 三变体，95% 体积缩减、2–3% 精度损失，支持工具调用与移动端部署】</h2>
+<ul>
+<li><strong>评分</strong>：A/2 · I/3 · S=7 · P2 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：Multiverse Computing | <a href="https://theaiinsider.tech/2026/04/28/multiverse-computing-littlelamb-models-hugging-face/">theaiinsider.tech/2026/04/28/multiverse-computing-littlelamb-models-hugging-face</a> | 2026-04-28</li>
+</ul>
+<p><strong>内容总结（~120 字）</strong>：
+Multiverse Computing（量子计算创业公司）发布 LittleLamb 0.3B 系列，采用专有 <strong>CompactifAI</strong> 技术——量子启发张量网络数学对 LLM 进行后训练压缩：将模型权重分解为低秩张量乘积，相比传统 INT4/INT8 量化机制本质不同（张量分解 vs. 数值精度降低）。压缩效果：高达 <strong>95% 体积缩减、2–3% 精度损失</strong>。三个变体：LittleLamb-0.3B（通用）、Tool-Calling（支持工具调用和 Agentic 工作流）、Mobile（针对移动端和离线设备优化）。全部 HuggingFace 开源（Apache 2.0），目标移动/边缘/离线场景，低延迟低资源消耗。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在 Android 广告 SDK 中将意图识别/查询改写模块压缩至 0.3B 级（模型约 150MB），实现全端侧推理不依赖云端，覆盖网络质量差的用户群体。<strong>暂不适用于生产</strong>：CompactifAI 精度损失（"2–3%"）缺乏广告场景第三方独立验证；LittleLamb-Mobile 的 Android/iOS 推理框架适配方案未披露；建议列入"超轻量端侧 SLM 技术雷达"，关注后续第三方 CTR/意图识别 benchmark 和 MNN/ExecuTorch 框架集成进展。</p>
+<hr />
+<h3>其他观察</h3>
+<p>今日两大线索收敛于同一方向：<strong>基础设施层</strong>（KVTC + ZipperQuant）以不同维度压缩 LLM 推理成本——一个在显存维度（20–40×），一个在计算维度（3×）——印证"生成式推荐/排序的边际服务成本将在 2026 下半年大幅下降"的判断；<strong>应用生态层</strong>（Doubao Agentic 智能机）展示广告大厂深嵌 OS 的战略路径。两者叠加：云侧成本降、端侧权限扩，广告 AI 的下半年格局正在成型。</p>
+<h3>近期关注</h3>
+<ul>
+<li><strong>Google I/O 2026（5 月 19–20 日，距今 17 天）</strong>：预计发布 LiteRT NPU 加速 API v2、Gemma 4 E2B/E4B 生产能力扩展、Android 17 AI Core 路线图——今年移动广告推理基础设施最重要的外部节点，建议提前锁定 AI Edge / LiteRT-LM / Gemma on-device Session。</li>
+<li><strong>ICLR 2026（维也纳，进行中至 5/5）</strong>：KV Cache 优化、量化训练等方向本周仍有大量 Poster 展示，关注端侧 LLM 工程化新进展，特别是推荐系统和个性化方向的 Oral/Poster 报告。</li>
+</ul>
+<hr />
+<p><em>中文补搜说明：本期执行两轮中文关键词检索（"端侧推理 端智能 广告推荐 2026年5月"、"端侧大模型 端云协同 CTR 意图识别 2026年5月"），24–72 小时内中文技术源无高质量原创新增；ByteDance/ZTE Doubao 报道以英文版 SCMP 为主要来源（中国科技叙事首发英文渠道）。</em></p>
+<p><em>数据截止：2026-05-02 | 已排除近期已报道内容（MTServe、Separable Expert、ZeroQAT、Preference Heads、VoxCPM2、MRC、GenRec、NSGR、MBGR、Network Edge Inference Survey、SSM+RRAM、LLM-HYPER、SAGER、MNN 3.5.0、Samsung multi-LoRA DS2D、Qualcomm QMX、ParoQuant、Apple M5 MLX ICLR Demo、LiteRT-LM、Gemma 4、ExecuTorch v1.2.0 等）</em></p>
+    </article>
+  </div>
+</body>
+</html>
