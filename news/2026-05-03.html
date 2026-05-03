@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端智能日报 2026-05-03</title>
+  <style>
+:root{
+  --bg:#f4faf8;
+  --surface:#ffffff;
+  --surface-soft:#f8fcfb;
+  --text:#1f2f2b;
+  --muted:#5e726b;
+  --accent:#0f766e;
+  --accent-soft:#dcf2ee;
+  --border:#d8e8e2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #e9f7f2 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, #e5f4ef 0%, transparent 28%),
+    var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.8;
+}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px 56px}
+.top{
+  margin-bottom:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+}
+.brand{
+  margin:0;
+  font-size:14px;
+  letter-spacing:.08em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.back{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px 28px 20px;
+  box-shadow:0 10px 30px rgba(15,118,110,.08);
+}
+h1,h2,h3{line-height:1.35;margin:1.1em 0 .45em}
+h1{font-size:2rem;margin-top:.15em}
+h2{font-size:1.32rem}
+h3{font-size:1.08rem}
+p,li{font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+blockquote{
+  margin:1rem 0;
+  padding:.72rem .95rem;
+  background:var(--surface-soft);
+  border-left:4px solid var(--accent);
+  color:#28433d;
+  border-radius:8px;
+}
+hr{
+  border:none;
+  border-top:1px dashed var(--border);
+  margin:1.3rem 0;
+}
+code{
+  background:#eef7f5;
+  border:1px solid #d7e9e4;
+  color:#1f4f49;
+  border-radius:6px;
+  padding:.14em .42em;
+  font-size:.92em;
+}
+pre{
+  background:#0f1f1d;
+  color:#e9f4f2;
+  border-radius:12px;
+  overflow:auto;
+  padding:14px;
+}
+pre code{
+  background:transparent;
+  border:none;
+  color:inherit;
+  padding:0;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  overflow:hidden;
+  border-radius:12px;
+}
+th,td{
+  border:1px solid var(--border);
+  padding:.6rem .7rem;
+  text-align:left;
+  vertical-align:top;
+}
+th{background:#edf8f5}
+.footer{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:.88rem;
+}
+.list{
+  list-style:none;
+  margin:1rem 0 0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.list a.item{
+  display:block;
+  padding:14px 15px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-soft);
+  transition:.15s ease;
+}
+.item-title{
+  display:block;
+  font-weight:700;
+  margin-top:2px;
+}
+.focus{
+  display:block;
+  margin-top:8px;
+  font-size:.92rem;
+  color:#37524c;
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.list a.item:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(15,118,110,.09);
+  text-decoration:none;
+}
+.date{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  margin-bottom:2px;
+}
+@media (max-width:700px){
+  .wrap{padding:20px 12px 40px}
+  .card{padding:20px 16px 16px;border-radius:14px}
+  h1{font-size:1.62rem}
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <p class="brand">Edge AI Daily</p>
+      <a class="back" href="../index.html">← 返回目录</a>
+    </div>
+    <article class="card">
+      <h1>端智能日报 2026-05-03</h1>
+<blockquote>
+<p><strong>本期聚焦</strong>：工业推荐系统双响——快手 A2Gen 以动作感知生成式建模在 4 亿日活规模上实现 +8.1% 互动率，美团 DSAIN 以情境感知降噪将线上 CTR 提升 2.7%；两篇论文均已大规模生产上线，印证生成式+情境感知路线已从实验室进入头部平台稳定迭代期；平台生态侧，OpenAI × Qualcomm × MediaTek 代理手机架构曝光，端云混合推理正在成为下一代广告触点的基础设施底座。</p>
+</blockquote>
+<hr />
+<h2>1. 【DSAIN（美团外卖）：情境感知降噪 CTR——重参数化去噪 + 三向关联情境融合，线上 CTR +2.70% / CPM +2.62% / GMV +2.16%，已上线主流量】</h2>
+<ul>
+<li><strong>评分</strong>：A/5 · I/3 · S=13 · P0 · 价值类型：收入提升</li>
+<li><strong>来源</strong>：美团 / arXiv | <a href="https://arxiv.org/abs/2604.12298">arxiv.org/abs/2604.12298</a> | 2026-04</li>
+</ul>
+<p><strong>内容总结（120字）</strong>：
+DSAIN（Deep Situation-Aware Interaction Network）提出"情境"概念：用户行为序列中每次交互隐含的上下文情境（时间段、设备状态、场景）影响点击真实意图，现有 CTR 模型等权处理所有行为产生大量噪声。DSAIN 以三步消除：① <strong>重参数化去噪</strong>，对原始行为序列施加扰动再重参数化，过滤低信噪行为；② <strong>情境特征三向关联融合</strong>（用户×情境×物品），学习高质量情境嵌入；③ 将情境感知行为向量注入序列编码器。部署于<strong>美团外卖平台主流量</strong>，线上 A/B：<strong>CTR +2.70%、CPM +2.62%、GMV +2.16%</strong>；离线三数据集（含两个公开及一个工业集）达 SOTA。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告 CTR 模型中引入"情境感知"维度——同一用户在早餐时段点外卖广告的意图与午夜完全不同，DSAIN 的重参数化去噪可直接应用于行为序列特征预处理，替换当前均一化 attention 权重。<strong>可直接应用</strong>：情境特征（时间段/设备/网络状态）在广告 SDK 均有埋点，建议 2 周内启动 DSAIN vs DIN/DIEN 的离线精度对比实验。</p>
+<hr />
+<h2>2. 【A2Gen（快手）：动作感知生成式序列建模——CAM+HSE+AAG，SIGIR 2026，线上 +8.1% 互动率 / +0.34% 时长，服务 4 亿+ 日活用户】</h2>
+<ul>
+<li><strong>评分</strong>：A/4 · I/4 · S=12 · P0 · 价值类型：收入提升/用户体验</li>
+<li><strong>来源</strong>：快手 / arXiv | <a href="https://arxiv.org/abs/2604.25834">arxiv.org/abs/2604.25834</a> | 2026-04-28 (SIGIR 2026)</li>
+</ul>
+<p><strong>内容总结（140字）</strong>：
+短视频内一段内容含多个片段，用户对不同片段态度各异——传统二分类推荐忽视了"动作时序"（暂停/快进/重播/退出）里蕴含的多维意图。A2Gen 提出 Action-Aware Generative Sequence Network 三模块：① <strong>CAM（Context-aware Attention Module）</strong>，对用户历史动作序列引入物品上下文，建模"看了什么时做出什么动作"的联合表示；② <strong>HSE（Hierarchical Sequence Encoder）</strong>，多层提取短期/长期动作时序模式；③ <strong>AAG（Action-seq Autoregressive Generator）</strong>，以自回归生成方式预测下一步动作分布，优化多任务联合目标。<strong>快手生产部署</strong>：服务 <strong>4 亿+ 日活</strong>，Kuaishou 数据集 + Tmall 公开数据集验证，线上 A/B：互动率 +8.1%、人均时长 +0.34%、整体留存 +0.162%。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在音频/内容流媒体广告系统中将"播放动作序列"（跳过/暂停/快进的时间节点）作为显式意图信号，驱动广告插入时机和素材优化，替代当前仅用完播率或点击率的粗粒度反馈。<strong>可借鉴思路</strong>：AAG 自回归生成头可替换现有广告 CVR 预估的 ranking 目标；SIGIR 2026（7月，华盛顿特区）将有完整论文展示，建议会前完成 POC 评估。</p>
+<hr />
+<h2>3. 【SK Telecom C-APO（ICLR 2026）：Conflict-Aware DPO——LLM 驱动推荐区分"一致偏好" vs. "表面偏好"，里约热内卢展示中】</h2>
+<ul>
+<li><strong>评分</strong>：A/4 · I/3 · S=11 · P1 · 价值类型：新能力探索/用户体验</li>
+<li><strong>来源</strong>：SK Telecom / ICLR 2026 | <a href="https://news.sktelecom.com/en/3015">news.sktelecom.com/en/3015</a> | 2026-04-28</li>
+</ul>
+<p><strong>内容总结（130字）</strong>：
+论文"More Than What Was Chosen: LLM-Based Explainable Recommendation Beyond Noisy User Preferences"，提出 <strong>C-APO（Conflict-Aware Direct Preference Optimization）</strong>。核心洞察：现有推荐系统将偶发性点击（"表面偏好"）和长期持续消费（"一致偏好"）等权处理，导致推荐失真。C-APO 分析用户长期行为数据，将重复、持续的消费模式标记为一致偏好，一次性点击降低权重；以 DPO 范式对 LLM 进行偏好对齐训练，引入"冲突感知"损失，显式惩罚训练信号不一致的样本对，提升推荐可解释性和准确性。ICLR 2026（里约热内卢，5/1–5，正式展示中）。工程细节：延迟/参数量未公开，移动端适配方案未披露。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告用户建模中区分"真实购买意图"与"偶发好奇浏览"，将用户 Embedding 中的兴趣权重向稳定偏好倾斜，提升广告定向精准度并降低用户疲劳度。<strong>可借鉴思路</strong>：C-APO 的冲突感知损失设计可迁移至广告 LLM 用户偏好蒸馏流程，与 Separable Expert（05-01 报道）互补——C-APO 解决"哪些行为是真实偏好"，Separable Expert 解决"偏好如何安全存储"；建议等 ICLR 全文公开后评估工程可行性。</p>
+<hr />
+<h2>4. 【OpenAI × Qualcomm × MediaTek AI 代理手机：端侧轻推理 + 云端重推理混合架构，2028 年量产，目标 3–4 亿年出货量】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/4 · S=10 · P1 · 价值类型：新能力探索/平台演化</li>
+<li><strong>来源</strong>：TechCrunch | <a href="https://techcrunch.com/2026/04/27/openai-could-be-making-a-phone-with-ai-agents-replacing-apps/">techcrunch.com/2026/04/27/openai-could-be-making-a-phone-with-ai-agents-replacing-apps/</a> | 2026-04-27</li>
+</ul>
+<p><strong>内容总结（130字）</strong>：
+据分析师郭明錤（Ming-Chi Kuo），OpenAI 正与 Qualcomm 和 MediaTek 联合定制 AI 手机芯片，Luxshare（立讯精密）担任协同设计及独家制造商。核心理念：AI 代理取代 App，用户自然语言完成打车/订餐/购物/发邮件等多步任务。<strong>端云混合推理架构</strong>：端侧处理轻量任务（上下文感知、记忆管理、&lt;3B 小模型），云端执行复杂推理；设备持续采集用户位置、活动、通信和环境上下文，为代理提供"全实时状态"。规格/供应商名单预计 2026 年底至 2027 年初确定，2028 年量产，目标年出货量 3–4 亿台（超过苹果 iPhone 量级）。Qualcomm 股价当日因此上涨 7%（CNBC 数据）。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们提前布局"代理层广告"生态——代理在执行比价/下单时，广告主竞价植入点从 App 内展示位转移至代理意图决策链路，用户行为数据粒度（跨应用+实时上下文）将空前提升。<strong>可借鉴思路</strong>：与字节 Doubao 代理机（05-02 报道）形成"双头格局"；广告 SDK 需提前研究如何在代理意图链路中注入广告信号，防止被平台层隔离；近期关注点在于 OpenAI 是否开放代理广告 API。</p>
+<hr />
+<h2>5. 【MiniCPM-o 4.5（面壁智能 × 清华大学）：9B 端侧全双工多模态——Omni-Flow 框架，&lt;12GB RAM 实时视觉+语音+文本并行，接近 Gemini 2.5 Flash】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/3 · S=9 · P1 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：面壁智能 × OpenBMB × 清华大学 | <a href="https://arxiv.org/abs/2604.27393">arxiv.org/abs/2604.27393</a> | 2026-04-30</li>
+</ul>
+<p><strong>内容总结（130字）</strong>：
+MiniCPM-o 4.5 基于 Qwen3-8B + SigLip2 + Whisper-medium + CosyVoice2 构建，总参数 9B，引入 <strong>Omni-Flow</strong> 统一流式框架：将"轮次制"多模态交互升级为全双工时序对齐——视觉输入流、语音输入流、文本输出流、语音输出流四路并行，端侧可同时"看、听、说"不互相阻塞，并主动发起提醒和评论。OpenCompass 综合评分 <strong>77.6</strong>（8 个主流 Benchmark 均值），超越 GPT-4o / Gemini 2.0 Pro，接近 Gemini 2.5 Flash 视觉语言能力；同时超越 Qwen3-Omni-30B-A3B（参数量 3.3× 大）。<strong>边缘部署上限：&lt;12GB RAM</strong>，旗舰手机可运行。HuggingFace Apache-2.0 开源。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告素材理解场景中以单一 9B 模型实现实时视频+音频联合内容审核与标签提取，替换现有视觉和音频两套独立模型，降低工程复杂度。<strong>暂不适用于中端端侧部署</strong>：&lt;12GB RAM 要求超出多数 Android 中端机可用内存（约 4–6GB），iOS 适配未确认；建议优先在服务器端（BF16）部署，同步跟踪 MNN/ExecuTorch INT4 量化进展（预计 ~4GB），届时考虑旗舰机端侧化。</p>
+<hr />
+<h3>其他观察</h3>
+<p>今日最强信号是工业推荐系统进入成熟迭代期：A2Gen（快手）和 DSAIN（美团）从动作感知生成与情境感知降噪两个维度并发推进，均大规模线上验证，广告系统可直接复用这两条技术路线。SK Telecom C-APO 将 LLM 对齐技术（DPO）迁移至推荐偏好建模，是 LLM 工程化向推荐系统渗透的最新案例。OpenAI × Qualcomm × MediaTek 代理手机与字节 Doubao 代理机共同指向同一趋势：2028 年前后，广告生态的核心触点将从 App 展示位迁移至 OS 级代理意图链路。</p>
+<h3>近期关注</h3>
+<ul>
+<li><strong>Google I/O 2026（5 月 19–20 日，距今 16 天）</strong>：预计发布 LiteRT NPU 加速 API v2、Android 17 AI Core 路线图、Gemma 4 AICore 生产能力扩展——本年度移动广告推理基础设施最重要的外部节点，建议提前锁定 AI Edge / LiteRT-LM / on-device function calling Session。</li>
+<li><strong>SIGIR 2026（7 月，华盛顿特区）</strong>：A2Gen 等广告/推荐论文将正式展示，配合时间节点做立项调研。</li>
+<li><strong>ICLR 2026（里约热内卢，进行中至 5/5）</strong>：C-APO 等用户偏好建模论文本周仍有展示，关注 LLM 对齐技术向推荐工程迁移的更多案例。</li>
+</ul>
+<hr />
+<p><em>中文补搜说明：本期执行中文关键词检索（"端侧推理 端智能 广告推荐 2026年5月"、"端侧大模型 端云协同 CTR 2026年5月3日"），MiniCPM-o 4.5 为中文源代表性内容（面壁智能/BAAI）。</em></p>
+<p><em>数据截止：2026-05-03 | 已排除近期已报道内容（MTServe、ZipperQuant、KVTC、LittleLamb、Doubao Agentic Phone、ZeroQAT、Separable Expert、Preference Heads、VoxCPM2、MRC、GenRec、NSGR、MBGR、Network Edge Inference Survey、SSM+RRAM、LiteRT-LM、Gemma 4、ExecuTorch v1.2.0、Samsung DS2D、Qualcomm QMX、ParoQuant、Apple M5 MLX、SAGER、MNN 3.5.0、CS3（已撤稿）等）</em></p>
+    </article>
+  </div>
+</body>
+</html>
