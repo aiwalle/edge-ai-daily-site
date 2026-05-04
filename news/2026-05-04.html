@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端智能日报 2026-05-04</title>
+  <style>
+:root{
+  --bg:#f4faf8;
+  --surface:#ffffff;
+  --surface-soft:#f8fcfb;
+  --text:#1f2f2b;
+  --muted:#5e726b;
+  --accent:#0f766e;
+  --accent-soft:#dcf2ee;
+  --border:#d8e8e2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #e9f7f2 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, #e5f4ef 0%, transparent 28%),
+    var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.8;
+}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px 56px}
+.top{
+  margin-bottom:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+}
+.brand{
+  margin:0;
+  font-size:14px;
+  letter-spacing:.08em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.back{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px 28px 20px;
+  box-shadow:0 10px 30px rgba(15,118,110,.08);
+}
+h1,h2,h3{line-height:1.35;margin:1.1em 0 .45em}
+h1{font-size:2rem;margin-top:.15em}
+h2{font-size:1.32rem}
+h3{font-size:1.08rem}
+p,li{font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+blockquote{
+  margin:1rem 0;
+  padding:.72rem .95rem;
+  background:var(--surface-soft);
+  border-left:4px solid var(--accent);
+  color:#28433d;
+  border-radius:8px;
+}
+hr{
+  border:none;
+  border-top:1px dashed var(--border);
+  margin:1.3rem 0;
+}
+code{
+  background:#eef7f5;
+  border:1px solid #d7e9e4;
+  color:#1f4f49;
+  border-radius:6px;
+  padding:.14em .42em;
+  font-size:.92em;
+}
+pre{
+  background:#0f1f1d;
+  color:#e9f4f2;
+  border-radius:12px;
+  overflow:auto;
+  padding:14px;
+}
+pre code{
+  background:transparent;
+  border:none;
+  color:inherit;
+  padding:0;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  overflow:hidden;
+  border-radius:12px;
+}
+th,td{
+  border:1px solid var(--border);
+  padding:.6rem .7rem;
+  text-align:left;
+  vertical-align:top;
+}
+th{background:#edf8f5}
+.footer{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:.88rem;
+}
+.list{
+  list-style:none;
+  margin:1rem 0 0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.list a.item{
+  display:block;
+  padding:14px 15px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-soft);
+  transition:.15s ease;
+}
+.item-title{
+  display:block;
+  font-weight:700;
+  margin-top:2px;
+}
+.focus{
+  display:block;
+  margin-top:8px;
+  font-size:.92rem;
+  color:#37524c;
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.list a.item:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(15,118,110,.09);
+  text-decoration:none;
+}
+.date{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  margin-bottom:2px;
+}
+@media (max-width:700px){
+  .wrap{padding:20px 12px 40px}
+  .card{padding:20px 16px 16px;border-radius:14px}
+  h1{font-size:1.62rem}
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <p class="brand">Edge AI Daily</p>
+      <a class="back" href="../index.html">← 返回目录</a>
+    </div>
+    <article class="card">
+      <h1>端智能日报 2026-05-04</h1>
+<blockquote>
+<p><strong>本期聚焦</strong>：广告 CVR 预估迎来工业级范式突破——阿里妈妈 WWW 2026 论文 TESLA+READER 首次把"点击→转化→退款"的级联延迟反馈全链路纳入统一建模框架，并开源 CASCADE 基准数据集；Google I/O 2026（5 月 19 日，距今 15 天）进入倒计时冲刺，Android 17 AICore 第三方 API 开放 + Firebase 端云混合推理实验性上线，将直接重塑移动广告 SDK 推理基础设施的技术选型窗口。</p>
+</blockquote>
+<hr />
+<h2>1. 【TESLA + READER（阿里妈妈 × 厦门大学，WWW 2026）：级联延迟反馈建模——NetCVR + Post-Click GMV 双框架，开源 CASCADE 数据集（4100万点击 / 370万转化 / 200万退款）】</h2>
+<ul>
+<li><strong>评分</strong>：A/5 · I/3 · S=13 · P0 · 价值类型：收入提升</li>
+<li><strong>来源</strong>：阿里妈妈展示推广 × 厦门大学 | <a href="https://hub.baai.ac.cn/view/53094">智源社区报道</a> | WWW 2026（迪拜，4/13–17）</li>
+</ul>
+<p><strong>内容总结（130字）</strong>：
+展示广告 CVR 预估面临"双重延迟"困境：① 成交相对点击有天然时滞；② 退款进一步滞后于成交——现有模型将"点击→转化→退款"三段当成独立事件处理，导致 NetCVR（净转化率）和 post-click GMV 预估严重失真。本文提出 <strong>TESLA</strong>（针对 NetCVR）和 <strong>READER</strong>（针对 post-click GMV）两个流式级联延迟反馈建模框架：CVR 与退款率（RFR）以级联结构联合建模，分阶段纠偏机制消除时滞偏差，延迟感知排序损失函数使模型对"哪些样本延迟最重要"更敏感。同期开源 <strong>CASCADE</strong> 数据集：4100万点击、370万转化、200万退款，记录精确时间戳，支持 15 分钟步长流式训练评估——是该任务迄今首个公开大规模基准。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告 CVR → NetCVR 优化闭环中直接落地分阶段纠偏框架，显著减少因退款延迟标签引发的模型高估——当前平台 CVR 模型普遍只建模"成交"，忽视"退款"，TESLA 的级联结构可直接移植。<strong>可直接应用</strong>：CASCADE 数据集已开源，建议 1 周内复现 TESLA 基线，对比内部 CVR 模型在"延迟窗口内 AUC"上的差距；READER 的 GMV 建模路线与广告 oCPX 优化目标完全对齐，具备 A/B 上线条件评估。</p>
+<hr />
+<h2>2. 【Google I/O 2026 倒计时 15 天：Android 17 AICore 第三方 API 开放 + Firebase 端云混合推理实验上线，移动广告端侧基础设施技术选型窗口正式打开】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/5 · S=11 · P0 · 价值类型：新能力探索/成本优化</li>
+<li><strong>来源</strong>：Google / io.google | <a href="https://io.google/2026/">官方 I/O 2026 主页</a> | Session 列表公开于 2026-04-14</li>
+</ul>
+<p><strong>内容总结（140字）</strong>：
+Google I/O 2026（5 月 19–20 日，Mountain View）已确认端侧 AI 三大关键落地：① <strong>Android 17 AICore 第三方 API</strong>：Gemini Nano 3 直接嵌入 OS，第三方开发者首次可调用同等 on-device 模型推理，30–50ms 本地延迟，无 per-token API 费用，无网络依赖；② <strong>Firebase Hybrid Inference 实验性 API</strong>：规则路由 Gemini Nano（端侧）与 Gemini Cloud（云侧），应用可动态切换，已向 Android 开发者开放 beta；③ <strong>Gemma 4 E2B on-device</strong>：&lt;1.5GB RAM 可运行，支持 2-bit 和 4-bit 权重（LiteRT-LM 后端），旗舰至中端机可用。确认 Sessions：「What's new in Android」、「What's new in Google AI」、「Build hybrid experiences with Firebase AI Logic」。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告 SDK 中将轻量意图识别 / 查询改写 / 用户上下文摘要三类任务迁移到 Android 17 AICore API，零云端成本、低延迟响应，用户隐私数据本地处理后仅将结构化信号上传。<strong>可直接应用</strong>：建议在 I/O 结束后（5/20）立即启动 AICore API + Firebase Hybrid Inference 的广告 SDK 集成 POC——技术选型窗口为 2026 Q3；Gemma 4 E2B &lt;1.5GB 内存是当前端侧 SLM 广告意图模型的可行下限，值得同步测试。</p>
+<hr />
+<h2>3. 【LLM Inference at the Edge（arXiv 2603.23640）：移动端 NPU/GPU 持续负载实测——iPhone 16 Pro 44% 吞吐损失、Galaxy S24 Ultra 6次推理后终止，NPU 是唯一可持续方案】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/3 · S=9 · P1 · 价值类型：成本优化/用户体验</li>
+<li><strong>来源</strong>：多机构 | <a href="https://arxiv.org/abs/2603.23640">arxiv.org/abs/2603.23640</a> | 2026-03</li>
+</ul>
+<p><strong>内容总结（130字）</strong>：
+现有端侧 LLM 推理 benchmark 多为"冷启动单次测试"，忽略持续负载下的热降频问题。本文系统测量旗舰手机在持续推理工作负载下的真实性能曲线。关键发现：① <strong>iPhone 16 Pro</strong>：两次推理后吞吐量下降 44%，且该损失在 65% 的测试迭代中持续存在，原因是 Apple Bionic GPU 在热约束下频率降级；② <strong>Galaxy S24 Ultra</strong>：OS 强制施加 GPU 频率地板，持续推理 6 次后直接终止，可用性为零；③ <strong>NPU 路径</strong>：Snapdragon 8 Elite Gen 5 上 56 个模型 NPU 运行 &lt;5ms，CPU 仅 13 个可达同等水平；NPU 省电 30–40%，不受 GPU 热约束影响。结论：GPU 路径在移动持续推理场景下不可靠，<strong>NPU-first 部署是端侧广告推理的唯一稳健选择</strong>。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告 SDK 端侧推理架构设计中将 NPU-first 列为硬性约束——用户在刷广告流时会触发大量连续推理请求，GPU 路径的热降频将导致 latency P99 严重劣化。<strong>可借鉴思路</strong>：本文的"持续负载实测方法论"值得移植到内部端侧广告模型的设备测试流程，目前内部大多数 benchmark 仍是冷启动单次测量，无法反映线上场景的真实延迟分布。</p>
+<hr />
+<h2>4. 【Qualcomm + CXMT：独立 NPU + 3D DRAM 手机 AI 芯片方案——40 TOPS + 4GB 3D DRAM（TSV+Hybrid Bonding），带宽超 LPDDR5X，2026 年底/2027 年初量产】</h2>
+<ul>
+<li><strong>评分</strong>：A/2 · I/3 · S=7 · P2 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：SemiWiki / Intelligent Living | <a href="https://www.intelligentliving.co/qualcomm-3d-dram-npu-ai-phone/">intelligentliving.co 报道</a> | 2026-04-11~14</li>
+</ul>
+<p><strong>内容总结（110字）</strong>：
+Qualcomm 与中国内存厂商长鑫存储（CXMT）及兆易创新（GigaDevice）联合开发<strong>离散 NPU + 3D DRAM</strong> 方案：将 AI 计算从主 SoC 抽离，配以 CXMT 制造的 4GB 3D DRAM（TSV 硅通孔 + Hybrid Bonding 堆叠），内存带宽超过 LPDDR5X 标准。独立 NPU 提供 <strong>40 TOPS</strong>，相当于旗舰 SoC AI 算力再翻倍。目标市场：中国 RMB 4000+（约 $585）中高端 Android 手机，2026 年底/2027 年初量产。驱动因素：2026 年手机存储危机（LPDDR 价格高企），Qualcomm 寻求自主可控的 HBM 替代方案。Qualcomm、CXMT 均未公开确认，信息来自供应链分析师。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在 2027 年的端侧广告模型规格制定时，将"独立 NPU 机型"纳入高价值用户人群标签，该人群将拥有接近 80 TOPS（SoC 集成 + 独立 NPU）的端侧 AI 能力，支持参数量 7B+ 模型实时推理。<strong>暂不适用</strong>：方案仍处于 pre-mass-production 阶段，Qualcomm 未官方确认；建议列入硬件能力跟踪日历，2026 Q4 关注正式发布公告。</p>
+<hr />
+<h3>其他观察</h3>
+<p>今日两条主线值得关联阅读：<strong>精度侧</strong>，TESLA+READER 揭示广告 CVR/NetCVR 建模的下一个精度增长点——延迟反馈纠偏而非更大模型；<strong>基础设施侧</strong>，arXiv 2603.23640 和 Google I/O 两条线同步收敛于一个结论：端侧广告推理必须以 NPU-first + 端云混合作为架构起点，而非 GPU 路径的补丁式优化。Qualcomm+CXMT 独立 NPU 方案是 2027 年后旗舰机算力跃升的先兆，广告系统的端侧模型容量上限届时将再提升一个量级。</p>
+<h3>近期关注</h3>
+<ul>
+<li><strong>Google I/O 2026（5 月 19–20 日，距今 15 天，Shoreline Amphitheater）</strong>：<strong>本年度移动广告推理基础设施最重要的外部事件</strong>。强烈建议提前关注以下 Session：① 「What's new in Android」（Android 17 AICore API 正式上线细节）；② 「What's new in Firebase」（Hybrid Inference 从 experimental 到 stable 的路线图）；③ 「What's new in Google AI」（Gemma 4 E2B/E4B 部署指南）。I/O 结束后 1 周内启动内部 SDK 集成评估。</li>
+<li><strong>SIGIR 2026（7 月，华盛顿特区）</strong>：快手 A2Gen（05-03 已报）等广告/推荐论文将正式展示，配合时间节点做立项调研。</li>
+</ul>
+<hr />
+<p><em>中文源说明：本期 TESLA+READER 来自智源社区（hub.baai.ac.cn）对阿里妈妈 × 厦门大学 WWW 2026 论文的中文报道，满足中文源覆盖要求。</em></p>
+<p><em>数据截止：2026-05-04 | 已排除近期已报道内容（DSAIN 美团、A2Gen 快手、C-APO SK Telecom、OpenAI×Qualcomm×MediaTek AI Phone、MiniCPM-o 4.5、Doubao Agentic Phone、KVTC、ZipperQuant、LittleLamb、MTServe、Separable Expert、ZeroQAT、Preference Heads、VoxCPM2、Meta Adaptive Ranking、KernelEvolve、Meta Capacity Efficiency、Firebase 混合推理（04月报）、Gemma 4、LiteRT-LM、ExecuTorch v1.2.0、LiteRT NPU 生产案例 等）</em></p>
+    </article>
+  </div>
+</body>
+</html>
