@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端智能日报 2026-05-05</title>
+  <style>
+:root{
+  --bg:#f4faf8;
+  --surface:#ffffff;
+  --surface-soft:#f8fcfb;
+  --text:#1f2f2b;
+  --muted:#5e726b;
+  --accent:#0f766e;
+  --accent-soft:#dcf2ee;
+  --border:#d8e8e2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #e9f7f2 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, #e5f4ef 0%, transparent 28%),
+    var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.8;
+}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px 56px}
+.top{
+  margin-bottom:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+}
+.brand{
+  margin:0;
+  font-size:14px;
+  letter-spacing:.08em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.back{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px 28px 20px;
+  box-shadow:0 10px 30px rgba(15,118,110,.08);
+}
+h1,h2,h3{line-height:1.35;margin:1.1em 0 .45em}
+h1{font-size:2rem;margin-top:.15em}
+h2{font-size:1.32rem}
+h3{font-size:1.08rem}
+p,li{font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+blockquote{
+  margin:1rem 0;
+  padding:.72rem .95rem;
+  background:var(--surface-soft);
+  border-left:4px solid var(--accent);
+  color:#28433d;
+  border-radius:8px;
+}
+hr{
+  border:none;
+  border-top:1px dashed var(--border);
+  margin:1.3rem 0;
+}
+code{
+  background:#eef7f5;
+  border:1px solid #d7e9e4;
+  color:#1f4f49;
+  border-radius:6px;
+  padding:.14em .42em;
+  font-size:.92em;
+}
+pre{
+  background:#0f1f1d;
+  color:#e9f4f2;
+  border-radius:12px;
+  overflow:auto;
+  padding:14px;
+}
+pre code{
+  background:transparent;
+  border:none;
+  color:inherit;
+  padding:0;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  overflow:hidden;
+  border-radius:12px;
+}
+th,td{
+  border:1px solid var(--border);
+  padding:.6rem .7rem;
+  text-align:left;
+  vertical-align:top;
+}
+th{background:#edf8f5}
+.footer{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:.88rem;
+}
+.list{
+  list-style:none;
+  margin:1rem 0 0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.list a.item{
+  display:block;
+  padding:14px 15px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-soft);
+  transition:.15s ease;
+}
+.item-title{
+  display:block;
+  font-weight:700;
+  margin-top:2px;
+}
+.focus{
+  display:block;
+  margin-top:8px;
+  font-size:.92rem;
+  color:#37524c;
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.list a.item:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(15,118,110,.09);
+  text-decoration:none;
+}
+.date{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  margin-bottom:2px;
+}
+@media (max-width:700px){
+  .wrap{padding:20px 12px 40px}
+  .card{padding:20px 16px 16px;border-radius:14px}
+  h1{font-size:1.62rem}
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <p class="brand">Edge AI Daily</p>
+      <a class="back" href="../index.html">← 返回目录</a>
+    </div>
+    <article class="card">
+      <h1>端智能日报 2026-05-05</h1>
+<blockquote>
+<p><strong>本期聚焦</strong>：端侧推荐/广告场景迎来两项有实测数据的工程成果——OD-LLM（WSDM 2026）首次为序列推荐 LLM 构建任务自适应压缩框架，模型减半精度零损失；EdgeWisePersona 提供首个用于评估端侧 SLM 用户画像能力的公开基准；TurboQuant 的 3-bit KV Cache 压缩方案（ICLR 2026）正被社区快速移植到 llama.cpp，Q2 2026 量产路径明确——三项合力标志着端侧广告推理的"精度-内存-成本"三角已出现系统性破局点。</p>
+</blockquote>
+<hr />
+<h2>1. 【OD-LLM（WSDM 2026）：序列推荐 LLM 的端侧任务自适应压缩——SVD 低秩分解 + 渐进对齐，模型减半 · 精度零损失，已在 WSDM 2026 发表】</h2>
+<ul>
+<li><strong>评分</strong>：A/5 · I/3 · S=13 · P0 · 价值类型：收入提升/成本优化</li>
+<li><strong>来源</strong>：多机构 | <a href="https://arxiv.org/abs/2601.09306">arxiv.org/abs/2601.09306</a> | WSDM 2026（2 月 22–26 日，Boise）</li>
+</ul>
+<p><strong>内容总结（130 字）</strong>：
+现有端侧 LLM 推荐方案直接借用通用模型压缩技术，忽视了序列推荐任务的特殊性：token 分布与 NLP 任务差异巨大，导致激进压缩时精度急剧下降。OD-LLM 是首个<strong>任务自适应</strong>压缩框架，三步解决：① <strong>低秩结构压缩</strong>（SVD 分解）大幅削减参数冗余；② <strong>Tokenization 归一化</strong>，对齐推荐 token 分布与 SVD 分解的统计假设；③ <strong>渐进对齐算法</strong>，逐层迭代精化目标模型参数，防止高压缩比时误差累积。在多个序列推荐 benchmark 上验证：<strong>压缩至原始模型 50% 参数量，精度无损</strong>；高压缩比下仍显著优于通用方法（LLM-Pruner、LoRA-based 方案等）。端侧部署目标：4GB RAM 以内旗舰手机实时序列推荐。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告序列推荐（Session-based CTR/CVR）场景中把 LLM-based 召回/排序模型直接部署到端侧，推理无需云端往返，延迟从 200ms+ 降至 &lt;20ms。<strong>可直接应用</strong>：SVD + 渐进对齐流程可独立于模型架构使用，建议以内部序列推荐 LLM（DIN/DIEN 扩展版）为基线，2 周内跑 50% 压缩比的精度对齐实验，评估 AUC 损失是否在 0.2% 以内。</p>
+<hr />
+<h2>2. 【EdgeWisePersona（arXiv 2505.11417，TCL Research Europe）：首个端侧 SLM 用户画像评测基准——多轮对话行为重建 · 隐私保护 · 开源数据集 + 代码】</h2>
+<ul>
+<li><strong>评分</strong>：A/4 · I/3 · S=11 · P1 · 价值类型：新能力探索/用户体验</li>
+<li><strong>来源</strong>：TCL Research Europe | <a href="https://arxiv.org/abs/2505.11417">arxiv.org/abs/2505.11417</a> | 2026-05</li>
+</ul>
+<p><strong>内容总结（130 字）</strong>：
+在广告/推荐系统中，用户画像（User Profiling）是精准定向的核心，而端侧本地化画像兼顾隐私合规与实时个性化。然而业界长期缺乏系统性评测基准。EdgeWisePersona 填补此空白：① <strong>数据集构造</strong>：以智能家居场景为载体，用 LLM 生成基于"行为惯例（Routine）"的多轮自然语言对话，形成"用户偏好结构 → 对话历史"配对；② <strong>评测任务</strong>：<em>Profile Reconstruction</em>（从多轮交互历史推断用户惯例与偏好）——天然映射广告系统的"用户兴趣建模"；③ <strong>基准对象</strong>：专为资源受限边缘设备设计的 SLM（Small Language Model），强调隐私保护与可解释性。数据集和评测代码已开源（TCLResearchEurope/EdgeWisePersona，Hugging Face + GitHub）。<strong>端侧延迟/内存</strong>：依具体 SLM 而定，本文聚焦 benchmark 构建，配套实验模型为 1–3B 量级。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告 SDK 的端侧用户画像模块引入系统性评测流程——当前业界缺乏标准化 benchmark，导致端侧画像精度难以横向对比。<strong>可借鉴思路</strong>：EdgeWisePersona 的 Profile Reconstruction 评测范式可直接迁移到广告场景：将用户广告点击/时长/跳出历史替换对话历史，验证端侧 SLM 推断兴趣类目的准确率；评估完成后可接入 OD-LLM（条目 1）压缩的模型作为端侧画像引擎，形成完整链路。</p>
+<hr />
+<h2>3. 【Google TurboQuant（ICLR 2026）社区实现进展：llama.cpp PR #21089 开放 · TheTom/turboquant_plus 6.4k stars · 3-bit KV Cache 5.2x 压缩即将落地移动端】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/4 · S=10 · P1 · 价值类型：成本优化/用户体验</li>
+<li><strong>来源</strong>：Google DeepMind + NYU（Zandieh et al.）| ICLR 2026 | 社区实现：<a href="https://github.com/ggml-org/llama.cpp/discussions/20969">github.com/ggml-org/llama.cpp/discussions/20969</a></li>
+</ul>
+<p><strong>内容总结（130 字）</strong>：
+TurboQuant（ICLR 2026）是 Google DeepMind + NYU 提出的 KV Cache 极限量化方案：① <strong>随机正交旋转</strong>将 KV 向量能量均匀分布，使量化误差在统计上最优；② <strong>Lloyd-Max 最优码本</strong>预计算，无需校准数据，任意模型/层/head 通用；③ 额外引入 1-bit 残差（Quantized Johnson-Lindenstrauss 变换）保持向量距离关系。结果：<strong>3.5-bit 压缩比 FP16 内存减少 5.2x，质量几乎无损（Llama-3.1-8B、Mistral-7B recall 与 FP16 一致）</strong>；H100 上 4-bit TQ 加速注意力计算 8x。<strong>社区落地</strong>：llama.cpp PR #21089（OPEN）实现 tbq3_0/tbq4_0 两种新 cache 类型；TheTom/turboquant_plus fork（6.4k stars）已先于主线上线；官方 Q2 2026 发布预期。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告端侧推理中将 KV Cache 内存占用降低 5x——这对于上下文较长的广告序列推理（用户历史行为序列 512-2048 token）尤为关键，直接决定旗舰机能否流畅运行 7B 级模型而不触发热降频。<strong>可借鉴思路</strong>：待 PR #21089 合入主线后（预计 Q2 2026），建议立即在广告 SDK 内部的 llama.cpp 分支中启用 tbq4_0，与 arXiv 2603.23640（持续推理热降频研究，05-04 报道）配合使用，可显著延长 NPU-first 路径下的持续推理窗口。</p>
+<hr />
+<h2>4. 【Qwen3.6-35B-A3B 开源发布（阿里 Qwen 团队，Apache 2.0）：35B 总参数 · 3B 推理激活 · 多模态 MoE · 73.4% SWE-Bench，高吞吐低成本端云推理新选项】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/4 · S=10 · P1 · 价值类型：新能力探索/成本优化</li>
+<li><strong>来源</strong>：阿里 Qwen 团队 | <a href="https://qwen.ai/blog?id=qwen3.6-35b-a3b">qwen.ai/blog?id=qwen3.6-35b-a3b</a> | <a href="https://www.marktechpost.com/2026/04/16/qwen-team-open-sources-qwen3-6-35b-a3b-a-sparse-moe-vision-language-model-with-3b-active-parameters-and-agentic-coding-capabilities/">MarkTechPost 报道</a> | 2026-04-16</li>
+</ul>
+<p><strong>内容总结（130 字）</strong>：
+Qwen3.6-35B-A3B 是阿里巴巴 Qwen 团队以 Apache 2.0 开源的稀疏 MoE 视觉语言模型：总参数 35B，推理时仅激活 3B 参数，每 token 算力成本接近 3B 密集模型；同时支持图像、视频、文档理解。核心指标：SWE-Bench 73.4%（代理编程任务），超越同量级密集模型；262K token 上下文窗口。<strong>推理框架</strong>：支持 vLLM、SGLang、KTransformers、llama.cpp（GGUF 版本由 unsloth 发布）；FP8 量化后约 35GB，可装入单张 H100。<strong>端侧定位</strong>：总权重体积（FP16 ~70GB）决定其<strong>不适合直接手机部署</strong>，但 3B 激活量意味着在服务端可以超低成本跑广告大模型，是广告云侧智能体的高性价比选择；配合未来手机内存扩展，边缘推理有探索空间。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告素材理解（图文/视频多模态）场景中以等效 3B 的计算成本运行能力接近 27B 密集模型的多模态 LLM，大幅降低广告审核/素材描述生成的云端推理成本。<strong>可直接应用（云侧）</strong>：GGUF 版本已在 unsloth 发布，建议 1 周内部署 Q4 量化版本（约 17-20GB），对比内部当前多模态素材理解模型的精度-延迟-成本三角；<strong>暂不适用（端侧）</strong>：需等待更小参数量的 Qwen3.6 系列（预计有 1.5B/3B dense 版本）面世。</p>
+<hr />
+<h3>其他观察</h3>
+<p>今日四条内容串联出一条完整的端侧广告技术路线：OD-LLM 解决"LLM 如何压缩进手机做推荐"，EdgeWisePersona 解决"端侧用户兴趣如何评测"，TurboQuant 解决"长序列推理的 KV 内存爆炸"，Qwen3.6-35B-A3B 解决"云侧多模态素材理解的成本问题"——四层技术栈自下而上打通，端云协同广告系统的工程可行性窗口在 Q2-Q3 2026 正式打开。</p>
+<h3>近期关注</h3>
+<ul>
+<li><strong>Google I/O 2026（5 月 19–20 日，距今 14 天）</strong>：本年度移动广告推理基础设施最重要外部事件。关键 Session：Android 17 AICore 第三方 API 正式细节、Firebase Hybrid Inference 路线图、Gemma 4 E2B 部署指南。I/O 结束后立即启动广告 SDK 集成 POC。</li>
+<li><strong>Apple WWDC 2026（6 月 8–12 日，距今 34 天）</strong>：Apple 将在 iOS 27 中以 <strong>Core AI 框架取代 Core ML</strong>（Mark Gurman 报道，2026-03-01），重点：① 第三方 AI 模型集成 API 规范；② Apple Foundation Models 开发者调用接口；③ 是否开放 Core AI 给广告/推荐 SDK 直接调用端侧模型。届时广告 iOS SDK 推理架构有重大技术选型窗口，建议提前梳理 Core ML → Core AI 迁移路径。</li>
+<li><strong>KDD 2026 / SIGIR 2026</strong>：广告/推荐工业论文投稿期将至，关注阿里、字节、快手、美团在 CVR、多目标优化、端云协同方向的新提交。</li>
+</ul>
+<hr />
+<p><em>中文源说明：条目 4 Qwen3.6-35B-A3B 来自阿里巴巴 Qwen 团队官方博客及 MarkTechPost 报道（中国企业发布，中文官网同步）；条目 3 TurboQuant 有知乎中文技术分析文章同步传播。</em></p>
+<p><em>数据截止：2026-05-05 | 已排除近期已报道内容（DSAIN 美团、A2Gen 快手、C-APO SK Telecom、OpenAI×Qualcomm×MediaTek AI Phone、MiniCPM-o 4.5、Doubao Agentic Phone、KVTC、ZipperQuant、LittleLamb、MTServe、Separable Expert、ZeroQAT、Preference Heads、VoxCPM2、Meta Adaptive Ranking、KernelEvolve、Meta Capacity Efficiency、Firebase 混合推理、Gemma 4、LiteRT-LM、ExecuTorch v1.2.0、LiteRT NPU 生产案例、TESLA+READER 阿里妈妈、Android 17 AICore、LLM Inference at the Edge arXiv 2603.23640、Qualcomm+CXMT 独立 NPU 等）</em></p>
+    </article>
+  </div>
+</body>
+</html>
