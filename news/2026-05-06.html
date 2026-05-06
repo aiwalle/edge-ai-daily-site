@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端智能日报 2026-05-06</title>
+  <style>
+:root{
+  --bg:#f4faf8;
+  --surface:#ffffff;
+  --surface-soft:#f8fcfb;
+  --text:#1f2f2b;
+  --muted:#5e726b;
+  --accent:#0f766e;
+  --accent-soft:#dcf2ee;
+  --border:#d8e8e2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #e9f7f2 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, #e5f4ef 0%, transparent 28%),
+    var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.8;
+}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px 56px}
+.top{
+  margin-bottom:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+}
+.brand{
+  margin:0;
+  font-size:14px;
+  letter-spacing:.08em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.back{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px 28px 20px;
+  box-shadow:0 10px 30px rgba(15,118,110,.08);
+}
+h1,h2,h3{line-height:1.35;margin:1.1em 0 .45em}
+h1{font-size:2rem;margin-top:.15em}
+h2{font-size:1.32rem}
+h3{font-size:1.08rem}
+p,li{font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+blockquote{
+  margin:1rem 0;
+  padding:.72rem .95rem;
+  background:var(--surface-soft);
+  border-left:4px solid var(--accent);
+  color:#28433d;
+  border-radius:8px;
+}
+hr{
+  border:none;
+  border-top:1px dashed var(--border);
+  margin:1.3rem 0;
+}
+code{
+  background:#eef7f5;
+  border:1px solid #d7e9e4;
+  color:#1f4f49;
+  border-radius:6px;
+  padding:.14em .42em;
+  font-size:.92em;
+}
+pre{
+  background:#0f1f1d;
+  color:#e9f4f2;
+  border-radius:12px;
+  overflow:auto;
+  padding:14px;
+}
+pre code{
+  background:transparent;
+  border:none;
+  color:inherit;
+  padding:0;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  overflow:hidden;
+  border-radius:12px;
+}
+th,td{
+  border:1px solid var(--border);
+  padding:.6rem .7rem;
+  text-align:left;
+  vertical-align:top;
+}
+th{background:#edf8f5}
+.footer{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:.88rem;
+}
+.list{
+  list-style:none;
+  margin:1rem 0 0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.list a.item{
+  display:block;
+  padding:14px 15px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-soft);
+  transition:.15s ease;
+}
+.item-title{
+  display:block;
+  font-weight:700;
+  margin-top:2px;
+}
+.focus{
+  display:block;
+  margin-top:8px;
+  font-size:.92rem;
+  color:#37524c;
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.list a.item:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(15,118,110,.09);
+  text-decoration:none;
+}
+.date{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  margin-bottom:2px;
+}
+@media (max-width:700px){
+  .wrap{padding:20px 12px 40px}
+  .card{padding:20px 16px 16px;border-radius:14px}
+  h1{font-size:1.62rem}
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <p class="brand">Edge AI Daily</p>
+      <a class="back" href="../index.html">← 返回目录</a>
+    </div>
+    <article class="card">
+      <h1>端智能日报 2026-05-06</h1>
+<blockquote>
+<p><strong>本期聚焦</strong>：工业广告 CTR 预估迎来范式级突破——LinkedIn CADET 以 decoder-only Transformer 在生产 A/B 中实现 11.04% CTR 提升，阿里 SGCTR 以"训推对称"生成式推理消除特征噪声；两篇均在 ACM Web Conference 2026 展示，确认生成式范式已完成从实验到工业的跨越；端侧推理侧，SparKV 与"Don't Waste Bits!"从云-端协同调度和自适应精度两条路线同步突破 KV Cache 内存与延迟瓶颈。</p>
+</blockquote>
+<hr />
+<h2>1. 【CADET（LinkedIn Engineering，arXiv 2602.11410）：Decoder-Only Transformer 广告 CTR 预估——时序 RoPE + Self-Gated Attention + 多塔预测头，线上 A/B CTR +11.04%，已上线 LinkedIn 信息流主流量】</h2>
+<ul>
+<li><strong>评分</strong>：A/5 · I/4 · S=14 · P0 · 价值类型：收入提升</li>
+<li><strong>来源</strong>：LinkedIn Engineering | <a href="https://arxiv.org/abs/2602.11410">arxiv.org/abs/2602.11410</a> | 2026-02（生产部署确认）</li>
+</ul>
+<p><strong>内容总结（140字）</strong>：
+LinkedIn 以生成式 decoder-only 架构替换原有 LiRank（DCNv2 + 序列编码器混合方案），提出 CADET：① <strong>时序 RoPE</strong>：RoPE 改为 timestamp-based，捕捉秒级到月级跨度的用户行为时序关系；② <strong>Self-Gated Attention</strong>：自适应调节表示层和交互层的信息流，稳定大规模训练；③ <strong>多塔预测头</strong>：显式建模广告位（position）等 post-scoring 信号，解决 selection bias；④ <strong>Session Masking</strong>：屏蔽 in-session 未来事件泄露，保证训练-推理分布一致。工程落地：张量打包（tensor packing）+ 序列分块（sequence chunking）+ 定制 Flash Attention Kernel，支持亿级规模训练与在线服务。<strong>线上 A/B</strong>：CTR +11.04% vs. LiRank 基线，现已服务 LinkedIn 信息流赞助内容主流量。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告信息流 CTR 预估中将用户行为序列的时序建模升级为 decoder-only 架构，用一个统一模型同时建模上下文条件和排序目标——相比我们当前 DIN/DIEN 类 attention 方案，时序 RoPE 可直接处理毫秒级到月级的行为时间戳而无需手工分桶。<strong>可直接应用</strong>：CADET 的 timestamp RoPE + session masking 是两个独立可移植模块，建议先在离线实验中替换 DIN 的 position encoding，用真实时间戳驱动；Flash Attention kernel 已有 CUDA 开源实现，2 周内可搭建 baseline，重点观察长序列（&gt;512 步）用户的 AUC 变化。</p>
+<hr />
+<h2>2. 【SGCTR "Infer As You Train"（阿里巴巴，arXiv 2511.14403，Web Conference 2026）：训推对称的生成式 CTR 预估——推理阶段迭代重定义特征消除噪声，Alibaba 出品，短论文 · 已在迪拜展示】</h2>
+<ul>
+<li><strong>评分</strong>：A/4 · I/3 · S=11 · P1 · 价值类型：收入提升/新能力探索</li>
+<li><strong>来源</strong>：阿里巴巴 | <a href="https://arxiv.org/abs/2511.14403">arxiv.org/abs/2511.14403</a> | ACM Web Conference 2026（迪拜，4/13–17）</li>
+</ul>
+<p><strong>内容总结（130字）</strong>：
+现有 CTR 模型训练和推理范式不对称：训练时做 Masked Language Model（屏蔽部分特征学依赖），推理时直接前向传播，无法利用已学到的生成能力纠正噪声输入。SGCTR（Symmetric Masked Generative CTR）打破这一不对称：<strong>推理阶段主动激活生成能力</strong>，以若干 masking 迭代步骤对输入特征做逐轮精化，过滤低质量/噪声特征，再做最终预测。工程约束：推理迭代次数 k 是线性开销，已通过 GPU 并行批处理控制延迟；具体线上延迟作者未披露，但实验代码已随论文开源。在阿里电商场景（公开数据集 + 内部数据集）上验证，多指标超越 SOTA 判别式基线。<strong>平台</strong>：阿里巴巴电商广告，Alibaba Group 出品，Web Conference 2026 短论文正式发表。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告 CTR 推理阶段引入"自修复特征"机制——当用户特征存在缺失（冷启动）或噪声（跨设备行为不一致）时，SGCTR 的生成推理可在不增加训练成本的前提下动态补全，对我们的冷启动广告主定向场景尤为有价值。<strong>可借鉴思路</strong>：SGCTR 的"训推对称"可与 CADET（条目 1）的 decoder-only 架构互补——CADET 解决序列时序建模，SGCTR 解决特征噪声，两者在 CTR 预估全链路中可串联部署；建议先复现 SGCTR 在公开广告数据集（Criteo/Avazu）上的结果，再评估 k=2-3 迭代时的实际推理延迟是否在可接受范围（&lt;5ms）。</p>
+<hr />
+<h2>3. 【OpenAI Privacy Filter（开源，Apache 2.0）：1.5B 总参 / 50M 激活的端侧 PII 检测模型——稀疏 MoE 128 专家，F1=96%，本地运行不出云，4 月 22 日发布】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/4 · S=10 · P1 · 价值类型：用户体验/成本优化</li>
+<li><strong>来源</strong>：OpenAI | <a href="https://openai.com/index/introducing-openai-privacy-filter">openai.com/index/introducing-openai-privacy-filter</a> | <a href="https://huggingface.co/openai/privacy-filter">huggingface.co/openai/privacy-filter</a> | 2026-04-22</li>
+</ul>
+<p><strong>内容总结（120字）</strong>：
+OpenAI 以 Apache 2.0 开源 Privacy Filter：专为企业数据脱敏设计，在数据进入云端前本地识别并遮蔽 PII。<strong>架构</strong>：1.5B 总参数，稀疏 MoE（128 专家，top-4 路由），推理仅激活 50M 参数——接近 50M 密集小模型的计算成本，实现"大模型精度 + 小模型速度"；<strong>覆盖范围</strong>：8 类敏感信息（账号、地址、邮箱、人名、电话、URL、日期、密码/密钥）；<strong>性能</strong>：PII-Masking-300k benchmark F1=96.0%（precision 94.04%, recall 98.04%），修正版 benchmark F1=97.43%；<strong>部署</strong>：Hugging Face + GitHub 开源，ONNX 格式支持跨平台端侧部署，支持 CPU 推理（laptop 级别即可），无需 GPU。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告 SDK 的用户行为数据上传链路中插入端侧 PII 过滤层——用户真实姓名、设备 ID 明文、邮箱等在离开设备前被自动遮蔽，满足 GDPR/隐私合规要求，同时降低云端数据安全审计成本。<strong>可直接应用（数据管道）</strong>：Apache 2.0 协议无商业限制，ONNX 格式可直接集成到 Android/iOS SDK；建议优先部署在广告归因模块的用户 profile 上传环节，测量脱敏前后归因模型 AUC 变化（因部分 PII 字段可能与 ID Mapping 强相关，需评估业务影响）；<strong>暂不适用（实时 CTR）</strong>：50M 激活参数的推理在每次广告请求中单独运行成本偏高，更适合异步数据清洗场景。</p>
+<hr />
+<h2>4. 【SparKV（arXiv 2604.21231）：端侧 LLM 推理的开销感知 KV Cache 云端流式加载——TTFT 降低 1.3x–5.1x · 每请求能耗降低 1.5x–3.3x，4 月 23 日发布】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/3 · S=9 · P1 · 价值类型：成本优化/用户体验</li>
+<li><strong>来源</strong>：多机构 | <a href="https://arxiv.org/abs/2604.21231">arxiv.org/abs/2604.21231</a> | 2026-04-23</li>
+</ul>
+<p><strong>内容总结（130字）</strong>：
+端侧 LLM 推理的 Prefill 阶段（构建 KV Cache）是最大延迟瓶颈，尤其在长上下文（512-2048 token 广告序列）场景下。SparKV 提出<strong>云-端协同 KV 调度</strong>框架：① <strong>KV Chunk 成本建模</strong>：对每个 KV chunk 同时估计本地计算成本和从云端流式拉取成本；② <strong>最优调度决策</strong>：动态决定每块 KV 是本地计算还是云端流式加载，并将两条路径并行执行以最大化重叠；③ <strong>运行时自适应</strong>：感知无线网络带宽波动和设备资源动态变化，在线调整预置调度策略。跨数据集/多种 LLM/多个边缘设备实测：<strong>TTFT 降低 1.3x–5.1x，每请求能耗降低 1.5x–3.3x</strong>，响应质量无明显损失。该方案天然契合端云协同架构，无需修改模型权重。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告端侧 LLM（用户序列召回/意图理解）中将上下文预填充的首字延迟从数百毫秒压缩至可接受范围，同时显著降低 NPU 持续推理的能耗，延长单次 session 内的连续推理窗口（与 arXiv 2603.23640 热降频研究结论吻合）。<strong>可借鉴思路</strong>：SparKV 的云-端 KV chunk 协同调度与 Firebase Hybrid Inference（Android 17）高度互补——AICore 本地模型处理简单请求，云端 KV 流式加载支撑长上下文复杂推理；等 SparKV 开源代码发布后（arXiv 版本已含方法，代码库 TBD），建议结合内部 CDN 边缘节点评估 KV 流式传输带宽可行性。</p>
+<hr />
+<h2>5. 【"Don't Waste Bits!"（arXiv 2604.04722）：端侧 LLM 自适应 KV Cache 量化——每 token 动态精度调度 {2/4/8-bit/FP16}，SmolLM-360M 延迟降低 17.75% · 精度接近 FP16，4 月 6 日发布】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/3 · S=9 · P1 · 价值类型：成本优化</li>
+<li><strong>来源</strong>：多机构 | <a href="https://arxiv.org/abs/2604.04722">arxiv.org/abs/2604.04722</a> | 2026-04-06</li>
+</ul>
+<p><strong>内容总结（130字）</strong>：
+与 TurboQuant（05-05 已报，针对 KV 整体旋转量化）不同，本文专注于<strong>每 token 级别的精度自适应策略</strong>。框架提取 4 维 token 级轻量特征（词频 / attention variance / 熵 / quality score），通过紧凑数据驱动控制器在解码时动态选择精度 {2-bit, 4-bit, 8-bit, FP16}：重要 token 保持高精度，低影响 token 降为 2-bit，整体 KV 内存大幅降低。<strong>实测（SmolLM-360M，HellaSwag）</strong>：解码延迟降低 17.75%（vs. 静态 KV 量化），精度提升 7.60 点，与 FP16 精度差距仅 0.30 点；在多个轻量模型（SmolLM 系列、Qwen2.5-1.5B）上验证有效。目标平台：4GB RAM 及以下端侧设备。与 TurboQuant 可组合使用（旋转 + 自适应精度双重优化）。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告端侧序列推理（用户历史 512 token）中将 KV Cache 内存占用进一步降低 30-50%，解锁在 3-4GB RAM 设备上运行广告意图 LLM 的可行性——当前主要障碍是 KV Cache 内存过大触发 OOM。<strong>可借鉴思路</strong>：本方案与 TurboQuant（ICLR 2026, llama.cpp PR #21089）形成互补"双 KV 优化栈"：TurboQuant 做全局旋转量化（5.2x 压缩比），"Don't Waste Bits!"做 per-token 精度调度（进一步节省 20%）；建议待 llama.cpp 主线合入 tbq4_0 后同步集成本方案的 token-level policy，形成组合优化。</p>
+<hr />
+<h3>其他观察</h3>
+<p>今日五条内容可解读为"广告端智能的两层技术栈同步成熟"：<strong>上层（业务算法）</strong>，CADET 和 SGCTR 分别以时序感知 decoder 和训推对称生成为 CTR 模型带来结构性提升，均已在顶级工业系统验证；<strong>下层（基础设施）</strong>，SparKV 和"Don't Waste Bits!"从调度和精度两个维度持续压缩端侧 KV Cache 开销——两层同时完成工程验证，意味着"完整端侧广告推理链路"的技术可行性窗口在 Q3 2026 正式打开。OpenAI Privacy Filter 则在两层之间插入合规层，使端侧 PII 过滤真正具备生产级可用性。</p>
+<h3>近期关注</h3>
+<ul>
+<li><strong>Google I/O 2026（5 月 19–20 日，距今 13 天）</strong>：本年度移动广告推理基础设施最重要外部事件。重点 Session：① Android 17 AICore 第三方 API 正式 GA 细节；② Firebase Hybrid Inference 稳定版路线图；③ Gemma 4 E2B on-device 部署指南。I/O 结束后 1 周内立即启动广告 SDK 集成 POC。</li>
+<li><strong>Apple WWDC 2026（6 月 8–12 日，距今 33 天）</strong>：Core AI 框架正式取代 Core ML（Mark Gurman 2026-03-01 爆料，9to5Mac 同步确认），iOS 27 广告 SDK 的推理架构选型窗口。关键判断：Core AI 是否开放给第三方广告 SDK 直接调用端侧模型，需在 WWDC 后 1 周内做 Core ML → Core AI 迁移路径评估。</li>
+</ul>
+<hr />
+<p><em>中文源说明：条目 2 SGCTR 来自阿里巴巴 Alibaba Group 团队（中国企业出品）在 ACM Web Conference 2026 发表的正式会议论文。</em></p>
+<p><em>数据截止：2026-05-06 | 已排除最近 3 天已报道内容（OD-LLM arXiv 2601.09306、EdgeWisePersona arXiv 2505.11417、TurboQuant ICLR 2026、Qwen3.6-35B-A3B、TESLA+READER 阿里妈妈 WWW 2026、Android 17 AICore、LLM Inference at Edge arXiv 2603.23640、Qualcomm+CXMT 独立 NPU、DSAIN 美团 arXiv 2604.12298、A2Gen 快手 arXiv 2604.25834、C-APO SK Telecom ICLR 2026、OpenAI×Qualcomm×MediaTek AI Phone 等）</em></p>
+    </article>
+  </div>
+</body>
+</html>
