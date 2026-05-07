@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端智能日报 2026-05-07</title>
+  <style>
+:root{
+  --bg:#f4faf8;
+  --surface:#ffffff;
+  --surface-soft:#f8fcfb;
+  --text:#1f2f2b;
+  --muted:#5e726b;
+  --accent:#0f766e;
+  --accent-soft:#dcf2ee;
+  --border:#d8e8e2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #e9f7f2 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, #e5f4ef 0%, transparent 28%),
+    var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.8;
+}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px 56px}
+.top{
+  margin-bottom:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+}
+.brand{
+  margin:0;
+  font-size:14px;
+  letter-spacing:.08em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.back{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px 28px 20px;
+  box-shadow:0 10px 30px rgba(15,118,110,.08);
+}
+h1,h2,h3{line-height:1.35;margin:1.1em 0 .45em}
+h1{font-size:2rem;margin-top:.15em}
+h2{font-size:1.32rem}
+h3{font-size:1.08rem}
+p,li{font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+blockquote{
+  margin:1rem 0;
+  padding:.72rem .95rem;
+  background:var(--surface-soft);
+  border-left:4px solid var(--accent);
+  color:#28433d;
+  border-radius:8px;
+}
+hr{
+  border:none;
+  border-top:1px dashed var(--border);
+  margin:1.3rem 0;
+}
+code{
+  background:#eef7f5;
+  border:1px solid #d7e9e4;
+  color:#1f4f49;
+  border-radius:6px;
+  padding:.14em .42em;
+  font-size:.92em;
+}
+pre{
+  background:#0f1f1d;
+  color:#e9f4f2;
+  border-radius:12px;
+  overflow:auto;
+  padding:14px;
+}
+pre code{
+  background:transparent;
+  border:none;
+  color:inherit;
+  padding:0;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  overflow:hidden;
+  border-radius:12px;
+}
+th,td{
+  border:1px solid var(--border);
+  padding:.6rem .7rem;
+  text-align:left;
+  vertical-align:top;
+}
+th{background:#edf8f5}
+.footer{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:.88rem;
+}
+.list{
+  list-style:none;
+  margin:1rem 0 0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.list a.item{
+  display:block;
+  padding:14px 15px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-soft);
+  transition:.15s ease;
+}
+.item-title{
+  display:block;
+  font-weight:700;
+  margin-top:2px;
+}
+.focus{
+  display:block;
+  margin-top:8px;
+  font-size:.92rem;
+  color:#37524c;
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.list a.item:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(15,118,110,.09);
+  text-decoration:none;
+}
+.date{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  margin-bottom:2px;
+}
+@media (max-width:700px){
+  .wrap{padding:20px 12px 40px}
+  .card{padding:20px 16px 16px;border-radius:14px}
+  h1{font-size:1.62rem}
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <p class="brand">Edge AI Daily</p>
+      <a class="back" href="../index.html">← 返回目录</a>
+    </div>
+    <article class="card">
+      <h1>端智能日报 2026-05-07</h1>
+<blockquote>
+<p><strong>本期聚焦</strong>：距 Google I/O 12 天，Google 宣布在 5/12 单独举办 "The Android Show: I/O Edition"、确认 Android 17 内置 Gemini Nano 3 并向第三方开放 AICore API——移动广告端侧基础设施技术选型窗口已进入倒计时；Gemma 4 MTP Drafters 同日落地，端侧密集模型吞吐量提升 3x，两篇工程实录进一步填补端侧 SLM "理论到生产"认知断层。</p>
+</blockquote>
+<hr />
+<h2>1. 【进展更新】【The Android Show: I/O Edition（5/12）+ Android 17 Gemini Nano 3 第三方 API 开放——广告端侧基础设施技术选型进入 12 天倒计时】</h2>
+<ul>
+<li><strong>评分</strong>：A/4 · I/4 · S=12 · P0 · 价值类型：新能力探索/收入提升</li>
+<li><strong>来源</strong>：Google | <a href="https://true-tech.net/google-the-android-show-i-o-edition-announced/">The Android Show 官方公告</a> | <a href="https://android.gadgethacks.com/news/what-to-expect-from-google-io-2026-dates-gemini-android-17/">Android Gadget Hacks 分析</a> | 2026-05</li>
+</ul>
+<p><strong>相较 2026-05-04 报道新增</strong>：Google 确认 5 月 12 日（I/O 前 7 天）单独举办 "The Android Show: I/O Edition"，专题发布 Android 17 详细功能并提前开放开发者文档；同时确认 Android 17 将 <strong>Gemini Nano 3</strong> 内置 OS 层并通过 <strong>Android AI Core API</strong> 向所有第三方开发者开放——首次明确 Nano 的 API 访问接口规范。</p>
+<p><strong>内容总结（130 字）</strong>：
+Android 17 在系统层内置 Gemini Nano 3（参数量未披露，预计比 Nano 2 更大），并通过新的 Android AI Core API 向第三方开发者暴露 Nano 的推理能力：① <strong>隐私合规场景优先</strong>：医疗/法律/金融类 App 无需将用户数据发送云端即可调用大模型能力；② <strong>无网络依赖</strong>：Nano 运行在 NPU，离线可用；③ <strong>API 规范待确认</strong>：目前仅有 AICore "第三方访问" 宣布，具体接口（流式输出、token 上限、多模态支持）将在 5/12 Android Show 和 5/19–20 I/O 正式公布。<strong>The Android Show: I/O Edition</strong> 是今年新增的独立 Android 专项活动，预示 Android 17 AI 能力将是 Google 本年度最重点开发者营销主线。<strong>平台</strong>：全系 Android 17 旗舰机（Pixel 10 为参考设备），SDK 文档预计 5/12 随演讲同步开放。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告 SDK 的端侧推理链路中直接调用系统级 Gemini Nano 3，而无需在 APK 内捆绑私有模型权重——对"用户意图识别 → 实时竞价策略调整"场景可以做到 0 下载成本 + NPU 原生延迟（&lt;10ms 首字节）。<strong>适配性</strong>：P0 级技术选型决策——建议本周安排 1 人阅读 Android AI Core 开发者文档草案（5/12 后发布），评估当前广告 SDK 的离线意图分类模块是否可替换为 AICore 调用，并明确 API 稳定性（Beta/Stable）时间线；I/O 结束后立即启动 POC，避免错过 Android 17 正式 GA 前的早鸟集成窗口。</p>
+<hr />
+<h2>2. 【进展更新】【Gemma 4 MTP Drafters（Google，May 5-6 发布）：推测解码 3x 加速，端侧 E2B/E4B 适用，LiteRT-LM/MLX/HuggingFace 三框架同步支持，Apache 2.0】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/4 · S=10 · P1 · 价值类型：成本优化/用户体验</li>
+<li><strong>来源</strong>：Google | <a href="https://blog.google/innovation-and-ai/technology/developers-tools/multi-token-prediction-gemma-4/">blog.google MTP 发布博客</a> | <a href="https://ai.google.dev/gemma/docs/mtp/overview">ai.google.dev 开发者文档</a> | 2026-05-05</li>
+</ul>
+<p><strong>相较早期 Gemma 4 报道新增</strong>：MTP Drafters 于 May 5-6 正式发布，这是 Gemma 4 首次获得推测解码支持，端侧 E2B/E4B 模型直接受益。</p>
+<p><strong>内容总结（130 字）</strong>：
+Google 为 Gemma 4 全系发布 Multi-Token Prediction（MTP）Drafters——一个配套轻量草稿模型（drafter），与主模型组成推测解码（speculative decoding）对：① Drafter 一次提议多个候选 token，主模型并行验证；② Dense 模型（E2B/E4B 端侧版）在 batch=1 场景下吞吐量最高提升 <strong>3x</strong>，生成质量与标准 FP16 推理完全一致；③ MoE 架构（26B/31B）因本身路由并行度较高，batch=1 下提升幅度有限（约 1.2-1.5x），batch 推理效果更优；④ <strong>平台支持</strong>：LiteRT-LM（移动/嵌入式）、MLX（Apple Silicon）、HuggingFace Transformers；端侧 E2B INT4 在 Android 中档机（Snapdragon 8-series + 6GB RAM）可流畅运行；<strong>授权</strong>：Apache 2.0，模型权重托管于 HuggingFace + Kaggle，Android/iOS AI Edge Gallery 已上线。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在端侧广告意图理解模块（用户 query 实时分类、素材文字描述生成）中将 Gemma 4 E2B 的推理延迟从约 400ms 压缩至约 130ms，使其真正进入广告竞价链路的可用延迟区间（&lt;200ms）。<strong>可直接应用</strong>：LiteRT-LM 的 Gemma 4 E2B-MTP 已有预编译模型，建议在内部 Android 广告 SDK testbed 中与条目 1（AICore Gemini Nano 3）做对比测试——两者分别代表"私有模型本地部署"和"系统模型 API 调用"两种架构范式，5/12 后的选型结论将决定未来 12-18 个月的端侧推理路线。</p>
+<hr />
+<h2>3. 【Less Is More（arXiv 2604.24636）：生产 Android 应用端侧 SLM 工程挑战实录——Gemma 4 E2B + Qwen3 0.6B 5 天 Sprint，5 类失败模式 + 缓解策略，已上线 Play Store】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/3 · S=9 · P1 · 价值类型：用户体验/新能力探索</li>
+<li><strong>来源</strong>：William Oliveira | <a href="https://arxiv.org/abs/2604.24636">arxiv.org/abs/2604.24636</a> | 2026-04</li>
+</ul>
+<p><strong>内容总结（140 字）</strong>：
+本文是端侧 SLM 集成的<strong>生产工程案例</strong>：作者在 Android 单词猜谜游戏 Palabrita 中集成 Gemma 4 E2B（2.6B 参数）和 Qwen3 0.6B，历经 5 天迭代后上线 Play Store。记录了 5 类系统性失败模式：① <strong>输出格式违反</strong>（JSON 结构错误）→ 多层防御解析；② <strong>约束违反</strong>（单词过于简单或超出词表）→ 上下文重试 + 失败反馈；③ <strong>上下文质量退化</strong>（长对话后模型"遗忘"约束）→ Session 轮换；④ <strong>延迟不兼容</strong>（E2B 在中低端机首字延迟 &gt;2s）→ 渐进提示硬化 + 降级到 Qwen3 0.6B；⑤ <strong>模型选择不稳定</strong>（跨机型表现差异大）→ 责任收窄（LLM 只生成 3 条 hint，不生成完整谜题）。核心结论："端侧 LLM 最可靠的功能，是 LLM 做事最少的功能"。<strong>硬件</strong>：测试于 Pixel 9 + 多款中低端 Android；内存占用 E2B INT4 约 1.8GB。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告 SDK 端侧 LLM 功能设计中规避最高频的工程陷阱——特别是"约束违反"和"延迟不兼容"这两类失败恰好是广告场景（实时竞价 &lt;200ms、素材描述字数限制）的核心痛点。<strong>可借鉴思路</strong>：端侧广告 SLM 的设计原则应遵循"责任最小化"——让模型只做一件事（如"从候选词中选出最匹配用户意图的 3 个标签"），不让其生成完整的广告文案或结构化 JSON；Session 轮换策略（条目 3 的缓解措施 ③）直接适用于广告 SDK 用户会话管理。</p>
+<hr />
+<h2>4. 【端侧 LLM 量化系统评测（arXiv 2505.15030 v5，March 2026 修订）：3.5 BPW 为精度分水岭——量化大模型优于高精度小模型，7 种 PTQ 方法实测对比】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/3 · S=9 · P1 · 价值类型：成本优化/新能力探索</li>
+<li><strong>来源</strong>：多机构 | <a href="https://arxiv.org/abs/2505.15030">arxiv.org/abs/2505.15030</a> | 2026-03（v5 修订）</li>
+</ul>
+<p><strong>内容总结（130 字）</strong>：
+对端侧模型选型有重要参考价值的系统评测：在 0.5B–14B 规模模型上跑 7 种 PTQ 量化方法（含 GPTQ、AWQ、SmoothQuant 等），在消费级硬件（含手机 NPU 和 x86 笔记本）上实测精度-延迟-内存三维指标。<strong>核心结论 ①</strong>：存在 <strong>3.5 BPW（有效每权重比特数）精度分水岭</strong>——高于该阈值的量化大模型（如 INT4/INT8 7B）在精度上<strong>持续优于</strong>低于该阈值的高精度小模型（如 FP16 1B）；<strong>核心结论 ②</strong>：内存占用随 BPW 线性增长，但不同量化算法的功耗曲线差异显著（最多 2x）；<strong>核心结论 ③</strong>：随模型规模缩小，吞吐量瓶颈从通信开销转移到计算延迟。提出三维评测框架：模型能力（accuracy） / 部署效率（latency/throughput） / 系统资源（内存/功耗）。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告端侧模型选型时做出有数据支撑的决策：当前常见误区是"为了省内存而选 FP16 1B"，但该研究表明 INT4 7B 在同等硬件上精度更高；对于 CTR 预估场景，3.5 BPW 阈值意味着 Gemma 4 E2B INT4（~1.8GB）是目前旗舰机上精度-内存最优的选型起点。<strong>可借鉴思路</strong>：三维评测框架可直接复用为广告 SDK 端侧模型准入标准，建议将"3.5 BPW"作为最低量化精度门槛写入内部模型部署规范；同时注意功耗指标（条目 3 提到 E2B 在中低端机存在延迟问题，功耗是背后原因之一）。</p>
+<hr />
+<h3>其他观察</h3>
+<p>今日四条内容指向同一个决策时间节点：<strong>5 月 12 日 The Android Show: I/O Edition</strong>。条目 1 的 AICore Gemini Nano 3 API 和条目 2 的 Gemma 4 MTP Drafters 构成广告 SDK 端侧推理的两条竞争路线（系统调用 vs. 私有部署），条目 3 和 4 提供了"私有部署"路线的工程风险底稿和模型选型决策框架——技术团队应在 5/12 前完成架构预研，5/12 后 48 小时内根据 AICore API 规范作出技术选型，避免在 5/19 I/O 主会场之后再被动跟进。</p>
+<h3>近期关注</h3>
+<ul>
+<li><strong>The Android Show: I/O Edition（5 月 12 日，距今 5 天）</strong>：强烈建议安排 1 名 Android 端侧工程师全程直播观看，重点关注：① Android AI Core API 接口规范（流式/批量、token 上限、多模态）；② Gemini Nano 3 在旗舰机上的实测延迟；③ 是否宣布向广告/推荐 SDK 类别开放 AICore 权限白名单。</li>
+<li><strong>Google I/O 2026（5 月 19–20 日，距今 12 天）</strong>：Firebase Hybrid Inference 路线图、LiteRT-LM 2.0 细节、Android 17 GA 时间表。</li>
+<li><strong>Apple WWDC 2026（6 月 8–12 日，距今 32 天）</strong>：Core ML → Core AI 迁移路径、Apple Foundation Models 第三方 API 规范（基于 Gemini 训练，隐私保护本地推理）。</li>
+</ul>
+<hr />
+<p><em>中文源说明：本期无独立中文源文章（5 月 7 日机器之心/量子位未见覆盖本期核心议题的独立报道）；条目 1 The Android Show 公告已有国内科技媒体同步，条目 4 量化评测已在知乎技术社区有讨论。</em></p>
+<p><em>数据截止：2026-05-07 | 已排除近期已报道内容（OD-LLM arXiv 2601.09306、EdgeWisePersona arXiv 2505.11417、TurboQuant ICLR 2026、Qwen3.6-35B-A3B、CADET arXiv 2602.11410、SGCTR arXiv 2511.14403、OpenAI Privacy Filter、SparKV arXiv 2604.21231、Don't Waste Bits arXiv 2604.04722、TESLA+READER 阿里妈妈、Android 17 AICore 第三方 API 宣布、LLM Inference at Edge arXiv 2603.23640、Qualcomm+CXMT 独立 NPU、DSAIN 美团 arXiv 2604.12298、A2Gen 快手、LiteRT-LM 发布、Gemma 4 发布等）</em></p>
+    </article>
+  </div>
+</body>
+</html>
