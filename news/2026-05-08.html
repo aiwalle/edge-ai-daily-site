@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端智能日报 2026-05-08</title>
+  <style>
+:root{
+  --bg:#f4faf8;
+  --surface:#ffffff;
+  --surface-soft:#f8fcfb;
+  --text:#1f2f2b;
+  --muted:#5e726b;
+  --accent:#0f766e;
+  --accent-soft:#dcf2ee;
+  --border:#d8e8e2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #e9f7f2 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, #e5f4ef 0%, transparent 28%),
+    var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.8;
+}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px 56px}
+.top{
+  margin-bottom:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+}
+.brand{
+  margin:0;
+  font-size:14px;
+  letter-spacing:.08em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.back{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px 28px 20px;
+  box-shadow:0 10px 30px rgba(15,118,110,.08);
+}
+h1,h2,h3{line-height:1.35;margin:1.1em 0 .45em}
+h1{font-size:2rem;margin-top:.15em}
+h2{font-size:1.32rem}
+h3{font-size:1.08rem}
+p,li{font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+blockquote{
+  margin:1rem 0;
+  padding:.72rem .95rem;
+  background:var(--surface-soft);
+  border-left:4px solid var(--accent);
+  color:#28433d;
+  border-radius:8px;
+}
+hr{
+  border:none;
+  border-top:1px dashed var(--border);
+  margin:1.3rem 0;
+}
+code{
+  background:#eef7f5;
+  border:1px solid #d7e9e4;
+  color:#1f4f49;
+  border-radius:6px;
+  padding:.14em .42em;
+  font-size:.92em;
+}
+pre{
+  background:#0f1f1d;
+  color:#e9f4f2;
+  border-radius:12px;
+  overflow:auto;
+  padding:14px;
+}
+pre code{
+  background:transparent;
+  border:none;
+  color:inherit;
+  padding:0;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  overflow:hidden;
+  border-radius:12px;
+}
+th,td{
+  border:1px solid var(--border);
+  padding:.6rem .7rem;
+  text-align:left;
+  vertical-align:top;
+}
+th{background:#edf8f5}
+.footer{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:.88rem;
+}
+.list{
+  list-style:none;
+  margin:1rem 0 0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.list a.item{
+  display:block;
+  padding:14px 15px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-soft);
+  transition:.15s ease;
+}
+.item-title{
+  display:block;
+  font-weight:700;
+  margin-top:2px;
+}
+.focus{
+  display:block;
+  margin-top:8px;
+  font-size:.92rem;
+  color:#37524c;
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.list a.item:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(15,118,110,.09);
+  text-decoration:none;
+}
+.date{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  margin-bottom:2px;
+}
+@media (max-width:700px){
+  .wrap{padding:20px 12px 40px}
+  .card{padding:20px 16px 16px;border-radius:14px}
+  h1{font-size:1.62rem}
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <p class="brand">Edge AI Daily</p>
+      <a class="back" href="../index.html">← 返回目录</a>
+    </div>
+    <article class="card">
+      <h1>端智能日报 2026-05-08</h1>
+<blockquote>
+<p><strong>本期聚焦</strong>：腾讯微信视频号广告系统以 GPR 和 OneRanker 两篇已全量上线论文完成广告全链路"多阶段级联 → 端到端生成式统一排序"的范式迁移，均有 GMV 在线 A/B 验证；Gemini Nano 4 AICore Developer Preview 双变体架构（Fast/E2B + Full/E4B）规格明朗，修正昨日命名偏差；Apple iOS 27 "Extensions"允许用户为 Siri 等系统功能自选第三方 AI 模型（Google/Anthropic 测试中），广告 SDK iOS 推理架构选型在 WWDC 前 31 天进入最后预研窗口。</p>
+</blockquote>
+<hr />
+<h2>1. 【GPR（arXiv 2511.10138，腾讯×清华，已在微信视频号全量）：广告推荐首个端到端生成式一模型范式——统一 Tokenization + HHD 双解码器 + HEPO，线上 GMV +2.11%→+0.70% 两轮爬坡】</h2>
+<ul>
+<li><strong>评分</strong>：A/5 · I/4 · S=14 · P0 · 价值类型：收入提升</li>
+<li><strong>来源</strong>：腾讯广告 × 清华 | <a href="https://arxiv.org/abs/2511.10138">arxiv.org/abs/2511.10138</a> | 2025-11（提交），2026-02（生产全量）</li>
+</ul>
+<p><strong>内容总结（140 字）</strong>：
+传统多阶段级联架构（召回→粗排→精排→重排）各阶段目标函数不对齐、误差逐层累积。GPR 首次以"端到端生成范式"替代完整级联：① <strong>统一 Tokenization</strong>：广告 item 与自然内容映射到共享多级语义 ID 空间；② <strong>HHD（异构分层解码器）</strong>：双解码器解耦用户意图建模与广告生成，兼顾训练效率与推理灵活性；③ <strong>多阶段联合训练</strong>：MTP（多 token 预测）+ Value-Aware Fine-Tuning + HEPO（层级增强策略优化）。<strong>线上 A/B 两轮爬坡</strong>：第一轮（HSD+NTP+DPO）GMV +2.11%、CTCVR +3.29%；第二轮（替换 DPO → HEPO）额外 GMV +0.70%、Costs +0.36%。<strong>平台</strong>：腾讯微信视频号广告系统，DAU 数亿级，生产全量。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告全链路中用单一生成式模型消除级联误差——最核心的工程价值是"目标对齐"，一个模型同时优化召回质量和变现效率。<strong>可借鉴思路</strong>：HHD 双解码器（意图建模+广告生成解耦）可直接借鉴到我们多目标 CTR/CVR 联合模型改造，建议以 HEPO 的层级策略优化替换当前 RLHF 固定奖励权重；如全栈替换成本过高，可先提取 Value-Aware Fine-Tuning 应用于精排阶段作为最小可行改造。</p>
+<hr />
+<h2>2. 【OneRanker（arXiv 2603.02999，腾讯广告，已在微信视频号上线）：广告生成与排序统一为一模型——价值感知多任务解耦 + 粗到细协同目标感知，线上 GMV-Normal +1.34%】</h2>
+<ul>
+<li><strong>评分</strong>：A/5 · I/4 · S=14 · P0 · 价值类型：收入提升</li>
+<li><strong>来源</strong>：腾讯广告 | <a href="https://arxiv.org/abs/2603.02999">arxiv.org/abs/2603.02999</a> | 2026-03</li>
+</ul>
+<p><strong>内容总结（130 字）</strong>：
+GPR 是 Tencent 广告生成式改造"第一步"；OneRanker 是"第二步"——专门解决 GPR 中生成与排序模块"架构断开"问题。三项核心创新：① <strong>价值感知多任务解耦（Value-Aware Multi-Task Decoupling）</strong>：显式分离兴趣目标和商业价值目标，防止 GMV 信号污染用户兴趣表征；② <strong>粗到细协同目标感知（Coarse-to-Fine Collaborative Target Awareness）</strong>：生成阶段由粗到细逐步引入排序 target，消除 target-agnostic 问题；③ <strong>输入输出双侧一致性</strong>：训练-推理分布对齐。<strong>线上结果</strong>：GMV-Normal +1.34%，Costs +0.72%；已在微信视频号广告系统全量上线。<strong>与 GPR 关系</strong>：两者可串联（GPR 负责端到端生成，OneRanker 精排），也可独立部署。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告精排阶段用统一生成+排序模型消除当前"召回模型 → 排序模型"信息断层——"价值感知多任务解耦"机制可在不增加模型数量的前提下同时优化 CTR 和 GMV，避免"高 CTR 低转化价值"的流量浪费。<strong>可直接应用</strong>：建议将"粗到细协同目标感知"机制作为精排 transformer 改造优先项，2-3 周离线实验可验证；arXiv 2603.02999v2 含完整实现细节，与条目 1（GPR）组合阅读可获完整技术栈全貌。</p>
+<hr />
+<h2>3. 【进展更新】【Gemini Nano 4 AICore Developer Preview（Android 开发者博客，4/2）：Fast（E2B，3x 速度）+ Full（E4B，最高质量）双变体——纠正昨日"Nano 3"命名，MediaTek/Qualcomm 硬件三家同步支持，代码兼容性已保证】</h2>
+<ul>
+<li><strong>评分</strong>：A/4 · I/4 · S=12 · P0 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：Google | <a href="https://android-developers.googleblog.com/2026/04/AI-Core-Developer-Preview.html">Android Developers Blog</a> | <a href="https://9to5google.com/2026/04/02/gemini-nano-4-android/">9to5Google</a> | 2026-04-02</li>
+</ul>
+<p><strong>相较 2026-05-07 报道新增</strong>：确认正确命名为 <strong>Gemini Nano 4</strong>（非 Nano 3）；明确两变体架构：Fast 基于 Gemma 4 E2B（速度 3x Full），Full 基于 Gemma 4 E4B（最高精度）；硬件加速器来自 Google（Pixel TPU）、MediaTek、Qualcomm 三家同步支持（不仅限 Pixel）；代码兼容性已保证——今日为 Gemma 4 写的代码可直接运行于未来 Nano 4 正式发布设备。</p>
+<p><strong>内容总结（110 字）</strong>：
+Gemini Nano 4 于 4 月 2 日进入 AICore Developer Preview。架构细节：<strong>Fast 变体</strong>基于 Gemma 4 E2B（2B 参数），推理速度比 Full 快 3x，目标场景为实时响应（广告意图分类 &lt;50ms）；<strong>Full 变体</strong>基于 Gemma 4 E4B（4B 参数），最高质量，适合复杂推理。两变体均比上代 Nano 快 4x，耗电降低 60%。<strong>硬件</strong>：专用 AI 加速器来自 Google/MediaTek/Qualcomm 三家，覆盖 Android 旗舰全系；Developer Preview 代码兼容性已确认，正式设备上线后无需改动。5 月 12 日 Android Show 将公布接口规范。</p>
+<p><strong>业务价值与适配性</strong>：
+Fast/Full 双变体设计直接对应广告系统"低延迟路径（竞价实时意图分类）"和"高质量路径（素材语义理解）"——可以让我们在一套 AICore API 调用中按场景切换变体，无需维护两套私有模型。<strong>适配性（P0）</strong>：5 月 12 日 Android Show 是关键时间点，建议今天确认 Developer Preview 申请状态，12 日后立即获取接口文档，重点核查 Fast 变体的 P99 延迟（目标 &lt;50ms）和 token 上限。</p>
+<hr />
+<h2>4. 【iOS 27 "Extensions"：Apple 允许用户为 Siri/Writing Tools 自选第三方 AI 模型（Google、Anthropic 测试中）——WWDC 前最重要 iOS AI 生态信号，广告 SDK 推理架构需提前预研】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/5 · S=11 · P1 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：Bloomberg / TechCrunch | <a href="https://www.bloomberg.com/news/articles/2026-05-05/ios-27-features-apple-plans-to-let-users-swap-models-across-apple-intelligence">Bloomberg 原文</a> | <a href="https://techcrunch.com/2026/05/05/apple-plans-to-make-ios-27-a-choose-your-own-adventure-of-ai-models/">TechCrunch</a> | <a href="https://9to5mac.com/2026/05/05/ios-27-will-let-you-choose-between-gemini-claude-and-more-for-ai-features-report/">9to5Mac</a> | 2026-05-05</li>
+</ul>
+<p><strong>内容总结（130 字）</strong>：
+Bloomberg（Mark Gurman）5 月 5 日报道：Apple 在 iOS 27 中引入内部代号"Extensions"机制，允许用户为 Apple Intelligence 各功能（Siri、Writing Tools、Image Playground 等）<strong>自主选择第三方 AI 模型</strong>（Google Gemini、Anthropic Claude 等）。Extensions 允许从已安装 App 中按需调用生成式 AI 能力并注入系统级功能；Siri 可根据所选外部模型切换声音。Google 和 Anthropic 模型已在 iPadOS 27/macOS 27 测试。<strong>发布时机</strong>：秋季随 iOS 27 正式发布，WWDC 2026（6 月 8-12 日）提供开发者 API 文档。<strong>平台</strong>：iOS 27 / iPadOS 27 / macOS 27 全系覆盖。注：该报道为路线图泄露，非正式发布。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们的广告 SDK 将自身 AI 能力（如端侧意图分类模型）注册为系统级 Extension，使其成为用户在 Siri 交互中可选的 AI 提供者——这是移动广告 SDK 首次获得接触 iOS 系统入口的机会。<strong>可借鉴思路</strong>：Extensions 架构意味着 iOS 广告 SDK 的端侧推理可借用系统 AI 管道，绕开 Core ML 沙箱限制；建议本月完成 Core ML → Core AI 迁移路径预研，WWDC 后立即评估 Extensions API 开放范围；<strong>暂不适用（短期）</strong>：正式 GA 为秋季 iOS 27，商业合规和开放政策尚未明确，当前阶段以技术预研为主。</p>
+<hr />
+<h2>5. 【TencentGR-1M/10M：腾讯开放首个多模态生成式推荐工业数据集——真实广告日志 + 点击/转化双标签 + 文本视觉特征，配套竞赛方案已公开（arXiv 2604.04976）】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/4 · S=10 · P1 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：腾讯广告 | <a href="https://arxiv.org/abs/2604.04976">arxiv.org/abs/2604.04976</a> | 2026-04</li>
+</ul>
+<p><strong>内容总结（120 字）</strong>：
+腾讯广告联合学术团队发布工业级多模态生成式推荐数据集，填补"真实广告多模态 benchmark"空白：① <strong>TencentGR-1M</strong>：100 万用户序列，每用户最多 100 条交互，含曝光+点击标签；② <strong>TencentGR-10M</strong>：1000 万用户，显式区分点击（Click）和转化（Conversion）双标签（序列级 + target 级）；③ <strong>多模态</strong>：每条 item 包含协同过滤 ID + 文本描述 + 图像嵌入；数据来自真实腾讯广告日志（脱敏）。配套"Tencent Advertising Algorithm Challenge 2025: All-Modality Generative Recommendation"竞赛已完结，获奖方案已公开。<strong>端侧延迟/部署</strong>：数据集本身 benchmark，不含模型；参赛方案含 1-7B 量级模型的多模态融合实现。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告端侧多模态召回/排序模型研发中获得首个可公开对标的工业数据集——TencentGR-10M 同时包含"点击+转化"双标签，正是我们 CTR/CVR 联合训练缺少的公开验证平台。<strong>可借鉴思路</strong>：TencentGR-10M 的序列长度（100 步）和双标签设计可直接作为内部数据集规范参考；竞赛获奖方案中的多模态特征融合方法（文本+图像+协同 ID）可借鉴到素材理解模块；<strong>注意</strong>：开放数据与线上广告分布存在差异，建议以 TencentGR 结果作为方法可行性验证，内部数据作为最终上线依据。</p>
+<hr />
+<h3>其他观察</h3>
+<p>今日五条内容呈现"生产优先"共同特征：GPR 和 OneRanker 均已全量上线微信视频号，Gemini Nano 4 已开放 Developer Preview，iOS 27 Extensions 已在 Google/Anthropic 间实测——端侧广告智能正从"研究可行性"向"工程标配"加速跨越。腾讯一季度连出 GPR + OneRanker 两篇生产论文（叠加 4 月 TencentGR 数据集），微信视频号广告系统正成为生成式推荐最重要的工业验证平台之一。</p>
+<p>另：Nota AI 于 5 月 7 日宣布与韩国 NPU 厂商 Mobilint（80 TOPS MLA100）达成 NetsPresso 压缩平台集成协议——"软硬件联合优化"合作模式将成为端侧 AI 部署基础设施趋势，目标市场为工业安全/智能交通，与移动广告关联较弱，供参考。</p>
+<h3>近期关注</h3>
+<ul>
+<li><strong>The Android Show: I/O Edition（5 月 12 日，距今 4 天）</strong>：确认 Gemini Nano 4 接口规范（Fast/Full token 上限、流式输出、多模态支持）；今天确认 Developer Preview 申请状态。</li>
+<li><strong>Google I/O 2026（5 月 19–20 日，距今 11 天）</strong>：LiteRT-LM 2.0、Firebase Hybrid Inference GA、Android 17 正式发布。</li>
+<li><strong>Apple WWDC 2026（6 月 8–12 日，距今 31 天）</strong>：iOS 27 Extensions API 规范——广告 SDK 能否注册为系统 Extension 是本年度 iOS AI 架构最大变量。</li>
+</ul>
+<hr />
+<p><em>中文源说明：条目 1（GPR）和条目 2（OneRanker）来自腾讯广告/清华合作团队（知乎有中文技术分析同步传播）；条目 5（TencentGR 数据集）为腾讯广告团队出品。</em></p>
+<p><em>数据截止：2026-05-08 | 已排除近期已报道内容（The Android Show May 12、Gemma 4 MTP Drafters、Less Is More arXiv 2604.24636、量化评测 arXiv 2505.15030、CADET arXiv 2602.11410、SGCTR arXiv 2511.14403、OpenAI Privacy Filter、SparKV arXiv 2604.21231、Don't Waste Bits arXiv 2604.04722、OD-LLM arXiv 2601.09306、EdgeWisePersona arXiv 2505.11417、TurboQuant ICLR 2026、Qwen3.6-35B-A3B、LiteRT-LM 发布、Gemma 4 发布等）</em></p>
+    </article>
+  </div>
+</body>
+</html>
