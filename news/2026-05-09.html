@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端智能日报 2026-05-09</title>
+  <style>
+:root{
+  --bg:#f4faf8;
+  --surface:#ffffff;
+  --surface-soft:#f8fcfb;
+  --text:#1f2f2b;
+  --muted:#5e726b;
+  --accent:#0f766e;
+  --accent-soft:#dcf2ee;
+  --border:#d8e8e2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #e9f7f2 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, #e5f4ef 0%, transparent 28%),
+    var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.8;
+}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px 56px}
+.top{
+  margin-bottom:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+}
+.brand{
+  margin:0;
+  font-size:14px;
+  letter-spacing:.08em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.back{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px 28px 20px;
+  box-shadow:0 10px 30px rgba(15,118,110,.08);
+}
+h1,h2,h3{line-height:1.35;margin:1.1em 0 .45em}
+h1{font-size:2rem;margin-top:.15em}
+h2{font-size:1.32rem}
+h3{font-size:1.08rem}
+p,li{font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+blockquote{
+  margin:1rem 0;
+  padding:.72rem .95rem;
+  background:var(--surface-soft);
+  border-left:4px solid var(--accent);
+  color:#28433d;
+  border-radius:8px;
+}
+hr{
+  border:none;
+  border-top:1px dashed var(--border);
+  margin:1.3rem 0;
+}
+code{
+  background:#eef7f5;
+  border:1px solid #d7e9e4;
+  color:#1f4f49;
+  border-radius:6px;
+  padding:.14em .42em;
+  font-size:.92em;
+}
+pre{
+  background:#0f1f1d;
+  color:#e9f4f2;
+  border-radius:12px;
+  overflow:auto;
+  padding:14px;
+}
+pre code{
+  background:transparent;
+  border:none;
+  color:inherit;
+  padding:0;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  overflow:hidden;
+  border-radius:12px;
+}
+th,td{
+  border:1px solid var(--border);
+  padding:.6rem .7rem;
+  text-align:left;
+  vertical-align:top;
+}
+th{background:#edf8f5}
+.footer{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:.88rem;
+}
+.list{
+  list-style:none;
+  margin:1rem 0 0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.list a.item{
+  display:block;
+  padding:14px 15px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-soft);
+  transition:.15s ease;
+}
+.item-title{
+  display:block;
+  font-weight:700;
+  margin-top:2px;
+}
+.focus{
+  display:block;
+  margin-top:8px;
+  font-size:.92rem;
+  color:#37524c;
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.list a.item:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(15,118,110,.09);
+  text-decoration:none;
+}
+.date{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  margin-bottom:2px;
+}
+@media (max-width:700px){
+  .wrap{padding:20px 12px 40px}
+  .card{padding:20px 16px 16px;border-radius:14px}
+  h1{font-size:1.62rem}
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <p class="brand">Edge AI Daily</p>
+      <a class="back" href="../index.html">← 返回目录</a>
+    </div>
+    <article class="card">
+      <h1>端智能日报 2026-05-09</h1>
+<blockquote>
+<p><strong>本期聚焦</strong>：端云协同隐私架构进入工程落地期——EdgeClaw 以三级隐私分级让用户数据"不出端"成为可部署的系统设计；OpenAI 定制双 NPU 手机则从硬件侧重构下一代移动推理基线，广告端侧全链路的基础设施窗口正在被 AI 原生手机重新定义。</p>
+</blockquote>
+<hr />
+<h2>1. 【EdgeClaw（面壁智能 × OpenBMB）：三级隐私分类端云协同 Agent 框架——MiniCPM 端侧处理 S3 敏感数据，已配套 EdgeClaw Box 硬件上线】</h2>
+<ul>
+<li><strong>评分</strong>：A4 · I3 · S=11 · P1 · 价值类型：用户体验 / 新能力探索</li>
+<li><strong>来源</strong>：面壁智能 / OpenBMB | <a href="https://cloud.tencent.com/developer/article/2652609">腾讯云开发者社区</a> · <a href="https://zhuanlan.zhihu.com/p/2018029704469324680">知乎详解</a> · <a href="https://github.com/OpenBMB/EdgeClaw">GitHub</a> | 2026-03（硬件版 EdgeClaw Box 3月19日发布）</li>
+</ul>
+<p><strong>内容总结（约 130 字）</strong>：
+EdgeClaw 由清华 THUNLP、面壁智能、OpenBMB 联合开发，针对 OpenClaw 的数据泄露与 Token 成本问题提出端云协同解法。核心机制为三级隐私分类：S1（默认，云处理）→ S2（脱敏后云处理）→ S3（本地 MiniCPM 系列模型处理，数据不出端）。分类粒度覆盖用户消息、工具调用参数、Agent 输出三层。配套硬件 EdgeClaw Box 已适配松果派 / NVIDIA DGX Spark / Apple Mac Mini，MiniCPM 系列累计下载量超 2400 万。框架 Apache 2.0 开源。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在"用户行为序列建模 + 实时意图识别"场景下做到：S3 级别的点击流、查询词等高敏感特征完全在端侧完成 embedding 提取，云端只接收脱敏向量，满足日益严格的隐私合规要求。适配判断：<strong>可借鉴思路</strong>——三级分类机制可直接映射到广告系统的用户数据分层（设备行为 / 账号特征 / 跨 App 数据），结合端侧轻量 embedding 模型（如 MiniCPM-2B）在端侧完成第一层特征处理，降低数据出境风险。</p>
+<hr />
+<h2>2. 【OpenAI AI 手机：定制 MediaTek Dimensity 9600 + 双 NPU 异构推理架构——端侧轻任务 + 云端复杂任务混合分发，2027H1 量产】</h2>
+<ul>
+<li><strong>评分</strong>：A3 · I4 · S=10 · P1 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：wccftech / Android Authority / Business Standard | <a href="https://wccftech.com/openai-picks-mediatek-over-qualcomm-for-its-first-smartphone-customizing-the-dimensity-9600-with-a-dual-npu-architecture-to-challenge-the-iphone/">wccftech 原文</a> · <a href="https://9to5google.com/2026/05/05/openai-phone-reportedly-lands-early-next-year-do-you-want-one/">9to5Google</a> | 2026-05-05</li>
+</ul>
+<p><strong>内容总结（约 130 字）</strong>：
+OpenAI 确认选用 MediaTek 定制版 Dimensity 9600 作为首款 AI Agent 手机的 SoC，放弃 Qualcomm。关键规格：双 NPU 异构架构（支持视觉理解与语言推理并行执行）、TSMC N2P 工艺、LPDDR6 + UFS 5.0 减少内存带宽瓶颈、pKVM + 内联哈希保障安全。推理策略为混合式：语音转写、图像识别等轻任务全端侧运行；复杂 LLM 推理无缝调度至云端。目标 2027H1 量产，年出货 3000 万台。MediaTek Dimensity 9500 NPU 990 已实现峰值功耗降低 56%。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在"未来 18 个月内"提前布局：AI 原生手机将配置专为混合推理优化的双 NPU，意味着端侧 CTR/CVR 轻量推理（&lt;1B 模型）和素材多模态理解可以在同一帧内并行执行，实现"边展示边推断用户意图"。适配判断：<strong>暂不适用（硬件未量产）</strong>，但架构预研方向明确——双 NPU 异构调度与现有端云协同广告系统设计高度同构，建议今年在 Dimensity 9400/Snapdragon 8 Elite 上验证分发逻辑。</p>
+<hr />
+<h2>3. 【LFM2.5-VL-450M（Liquid AI）：450M 参数视觉语言模型，边缘推理 &lt;250ms，支持边界框预测 + 多语言】</h2>
+<ul>
+<li><strong>评分</strong>：A3 · I3 · S=9 · P1 · 价值类型：成本优化 / 新能力探索</li>
+<li><strong>来源</strong>：Liquid AI / MarkTechPost | <a href="https://www.marktechpost.com/2026/04/11/liquid-ai-releases-lfm2-5-vl-450m-a-450m-parameter-vision-language-model-with-bounding-box-prediction-multilingual-support-and-sub-250ms-edge-inference/">MarkTechPost</a> · <a href="https://www.liquid.ai/models">Liquid AI 模型页</a> | 2026-04-11</li>
+</ul>
+<p><strong>内容总结（约 120 字）</strong>：
+LFM2.5-VL-450M 是 Liquid AI 发布的 450M 参数视觉语言模型，专为边缘设备优化。核心能力：边界框预测（目标检测）、多语言理解、图文对齐。延迟实测：Jetson Orin 上 256×256 图像 233ms / 512×512 图像 242ms。参数规模比同类 VLM 小 3-5 倍。同族 LFM2.5-1.2B-Instruct 在 AMD CPU 上达 239 tok/s、移动 NPU 上达 82 tok/s；LFM2.5-1.2B-Thinking（推理增强版）在 MATH 500 上从 63 提升至 88，内存占用 &lt;1 GB。框架支持：llama.cpp / MLX / vLLM / ONNX Runtime 全系开箱即用。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在"广告素材端侧理解"场景下做到：在用户刷视频/图文流时本地完成素材主体检测（边界框）+ 场景分类 + 语义标签，用于实时素材质量评分与用户视觉偏好建模，无需将图片上传云端。适配判断：<strong>可直接应用</strong>——VLM 可集成至 ExecuTorch / LiteRT 流水线，在中高端安卓机（Snapdragon 8 Gen 3+）上验证素材理解延迟是否满足展示周期（&lt;300ms）要求。</p>
+<hr />
+<h2>4. 【LLM Inference at the Edge（arXiv 2603.23640）：Galaxy S24 Ultra vs iPhone 16 Pro vs Hailo-10H NPU 实测——热节流致 iPhone 16 Pro 2 次推理后吞吐下降 50%】</h2>
+<ul>
+<li><strong>评分</strong>：A3 · I3 · S=9 · P1 · 价值类型：成本优化 / 用户体验</li>
+<li><strong>来源</strong>：多机构 | <a href="https://arxiv.org/abs/2603.23640">arxiv.org/abs/2603.23640</a> | 2026-03</li>
+</ul>
+<p><strong>内容总结（约 120 字）</strong>：
+该论文在 4 个平台上系统评测 Qwen 2.5 1.5B（4-bit 量化）的持续推理性能：Raspberry Pi 5 + Hailo-10H NPU、Samsung Galaxy S24 Ultra、iPhone 16 Pro、笔记本 RTX 4050 GPU。关键发现：（1）移动平台的主要瓶颈是<strong>热管理而非峰值算力</strong>，iPhone 16 Pro 仅在 2 次连续推理后吞吐量下降接近 50%；（2）Galaxy S24 Ultra 热节流更温和但底层吞吐更低；（3）Hailo-10H NPU 在持续低功耗任务上表现最稳定；（4）量化至 4-bit 在内存受限平台上是精度与带宽的最优折衷点。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在"端侧广告推理 SLA 设计"上做出更现实的工程决策：不能以峰值 benchmark 作为线上保障依据，需要在 P95/P99 热态延迟下设定用户建模模型的推理时间预算（建议 &lt;100ms per request）。适配判断：<strong>可直接应用</strong>——参考本文的热态测试方法，在目标机型上复现持续负载测试，指导端侧广告推理框架选型（优先 Hailo/NPU 路线而非纯 CPU/GPU 路线）。</p>
+<hr />
+<h2>5. 【DeepSeek V4 全面适配华为昇腾 950 + 国产芯片生态——1M 上下文 MoE 模型打破 CUDA 垄断，CANN 框架全栈迁移】</h2>
+<ul>
+<li><strong>评分</strong>：A2 · I4 · S=8 · P1 · 价值类型：成本优化</li>
+<li><strong>来源</strong>：新浪财经 / 36kr / 腾讯云 | <a href="https://finance.sina.com.cn/stock/usstock/c/2026-04-24/doc-inhvrnzq4254551.shtml">新浪财经原文</a> · <a href="https://36kr.com/p/3780399181878528">36kr</a> | 2026-04-24</li>
+</ul>
+<p><strong>内容总结（约 120 字）</strong>：
+DeepSeek V4（含 Pro / Flash 两版）于 4 月 24 日正式发布并开源，上下文从 128K 扩展至 1M（约 10 倍）。发布当日即完成华为昇腾 950PR 原生适配，并同步支持寒武纪、天数智芯等共 10 家国产 AI 芯片，框架从 CUDA 生态迁移至 CANN。战略意义：这是国产算力首次在顶级开源 MoE 大模型上实现"从可用到好用"的跨越。昇腾 950 超节点大规模量产（计划 2026H2）后，Pro 版 API 价格预计大幅下降，将直接影响广告大模型的云端推理成本结构。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在"大模型辅助广告审核 / 创意生成"场景下做到：以更低成本（预计 API 价格下降 30-50%）调用 DeepSeek V4-Flash 的 1M 长上下文能力处理用户行为长序列，或批量生成素材文案。适配判断：<strong>可借鉴思路</strong>——当前应关注昇腾生态成熟度，若公司有私有化部署诉求，Q3 可评估在昇腾 910 集群上部署蒸馏版 DeepSeek V4，替代 GPU 集群降低广告模型推理成本。</p>
+<hr />
+<h3>其他观察</h3>
+<p>今日整体趋势：端侧 AI 的工程重心正从"能不能跑"转向"可持续运行 SLA 保障"——热管理论文和端云协同隐私框架同时出现，标志着端侧广告系统工程化进入精细化阶段。OpenAI AI 手机双 NPU 架构确立了新一代移动推理硬件的设计范式，广告 SDK 层需要提前适配异构 NPU 调度接口。</p>
+<h3>近期关注</h3>
+<ul>
+<li><strong>2026-05-12</strong>：Google The Android Show（Android 17 / Gemini Nano 4 API 开放细节，广告 SDK 适配窗口）</li>
+<li><strong>2026-05-19</strong>：Google I/O 2026 主题演讲（端侧 AI 代理、LiteRT 新版、Gemini on-device 生态全景）</li>
+<li><strong>2026-06</strong>（TBD）：Apple WWDC 2026（iOS 27 Extensions 三方模型接入正式发布，Siri 广告意图识别新可能）</li>
+</ul>
+    </article>
+  </div>
+</body>
+</html>
