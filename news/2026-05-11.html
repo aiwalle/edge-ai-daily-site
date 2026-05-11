@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端智能日报 2026-05-11</title>
+  <style>
+:root{
+  --bg:#f4faf8;
+  --surface:#ffffff;
+  --surface-soft:#f8fcfb;
+  --text:#1f2f2b;
+  --muted:#5e726b;
+  --accent:#0f766e;
+  --accent-soft:#dcf2ee;
+  --border:#d8e8e2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #e9f7f2 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, #e5f4ef 0%, transparent 28%),
+    var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.8;
+}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px 56px}
+.top{
+  margin-bottom:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+}
+.brand{
+  margin:0;
+  font-size:14px;
+  letter-spacing:.08em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.back{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px 28px 20px;
+  box-shadow:0 10px 30px rgba(15,118,110,.08);
+}
+h1,h2,h3{line-height:1.35;margin:1.1em 0 .45em}
+h1{font-size:2rem;margin-top:.15em}
+h2{font-size:1.32rem}
+h3{font-size:1.08rem}
+p,li{font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+blockquote{
+  margin:1rem 0;
+  padding:.72rem .95rem;
+  background:var(--surface-soft);
+  border-left:4px solid var(--accent);
+  color:#28433d;
+  border-radius:8px;
+}
+hr{
+  border:none;
+  border-top:1px dashed var(--border);
+  margin:1.3rem 0;
+}
+code{
+  background:#eef7f5;
+  border:1px solid #d7e9e4;
+  color:#1f4f49;
+  border-radius:6px;
+  padding:.14em .42em;
+  font-size:.92em;
+}
+pre{
+  background:#0f1f1d;
+  color:#e9f4f2;
+  border-radius:12px;
+  overflow:auto;
+  padding:14px;
+}
+pre code{
+  background:transparent;
+  border:none;
+  color:inherit;
+  padding:0;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  overflow:hidden;
+  border-radius:12px;
+}
+th,td{
+  border:1px solid var(--border);
+  padding:.6rem .7rem;
+  text-align:left;
+  vertical-align:top;
+}
+th{background:#edf8f5}
+.footer{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:.88rem;
+}
+.list{
+  list-style:none;
+  margin:1rem 0 0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.list a.item{
+  display:block;
+  padding:14px 15px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-soft);
+  transition:.15s ease;
+}
+.item-title{
+  display:block;
+  font-weight:700;
+  margin-top:2px;
+}
+.focus{
+  display:block;
+  margin-top:8px;
+  font-size:.92rem;
+  color:#37524c;
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.list a.item:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(15,118,110,.09);
+  text-decoration:none;
+}
+.date{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  margin-bottom:2px;
+}
+@media (max-width:700px){
+  .wrap{padding:20px 12px 40px}
+  .card{padding:20px 16px 16px;border-radius:14px}
+  h1{font-size:1.62rem}
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <p class="brand">Edge AI Daily</p>
+      <a class="back" href="../index.html">← 返回目录</a>
+    </div>
+    <article class="card">
+      <h1>端智能日报 2026-05-11</h1>
+<blockquote>
+<p><strong>本期聚焦</strong>：今日（周日）新鲜资讯相对有限，以近期延迟发酵的技术内容为主——MIT FTTE 将联邦学习训练加速 81%、内存减少 80%，首次让隐私约束下的端侧 CTR 增量建模在工程上变得可行；Multi-LoRA 一模多任务框架在 Galaxy S24/S25 实测 6× 延迟降低，为广告 SDK 多场景模型复用提供了最具工程参考价值的端侧验证。</p>
+</blockquote>
+<hr />
+<h2>1. 【MIT FTTE：端侧联邦学习训练加速 81%、内存减少 80%——隐私约束下的 CTR 模型本地训练首次变得工程可行】</h2>
+<ul>
+<li><strong>评分</strong>：A/4 · I/3 · S=11 · P1 · 价值类型：新能力探索 / 用户体验</li>
+<li><strong>来源</strong>：MIT News | <a href="https://news.mit.edu/2026/enabling-privacy-preserving-ai-training-everyday-devices-0429">Enabling privacy-preserving AI training on everyday devices</a> | 2026-04-29</li>
+</ul>
+<p><strong>内容总结（~130 字）</strong>：
+MIT Decentralized Information Group 发布 FTTE（Federated Tiny Training Engine）框架，将联邦学习训练效率提升 81%。核心思路：以小规模参数子集广播代替全模型广播，每个边缘设备仅接收并计算必要梯度，本地内存开销减少 80%、上行通信量减少 69%，同时保持接近全模型联邦学习的精度。实测显示对更大设备群体扩展性更优（设备数越多，加速收益越显著）。平台适配：传感器、智能手表等资源受限设备均可运行，标准 PyTorch 实现，无特定硬件依赖。高负载验证场景涵盖医疗、金融领域。发布时间：2026-04-29，MIT Lincoln Laboratory + CSAIL 联合。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在端侧 CTR/CVR 模型增量训练场景下，以不离开设备的方式完成 user-specific 个性化梯度更新，无需上传原始行为日志，满足 ATT 及国内《个人信息保护法》双重合规要求。<strong>可借鉴思路</strong>：将 FTTE 子集参数广播机制引入"本地 LoRA 微调 + 仅上传 gradient mask"方案，联邦 CTR 训练通信成本可降低 69%；建议等待 WWDC（6/8）Apple Private Compute 进展后再决定是否结合 Core AI 立项，届时两者的整合点会更清晰。</p>
+<hr />
+<h2>2. 【arXiv 2604.18655：Multi-LoRA 一模多任务端侧部署——Galaxy S24/S25 实测 6× 延迟降低，DS2D 无 draft 模型推测解码】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/3 · S=9 · P1 · 价值类型：成本优化 / 新能力探索</li>
+<li><strong>来源</strong>：arXiv | <a href="https://arxiv.org/abs/2604.18655">Unlocking the Edge deployment and ondevice acceleration of multi-LoRA enabled one-for-all foundational LLM</a> | 2026-04-20</li>
+</ul>
+<p><strong>内容总结（~130 字）</strong>：
+基于 LLaMA 的多语言基础模型端侧部署框架，核心是在单一冻结推理图上动态加载多个应用特定 LoRA adapter，无需重编译或额外内存开销即可完成任务切换。两项关键创新：① Multi-Stream Decoding——在单次前向传播中并行生成多种风格变体（正式/礼貌/活泼），相比顺序生成延迟降低 6×；② Dynamic Self-Speculative Decoding（DS2D）——树状结构预测未来 token，无需独立 draft 模型，避免额外内存开销。硬件平台：Samsung Galaxy S24（Qualcomm SM8650）和 Galaxy S25（SM8750），均为旗舰级量产设备。工程细节：推理图一次编译，多 LoRA 作为运行时输入，LoRA 数量对延迟影响可控。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告 SDK 中用"单基础端侧模型 + 多场景 LoRA（CTR 预估 / 素材风格理解 / 意图分类）"代替维护多个独立模型，显著降低端侧内存占用与模型管理成本。<strong>可直接应用</strong>：Multi-Stream Decoding 可用于广告创意同时生成多种风格文案变体（不同品类调性），DS2D 免 draft 模型特性尤其适合中端机型内存受限场景；建议基于 Galaxy S24 测试平台复现，评估广告 LoRA 迁移可行性。</p>
+<hr />
+<h2>3. 【面壁智能 × 瑞芯微：MiniCPM-o 4.5（9B 全模态）进入智能座舱 AI Box 量产——端侧全双工实时音视频交互工程落地】</h2>
+<ul>
+<li><strong>评分</strong>：A/2 · I/3 · S=7 · P2 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：新浪科技 / 面壁智能官方 | <a href="https://finance.sina.com.cn/tech/roll/2026-04-24/doc-inhvqwea4749037.shtml">面壁智能 SuperMate 升级：智能座舱走向端侧 Agent</a> | 2026-04-24</li>
+</ul>
+<p><strong>内容总结（~120 字）</strong>：
+面壁智能与瑞芯微于 4 月 26 日签署战略合作协议，基于 MiniCPM-o 4.5 联合研发智能座舱 AI Box 产品。MiniCPM-o 4.5：9B 参数、视觉+音频+语言三流毫秒级时间对齐，全双工实时音视频交互（无需等待对方发言结束），业界首个"即时自由对话"多模态模型。RK3588 NPU 支持本地推理，离线可用。工程参数：RTX 5070 可实时运行，Hugging Face 已开源，下载量超 25 万次（2026-04）。产品方向：SuperMate AI Box 覆盖车载助手、驾驶状态感知、座舱娱乐交互三类场景。从语音助手到端侧 Agent 的形态转变已量产落地。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们用 MiniCPM-o 4.5 的三流毫秒级对齐架构参考，为短视频广告素材理解设计"视频帧+BGM+画外音联合特征"端侧方案，提升多模态广告质量评估精度。<strong>暂不适用（主链路）</strong>：座舱场景与移动广告差异较大；但 9B 全模态模型在消费级 NPU 上量产的工程路径，对广告端侧素材理解模块的模型规模选择具有参考价值——9B 已进入量产区间。</p>
+<hr />
+<h2>4. 【MediaTek Dimensity 9600：2nm N2P + 双 NPU + LPDDR6 + ARM Neural Shader Scheduler GPU-NPU 协同——Q3 2026 旗舰 SoC 量产】</h2>
+<ul>
+<li><strong>评分</strong>：A/2 · I/3 · S=7 · P2 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：WCCFTech | <a href="https://wccftech.com/roundup/mediatek-dimensity-9600-chips-launch-price-architecture-and-specifications-here-is-everything-you-need-to-know/">MediaTek Dimensity 9600 Specifications Roundup</a> | 2026-04</li>
+</ul>
+<p><strong>内容总结（~110 字）</strong>：
+MediaTek 下一代旗舰 SoC Dimensity 9600 规格持续明确：TSMC N2P（2nm）工艺、双 prime core CPU 架构、LPDDR6 内存、UFS 5.0 存储，预计 Q3 2026 发布。NPU：双 NPU 分层推理架构，OpenAI AI 手机已将其定制为搭载该 SoC 双 NPU 版本。ARM 下一代 GPU 引入 Neural Shader Scheduler（NSS），动态在 GPU 与 NPU 之间分配推理任务（运动估计 / 超分辨率 / 帧重建），减少 GPU stall 并降低总功耗。现有 Dimensity 9500 CIM 存算一体 NPU 在始终在线场景已实现省电 42%、端侧文本推理性能提升约 100%，9600 将进一步提升。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在 Dimensity 9600 设备上同时运行广告 SDK 端侧推理与广告素材超分辨率增强，NSS 自动调度避免 GPU-NPU 资源争抢，有望实现"推理+渲染"零额外延迟损耗。<strong>可借鉴思路</strong>：在广告 SDK 设备能力检测模块中提前规划 Dimensity 9600 适配；Q4 2026 前装设备上市后，该 SoC 将成为 Android 高端用户主力芯片。</p>
+<hr />
+<h3>其他观察</h3>
+<p>本周日新鲜资讯有限，主要以近期未发酵的技术内容补仓。两条核心信号：MIT FTTE 是近年联邦学习在端侧训练工程化程度最高的工作之一，直接解锁了隐私合规约束下的端侧 CTR 本地更新路径；Multi-LoRA 一推理图多 LoRA 运行时框架在旗舰量产设备上验证 6× 延迟降低，意味着广告 SDK 多场景复用端侧推理的架构成本已降至可接受区间。此外，9B 全模态模型（MiniCPM-o 4.5）进入座舱量产验证，标志着该参数规模在端侧已具备工程可行性——对广告素材理解模块的模型规模选型有直接参考价值。</p>
+<h3>近期关注</h3>
+<ul>
+<li><strong>明日（5/12）</strong>：The Android Show: I/O Edition 直播（10:00 AM PT）——Android 17 + Gemini AI 深度集成预热，重点关注 Android AI Core 开放 API 的最新开发者文档信号</li>
+<li><strong>5/13-14</strong>：Create 2026 百度 AI 开发者大会——文心 5.1 端侧蒸馏细节及"Once-For-All"弹性训练实现是否开源值得重点关注</li>
+<li><strong>5/19</strong>：Google I/O 2026——Android AI Core 第三方 API 正式文档 + Firebase agent-native 平台（Antigravity 工具），端侧广告 SDK 技术选型关键节点</li>
+<li><strong>6/8-12</strong>：WWDC 2026——Apple Core AI 框架正式发布，iOS 端侧推理栈代际切换，FTTE + Core AI 整合可行性届时评估</li>
+</ul>
+<hr />
+<p><em>数据截止：2026-05-11 | 今日为周日，内容以延迟发酵技术动态为主 | 已排除近期已报道内容（OpenAI Ads Manager、Google I/O Android AI Core、LiteRT NPU双路量产、Apple WWDC Core AI、国标 GB/Z 177—2026、百度文心5.1、The Android Show 5/12预告、EdgeClaw 面壁智能×OpenBMB、GPR arXiv 2511.10138、OneRanker arXiv 2603.02999、Gemini Nano 4 AICore DP、iOS 27 Extensions、TencentGR-1M/10M等）</em></p>
+    </article>
+  </div>
+</body>
+</html>
