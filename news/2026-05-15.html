@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端智能日报 2026-05-15</title>
+  <style>
+:root{
+  --bg:#f4faf8;
+  --surface:#ffffff;
+  --surface-soft:#f8fcfb;
+  --text:#1f2f2b;
+  --muted:#5e726b;
+  --accent:#0f766e;
+  --accent-soft:#dcf2ee;
+  --border:#d8e8e2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #e9f7f2 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, #e5f4ef 0%, transparent 28%),
+    var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.8;
+}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px 56px}
+.top{
+  margin-bottom:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+}
+.brand{
+  margin:0;
+  font-size:14px;
+  letter-spacing:.08em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.back{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px 28px 20px;
+  box-shadow:0 10px 30px rgba(15,118,110,.08);
+}
+h1,h2,h3{line-height:1.35;margin:1.1em 0 .45em}
+h1{font-size:2rem;margin-top:.15em}
+h2{font-size:1.32rem}
+h3{font-size:1.08rem}
+p,li{font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+blockquote{
+  margin:1rem 0;
+  padding:.72rem .95rem;
+  background:var(--surface-soft);
+  border-left:4px solid var(--accent);
+  color:#28433d;
+  border-radius:8px;
+}
+hr{
+  border:none;
+  border-top:1px dashed var(--border);
+  margin:1.3rem 0;
+}
+code{
+  background:#eef7f5;
+  border:1px solid #d7e9e4;
+  color:#1f4f49;
+  border-radius:6px;
+  padding:.14em .42em;
+  font-size:.92em;
+}
+pre{
+  background:#0f1f1d;
+  color:#e9f4f2;
+  border-radius:12px;
+  overflow:auto;
+  padding:14px;
+}
+pre code{
+  background:transparent;
+  border:none;
+  color:inherit;
+  padding:0;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  overflow:hidden;
+  border-radius:12px;
+}
+th,td{
+  border:1px solid var(--border);
+  padding:.6rem .7rem;
+  text-align:left;
+  vertical-align:top;
+}
+th{background:#edf8f5}
+.footer{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:.88rem;
+}
+.list{
+  list-style:none;
+  margin:1rem 0 0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.list a.item{
+  display:block;
+  padding:14px 15px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-soft);
+  transition:.15s ease;
+}
+.item-title{
+  display:block;
+  font-weight:700;
+  margin-top:2px;
+}
+.focus{
+  display:block;
+  margin-top:8px;
+  font-size:.92rem;
+  color:#37524c;
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.list a.item:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(15,118,110,.09);
+  text-decoration:none;
+}
+.date{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  margin-bottom:2px;
+}
+@media (max-width:700px){
+  .wrap{padding:20px 12px 40px}
+  .card{padding:20px 16px 16px;border-radius:14px}
+  h1{font-size:1.62rem}
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <p class="brand">Edge AI Daily</p>
+      <a class="back" href="../index.html">← 返回目录</a>
+    </div>
+    <article class="card">
+      <h1>端智能日报 2026-05-15</h1>
+<blockquote>
+<p><strong>本期聚焦</strong>：Android Contextual Suggestions 正式推送 Pixel 10，首次将"端侧行为建模 → 系统级预测 API"向上层应用开放，完全不离设备的隐私架构使其成为后 ATT 时代最接近"OS 级意图信号"的广告特征来源；配合 Google Play for On-Device AI beta 的模型独立分发基础设施，端侧广告推理栈"采集端、分发端、推理端"三层架构在 Google I/O（5/19）前已逐步就位。</p>
+</blockquote>
+<hr />
+<h2>1. 【Android Contextual Suggestions 正式推送 Pixel 10：端侧行为建模首次以系统级 API 开放预测能力】</h2>
+<ul>
+<li><strong>评分</strong>：A/4 · I/4 · S=12 · P0 · 价值类型：新能力探索 / 用户体验</li>
+<li><strong>来源</strong>：9to5Google | <a href="https://9to5google.com/2026/05/13/android-contextual-suggestions/">Android rolling out AI-powered Contextual suggestions</a> | 2026-05-13；GSMArena | <a href="https://www.gsmarena.com/androids_contextual_suggestions_rolling_out_to_pixel_10_series-news-72826.php">Android's Contextual suggestions rolling out to Pixel 10 series</a> | 2026-05-13</li>
+</ul>
+<p><strong>内容总结（~140 字）</strong>：
+Google 通过 Google Play Services v26.18 向 Pixel 10 系列（含 Pixel 10a）正式推送 Android Contextual Suggestions，运行 Android 16。<strong>技术架构</strong>：端侧 AI 持续学习"设备活动 + 位置数据"，构建本地行为模式，预测用户下一步最可能的操作（示例：每周六习惯将足球赛投屏至客厅电视，提前推送 Cast 建议）。<strong>隐私边界</strong>：原始数据永不离设备，不上传 Google 服务器，不与第三方共享；应用只能获取结构化"预测结果"，无法访问底层数据流。用户可随时关闭或清除所有存储数据。<strong>平台路线图</strong>：首批 Pixel 10，后续扩展至更多 Android 设备；下周 I/O（5/19）预期公布第三方开发者 API 细节。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在支持 Contextual Suggestions 的 Android 设备上获取系统级用户意图预测信号，无需广告 SDK 自行采集行为数据，直接对接 Play Services 预测 API 作为 CTR 特征输入，且完全符合 Android 隐私合规要求。<strong>当前关键不确定性</strong>：API 是否向第三方广告场景开放——下周 Google I/O（5/19）是最终验证节点。<strong>可直接应用（待 API 开放）</strong>：CTR 特征工程加入"系统行为预测特征"维度，信号质量预计远超传统埋点；若 API 不开放，参考其隐私架构设计广告 SDK 自有端侧行为建模模块。</p>
+<hr />
+<h2>2. 【Google Play for On-Device AI (beta)：AI 模型独立分发基础设施就绪，广告 SDK 端侧模型可实现发版解耦】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/4 · S=10 · P1 · 价值类型：成本优化 / 新能力探索</li>
+<li><strong>来源</strong>：Android Developers | <a href="https://developer.android.com/google/play/on-device-ai">Play for On-device AI (beta)</a> | 2026-05-01（文档最新更新，Google I/O 2026 正式宣布预期）</li>
+</ul>
+<p><strong>内容总结（~140 字）</strong>：
+Google 将 Play 的 App Bundle 分发基础设施正式延伸至 AI 模型分发，推出 Play for On-Device AI (beta)。核心能力：① 开发者将自定义 ML 模型打包为独立 <strong>AI Pack</strong>，与应用代码解耦发布；② 三种分发模式：<strong>install-time</strong>（随应用安装）、<strong>fast-follow</strong>（安装后立即后台下载）、<strong>on-demand</strong>（按需拉取）；③ 支持按设备 API Level / RAM / SoC 类型<strong>差异化投放</strong>，旗舰机推送大模型、低端机推送轻量版；④ 完全兼容 <strong>LiteRT</strong>（TFLite）和 <strong>MediaPipe</strong>；⑤ 支持 Play 现有 alpha/beta 测试轨道和分阶段发布，天然具备模型 A/B 测试能力。文档于 5 月 1 日完成最新版本更新，正式发布预计随 I/O（5/19）落地。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们将广告 SDK 的端侧 CTR/意图模型作为独立 AI Pack 分发，绕开应用审核周期（通常 5-7 天），模型更新频率从"随版本"升级为"周级或月级独立迭代"，同时借助差异化投放自动覆盖旗舰机大模型/低端机轻量模型双路径。<strong>可直接应用（I/O 正式发布后）</strong>：广告 SDK 端侧推理模块（意图识别 + 轻量 CTR + 素材相关性评分）均适合打包为 AI Pack；建议 I/O（5/19）后评估完整 API 规格，作为端侧模型分发架构选型的优先方案。</p>
+<hr />
+<h2>3. 【MiniCPM-V 4.6 发布：1.3B 端侧多模态模型超越 Gemma4-E2B，iOS/Android/HarmonyOS 全开源部署】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/3 · S=9 · P1 · 价值类型：新能力探索 / 成本优化</li>
+<li><strong>来源</strong>：OpenBMB | <a href="https://huggingface.co/openbmb/MiniCPM-V-4.6">MiniCPM-V 4.6 on Hugging Face</a> | 2026-05-11；HyperAI | <a href="https://hyper.ai/en/news/51359">MiniCPM-V-4.6 部署教程</a> | 2026-05-11</li>
+</ul>
+<p><strong>内容总结（~140 字）</strong>：
+OpenBMB 于 5 月 11 日发布 MiniCPM-V 4.6，架构为 <strong>SigLIP2-400M 视觉编码器 + Qwen3.5-0.8B LLM</strong>，总参数 <strong>1.3B</strong>。关键指标：① 视觉编码 FLOPs 较前代降低 <strong>&gt;50%</strong>（LLaVA-UHD v4 技术）；② Artificial Analysis Intelligence Index 得分 <strong>13</strong>，超越 Gemma4-E2B-it（得分 10）和 Qwen3.5-0.8B-Thinking（得分 11），且 Token 成本分别低 19× 和 43×；③ Token 吞吐量约为 Qwen3.5-0.8B 的 <strong>~1.5×</strong>。功能覆盖：单图/多图/视频理解、OCR、多轮多模态对话。<strong>三端全开源</strong>：iOS、Android、HarmonyOS 适配代码全部公开；同时支持 vLLM/SGLang/llama.cpp/Ollama 推理框架及 SWIFT/LLaMA-Factory 微调生态，端到端部署门槛极低。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告素材理解场景中以 MiniCPM-V 4.6 实现端侧"图文创意解析 + 用户视觉兴趣识别"，无需调用云端多模态 API，延迟降至毫秒级，同时规避素材内容上传的隐私合规风险。<strong>可借鉴思路</strong>：其"1.3B 超越 2B 级模型"的架构效率结论与 arXiv 2505.15030 量化研究（已报道）呼应——广告端侧多模态模型选型应优先关注每参数效率而非绝对参数量；建议以 Pixel 9/10 或 iPhone 15+ 为目标设备，原型验证"创意自动审核"和"用户视觉兴趣实时分类"两个场景。</p>
+<hr />
+<h3>其他观察</h3>
+<p>今日三条信号共同描绘了一幅"端侧广告推理栈三层架构就位"的图景：① <strong>采集端</strong>——Android Contextual Suggestions 以 OS 级行为建模替代 SDK 埋点，隐私合规的高质量意图信号首次从系统层向应用层开放；② <strong>分发端</strong>——Play for On-Device AI 将模型更新与 App 审核解耦，广告端侧模型迭代频率可大幅提升；③ <strong>推理端</strong>——MiniCPM-V 4.6 以 1.3B 多模态模型实现三端量产级部署，填补广告"图文创意理解"的端侧能力缺口。三层架构同步成熟，距"完整端侧广告推理链路落地"的距离正在以月为单位收窄。</p>
+<h3>近期关注</h3>
+<ul>
+<li><strong>5/19-20</strong>：<strong>Google I/O 2026</strong>——Contextual Suggestions 第三方 API 权限确认、Play for On-Device AI 正式发布规格、LiteRT/AICore 开发者 API 完整细节。<strong>是本轮端侧广告技术选型的最终决策节点，建议届时复盘本周三条新闻的落地可行性</strong>。</li>
+<li><strong>6/8-12</strong>：Apple WWDC 2026——Core AI 框架正式发布（iOS 27 端侧 LLM/扩散模型开发者 API），Apple Maps 广告技术规格完整披露。</li>
+<li><strong>6 月底</strong>：高通新一代 CPU/推理方案公告（Amon 5/9-10 预告）。</li>
+</ul>
+<p><em>数据截止：2026-05-15 | 已排除近期已报道内容（Apple Maps 广告 + Apple Ads 扩张团队、Google LiteRT NPU 量产案例、LiteRT-LM 开源 + Gemma 4 E2B、百度 Create 2026 / DAA、Meta ARM、Gemini Intelligence / Android 17、arXiv 2505.15030 LLM 量化、ExecuTorch v1.2、Meta GEM、arXiv 2604.07360 Adaptive Edge AI、Samsung Galaxy S26 PDE、Qualcomm Amon 专访、OpenAI AI 手机 / MediaTek Dimensity 9600、LFM2.5-VL 等）</em></p>
+    </article>
+  </div>
+</body>
+</html>
