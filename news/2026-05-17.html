@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端智能日报 2026-05-17</title>
+  <style>
+:root{
+  --bg:#f4faf8;
+  --surface:#ffffff;
+  --surface-soft:#f8fcfb;
+  --text:#1f2f2b;
+  --muted:#5e726b;
+  --accent:#0f766e;
+  --accent-soft:#dcf2ee;
+  --border:#d8e8e2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #e9f7f2 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, #e5f4ef 0%, transparent 28%),
+    var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.8;
+}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px 56px}
+.top{
+  margin-bottom:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+}
+.brand{
+  margin:0;
+  font-size:14px;
+  letter-spacing:.08em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.back{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px 28px 20px;
+  box-shadow:0 10px 30px rgba(15,118,110,.08);
+}
+h1,h2,h3{line-height:1.35;margin:1.1em 0 .45em}
+h1{font-size:2rem;margin-top:.15em}
+h2{font-size:1.32rem}
+h3{font-size:1.08rem}
+p,li{font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+blockquote{
+  margin:1rem 0;
+  padding:.72rem .95rem;
+  background:var(--surface-soft);
+  border-left:4px solid var(--accent);
+  color:#28433d;
+  border-radius:8px;
+}
+hr{
+  border:none;
+  border-top:1px dashed var(--border);
+  margin:1.3rem 0;
+}
+code{
+  background:#eef7f5;
+  border:1px solid #d7e9e4;
+  color:#1f4f49;
+  border-radius:6px;
+  padding:.14em .42em;
+  font-size:.92em;
+}
+pre{
+  background:#0f1f1d;
+  color:#e9f4f2;
+  border-radius:12px;
+  overflow:auto;
+  padding:14px;
+}
+pre code{
+  background:transparent;
+  border:none;
+  color:inherit;
+  padding:0;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  overflow:hidden;
+  border-radius:12px;
+}
+th,td{
+  border:1px solid var(--border);
+  padding:.6rem .7rem;
+  text-align:left;
+  vertical-align:top;
+}
+th{background:#edf8f5}
+.footer{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:.88rem;
+}
+.list{
+  list-style:none;
+  margin:1rem 0 0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.list a.item{
+  display:block;
+  padding:14px 15px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-soft);
+  transition:.15s ease;
+}
+.item-title{
+  display:block;
+  font-weight:700;
+  margin-top:2px;
+}
+.focus{
+  display:block;
+  margin-top:8px;
+  font-size:.92rem;
+  color:#37524c;
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.list a.item:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(15,118,110,.09);
+  text-decoration:none;
+}
+.date{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  margin-bottom:2px;
+}
+@media (max-width:700px){
+  .wrap{padding:20px 12px 40px}
+  .card{padding:20px 16px 16px;border-radius:14px}
+  h1{font-size:1.62rem}
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <p class="brand">Edge AI Daily</p>
+      <a class="back" href="../index.html">← 返回目录</a>
+    </div>
+    <article class="card">
+      <h1>端智能日报 2026-05-17</h1>
+<blockquote>
+<p><strong>本期聚焦</strong>：Google I/O 倒计时2天，端侧广告×AI生态的两条主线正在加速收敛——Gemini App 广告路线图曝光（Personal Intelligence 以 Gmail/YouTube/Photos 数据构建跨平台定向底座），同期 Android 17 以 ModelManager API + Firebase Hybrid Inference SDK 正式打通第三方广告 SDK 的端侧 LLM 零成本接入路径。两者叠加，Google 在 Apple WWDC（6/8）前完成了"广告主定向能力"与"开发者端侧推理基础设施"的双线预布局。</p>
+</blockquote>
+<hr />
+<h2>1. 【Google Gemini App 广告路线图曝光：Personal Intelligence 构建 Gmail/YouTube 定向底座，AI Mode 广告先行→ Gemini App 跟进】【延迟发酵】</h2>
+<ul>
+<li><strong>评分</strong>：A/5 · I/4 · S=14 · P0 · 价值类型：新能力探索 / 收入提升</li>
+<li><strong>来源</strong>：Adweek | <a href="https://www.adweek.com/media/google-gemini-ads-2026/">EXCLUSIVE: Google Tells Advertisers It'll Bring Ads to Gemini in 2026</a> | 2026-04；gHacks | <a href="https://www.ghacks.net/2026/05/04/google-considers-ads-in-gemini-app-after-testing-ad-format-in-ai-mode-first/">Google Considers Ads in Gemini App After Testing Ad Format in AI Mode First</a> | 2026-05-04；PPC Land | <a href="https://ppc.land/google-denies-gemini-ads-despite-advertiser-briefings-on-2026-rollout/">Google denies Gemini ads despite advertiser briefings</a> | 2026-05</li>
+</ul>
+<p><strong>内容总结（~140 字）</strong>：
+Adweek 独家曝光 Google 已向广告主私下简报 Gemini App 广告计划；Alphabet CBO Philipp Schindler 在 Q1 2026 财报电话会证实正在探索，但 VP Dan Taylor 随后在 X 公开否认。gHacks 5月4日确认 Google 正在测试 <strong>AI Mode（对话式搜索）广告格式</strong>，再逐步迁移至 Gemini App 的分阶段路线。<strong>定向底座</strong>：<strong>Personal Intelligence</strong>（2026年1月 beta 上线）连接 Gmail、Google Photos、YouTube 历史和 Search 记录，为 Gemini 生成高度个性化响应，同时构建了"第一方跨平台意图信号集"。<strong>广告机制</strong>：复用 AI Mode 验证过的"回答后附带"模式（不干扰回答本体），情境定向而非直接出售用户数据给广告主。<strong>财务压力</strong>：Google 广告营收占 Alphabet 总营收 77%，ChatGPT Ads Custom Audiences（参见5/16报道）已是直接竞争威胁。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在 Google Gemini 对话场景中利用 Personal Intelligence 驱动的跨平台意图信号（Gmail 内容 + YouTube 历史）精准触达"正在讨论音乐订阅/娱乐内容"的高意图用户，补充现有搜索广告意图捕获的盲区。<strong>可直接应用</strong>：① 立即申请 Google AI Mode 广告 beta，验证对话式广告在音频内容场景的 CTR 表现基线；② 关注 Personal Intelligence 意图信号结构（对比 ChatGPT Ads Custom Audiences），评估两大平台第一方数据定向的互操作性；③ Google I/O 5/19 大概率公布正式 API 规格，届时 48 小时内完成竞品对比分析。<strong>核心风险</strong>：Google 官方公开否认广告计划，实际时间表不确定；但 Personal Intelligence 构建的跨应用数据基础设施本身已不可逆，定向能力落地只是时间问题。</p>
+<hr />
+<h2>2. 【Android 17 Gemini Nano ModelManager API + Firebase Hybrid Inference：第三方广告 SDK 端侧 LLM 推理成本归零路径正式开放】【延迟发酵】</h2>
+<ul>
+<li><strong>评分</strong>：A/4 · I/4 · S=12 · P0 · 价值类型：成本优化 / 新能力探索</li>
+<li><strong>来源</strong>：Android Developers Blog | <a href="https://android-developers.googleblog.com/2026/04/Hybrid-inference-and-new-AI-models-are-coming-to-Android.html">Experimental hybrid inference and new Gemini models for Android</a> | 2026-04；Firebase Docs | <a href="https://firebase.google.com/docs/ai-logic/hybrid-on-device-inference">Build hybrid experiences with on-device and cloud-hosted models</a> | 2026-05；Dev.to | <a href="https://dev.to/bolgercarol/on-device-or-cloud-building-hybrid-ai-inference-into-your-android-app-with-firebase-ai-logic-3p1i">On-device or cloud? Building hybrid AI inference</a> | 2026-05</li>
+</ul>
+<p><strong>内容总结（~140 字）</strong>：
+Android 17 通过 <strong>ModelManager API</strong> 正式向第三方开发者开放 Gemini Nano 端侧推理（此前仅 Google 自有 App 可用），单行代码 <code>ModelManager.getModel(ModelType.GEMINI_NANO)</code> 即可返回本地推理 context，支持文本生成、<strong>分类、embedding 三种模式</strong>，完全离线、零 API 调用成本。同期 Google 推出 <strong>Firebase AI Logic Hybrid Inference SDK</strong>：统一 API 接口，自动路由——设备能力足够时走 Gemini Nano 本地推理（ML Kit Prompt API），否则无缝 fallback 至云端 Gemini 模型，无需维护两套代码。<strong>性能参数</strong>：Gemini Nano 4 Fast（基于 Gemma 4 E2B）在 AICore 系统服务中运行，利用 Hexagon NPU / Tensor G4 加速；实测推理速度约为前代 2x（官方声称 4x），分类任务延迟 &lt;20ms，替代云端 LLM 节省 $0.02–0.05/次 API 成本；覆盖 Pixel 8+、Galaxy S25+ 起步，Android 17 正式版预计 Q3 2026 推送。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告 SDK Android 模块内以零 API 成本实现端侧"广告意图分类"和"素材语义 embedding"——按现有云端 LLM 调用规模，ModelManager API 将这两类推理任务的边际成本降至0，直接决定端侧广告 AI 功能规模化的经济可行性。<strong>可直接应用</strong>（广告 SDK Android 模块，接入复杂度低）：① <strong>意图分类</strong>：<code>model.generateContent("classify ad intent: [user_context]")</code> 替换现有云端 API 调用；② <strong>素材语义 embedding</strong>：本地生成 embedding 后与广告库做相似度匹配，无需网络往返；③ <strong>Firebase Hybrid 模式作为灰度策略</strong>——旗舰机 on-device，低端机 fallback 云端，一套代码覆盖全机型，0改造成本完成分级部署。<strong>限制</strong>：仅 Android 17 + 支持 AICore 的设备（2026 Q4 旗舰设备覆盖率预计 40%+）；embedding 维度与现有广告特征工程的对齐需要验证实验。</p>
+<hr />
+<h2>3. 【CNBC: Google vs Apple 端侧 AI 竞速白热化——I/O 2天前，两大平台"端侧推理开发者 OS"定义权博弈格局】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/4 · S=10 · P1 · 价值类型：趋势研判 / 新能力探索</li>
+<li><strong>来源</strong>：CNBC | <a href="https://www.cnbc.com/2026/05/12/google-races-put-gemini-at-center-of-android-before-apples-ai-reboot.html">Google races to put Gemini at the center of Android before Apple's AI reboot</a> | 2026-05-12；Eastern Herald | <a href="https://easternherald.com/2026/05/15/google-gemini-android-ai-widgets-gemini-update-2026/">Gemini Upgrade Transforms Android With AI Widgets and Generative UI Revolution</a> | 2026-05-15；Mobile Marketing Reads | <a href="https://www.mobilemarketingreads.com/google-expands-gemini-across-android-as-os-shifts-toward-ai-driven-intelligence-system/">Google expands Gemini across Android as OS shifts toward AI-driven Intelligence System</a> | 2026-05</li>
+</ul>
+<p><strong>内容总结（~130 字）</strong>：
+CNBC 5月12日系统梳理 Google vs Apple 端侧 AI 竞争格局：<strong>Google 侧</strong>：Gemini Intelligence 作为系统级智能层（非 App 层）替代传统 OS 范式，AppFunctions Jetpack API 开放第三方接入 Gemini 智能体（KakaoTalk、Uber、DoorDash 私测中），Gemini Nano API 开放第三方开发者，Create My Widget 生成式 UI，夏季率先覆盖最新 Samsung Galaxy + Google Pixel；<strong>Apple 侧（对照组）</strong>：iOS 27 Core AI 替代 Core ML（6月8日 WWDC），Siri 2.0 LLM 重构，Siri Extensions 开放 Claude/Gemini 协同多步任务；<strong>共同时间窗口</strong>：两家均在 2026 Q2-Q3 完成端侧推理 OS 框架切换，AppFunctions（Android）vs Core AI Extensions（iOS）构成广告 SDK 接入端侧智能体 OS 的两条平行路径。<strong>硬件竞争</strong>：Google Tensor G4 / Hexagon NPU vs Apple Neural Engine（A18 Pro），双方均争夺"对话式 AI 推理的端侧首选平台"定位。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在 Google I/O（5/19）和 WWDC（6/8）两个节点后立即启动广告 SDK 双平台 AI 适配评估，避免在单一平台 API 上过度投入后被对方形成竞争优势。<strong>可借鉴思路</strong>：在两个节点后建立"平台 AI API 对比矩阵"——评估维度：端侧推理延迟（分类任务 / embedding 任务）、覆盖设备比例（2026 Q4）、隐私限制（第三方 SDK 可获取的信号类型）、开发接入成本（SDK 行数/兼容性），用矩阵结果指导 2026 Q3 SDK 双平台 AI 模块开发的资源分配决策。<strong>当前判断</strong>：Android ModelManager API 已开放（可立即验证），iOS Core AI 等 6/8 确认 API 规格后跟进；综合覆盖率和开发成本，Android 端优先级更高。</p>
+<hr />
+<h3>其他观察</h3>
+<p>今日3条信号共同指向 Google I/O 前夜的系统性布局加速：广告主侧（Personal Intelligence 定向底座）+ 开发者侧（ModelManager API 零成本接入）+ 平台侧（Gemini Intelligence OS 层）三个维度同步推进，而 Apple 以 WWDC Core AI 为压力点形成的竞争时钟正在推动 Google 加快开发者生态收编节奏。今日未找到符合时间窗口的高质量中文端侧广告/推理落地案例（主动补搜了"端侧推理""端云协同""端智能"等关键词，近期中文覆盖集中在 4月北京车展相关的商汤绝影 Sage 等汽车场景，与移动广告核心场景相关度较低）。</p>
+<h3>近期关注</h3>
+<ul>
+<li><strong>5/19-20（后天）</strong>：<strong>Google I/O 2026 主题演讲</strong>——重点观察：① Gemini Nano ModelManager API 是否从实验性升至正式稳定 API；② AppFunctions 私测范围扩展及广告类 App 接入条件；③ Android 17 正式发布时间线；④ Gemini 4 云端模型规格对端云协同 Hybrid Inference 路由策略的影响；⑤ 是否正式宣布 Gemini App 广告计划。<strong>建议 5/19 主题演讲结束后2小时内启动技术详情收集，5/20 写一份 Google I/O 端侧广告专项影响评估。</strong></li>
+<li><strong>6/8-12</strong>：<strong>Apple WWDC 2026</strong>——Core AI 是否开放第三方模型注册、广告 SDK 可调用的意图信号类型、Private Cloud Compute 访问策略是核心决策节点（参见5/16报道详细分析）。</li>
+</ul>
+<p><em>数据截止：2026-05-17 | 已排除近期已报道内容（Android Contextual Suggestions、Google Play for On-Device AI、MiniCPM-V 4.6、Apple Maps广告、Google LiteRT NPU量产案例、LiteRT-LM + Gemma 4 E2B、百度 Create 2026 / DAA、Meta ARM、Gemini Intelligence / Android 17消费者侧、arXiv 2505.15030 LLM量化、OpenAI AI手机 / MediaTek Dimensity 9600、OpenAI ChatGPT Ads Manager / Custom Audiences、Apple Core AI框架重构、Qualcomm × CXMT 3D DRAM NPU、Gemini Nano 4 AICore DP、ExecuTorch v1.2、商汤绝影 Sage / 北京车展等）</em></p>
+    </article>
+  </div>
+</body>
+</html>
