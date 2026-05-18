@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端智能日报 2026-05-18</title>
+  <style>
+:root{
+  --bg:#f4faf8;
+  --surface:#ffffff;
+  --surface-soft:#f8fcfb;
+  --text:#1f2f2b;
+  --muted:#5e726b;
+  --accent:#0f766e;
+  --accent-soft:#dcf2ee;
+  --border:#d8e8e2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #e9f7f2 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, #e5f4ef 0%, transparent 28%),
+    var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.8;
+}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px 56px}
+.top{
+  margin-bottom:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+}
+.brand{
+  margin:0;
+  font-size:14px;
+  letter-spacing:.08em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.back{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px 28px 20px;
+  box-shadow:0 10px 30px rgba(15,118,110,.08);
+}
+h1,h2,h3{line-height:1.35;margin:1.1em 0 .45em}
+h1{font-size:2rem;margin-top:.15em}
+h2{font-size:1.32rem}
+h3{font-size:1.08rem}
+p,li{font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+blockquote{
+  margin:1rem 0;
+  padding:.72rem .95rem;
+  background:var(--surface-soft);
+  border-left:4px solid var(--accent);
+  color:#28433d;
+  border-radius:8px;
+}
+hr{
+  border:none;
+  border-top:1px dashed var(--border);
+  margin:1.3rem 0;
+}
+code{
+  background:#eef7f5;
+  border:1px solid #d7e9e4;
+  color:#1f4f49;
+  border-radius:6px;
+  padding:.14em .42em;
+  font-size:.92em;
+}
+pre{
+  background:#0f1f1d;
+  color:#e9f4f2;
+  border-radius:12px;
+  overflow:auto;
+  padding:14px;
+}
+pre code{
+  background:transparent;
+  border:none;
+  color:inherit;
+  padding:0;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  overflow:hidden;
+  border-radius:12px;
+}
+th,td{
+  border:1px solid var(--border);
+  padding:.6rem .7rem;
+  text-align:left;
+  vertical-align:top;
+}
+th{background:#edf8f5}
+.footer{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:.88rem;
+}
+.list{
+  list-style:none;
+  margin:1rem 0 0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.list a.item{
+  display:block;
+  padding:14px 15px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-soft);
+  transition:.15s ease;
+}
+.item-title{
+  display:block;
+  font-weight:700;
+  margin-top:2px;
+}
+.focus{
+  display:block;
+  margin-top:8px;
+  font-size:.92rem;
+  color:#37524c;
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.list a.item:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(15,118,110,.09);
+  text-decoration:none;
+}
+.date{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  margin-bottom:2px;
+}
+@media (max-width:700px){
+  .wrap{padding:20px 12px 40px}
+  .card{padding:20px 16px 16px;border-radius:14px}
+  h1{font-size:1.62rem}
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <p class="brand">Edge AI Daily</p>
+      <a class="back" href="../index.html">← 返回目录</a>
+    </div>
+    <article class="card">
+      <h1>端智能日报 2026-05-18</h1>
+<blockquote>
+<p><strong>本期聚焦</strong>：Google I/O 2026 明日开幕（5/19），前夜两项开发者侧技术正式落地：① AppFunctions 将 Android 应用转化为"端侧 MCP Server"，广告 SDK 可首次将意图函数直接暴露给 Gemini Agent 本地调用；② AICore 隐私框架（Private Compute Core + Protected KVM）划定了端侧广告 AI 的数据合规红线——输入输出处理后不落盘、无直接网络访问。两项技术合力定义了"广告 SDK 参与 Gemini Agent 生态"的接入边界与合规路径。</p>
+</blockquote>
+<hr />
+<h2>1. 【Android AppFunctions："端侧 MCP Server" API 开放 Early Access，广告 SDK 可将用户意图函数直接暴露给 Gemini Agent】</h2>
+<ul>
+<li><strong>评分</strong>：A/4 · I/4 · S=12 · P0 · 价值类型：新能力探索 / 收入提升</li>
+<li><strong>来源</strong>：Android Developers | <a href="https://developer.android.com/ai/appfunctions">AppFunctions Overview</a> | Android Developers Blog | <a href="https://android-developers.googleblog.com/2026/05/the-android-show-developers-cut-2026.html">Building for the Intelligence System on Android</a> | 2026-05-13</li>
+</ul>
+<p><strong>内容总结（~140 字）</strong>：
+AppFunctions 是 Android 16+ 的官方平台 API + Jetpack 库，允许 App 将自身能力暴露为 Gemini Agent 可调用的"端侧工具"——本质上是把 App 变成<strong>在设备上运行的 MCP Server</strong>。四步调用链：① App 用 <code>@AppFunction</code> 注解声明函数；② Jetpack 库生成 XML schema 注册至 OS 函数注册表；③ Gemini Agent 通过 <code>AppFunctionManager</code> 发现可用函数；④ 持有 <code>EXECUTE_APP_FUNCTIONS</code> 权限的 Agent 本地调用函数，<strong>全程不经网络</strong>。已有 25 个 App 参与 Private Preview（KakaoTalk、Uber、DoorDash），Early Access Program 注册通道现已开放（Google 审核后邮件通知）。覆盖：Android 16+（约 Pixel 9 / Galaxy S25 及以上起步）；Gemini 集成仍在私测，无公开 ETA。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告 SDK 内将"用户当前意图信号获取"和"上下文相关广告触发"作为 AppFunction 暴露给 Gemini Agent，由 Agent 在用户完成跨 App 任务时主动调用广告 SDK 的推荐接口——实现<strong>广告由 Agent 主动分发而非用户被动浏览</strong>的新范式。<strong>可直接应用（Android 16+ 设备，短期接入复杂度低）</strong>：① 注册 AppFunctions EAP，以流媒体/音频 App 为主体暴露 <code>get_user_content_preference()</code>、<code>suggest_premium_upgrade()</code> 等函数；② 验证 Gemini Agent 在"播放音乐→推荐周边→触发广告"跨应用场景的 CTR 基线；③ 关注明日 Google I/O 是否宣布广告类 App 的接入白名单条件。<strong>限制</strong>：当前 Gemini 集成为私测，广告类 App 能否通过 EAP 审核需验证；数据访问受 EXECUTE_APP_FUNCTIONS 权限约束，不可越权读取用户数据。</p>
+<hr />
+<h2>2. 【Android Gemini Intelligence 安全隐私框架：AICore 输入输出不落盘 + Private Compute Core 划定端侧广告 AI 数据合规红线】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/4 · S=10 · P0 · 价值类型：用户体验 / 新能力探索</li>
+<li><strong>来源</strong>：Google Security Blog | <a href="https://blog.google/security/android-gemini-intelligence-security-privacy/">Android's Agentic Future: Building Gemini Intelligence on a Foundation of Security &amp; Privacy</a> | PrivacyGuides | <a href="https://www.privacyguides.org/news/2026/05/13/android-introduces-new-privacy-and-security-protections-with-a-focus-on-agentic-ai/">Android Introduces New Privacy and Security Protections</a> | 2026-05-13</li>
+</ul>
+<p><strong>内容总结（~135 字）</strong>：
+Google 发布 Gemini Intelligence 隐私安全框架，三大技术支柱：① <strong>AICore 数据隔离</strong>：每次推理请求独立处理，输入输出完成后立即清除，<strong>不存储任何推理记录</strong>；无直接网络访问，仅通过开源 Private Compute Services APK 间接访问互联网；② <strong>Private AI Compute</strong>：AICore 遵循 Private Compute Core 原则，restricted package binding 防止数据侧渠；③ <strong>Protected KVM</strong>：Agent 自动化任务时通过虚拟化隔离保护环境。用户侧新增：任务执行实时进度可见（"View progress"），屏幕顶部常驻通知 chip 不可隐藏；Android Privacy Dashboard 新增"过去 24 小时哪些 AI 助手触达了哪些 App"的审计视图。任务复杂度决定路由：简单+敏感任务走 Gemini Nano 本地，复杂任务走云端 Gemini。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在设计端侧广告 AI 特性时明确合规边界——AICore 不落盘、无直接网络的约束意味着<strong>端侧广告推断结果不能被第三方 SDK 直接读取</strong>，每次推理结果用完即销毁，建立"推断→展示→清除"的合规流程。<strong>可借鉴思路</strong>：① 对标 AICore 的隐私框架，在广告 SDK 的端侧推理模块中实现"请求-执行-清除"三段式，避免推理结果跨次请求累积；② Privacy Dashboard 的 AI 活动审计视图意味着用户可看到广告 AI 何时何地访问了哪些 App，需确保广告 SDK 的 Agent 调用链经得起审计；③ Nano（简单任务）vs 云端（复杂任务）路由策略可直接借鉴到广告系统的"端云协同推断分级"设计中。<strong>暂不适用</strong>：Protected KVM 目前面向系统级 Agent，第三方广告 SDK 暂无直接访问路径。</p>
+<hr />
+<h2>3. 【Google I/O 2026 明日开幕（5/19）：Gemini 4 + Android 17 + XR 眼镜——端侧广告 AI 的 2026 H2 路线图即将落锤】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/4 · S=10 · P1 · 价值类型：趋势研判 / 新能力探索</li>
+<li><strong>来源</strong>：Android Central | <a href="https://www.androidcentral.com/phones/live/google-i-o-2026-live-blog-android-17-android-xr-glasses-and-all-the-gemini-ai-news">Google I/O 2026 Live Blog</a> | Android Authority | <a href="https://www.androidauthority.com/what-to-expect-from-google-io-2026-3664979/">What to Expect from Google I/O 2026</a> | 2026-05-18</li>
+</ul>
+<p><strong>内容总结（~130 字）</strong>：
+Google I/O 2026 主题演讲明日（5/19，北京时间 01:00）开幕。已披露/高度可信预期：① <strong>Gemini 4</strong>：更快推理、更强多步推理，云端旗舰模型，为 Hybrid Inference 路由的"云侧节点"提供升级；② <strong>Android 17 正式版</strong>：ModelManager API（Gemini Nano 向第三方开放）和 AppFunctions 从实验性升至 stable，开发者可在 Production 中部署；③ <strong>Android XR 智能眼镜</strong>（三星合作），首款 Android XR 消费级 AR 眼镜实物曝光，搭载 Gemini Live；④ <strong>Googlebook</strong>：Google 定义的新笔记本品类，为 Gemini Intelligence 专属优化，与 Android 手机深度同步；⑤ <strong>AppFunctions GA 时间线</strong>：预期宣布面向广泛开发者开放的条件和时间节点。硬件：覆盖最新 Pixel 9a（刚发布）和 Samsung Galaxy S26（预计 Q3）。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在明日演讲后 2 小时内启动关键决策点快速评估：① ModelManager API 是否 stable（决定广告 SDK Android 模块端侧 LLM 接入的工程排期）；② AppFunctions GA 条件（决定广告 App 参与 Agent 分发生态的时间窗口）；③ Gemini 4 与 Hybrid Inference 路由的兼容性（影响云侧推理成本预测）。<strong>当前行动建议</strong>：明日主题演讲实时追踪（重点 Watch List：ModelManager stable API 文档、AppFunctions 广告类 App 白名单条件、Android 17 正式发布日期），5/20 午前输出"Google I/O 2026 端侧广告 AI 专项影响评估"。</p>
+<hr />
+<h2>4. 【百度文心5.1：超稀疏 MoE 训练成本降至业界 6%，Intel OpenVINO 支持端侧部署】</h2>
+<ul>
+<li><strong>评分</strong>：A/2 · I/3 · S=7 · P2 · 价值类型：成本优化</li>
+<li><strong>来源</strong>：量子位 | <a href="https://www.qbitai.com/2026/05/414496.html">百度文心5.1发布</a> | MBA智库早报 | <a href="https://news.mbalib.com/story/258688">百度文心5.1发布简报</a> | 2026-05-18</li>
+</ul>
+<p><strong>内容总结（~120 字）</strong>：
+百度发布文心大模型 5.1，采用<strong>超稀疏 MoE 架构</strong>，总参数量约 0.8T（文心 5.0 的 1/3，后者约 2.4T），激活参数降至约 36B，<strong>预训练成本仅为业界同规模模型的 6%</strong>。登上 LMArena 国内搜索排行榜第一。工程亮点：依托"多维弹性预训练"技术，在同等算力下可训练更大规模稀疏模型；Intel OpenVINO 支持文心端侧模型在<strong>酷睿 Ultra 平台</strong>（PC/AI PC 级别，非手机）上本地部署；同时支持模型搜索、知识蒸馏、量化压缩的一站式小型化服务平台。<strong>部署注意</strong>：当前端侧版本为 PC 级（Core Ultra），移动端部署规格未公布；云端版本为主力，serving 成本优势明显。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们评估文心5.1作为广告 AI 推理服务器侧模型的成本可行性——同规模训练成本仅业界 6% 意味着百度系广告业务有更大空间用低成本模型服务 serving 端侧广告特征，间接降低云端推理总成本。<strong>暂不适用（广告端侧模块）</strong>：端侧部署目前仅限 PC AI 平台（非移动端），移动广告场景无法直接使用；且当前无 Android/iOS SDK；关注百度是否跟进发布移动端版本（鸿蒙/Android 适配）。<strong>可借鉴思路</strong>：超稀疏 MoE + 多维弹性预训练的训练方法论值得跟踪，看后续是否有端侧友好的小参数规格（如 3B/7B sparse MoE 版本）适合移动广告特征建模场景。</p>
+<hr />
+<h3>其他观察</h3>
+<p>今日三大信号均指向 Google I/O 前夜：AppFunctions（开发者接入 Gemini Agent 的 MCP 路径）+ 隐私框架（端侧 AI 数据合规底线）+ I/O 期待（路线图确认窗口），形成"接入通道 → 合规约束 → 路线图锁定"的完整叙事链。Google 正在 I/O 前密集输出开发者侧技术规范，目的是在主题演讲前锁定开发者的技术准备方向。中文侧文心5.1是近期唯一符合窗口期的端侧相关重要发布（移动端部署暂不成熟），端侧广告中文生态覆盖今日偏少。</p>
+<h3>近期关注</h3>
+<ul>
+<li><strong>明日（5/19）01:00 北京时间</strong>：<strong>Google I/O 2026 主题演讲</strong>——重点观察：① ModelManager API stable 发布与 changelog；② AppFunctions GA 条件及广告类 App 白名单；③ Gemini 4 对 Hybrid Inference 端云路由的影响；④ Android 17 正式发布时间线；⑤ Android XR 眼镜对新广告格式（AR 场景广告）的开放 API。<strong>建议5/19主题演讲结束后立即启动专项分析。</strong></li>
+<li><strong>6/8-12</strong>：<strong>Apple WWDC 2026</strong>——Core AI 替代 Core ML 正式发布，第三方 SDK 调用权限与广告模块适配。</li>
+</ul>
+<p><em>数据截止：2026-05-18 | 已排除近期已报道内容（Android ModelManager API/Firebase Hybrid Inference、Gemini App广告路线图/Personal Intelligence、Google vs Apple AI竞速格局、OpenAI AI手机/MediaTek Dimensity 9600、Gemini Nano 4 AICore DP、ExecuTorch v1.2、LiteRT-LM + Gemma 4 E2B、ChatGPT Ads Manager/Custom Audiences、Apple Core AI重构、Qualcomm × CXMT 3D DRAM NPU、商汤绝影 Sage 等）</em></p>
+    </article>
+  </div>
+</body>
+</html>
