@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端智能日报 2026-05-19</title>
+  <style>
+:root{
+  --bg:#f4faf8;
+  --surface:#ffffff;
+  --surface-soft:#f8fcfb;
+  --text:#1f2f2b;
+  --muted:#5e726b;
+  --accent:#0f766e;
+  --accent-soft:#dcf2ee;
+  --border:#d8e8e2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #e9f7f2 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, #e5f4ef 0%, transparent 28%),
+    var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.8;
+}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px 56px}
+.top{
+  margin-bottom:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+}
+.brand{
+  margin:0;
+  font-size:14px;
+  letter-spacing:.08em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.back{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px 28px 20px;
+  box-shadow:0 10px 30px rgba(15,118,110,.08);
+}
+h1,h2,h3{line-height:1.35;margin:1.1em 0 .45em}
+h1{font-size:2rem;margin-top:.15em}
+h2{font-size:1.32rem}
+h3{font-size:1.08rem}
+p,li{font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+blockquote{
+  margin:1rem 0;
+  padding:.72rem .95rem;
+  background:var(--surface-soft);
+  border-left:4px solid var(--accent);
+  color:#28433d;
+  border-radius:8px;
+}
+hr{
+  border:none;
+  border-top:1px dashed var(--border);
+  margin:1.3rem 0;
+}
+code{
+  background:#eef7f5;
+  border:1px solid #d7e9e4;
+  color:#1f4f49;
+  border-radius:6px;
+  padding:.14em .42em;
+  font-size:.92em;
+}
+pre{
+  background:#0f1f1d;
+  color:#e9f4f2;
+  border-radius:12px;
+  overflow:auto;
+  padding:14px;
+}
+pre code{
+  background:transparent;
+  border:none;
+  color:inherit;
+  padding:0;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  overflow:hidden;
+  border-radius:12px;
+}
+th,td{
+  border:1px solid var(--border);
+  padding:.6rem .7rem;
+  text-align:left;
+  vertical-align:top;
+}
+th{background:#edf8f5}
+.footer{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:.88rem;
+}
+.list{
+  list-style:none;
+  margin:1rem 0 0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.list a.item{
+  display:block;
+  padding:14px 15px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-soft);
+  transition:.15s ease;
+}
+.item-title{
+  display:block;
+  font-weight:700;
+  margin-top:2px;
+}
+.focus{
+  display:block;
+  margin-top:8px;
+  font-size:.92rem;
+  color:#37524c;
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.list a.item:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(15,118,110,.09);
+  text-decoration:none;
+}
+.date{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  margin-bottom:2px;
+}
+@media (max-width:700px){
+  .wrap{padding:20px 12px 40px}
+  .card{padding:20px 16px 16px;border-radius:14px}
+  h1{font-size:1.62rem}
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <p class="brand">Edge AI Daily</p>
+      <a class="back" href="../index.html">← 返回目录</a>
+    </div>
+    <article class="card">
+      <h1>端智能日报 2026-05-19</h1>
+<blockquote>
+<p><strong>本期聚焦</strong>：Google I/O 2026 今日开幕，端侧广告 AI 进入"落锤日"——Meta LLM 级广告排序在 Instagram 已验证 +5% CTR，Google Gemma 4 把端侧推理提速 4x，Android 17 + Gemini Intelligence 确立设备覆盖门槛，整条端侧广告链路的技术底座在本周同步成熟。</p>
+</blockquote>
+<hr />
+<h2>1. 【Meta Adaptive Ranking Model：LLM 级广告排序上线 Instagram，+5% CTR / +3% 转化率，自适应计算路由压制延迟】【延迟发酵】</h2>
+<ul>
+<li><strong>评分</strong>：A5/5 · I5/5 · S=15 · P0 · 价值类型：收入提升</li>
+<li><strong>来源</strong>：Meta Engineering Blog | <a href="https://engineering.fb.com/2026/03/31/ml-applications/meta-adaptive-ranking-model-bending-the-inference-scaling-curve-to-serve-llm-scale-models-for-ads/">Meta Adaptive Ranking Model</a> | 2026-03-31；<a href="https://www.appvertiser.ai/blog/the-llm-ad-stack-how-ai-is-rebuilding-mobile-ad-ranking-from-scratch">市场解读</a></li>
+</ul>
+<p><strong>内容总结（100-150 字）</strong>：
+Meta 于 3 月底发布 Adaptive Ranking Model（ARM），核心是把"单一排序模型"改造为"自适应计算路由"：每次广告排序请求先用轻量信号评估用户意图强度（随意浏览 vs. 高意图比价），再路由到对应算力层——轻量路径延续毫秒级响应，高意图路径接入 trillion-parameter 级 LLM 嵌入（约 10B FLOPs/token）。模型于 Q4 2025 在 Instagram 上线，2026 年初确认数据：+5% 广告 CTR、+3% 广告转化率。推理在 Meta 自有数据中心完成（非端侧），但路由决策依赖端上用户上下文信号。</p>
+<p><strong>业务价值与适配性</strong>：
+1. 可以让我们在"高意图用户流量"场景（如主动搜索、反复停留某类内容后的推荐坑位）用更重的模型，在低意图流量省算力——这正是广告 CTR 系统的核心矛盾。
+2. 路由机制（意图强度分桶 → 分层算力）可直接借鉴到云端广告排序架构；端侧意图信号（停留时长、滑动速度）作为路由依据，是端云协同的天然切入点，可在端侧轻推理，云端重排序。</p>
+<hr />
+<h2>2. 【Google I/O 2026 Keynote 实况：Android 17 + Gemini Intelligence 正式落地，旗舰 SoC + 12GB RAM 确立端侧广告 AI 设备门槛】【进展更新】</h2>
+<ul>
+<li><strong>评分</strong>：A4/5 · I5/5 · S=13 · P0 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：Android Central | <a href="https://www.androidcentral.com/phones/live/google-i-o-2026-live-blog-android-17-android-xr-glasses-and-all-the-gemini-ai-news">Google I/O 2026 Live Blog</a> | 2026-05-19；HowToGeek | <a href="https://www.howtogeek.com/gemini-intelligence-android-17-device-requirements/">Gemini Intelligence device requirements</a> | 2026-05-17；相较 2026-05-18 报道新增：今日正式发布硬件要求与功能详情</li>
+</ul>
+<p><strong>内容总结（100-150 字）</strong>：
+Google I/O 2026 今日开幕，正式发布 Android 17 + Gemini Intelligence。核心功能：跨全文本域的 Gemini 语音听写（含复杂格式指令）、基于用户上下文自动生成的 AI Widget。硬件门槛明确为：旗舰 SoC（Snapdragon 8 Elite / Tensor G5 同级）+ 12GB RAM + Gemini Nano v3 on-device 模型。首批覆盖 2026 款 Samsung Galaxy 和 Google Pixel，夏季推出；年内扩展至 Android 手表、车载、XR 眼镜、笔记本。硬件门槛意味着全球 Android 用户中约 30-40% 旗舰机持有者可激活 Gemini Intelligence。</p>
+<p><strong>业务价值与适配性</strong>：
+1. 设备门槛的明确化让我们可以在广告策略层做"AI 能力分桶"：Gemini Intelligence 可用设备上启用端侧意图推理，其余设备走轻量规则；这两套逻辑需现在开始设计。
+2. AI Widget 是广告原生化的新入口——动态 Widget 的内容生成逻辑与广告创意个性化高度重合，值得关注后续 Android 17 Widget API 是否对广告 SDK 开放。</p>
+<hr />
+<h2>3. 【Gemma 4 / Gemini Nano 4 AICore 开发者预览：E2B + E4B 双档，端侧推理 4x 提速、省电 60%，Tool Calling 首次进端侧 API】</h2>
+<ul>
+<li><strong>评分</strong>：A4/5 · I4/5 · S=12 · P0 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：Android Developers Blog | <a href="https://android-developers.googleblog.com/2026/04/AI-Core-Developer-Preview.html">Announcing Gemma 4 in AICore Developer Preview</a> | 2026-04-02；9to5Google | <a href="https://9to5google.com/2026/04/02/gemini-nano-4-android/">Google previews Gemini Nano 4</a> | 2026-04-02；<a href="https://www.androidauthority.com/gemini-nano-4-benchmarks-3655763/">Gemini Nano 4 benchmarks</a></li>
+</ul>
+<p><strong>内容总结（100-150 字）</strong>：
+Google 于 4 月 2 日发布 Gemma 4 并接入 AICore Developer Preview。两个端侧档位：Gemma 4 E2B（Fast，用于快速响应场景）和 E4B（Full，高质量推理），均将对应升级为年内旗舰设备上的 Gemini Nano 4 Fast / Full。关键数据：较上一代 4x 推理速度提升，60% 功耗下降，原生支持 140+ 语言。Prompt API 新增 Tool Calling、Structured Output、System Prompt、Thinking Mode，使端侧模型首次具备多步推理能力。开发者今日即可通过 AICore Developer Preview 接入，代码与年内 Gemini Nano 4 设备兼容。</p>
+<p><strong>业务价值与适配性</strong>：
+1. 可以让我们在端侧直接调用 Tool Calling 实现"用户意图→广告动作"的多步推理（例如：识别"正在比价耳机"→调用商品查询→个性化广告插入），无需往返云端。
+2. E2B 档（Fast）适合广告 CTR/CVR 轻量特征抽取；E4B 档（Full）适合创意理解与用户建模，可按请求优先级动态选档——与 Meta ARM 的路由思路高度一致，可直接借鉴。</p>
+<hr />
+<h2>4. 【ExecuTorch v1.2.0 发布：Voxtral Realtime 实时语音 + Qwen3.5（0.8B-4B）支持，Cortex-M 升级为一级推理目标】</h2>
+<ul>
+<li><strong>评分</strong>：A3/5 · I4/5 · S=10 · P1 · 价值类型：成本优化 / 新能力探索</li>
+<li><strong>来源</strong>：PyTorch / Meta | <a href="https://github.com/pytorch/executorch/releases">ExecuTorch Releases</a> | 2026-05；<a href="https://executorch.ai/">ExecuTorch 官网</a></li>
+</ul>
+<p><strong>内容总结（100-150 字）</strong>：
+ExecuTorch v1.2.0 对齐 PyTorch 2.11，本次更新聚焦三点：①新增 Voxtral Realtime 流式语音模型（int4 量化，支持 XNNPACK / Metal / CUDA，含实时麦克风输入，提供预导出 .pte 文件）；②新增 Qwen3.5（0.8B、2B、4B）及 Qwen2.5-Coder 导出支持；③将 Cortex-M 升为一级目标，集成 CMSIS-NN 量化 int8 批矩阵乘，优化模式匹配，减少二进制体积。12+ 硬件后端（Apple、Qualcomm、Arm、MediaTek、Vulkan）已覆盖，HuggingFace 上 80%+ 流行边缘 LLM 开箱即用。</p>
+<p><strong>业务价值与适配性</strong>：
+1. 可以让我们在 iOS / Android 上以统一框架部署 Qwen3.5 用于素材语义理解和用户意图标签抽取，无需分平台维护两套推理代码。
+2. Voxtral Realtime 流式语音是音频/内容平台用户意图识别的直接能力——用户语音搜索或内容评论的实时理解可端侧完成，降低服务端请求量；int4 量化保证延迟在可接受范围内，值得 POC 验证。</p>
+<hr />
+<h2>5. 【Gemini Intelligence 设备覆盖率解析：8 项硬件门槛锁定旗舰，2026 年广告端 AI 实际可触达人群首次可量化】</h2>
+<ul>
+<li><strong>评分</strong>：A3/5 · I3/5 · S=9 · P1 · 价值类型：用户体验 / 策略优化</li>
+<li><strong>来源</strong>：tech-ish | <a href="https://tech-ish.com/2026/05/17/gemini-intelligence-android-requirements/">The Eight Specs That Decide Whether Your Phone Gets Gemini Intelligence</a> | 2026-05-17；HowToGeek | <a href="https://www.howtogeek.com/gemini-intelligence-android-17-device-requirements/">Gemini Intelligence Android 17 device requirements</a></li>
+</ul>
+<p><strong>内容总结（100-150 字）</strong>：
+详细解析 Gemini Intelligence 的 8 项硬件准入要求（旗舰级 SoC、≥12GB RAM、Gemini Nano v3 on-device 预装、Android 17 等）。实际覆盖情况：2024-2025 年出货的 Snapdragon 8 Elite / Tensor G5 设备满足条件；2026 年 Q1 中国市场智能手机出货约 6900 万台，安卓旗舰占比约 15-20%，即 1000-1400 万台/季。全球范围内，能激活 Gemini Intelligence 的 Android 设备约占活跃 Android 用户的 30-40%（旗舰存量估算）。非旗舰用户仍走 Firebase Hybrid Inference 云端回退路径。</p>
+<p><strong>业务价值与适配性</strong>：
+1. 可以让我们在广告策略层做精准"端 AI 能力分层"：12GB+ 旗舰用户可接入端侧 CTR/意图模型，其余用户保持云端逻辑，AB 实验组可按设备能力分桶设计。
+2. 暂不适用于要求全量覆盖的广告场景；但对高价值旗舰用户（ARPU 通常更高）做端侧深度个性化具备明确的 ROI 逻辑，可作为 2026 H2 立项方向。</p>
+<hr />
+<h3>其他观察</h3>
+<p>今日 Google I/O 2026 开幕，端侧广告 AI 从"期待"转入"执行"阶段：Meta ARM 已验证 LLM 级排序的广告价值，Google 端侧链路（Gemma 4 → Gemini Nano 4 → Android 17 AICore API）正式向开发者开放。两条线索汇聚意味着：云端 LLM 排序（Meta 路线）与端侧 LLM 推理（Google 路线）在 2026 年并行成熟，音频/内容平台应同步规划两套实验。</p>
+<h3>近期关注</h3>
+<ul>
+<li><strong>WWDC 2026（6 月 8 日，约 20 天后）</strong>：Apple Core AI 正式替代 Core ML，iOS 27 端侧生成 AI API 首次开放，广告 SDK 对 iOS 侧端侧模型的接入窗口将打开。</li>
+<li><strong>KDD 2026 / RecSys 2026</strong>：端侧推荐系统论文预计密集涌现，持续关注 CTR/CVR 端侧化实验结果。</li>
+</ul>
+    </article>
+  </div>
+</body>
+</html>
