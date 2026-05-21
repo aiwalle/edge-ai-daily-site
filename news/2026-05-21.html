@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端智能日报 2026-05-21</title>
+  <style>
+:root{
+  --bg:#f4faf8;
+  --surface:#ffffff;
+  --surface-soft:#f8fcfb;
+  --text:#1f2f2b;
+  --muted:#5e726b;
+  --accent:#0f766e;
+  --accent-soft:#dcf2ee;
+  --border:#d8e8e2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #e9f7f2 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, #e5f4ef 0%, transparent 28%),
+    var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.8;
+}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px 56px}
+.top{
+  margin-bottom:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+}
+.brand{
+  margin:0;
+  font-size:14px;
+  letter-spacing:.08em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.back{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px 28px 20px;
+  box-shadow:0 10px 30px rgba(15,118,110,.08);
+}
+h1,h2,h3{line-height:1.35;margin:1.1em 0 .45em}
+h1{font-size:2rem;margin-top:.15em}
+h2{font-size:1.32rem}
+h3{font-size:1.08rem}
+p,li{font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+blockquote{
+  margin:1rem 0;
+  padding:.72rem .95rem;
+  background:var(--surface-soft);
+  border-left:4px solid var(--accent);
+  color:#28433d;
+  border-radius:8px;
+}
+hr{
+  border:none;
+  border-top:1px dashed var(--border);
+  margin:1.3rem 0;
+}
+code{
+  background:#eef7f5;
+  border:1px solid #d7e9e4;
+  color:#1f4f49;
+  border-radius:6px;
+  padding:.14em .42em;
+  font-size:.92em;
+}
+pre{
+  background:#0f1f1d;
+  color:#e9f4f2;
+  border-radius:12px;
+  overflow:auto;
+  padding:14px;
+}
+pre code{
+  background:transparent;
+  border:none;
+  color:inherit;
+  padding:0;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  overflow:hidden;
+  border-radius:12px;
+}
+th,td{
+  border:1px solid var(--border);
+  padding:.6rem .7rem;
+  text-align:left;
+  vertical-align:top;
+}
+th{background:#edf8f5}
+.footer{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:.88rem;
+}
+.list{
+  list-style:none;
+  margin:1rem 0 0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.list a.item{
+  display:block;
+  padding:14px 15px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-soft);
+  transition:.15s ease;
+}
+.item-title{
+  display:block;
+  font-weight:700;
+  margin-top:2px;
+}
+.focus{
+  display:block;
+  margin-top:8px;
+  font-size:.92rem;
+  color:#37524c;
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.list a.item:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(15,118,110,.09);
+  text-decoration:none;
+}
+.date{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  margin-bottom:2px;
+}
+@media (max-width:700px){
+  .wrap{padding:20px 12px 40px}
+  .card{padding:20px 16px 16px;border-radius:14px}
+  h1{font-size:1.62rem}
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <p class="brand">Edge AI Daily</p>
+      <a class="back" href="../index.html">← 返回目录</a>
+    </div>
+    <article class="card">
+      <h1>端智能日报 2026-05-21</h1>
+<blockquote>
+<p><strong>本期聚焦</strong>：两条主线交汇——① 产业级 CTR 演进：GenLI 以生成式建模替代检索式用户长期兴趣，+1.56% RPM 已在真实广告系统线上验证，为我们提供直接可复现的方法论；② 端侧推理基础设施全面提速：Arm SME2 + KleidiAI 让 LiteRT 在零代码改动下实现 5x CPU AI 加速，MiniCPM-V 4.6 以 1.3B 参数覆盖 iOS/Android/HarmonyOS 三平台——"算法更优 + 推理更快 + 模型更轻"三层收益在本期同步落地。</p>
+</blockquote>
+<hr />
+<h2>1. 【GenLI：生成式长期用户兴趣建模 CTR 方法，线上 +1.56% RPM，日服务亿级用户】</h2>
+<ul>
+<li><strong>评分</strong>：A5/5 · I4/5 · S=14 · P0 · 价值类型：收入提升</li>
+<li><strong>来源</strong>：arxiv | <a href="https://arxiv.org/abs/2605.15905">arxiv.org/abs/2605.15905</a> | 2026-05-15</li>
+</ul>
+<p><strong>内容总结（约 140 字）</strong>：
+GenLI（Generative Long-term user Interest model）来自真实广告平台，核心思路：用<strong>生成式建模</strong>取代传统"检索-加权"范式来表达用户长期兴趣。架构三模块：① <strong>IGM（Interest Generation Module）</strong>：目标无关，生成多个兴趣分布，捕捉行为间交互信息；② <strong>BRM（Behavior Retrieval Module）</strong>：简单查表操作，每条行为加权时间复杂度降至 O(1)；③ <strong>IFM（Interest Fusion Module）</strong>：融合兴趣向量用于 CTR 预估。离线实验超越基线；<strong>线上 A/B 测试 +1.56% RPM</strong>；已在真实广告系统全量上线，日服务亿级用户。训练与推理均在云端，IGM 生成的兴趣向量可 cache 后供端云协同场景调用。</p>
+<p><strong>业务价值与适配性</strong>：
+1. 可以让我们在广告 CTR 系统中用生成式兴趣向量替换现有长期兴趣池（SIM/MIMN 等），O(1) 的行为检索复杂度使高并发场景推理延迟可控——+1.56% RPM 是业界难得的同类公开线上基准，可作为内部立项的对标数据。
+2. 可直接应用（云端 CTR 排序模块）：① 复现 IGM 的"目标无关多兴趣生成"思路，替换现有 SIM 长期兴趣检索；② IGM 生成的兴趣向量可缓存至端侧 embedding 存储，作为端云协同 CTR 的端侧用户特征来源；③ 建议 2 周内启动 offline 实验验证。</p>
+<hr />
+<h2>2. 【Arm SME2 × KleidiAI × LiteRT：CPU 端侧 AI 5x 提速，零代码修改，音频生成单核 8 秒内完成】</h2>
+<ul>
+<li><strong>评分</strong>：A3/5 · I4/5 · S=10 · P1 · 价值类型：成本优化 / 用户体验</li>
+<li><strong>来源</strong>：Google Developers Blog | <a href="https://developers.googleblog.com/accelerating-on-device-ai-a-look-at-arm-and-google-ai-edge-optimization/">Accelerating on-device AI: A look at Arm and Google AI Edge optimization</a> · Arm Newsroom | <a href="https://newsroom.arm.com/blog/arm-sme2-android-mobile-apps">Arm to Supercharge AI on Android</a> | 2026-05-14</li>
+</ul>
+<p><strong>内容总结（约 140 字）</strong>：
+Arm 与 Google 联合发布 SME2（Scalable Matrix Extension 2）与 KleidiAI 在 Android 上的深度集成方案。核心机制：SME2 在 CPU 集群中内置专用矩阵计算单元，消除"高延迟 CPU"vs"碎片化加速器"的传统权衡；LiteRT 通过 XNNPACK 自动路由矩阵密集型 kernel 至 SME2，<strong>开发者零代码修改即获收益</strong>。量化数据：① 相比 NEON 指令集提速 2x 以上（音频生成场景）；② DiT 子模块 INT8 量化后体积缩小 4x，RAM 降低 4x；③ 单核可在 8 秒内完成 11 秒音频生成；④ 整体 AI 推理提速最高 5x。框架覆盖：除 LiteRT 外，MNN、MediaPipe、ONNX Runtime、llama.cpp 均已集成 SME2/KleidiAI，无需升级应用代码。适配芯片：Cortex-X925 / A725 / A520 及以上（Snapdragon 8 Elite / Dimensity 9400 级旗舰到中高端全覆盖）。</p>
+<p><strong>业务价值与适配性</strong>：
+1. 可以让我们在 Android 广告端侧模型上直接获得 5x CPU 推理提速——中端机型（无旗舰 NPU 的 Snapdragon 7 系 / Dimensity 7 系）上的 CTR 轻量模型和意图分类推理延迟可从 50ms+ 降至 10ms 级别，覆盖约 50% Android 活跃用户，不再依赖旗舰 NPU。
+2. 可直接应用（Android LiteRT 模块）：升级至最新 LiteRT + XNNPACK 即自动启用 SME2（无需改代码）；INT8 量化 + SME2 组合可将广告端侧模型从"旗舰专属"扩展至中端覆盖，为端侧广告分层策略提供中端机型的算力基础。</p>
+<hr />
+<h2>3. 【MiniCPM-V 4.6：1.3B 手机多模态 VLM 三平台全开源，视觉 FLOPs 减半，1.5x 吞吐提升】</h2>
+<ul>
+<li><strong>评分</strong>：A3/5 · I3/5 · S=9 · P1 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：OpenBMB / Hugging Face | <a href="https://huggingface.co/openbmb/MiniCPM-V-4.6">openbmb/MiniCPM-V-4.6</a> · <a href="https://firethering.com/minicpm-v-4-6-on-device-multimodal-model/">Firethering 解析</a> | 2026-05-11</li>
+</ul>
+<p><strong>内容总结（约 140 字）</strong>：
+清华系 OpenBMB 发布 MiniCPM-V 4.6，以 1.3B 参数（SigLIP2-400M 视觉编码器 + Qwen3.5-0.8B LLM）实现手机级多模态推理。技术亮点：① Q4_K_M 量化后整体 <strong>1.6GB</strong>（≥6GB 设备可流畅运行）；② LLaVA-UHD v4 混合视觉 token 压缩（4x/16x 自适应），视觉编码 <strong>FLOPs 降低 50%</strong>；③ 相比 Qwen3.5-0.8B 吞吐提升 1.5x，Intelligence Index 评分 13 vs 10（优 30%，token 成本仅 1/19）；④ 另有 MiniCPM-V 4.6-Thinking 推理链增强版。平台适配：iOS（Metal）/ Android（Vulkan/NNAPI）/ HarmonyOS NEXT 三平台代码全量开源，基于 llama.cpp 后端，接入成本极低。在 OpenCompass、OCRBench、HallusionBench 上达到 Qwen3.5 2B 级水准，参数仅一半不到。</p>
+<p><strong>业务价值与适配性</strong>：
+1. 可以让我们在 iOS + Android + 鸿蒙三套广告 SDK 中用同一套 llama.cpp 代码部署同一 VLM，实现"广告素材理解（OCR + 图片质量评估）+ 用户内容偏好识别"全平台统一——1.6GB 体积适合广告 SDK 嵌入后台预加载（App 启动期初始化，不占用广告请求链路延迟）。
+2. 可借鉴思路：混合 token 压缩率（4x/16x 自适应）是素材理解的核心优化——简单 banner 走 16x（低延迟），复杂视频帧走 4x（高质量），可作为广告素材理解 token 预算控制参考；代码已开源、三平台适配文档完整，建议直接启动 POC 验证广告 CreativeQA 场景。</p>
+<hr />
+<h2>4. 【Synaptics Coralboard × Google Coral NPU：1 TOPS 超低功耗边缘 AI 平台 I/O 亮相，Gemma 3 270M NPU 加速推理】</h2>
+<ul>
+<li><strong>评分</strong>：A2/5 · I3/5 · S=7 · P2 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：CNX Software | <a href="https://www.cnx-software.com/2026/05/20/coralboard-features-synaptics-astra-sl2619-edge-ai-soc-supports-google-gemma-3-inference/">Coralboard features Synaptics Astra SL2619, supports Gemma 3 inference</a> · GlobeNewswire | <a href="https://www.globenewswire.com/news-release/2026/05/19/3297828/35894/en/Google-Research-and-Synaptics-Partner-to-Showcase-Immersive-Edge-AI-experiences-powered-by-the-Coralboard-at-Google-I-O-2026.html">Google Research and Synaptics Partner at I/O 2026</a> | 2026-05-19~20</li>
+</ul>
+<p><strong>内容总结（约 120 字）</strong>：
+Google Research 与 Synaptics 在 I/O 2026 联合展示 Coralboard 开发套件，搭载 Synaptics Astra SL2619 SoC（2GHz 双核 + <strong>1 TOPS NPU</strong> + 2GB DDR4）。NPU 子系统深度集成 Google Coral NPU（512 GOPS 量级，仅数毫瓦功耗），Transformer-capable，支持动态算子。软件栈：开源 MLIR-based Torq 工具链，内置 Gemma 3 270M NPU 硬件加速。现场以 NPU 加速 YOLOv8 实时追踪水母运动并驱动 DeepMind Lyria Realtime 生成音乐（"Jellectronica"体验）。定位：可穿戴、IoT、AR 眼镜的<strong>超低功耗常驻端侧 AI</strong>，目标日常全天候 AI 体验（always-on sensing）。Coral NPU 架构已向手机厂商授权，预示下一代旗舰可能集成此类协处理器。</p>
+<p><strong>业务价值与适配性</strong>：
+1. 暂不适用（广告端侧模块）：Coralboard 定位 IoT/可穿戴开发板，非消费级手机量产 SoC，不直接映射手机广告 SDK 场景。
+2. 可借鉴趋势：Coral NPU"Transformer-capable + 超低功耗"设计代表 Google 下一代端侧 AI 协处理器方向；若此类设计进入 Pixel 10 / Android 旗舰（2027），常驻 NPU 将使广告端侧特征推理无需与其他 App 争抢主 NPU 资源，值得长期跟踪。</p>
+<hr />
+<h3>其他观察</h3>
+<p>Google I/O 2026 两日大会（5/19-20）今日（5/21）全部 85+ 技术专场录播<a href="https://io.google/2026/">上线 on-demand</a>，包含 LiteRT NPU 加速、AppFunctions 端侧 MCP、WebMCP 等多个与广告端侧 AI 直接相关的深度 session，建议今日重点观看 AI Edge 专场。综合本周视角：<strong>"基础加速层（Arm SME2）→ 推理框架层（LiteRT/XNNPACK 自动集成）→ 端侧模型层（MiniCPM-V 4.6）→ 广告算法层（GenLI CTR）"四层技术栈在同一周同步成熟</strong>，广告系统端侧化的工程前提已经完备，本周适合启动端侧 CTR POC 正式立项讨论。中文侧：本期补搜"端侧推理""端云协同""端智能"等关键词，近期中文源集中在小米 MiMo-V2.5 开源（4 月末，已过 72h 时间窗口）和华米 OV 手机厂商端侧大模型竞速，暂无新的移动广告端侧工程落地案例出现。</p>
+<h3>近期关注</h3>
+<ul>
+<li><strong>WWDC 2026（6 月 8-12 日，约 18 天后）</strong>：Apple Core AI 正式替代 Core ML，Foundation Models API 开放范围（是否对广告 SDK 开放 on-device VLM 调用），iOS 27 端侧推理延迟基准数据首发——这将是 iOS 侧端侧广告 AI 的关键政策窗口。</li>
+<li><strong>KDD 2026 / RecSys 2026</strong>：CTR/CVR 端侧化论文预计集中涌现，持续关注带线上 A/B 数据的工程实战论文（参考本期 GenLI 标准：离线 + 线上 + 生产部署三验证）。</li>
+</ul>
+<p><em>数据截止：2026-05-21 | 已排除近期已报道内容（LiteRT × Qualcomm/MediaTek 双 NPU GA、WebMCP Chrome MCP Server、Antigravity 2.0、Snapdragon 6/4 Gen 5、Meta ARM +5% CTR、Android 17 + Gemini Intelligence、Gemma 4 AICore DP、ExecuTorch v1.2.0、AppFunctions 端侧 MCP Server、AICore 隐私框架、百度文心5.1）</em></p>
+    </article>
+  </div>
+</body>
+</html>
