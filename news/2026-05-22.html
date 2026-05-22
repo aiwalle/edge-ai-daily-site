@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端智能日报 2026-05-22</title>
+  <style>
+:root{
+  --bg:#f4faf8;
+  --surface:#ffffff;
+  --surface-soft:#f8fcfb;
+  --text:#1f2f2b;
+  --muted:#5e726b;
+  --accent:#0f766e;
+  --accent-soft:#dcf2ee;
+  --border:#d8e8e2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #e9f7f2 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, #e5f4ef 0%, transparent 28%),
+    var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.8;
+}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px 56px}
+.top{
+  margin-bottom:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+}
+.brand{
+  margin:0;
+  font-size:14px;
+  letter-spacing:.08em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.back{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px 28px 20px;
+  box-shadow:0 10px 30px rgba(15,118,110,.08);
+}
+h1,h2,h3{line-height:1.35;margin:1.1em 0 .45em}
+h1{font-size:2rem;margin-top:.15em}
+h2{font-size:1.32rem}
+h3{font-size:1.08rem}
+p,li{font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+blockquote{
+  margin:1rem 0;
+  padding:.72rem .95rem;
+  background:var(--surface-soft);
+  border-left:4px solid var(--accent);
+  color:#28433d;
+  border-radius:8px;
+}
+hr{
+  border:none;
+  border-top:1px dashed var(--border);
+  margin:1.3rem 0;
+}
+code{
+  background:#eef7f5;
+  border:1px solid #d7e9e4;
+  color:#1f4f49;
+  border-radius:6px;
+  padding:.14em .42em;
+  font-size:.92em;
+}
+pre{
+  background:#0f1f1d;
+  color:#e9f4f2;
+  border-radius:12px;
+  overflow:auto;
+  padding:14px;
+}
+pre code{
+  background:transparent;
+  border:none;
+  color:inherit;
+  padding:0;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  overflow:hidden;
+  border-radius:12px;
+}
+th,td{
+  border:1px solid var(--border);
+  padding:.6rem .7rem;
+  text-align:left;
+  vertical-align:top;
+}
+th{background:#edf8f5}
+.footer{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:.88rem;
+}
+.list{
+  list-style:none;
+  margin:1rem 0 0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.list a.item{
+  display:block;
+  padding:14px 15px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-soft);
+  transition:.15s ease;
+}
+.item-title{
+  display:block;
+  font-weight:700;
+  margin-top:2px;
+}
+.focus{
+  display:block;
+  margin-top:8px;
+  font-size:.92rem;
+  color:#37524c;
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.list a.item:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(15,118,110,.09);
+  text-decoration:none;
+}
+.date{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  margin-bottom:2px;
+}
+@media (max-width:700px){
+  .wrap{padding:20px 12px 40px}
+  .card{padding:20px 16px 16px;border-radius:14px}
+  h1{font-size:1.62rem}
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <p class="brand">Edge AI Daily</p>
+      <a class="back" href="../index.html">← 返回目录</a>
+    </div>
+    <article class="card">
+      <h1>端智能日报 2026-05-22</h1>
+<blockquote>
+<p><strong>本期聚焦</strong>：Google I/O 后首日盘点——Firebase AI Logic 正式 GA 将端云混合推理能力完全产品化（iOS/Android/Web 三端统一 API）；SUIN 通过相似用户行为填补稀疏序列盲区，是近期最值得代入冷启动场景的 CTR 论文；OpenAI ChatGPT 广告自服务全面开放，AI 广告生态格局生变。</p>
+</blockquote>
+<hr />
+<h2>1. 【Firebase AI Logic 正式 GA：端云混合推理 iOS/Android/Web/Chrome 全平台落地】</h2>
+<ul>
+<li><strong>评分</strong>：A 4/5 · I 5/5 · S=13 · P0 · 价值类型：成本优化 / 新能力探索</li>
+<li><strong>来源</strong>：Firebase Blog | <a href="https://firebase.blog/posts/2026/05/google-io-2026-announcements/">原文链接</a> | 2026-05-20</li>
+</ul>
+<p><strong>内容总结（约 130 字）</strong>：
+Firebase AI Logic 在 Google I/O 2026 正式 GA，覆盖 iOS、Android、Web（Chrome）、Flutter 四端；开发者通过单一 API 在端侧 Gemma 4 / Gemini Nano 4 与云端 Gemini 之间动态路由，无须管理服务端；Chrome 本地推理同步 GA；混合推理新增 iOS 支持，Android 端扩展 Gemma 4 后端；无 API Key 嵌入客户端，内置安全层。路由策略基于规则（PREFER_ON_DEVICE / PREFER_IN_CLOUD），端侧目前仅支持文本/图像单轮。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告请求链路中做到：低延迟场景（实时竞价、点击后意图判断）优先走端侧 Gemma 4，复杂内容理解（长视频素材分析）自动降级云端 Gemini，同一 Firebase SDK 无缝衔接，大幅减少多推理路径运维成本。可直接应用于 Android/iOS 广告 SDK 的端云协同调度模块。</p>
+<hr />
+<h2>2. 【SUIN：相似用户行为增强解决 CTR 预估稀疏序列问题】【延迟发酵】</h2>
+<ul>
+<li><strong>评分</strong>：A 5/5 · I 3/5 · S=13 · P0 · 价值类型：收入提升</li>
+<li><strong>来源</strong>：arXiv | <a href="https://arxiv.org/abs/2604.23810">arxiv.org/abs/2604.23810</a> | 2026-04-26</li>
+</ul>
+<p><strong>内容总结（约 130 字）</strong>：
+SUIN（Similar Users-Augmented Interest Network）针对真实推荐系统中普遍存在的行为序列稀疏问题，通过检索相似用户的历史行为扩充目标用户序列，再以注意力融合机制区分"用户自有信号"与"相似用户信号"的权重。作者来自中国科学技术大学，4 月 26 日挂出，本报初次收录【延迟发酵】。论文未披露具体延迟/内存数字，但相似用户检索模块支持云侧离线预计算、端侧实时融合的协同部署模式。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在用户冷启动或低活跃用户场景下做到：用相似活跃用户的行为序列补全稀疏信号，提升 CTR 预估准确率。可借鉴思路：相似用户检索在云侧离线完成并压缩下推端侧，轻量融合模块端侧可部署；与 R2LED（arxiv 2602.06622）的语义 ID 检索互补，可组合成端云协同用户建模流水线。</p>
+<hr />
+<h2>3. 【OpenAI ChatGPT 广告自服务平台全面开放：移除 $50K 门槛 + CPC 竞价 + Ads Manager】</h2>
+<ul>
+<li><strong>评分</strong>：A 3/5 · I 4/5 · S=10 · P1 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：OpenAI | <a href="https://openai.com/index/new-ways-to-buy-chatgpt-ads/">原文链接</a> | 2026-05-05</li>
+</ul>
+<p><strong>内容总结（约 130 字）</strong>：
+OpenAI 于 5 月 5 日推出 Ads Manager 自服务 Beta，彻底取消 $50,000 最低投放门槛，引入 CPC 竞价和扩展归因工具；5 月 7 日宣布扩展至英国、墨西哥、巴西、日本、韩国；合作测量平台含 Criteo、Kargo、Pacvue、StackAdapt；强调不向广告主共享用户对话内容，用户隐私通过对话本地处理实现；代理商合作方包括 Dentsu、Omnicom、Publicis、WPP。无端侧推理延迟数字披露。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们把 ChatGPT 作为新兴广告渠道提上选型日程——AI 搜索广告的用户意图信号质量远高于传统 banner，对 CVR 预估模型训练数据多样性有正向价值。可借鉴思路：ChatGPT 广告归因机制（不共享对话、端侧分析）的隐私设计思路可迁移至流媒体 App 端侧广告隐私计算方案。</p>
+<hr />
+<h2>4. 【Android 17 android.ai.inference 包：端侧 Gemini Nano 稳定开发者 API 正式发布】【进展更新】</h2>
+<ul>
+<li><strong>评分</strong>：A 3/5 · I 4/5 · S=10 · P1 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：Android Developers Blog | <a href="https://android-developers.googleblog.com/2026/05/17-things-android-developers-google-io.html">原文链接</a> | 2026-05-20</li>
+<li>相较 2026-05-21 报道新增：开发者 API 具体包名 <code>android.ai.inference</code>、功能边界（文本分类、摘要、智能回复）及设备门槛细节。</li>
+</ul>
+<p><strong>内容总结（约 130 字）</strong>：
+Android 17 引入 <code>android.ai.inference</code> 系统级稳定 API，开发者可通过标准调用访问 Pixel 10 / Galaxy S26 等旗舰设备上的 Gemini Nano v3 推理能力，无需打包或管理模型权重；支持文本摘要、文本分类、智能回复三大场景；与 AICore 系统服务深度集成，响应流式回传；硬件门槛为旗舰 SoC + 12GB RAM。Gemini Nano 4 预览已验证 4× 推理提速、省电 60%。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告 SDK 中做到：调用系统级 API 实现端侧用户意图分类（如广告受众分群 on-device）和智能素材摘要，零模型包体积增加。暂部分适用：硬件门槛限定旗舰机，2026 年底前可触达比例有限；建议搭配条目 1 Firebase hybrid inference 做跨档位覆盖。</p>
+<hr />
+<h2>5. 【OpenAI AI 原生智能手机：MediaTek Dimensity 9600 定制芯片，以 Agent 取代 App】【延迟发酵】</h2>
+<ul>
+<li><strong>评分</strong>：A 2/5 · I 4/5 · S=8 · P2 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：Business Standard | <a href="https://www.business-standard.com/technology/tech-news/openai-reportedly-picks-mediatek-over-qualcomm-for-its-maiden-ai-smartphone-126050500730_1.html">原文链接</a> | 2026-05-05</li>
+</ul>
+<p><strong>内容总结（约 130 字）</strong>：
+分析师 Ming-Chi Kuo 披露 OpenAI 正与 Qualcomm 及 MediaTek 协同开发 AI 原生手机专用芯片，目前倾向选用 MediaTek Dimensity 9600 定制版；制造商为立讯精密；战略目标是以 AI Agent 完全取代传统 App 交互；预计 2027 年上半年量产，年出货量目标 3-4 亿台。各方均未官方确认。4 月 27 日首次曝光，5 月 5 日关键细节（MediaTek 优先）披露。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在 3 年维度上预判：Agent 替代 App 意味着广告触达链路将从「App 内 Feed 广告」向「Agent 意图对话中插入赞助结果」演化，CTR/CVR 预估的特征工程需要重构。暂不适用：芯片尚未量产、设备形态未定，但应纳入 2027-2028 年广告端智能路线图讨论。</p>
+<hr />
+<h3>其他观察</h3>
+<p>Google I/O 后效应持续释放：Firebase AI Logic GA 将 2025 年以来端云协同的"实验功能"全部转正，开发者准入门槛大幅降低。SUIN 的相似用户增强思路与行业冷启动挑战高度契合，是近期最值得代入广告冷启动场景的 CTR 论文之一。OpenAI 广告生态快速扩张（自服务 + CPC + 5 国扩展），AI 搜索广告的用户意图质量将对传统展示广告形成替代压力。</p>
+<h3>近期关注</h3>
+<ul>
+<li><strong>Apple WWDC 2026（6 月 8-12 日）</strong>：Core AI 替代 Core ML 预计正式发布，iOS 广告 SDK 的端侧推理接口迎来重大升级，建议提前评估迁移成本及 Foundation Models 框架对广告素材理解场景的适配性。</li>
+<li><strong>KDD 2026（8 月）</strong>：端侧推荐 / CTR 相关工程论文收录期临近，关注大厂实际部署 paper。</li>
+</ul>
+    </article>
+  </div>
+</body>
+</html>
