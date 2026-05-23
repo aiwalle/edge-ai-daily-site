@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端智能日报 2026-05-23</title>
+  <style>
+:root{
+  --bg:#f4faf8;
+  --surface:#ffffff;
+  --surface-soft:#f8fcfb;
+  --text:#1f2f2b;
+  --muted:#5e726b;
+  --accent:#0f766e;
+  --accent-soft:#dcf2ee;
+  --border:#d8e8e2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #e9f7f2 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, #e5f4ef 0%, transparent 28%),
+    var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.8;
+}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px 56px}
+.top{
+  margin-bottom:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+}
+.brand{
+  margin:0;
+  font-size:14px;
+  letter-spacing:.08em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.back{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px 28px 20px;
+  box-shadow:0 10px 30px rgba(15,118,110,.08);
+}
+h1,h2,h3{line-height:1.35;margin:1.1em 0 .45em}
+h1{font-size:2rem;margin-top:.15em}
+h2{font-size:1.32rem}
+h3{font-size:1.08rem}
+p,li{font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+blockquote{
+  margin:1rem 0;
+  padding:.72rem .95rem;
+  background:var(--surface-soft);
+  border-left:4px solid var(--accent);
+  color:#28433d;
+  border-radius:8px;
+}
+hr{
+  border:none;
+  border-top:1px dashed var(--border);
+  margin:1.3rem 0;
+}
+code{
+  background:#eef7f5;
+  border:1px solid #d7e9e4;
+  color:#1f4f49;
+  border-radius:6px;
+  padding:.14em .42em;
+  font-size:.92em;
+}
+pre{
+  background:#0f1f1d;
+  color:#e9f4f2;
+  border-radius:12px;
+  overflow:auto;
+  padding:14px;
+}
+pre code{
+  background:transparent;
+  border:none;
+  color:inherit;
+  padding:0;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  overflow:hidden;
+  border-radius:12px;
+}
+th,td{
+  border:1px solid var(--border);
+  padding:.6rem .7rem;
+  text-align:left;
+  vertical-align:top;
+}
+th{background:#edf8f5}
+.footer{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:.88rem;
+}
+.list{
+  list-style:none;
+  margin:1rem 0 0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.list a.item{
+  display:block;
+  padding:14px 15px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-soft);
+  transition:.15s ease;
+}
+.item-title{
+  display:block;
+  font-weight:700;
+  margin-top:2px;
+}
+.focus{
+  display:block;
+  margin-top:8px;
+  font-size:.92rem;
+  color:#37524c;
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.list a.item:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(15,118,110,.09);
+  text-decoration:none;
+}
+.date{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  margin-bottom:2px;
+}
+@media (max-width:700px){
+  .wrap{padding:20px 12px 40px}
+  .card{padding:20px 16px 16px;border-radius:14px}
+  h1{font-size:1.62rem}
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <p class="brand">Edge AI Daily</p>
+      <a class="back" href="../index.html">← 返回目录</a>
+    </div>
+    <article class="card">
+      <h1>端智能日报 2026-05-23</h1>
+<blockquote>
+<p><strong>本期聚焦</strong>：MLSys 2026（5/19-22）闭幕周收割期——ExecuTorch 统一框架与 IntAttention 全整数注意力同日发表为端侧推理工程奠基；SCaLRec 的"云端语义时效性"校正思路直接切中广告系统端云协同的核心痛点；GenCI（WWW 2026）以群体意图为锚点建模兴趣漂移，与上期 GenLI 构成"长期兴趣 + 意图漂移"双引擎组合，为广告 CTR 系统提供可落地的全链路生成式用户建模方案。</p>
+</blockquote>
+<hr />
+<h2>1. 【SCaLRec：LLM 云端语义校准 + 端侧实时重排，解决端云协同推荐的"语义时效性"问题】【延迟发酵】</h2>
+<ul>
+<li><strong>评分</strong>：A4/5 · I3/5 · S=11 · P0 · 价值类型：收入提升 / 成本优化</li>
+<li><strong>来源</strong>：arXiv | <a href="https://arxiv.org/abs/2601.22543">arxiv.org/abs/2601.22543</a> | 2026-01-29（延迟发酵：首次收录）</li>
+</ul>
+<p><strong>内容总结（约 140 字）</strong>：
+SCaLRec（Semantic Calibration for LLM-enabled Cloud-Device Sequential Recommendation）直击端云协同推荐系统的核心工程难题：云端 LLM 每次推理为每个请求重新生成语义表示成本不可接受，缓存复用却因用户最新行为而<strong>语义过时（cloud semantic staleness）</strong>，导致排序质量下降。解决方案：① <strong>云端 LLM 离线生成语义 embedding 并缓存</strong>，避免实时调用；② <strong>端侧语义校准模块（on-device calibration）</strong>：根据用户最新交互序列评估 cached embedding 可靠性，并在端侧实时调整语义向量，对齐最新偏好；③ 最终由端侧轻量重排模型输出结果，全程保护用户隐私。实验在 3 个序列推荐基准上显著超越 baseline；工程意义在于：LLM 语义表达能力 + 端侧实时感知能力真正互补，不因缓存复用损失排序质量。</p>
+<p><strong>业务价值与适配性</strong>：
+1. 可以让我们在广告 CTR 系统中实现：云端每日（或每小时）批量为活跃用户生成 LLM 语义兴趣向量并下推端侧，用户在 App 内的实时点击/滑动行为触发端侧校准模块更新向量——广告请求时直接用更新后的语义向量做端侧初排，再上传 top-k 候选至云端精排。这样既利用 LLM 的深度语义理解，又避免每次广告请求调用 LLM（延迟 + 成本无法承受）。
+2. 可直接应用（端云协同广告排序模块）：校准模块是轻量 MLP，可集成进现有广告 SDK；建议先在 iOS（Foundation Models 语义向量来源）验证校准模块效果，再扩展至 Android（LiteRT 部署）。P0：3 周内启动离线实验复现。</p>
+<hr />
+<h2>2. 【GenCI：群体意图生成式 CTR 建模，WWW 2026 实证超越 SOTA，与 GenLI 构成兴趣建模双引擎】【延迟发酵】</h2>
+<ul>
+<li><strong>评分</strong>：A4/5 · I3/5 · S=11 · P0 · 价值类型：收入提升</li>
+<li><strong>来源</strong>：arXiv | <a href="https://arxiv.org/abs/2601.18251">arxiv.org/abs/2601.18251</a> | WWW 2026（ACM Web Conference，4 月 13-17 日，迪拜）| 延迟发酵，与 2026-05-21 GenLI 互补，首次收录</li>
+</ul>
+<p><strong>内容总结（约 140 字）</strong>：
+GenCI（Generative Modeling of User Interest Shift via Cohort-based Intent Learning）与本报 5/21 收录的 GenLI 互为补充：<strong>GenLI 建模用户的长期稳定兴趣</strong>（目标无关兴趣生成），而 <strong>GenCI 建模用户兴趣的短期漂移</strong>（意图群体对齐）。核心机制：① <strong>生成式群体意图模型（Cohort-based NTP）</strong>：以"下一个物品预测"目标训练生成模型，主动生成候选兴趣群体（cohort），显式表达用户当前短期意图——无需绑定具体候选广告；② <strong>层级候选感知网络</strong>：交叉注意力将意图群体信号注入排序层，结合用户历史与目标物品精细对齐。在 3 个标准 benchmark（Taobao、Amazon-Books、MovieLens）上持续超越 DIN、SIM、ETA 等主流 baseline。工程特点：意图群体 embedding 可离线预计算并缓存，实时推理仅需轻量注意力融合。</p>
+<p><strong>业务价值与适配性</strong>：
+1. 可以让我们用"GenLI（长期兴趣）+ GenCI（意图漂移）"组合为广告用户建立双引擎兴趣表达：GenLI 负责捕捉用户跨周期的稳定广告偏好（视频类、品牌偏好），GenCI 负责捕捉用户当前 session 的意图漂移（刚搜索手机后对数码广告兴趣激增）——双层兴趣信号合并输入 CTR 排序模型，理论 RPM 增益可叠加。
+2. 可直接应用（云端 CTR 排序）：GenCI 意图 cohort 离线预计算成本低，与现有 DIN/SIM 排序层兼容；建议将 GenCI cohort embedding 作为 GenLI 兴趣向量的补充特征，先做 offline A/B 测试，2-3 周出结果。</p>
+<hr />
+<h2>3. 【ExecuTorch MLSys 2026 Oral：Meta 统一 PyTorch 端侧部署框架，50KB 基础运行时，12+ 硬件后端，生产覆盖数十亿用户】</h2>
+<ul>
+<li><strong>评分</strong>：A3/5 · I4/5 · S=10 · P1 · 价值类型：成本优化 / 新能力探索</li>
+<li><strong>来源</strong>：arXiv | <a href="https://arxiv.org/abs/2605.08195">arxiv.org/abs/2605.08195</a> | MLSys 2026 Oral | 2026-05-05 提交，5 月 19 日大会首发</li>
+</ul>
+<p><strong>内容总结（约 140 字）</strong>：
+ExecuTorch 在 MLSys 2026 获得 Oral 最高荣誉，系统论文首次完整披露框架架构与生产数据。核心设计：① <strong>统一 PyTorch 语义导出</strong>：从 PyTorch 训练代码直接导出，无需模型重写，保留 eager mode 调试能力；② <strong>50KB 基础运行时</strong>：可在微控制器到旗舰 SoC 上运行，运行时内存由 backend 精细控制；③ <strong>12+ 可插拔 Backend</strong>：Apple（CoreML、MPS）、Qualcomm QNN、Arm（TOSA、Ethos-U）、MediaTek NeuroPilot、Vulkan、XNNPACK，全平台覆盖；④ <strong>量化与图优化前端</strong>：统一 API 支持 INT8/INT4/FP8，backend 感知量化器针对硬件约束定制；⑤ <strong>生产数据</strong>：已在 Instagram、WhatsApp、Messenger、Facebook 上服务数十亿用户，实现显著延迟降低和隐私增强。MLSys Oral 评定标准极严，同期入选率 &lt;5%。</p>
+<p><strong>业务价值与适配性</strong>：
+1. 可以让我们用一套 PyTorch 代码库覆盖 iOS（CoreML/MPS）+ Android（Qualcomm QNN / Arm TOSA / Vulkan）+ 嵌入式的端侧广告模型全量部署——告别当前"同一模型维护 CoreML + TFLite 两套转换链路"的碎片化现状，模型更新速度和工程维护成本双优化。
+2. 可直接应用（广告端侧推理工程）：以 ExecuTorch 替代现有 TFLite/CoreML 分散部署方案的先决条件是广告模型已在 PyTorch 训练——如满足，可立即启动迁移 POC；12+ backend 中 Qualcomm QNN + XNNPACK 优先验证（覆盖 Android 80%+ 旗舰 + 中端机型）。P1：等待内部 PyTorch 训练链路确认后，2026 Q3 立项。</p>
+<hr />
+<h2>4. 【IntAttention：MLSys 2026 全整数注意力流水线，消除 softmax 瓶颈，3.7x 提速 + 61% 节能，免重训即插即用】</h2>
+<ul>
+<li><strong>评分</strong>：A2/5 · I4/5 · S=8 · P1 · 价值类型：成本优化 / 用户体验</li>
+<li><strong>来源</strong>：arXiv | <a href="https://arxiv.org/abs/2511.21513">arxiv.org/abs/2511.21513</a> | MLSys 2026 Accepted | 2025-11-28 提交</li>
+</ul>
+<p><strong>内容总结（约 130 字）</strong>：
+IntAttention 针对边缘设备 LLM 推理中 INT8 量化后 <strong>softmax 成为首要瓶颈</strong>的问题（占注意力延迟高达 65%）提出首个端到端全整数注意力流水线。核心创新：① <strong>IndexSoftmax</strong>：用 32 项整数查找表（LUT）近似 FP 指数运算，完全消除 dequantize-softmax-requantize 的数据类型转换往返；② <strong>稀疏感知裁剪 + 直接整数归一化</strong>：保持精度同时维持纯整数数据流；③ <strong>免重训，即插即用</strong>（plug-and-play）：兼容现有量化模型，无需修改训练流程。实测（Armv8 CPU）：vs FP16 提速 <strong>3.7x</strong>，能耗降低 <strong>61%</strong>；vs 传统 INT8 attention 提速 <strong>2.0x</strong>；语言与视觉模型精度与 baseline 持平。MLSys 2026 接收，端侧推理社区高认可度。</p>
+<p><strong>业务价值与适配性</strong>：
+1. 可以让我们在 Android 广告端侧 Transformer 模型（用户兴趣编码器、素材 VLM）上直接获得 2-3.7x 注意力加速——尤其在不开启 NPU 的中端机型（Armv8 CPU 路径）上，广告意图分类延迟从 30ms 级别降至 10ms 以内，大幅提升用户体验响应性。
+2. 可直接应用（Android 端侧广告模型推理模块）：即插即用无需重训，只需在量化后模型中替换 attention 实现；建议优先在广告序列编码器（DIN/DIEN attention 层）试验，评估 2-4 周。中端机型（无专用 NPU）是核心受益场景。</p>
+<hr />
+<h2>5. 【OD-LLM：WSDM 2026 端侧 LLM 序列推荐压缩框架，模型减半零精度损失，SVD + 渐进对齐双引擎】【延迟发酵】</h2>
+<ul>
+<li><strong>评分</strong>：A4/5 · I3/5 · S=11 · P1 · 价值类型：收入提升 / 成本优化</li>
+<li><strong>来源</strong>：arXiv | <a href="https://arxiv.org/abs/2601.09306">arxiv.org/abs/2601.09306</a> | WSDM 2026（2 月 22-26 日）| 延迟发酵，首次收录</li>
+</ul>
+<p><strong>内容总结（约 130 字）</strong>：
+OD-LLM 是首个专为序列推荐任务设计的端侧 LLM 任务自适应压缩框架，发表于 WSDM 2026。核心方法：① <strong>低秩结构压缩（SVD）</strong>：对 LLM 权重矩阵做奇异值分解，精准消除参数冗余而不破坏推荐任务特异性表达；② <strong>Tokenization Normalization</strong>：针对推荐序列的特殊 token 分布设计归一化，与低秩分解协同增效；③ <strong>渐进对齐算法（Progressive Alignment）</strong>：逐层迭代精调压缩后参数，最小化推荐精度退化。关键结论：<strong>模型参数减半（2x 压缩），推荐效果无损</strong>；实验在 4 个公开推荐基准上验证；延迟与内存数据未在摘要中披露，但 2x 压缩意味着 KV cache 和激活内存减半，对端侧部署意义显著。</p>
+<p><strong>业务价值与适配性</strong>：
+1. 可以让我们把云端 LLM 基础推荐模型（如 LLaMA/Qwen 系列）压缩至端侧部署：2x 压缩后 7B→3.5B 等效体积，旗舰手机（12GB RAM）可在 LiteRT/ExecuTorch 下运行端侧序列推荐，为广告系统的端侧精排提供 LLM 级语义质量，同时规避云端请求延迟。
+2. 可借鉴思路：SVD + 渐进对齐的压缩范式不绑定推荐任务，可迁移至广告端侧用户兴趣编码器（DIN/SIM attention 结构）压缩；建议结合 IntAttention（条目 4）做联合优化：OD-LLM 压缩权重体积 + IntAttention 加速注意力计算。</p>
+<hr />
+<h2>6. 【腾讯混元 HY-1.8B-2Bit：业界首个产业级 2Bit 量化端侧模型，等效 0.3B，600MB 落地手机/耳机】【延迟发酵】</h2>
+<ul>
+<li><strong>评分</strong>：A2/5 · I3/5 · S=7 · P2 · 价值类型：成本优化 / 新能力探索</li>
+<li><strong>来源</strong>：腾讯混元 | <a href="https://ai-bot.cn/hy-1-8b-2bit/">ai-bot.cn/hy-1-8b-2bit</a> | 量子位 | 2026-02-10</li>
+</ul>
+<p><strong>内容总结（约 120 字）</strong>：
+腾讯混元于 2 月 10 日发布 HY-1.8B-2Bit，定位"业界首个产业级 2Bit 量化端侧大模型"。技术要点：① 基础模型 1.8B 参数，经产业级 2Bit 极致量化后等效约 <strong>0.3B 体积</strong>，实际 gguf-int2 权重仅 <strong>300-600MB</strong>（含 bf16 伪量化版）；② <strong>生成速度较原始精度提升 2-3x</strong>，同时保留 CoT 思维链能力；③ 适配 Arm SME2 移动平台，可在手机、耳机、智能家居等边缘设备部署；④ 已开源权重与代码。意义：2Bit 量化长期被认为精度损失过大难以产业化，腾讯此举是首个公开宣称"产业级可用"的 2Bit 落地案例，为超低内存设备（&lt;1GB RAM）的端侧 LLM 部署开辟新路径。与 Arm SME2 + LiteRT 生态完全兼容。</p>
+<p><strong>业务价值与适配性</strong>：
+1. 可以让我们在内存受限的中低端设备（4-6GB RAM）或广告 SDK 严格控制内存预算的场景下，用 300-600MB 的 2Bit 模型运行简单的用户意图分类或广告摘要生成，而不占用大块 RAM 影响主 App 体验。
+2. 暂不适用（复杂广告推理）：2Bit 精度损失对 CTR 预估等精度敏感任务风险较高；适合"意图粗分类""点击后理由生成"等对绝对精度要求较低的辅助功能；中文语义理解场景中文表达能力较强是加分项。</p>
+<hr />
+<h3>其他观察</h3>
+<p>本期呈现 <strong>MLSys 2026 闭幕效应</strong>：ExecuTorch（统一部署）+ IntAttention（全整数注意力）两篇 Oral/Accepted 论文在同一周公开，标志着端侧推理工程体系从"各组件分散优化"走向"端到端统一体系"。算法侧三篇论文（SCaLRec、GenCI、OD-LLM）形成完整的端云协同推荐链路：<strong>云端 LLM 语义建模（SCaLRec 云侧）→ 意图漂移感知（GenCI 排序层）→ 端侧 LLM 压缩部署（OD-LLM）</strong>，三层方法论可组合为一条完整的广告端侧 AI 改造路径。<strong>中文源</strong>：本期腾讯 HY-1.8B-2Bit 为 2Bit 量化产业化的中文一手案例，补足中文来源。</p>
+<h3>近期关注</h3>
+<ul>
+<li><strong>WWDC 2026（6 月 8-12 日，约 16 天后）</strong>：Apple Core AI 正式发布预期，iOS 广告 SDK 的端侧推理 API（Foundation Models 第三方开放范围）将是 iOS 广告端智能的关键政策节点；建议提前调研现有 Foundation Models 框架对序列推荐 embedding 场景的适配成本。</li>
+<li><strong>KDD 2026（8 月）</strong>：CTR/CVR 端侧化、端云协同推荐工程论文收录窗口已开，关注大厂实际部署 A/B 数据（参考 GenLI +1.56% RPM 标准）。</li>
+</ul>
+<p><em>数据截止：2026-05-23 | 已排除近期已报道内容（GenLI 2605.15905、SUIN 2604.23810、Firebase AI Logic GA、Android 17 android.ai.inference API、LiteRT × Qualcomm/MediaTek NPU GA、Arm SME2 × KleidiAI、MiniCPM-V 4.6、WebMCP、Antigravity 2.0、OpenAI ChatGPT Ads、OpenAI AI 手机 MediaTek Dimensity 9600、Snapdragon 6/4 Gen 5）</em></p>
+    </article>
+  </div>
+</body>
+</html>
