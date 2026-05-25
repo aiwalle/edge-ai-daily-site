@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端智能日报 2026-05-25</title>
+  <style>
+:root{
+  --bg:#f4faf8;
+  --surface:#ffffff;
+  --surface-soft:#f8fcfb;
+  --text:#1f2f2b;
+  --muted:#5e726b;
+  --accent:#0f766e;
+  --accent-soft:#dcf2ee;
+  --border:#d8e8e2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #e9f7f2 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, #e5f4ef 0%, transparent 28%),
+    var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.8;
+}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px 56px}
+.top{
+  margin-bottom:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+}
+.brand{
+  margin:0;
+  font-size:14px;
+  letter-spacing:.08em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.back{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px 28px 20px;
+  box-shadow:0 10px 30px rgba(15,118,110,.08);
+}
+h1,h2,h3{line-height:1.35;margin:1.1em 0 .45em}
+h1{font-size:2rem;margin-top:.15em}
+h2{font-size:1.32rem}
+h3{font-size:1.08rem}
+p,li{font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+blockquote{
+  margin:1rem 0;
+  padding:.72rem .95rem;
+  background:var(--surface-soft);
+  border-left:4px solid var(--accent);
+  color:#28433d;
+  border-radius:8px;
+}
+hr{
+  border:none;
+  border-top:1px dashed var(--border);
+  margin:1.3rem 0;
+}
+code{
+  background:#eef7f5;
+  border:1px solid #d7e9e4;
+  color:#1f4f49;
+  border-radius:6px;
+  padding:.14em .42em;
+  font-size:.92em;
+}
+pre{
+  background:#0f1f1d;
+  color:#e9f4f2;
+  border-radius:12px;
+  overflow:auto;
+  padding:14px;
+}
+pre code{
+  background:transparent;
+  border:none;
+  color:inherit;
+  padding:0;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  overflow:hidden;
+  border-radius:12px;
+}
+th,td{
+  border:1px solid var(--border);
+  padding:.6rem .7rem;
+  text-align:left;
+  vertical-align:top;
+}
+th{background:#edf8f5}
+.footer{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:.88rem;
+}
+.list{
+  list-style:none;
+  margin:1rem 0 0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.list a.item{
+  display:block;
+  padding:14px 15px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-soft);
+  transition:.15s ease;
+}
+.item-title{
+  display:block;
+  font-weight:700;
+  margin-top:2px;
+}
+.focus{
+  display:block;
+  margin-top:8px;
+  font-size:.92rem;
+  color:#37524c;
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.list a.item:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(15,118,110,.09);
+  text-decoration:none;
+}
+.date{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  margin-bottom:2px;
+}
+@media (max-width:700px){
+  .wrap{padding:20px 12px 40px}
+  .card{padding:20px 16px 16px;border-radius:14px}
+  h1{font-size:1.62rem}
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <p class="brand">Edge AI Daily</p>
+      <a class="back" href="../index.html">← 返回目录</a>
+    </div>
+    <article class="card">
+      <h1>端智能日报 2026-05-25</h1>
+<blockquote>
+<p><strong>本期聚焦</strong>：两条主线交汇——<strong>推理效率</strong>与<strong>生态卡位</strong>。Quant.npu 和 Agent-X 从量化与系统两层将端侧 LLM 推理推向 NPU 极限；MediaTek 天玑开发套件 3.0 强化中国 Android 生态工具链；WWDC 2026（6/8）即将开幕，Apple Intelligence 开放第三方 AI 接入，将在 iOS 广告生态制造新的"端侧能力窗口"。AdFL 补充了浏览器内联邦学习广告场景的隐私计算实践。</p>
+</blockquote>
+<hr />
+<h2>1. 【WWDC 2026（6月8日）：Apple Intelligence 开放第三方 AI 接入，iOS 27 Core AI 框架加码端侧能力】</h2>
+<ul>
+<li><strong>评分</strong>：A4/5 · I4/5 · S=12 · P0 · 价值类型：新能力探索 + 成本优化</li>
+<li><strong>来源</strong>：Geeky Gadgets / MacRumors | <a href="https://www.geeky-gadgets.com/apple-intelligence-wwdc-2026/">WWDC 2026 Apple Intelligence AI Plans</a> | 2026-05-22</li>
+</ul>
+<p><strong>内容总结（约 130 字）</strong>：
+Apple 正式宣布 WWDC 2026 于 <strong>6 月 8–12 日</strong>举行，并提前披露两项关键方向：① <strong>"Extensions" 框架</strong>——允许用户选择 Claude、ChatGPT 等第三方 AI 驱动 Apple Intelligence 功能，通过 App Store 接入；② <strong>Core AI 框架</strong>——面向开发者的预训练模型 API 集合，强调端侧运行与隐私优先。Siri 底层将切换至现代 LLM 架构，支持跨应用上下文感知。iOS 27 / iPadOS 27 / macOS 27 同步亮相。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在 <strong>iOS 广告 SDK 场景下，直接调用 Core AI 框架做端侧素材理解与意图分类</strong>，无需自研推理引擎，延迟优于云端回路。"Extensions" 开口意味着广告 LLM 能力可借道 App Store 合法接入 Apple Intelligence 数据流，是 iOS 广告用户建模的重大政策红利——<strong>P0：WWDC 前两周需准备技术预研，确认 Core AI API 开放边界</strong>。</p>
+<hr />
+<h2>2. 【AdFL：浏览器内联邦学习用于在线广告，差分隐私保护下广告可见性预测 AUC 92.59%】【延迟发酵】</h2>
+<ul>
+<li><strong>评分</strong>：A5/5 · I2/5 · S=12 · P1 · 价值类型：成本优化 + 用户体验</li>
+<li><strong>来源</strong>：arXiv | <a href="https://arxiv.org/abs/2602.06336">arxiv.org/abs/2602.06336</a> | 2026-02 发布（延迟发酵：首次收录）</li>
+</ul>
+<p><strong>内容总结（约 140 字）</strong>：
+AdFL 在浏览器内实现联邦学习（FL）用于在线广告，<strong>无需将用户行为数据上传服务端</strong>，训练信息在毫秒级内在本地浏览器捕获。核心技术：① 浏览器端 FL 通信协议；② 差分隐私（DP）对本地模型参数加噪保护；③ 在 ad viewability（广告可见性）预测任务上验证，<strong>AUC 达 92.59%</strong>。部署环境：纯浏览器端，无须额外客户端安装。工程信息：训练捕获延迟达毫秒级，隐私成本与模型精度有明确 trade-off 分析。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在 <strong>移动 Web 广告投放场景下，利用浏览器内 FL 实现无数据出境的用户建模</strong>，在不依赖服务端原始数据的情况下优化广告可见性预测。借鉴思路（方法论）：差分隐私 + 本地 FL 的架构可迁移至 App 内 WebView 广告场景；适配原生端侧广告时需替换 Web 运行时为 LiteRT 或 CoreML。</p>
+<hr />
+<h2>3. 【MediaTek 天玑开发者大会 MDDC 2026：Dimensity AI 开发套件 3.0，eNPU 工具链 + Low Bit 压缩 58% 提升助力生产落地】【延迟发酵】</h2>
+<ul>
+<li><strong>评分</strong>：A3/5 · I4/5 · S=10 · P1 · 价值类型：成本优化 + 新能力探索</li>
+<li><strong>来源</strong>：MediaTek 官方 / IT之家 | <a href="https://www.mediatek.com/zh-cn/press-room/mediatek-held-dimensity-developer-conference-2026-mddc2026">MDDC 2026 官方新闻稿</a> | 2026-05-13（延迟发酵：首次收录）</li>
+</ul>
+<p><strong>内容总结（约 150 字）</strong>：
+MediaTek 5月13–15日召开天玑开发者大会 MDDC 2026，发布 <strong>Dimensity AI 开发套件 3.0</strong>，三项核心工具：① <strong>eNPU 开发工具包</strong>——为天玑芯片超高效 NPU 优化常驻轻量 AI 模型，实测 <strong>42% 功耗节省</strong>；② <strong>Low Bit 压缩工具</strong>——端侧 LLM 量化压缩，压缩率提升幅度高达 <strong>58%</strong>；③ <strong>Dimensity AI Partner 工具</strong>——端侧 LLM 部署自动化，可节省 <strong>90% 部署时间</strong>。配套 LVM 模型可视化部署效率提升 50%。同期发布 Dimensity AI Agent Engine 2.0，支持低功耗常驻感知（SensingClaw）+ 跨应用 Agent 驱动。AI 开发套件下载量同比升 440%。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在 <strong>Android 广告 SDK（搭载天玑旗舰 SoC）上，借助 eNPU 工具包直接将广告轻量模型（CTR 轻量特征抽取、意图分类）常驻 eNPU</strong>，在不占用主 CPU 的情况下降低广告推理功耗。Low Bit 压缩工具可直接应用（端侧广告 LLM 量化模块），58% 压缩提升能显著缩减部署包体积。</p>
+<hr />
+<h2>4. 【Quant.npu：NPU 全静态量化框架解锁端侧 LLM 高效推理，延迟降低最高 15.1%】</h2>
+<ul>
+<li><strong>评分</strong>：A3/5 · I3/5 · S=9 · P1 · 价值类型：成本优化</li>
+<li><strong>来源</strong>：arXiv | <a href="https://arxiv.org/abs/2605.20295">arxiv.org/abs/2605.20295</a> | 2026-05（近期发布）</li>
+</ul>
+<p><strong>内容总结（约 130 字）</strong>：
+Quant.npu 提出专为移动 NPU 设计的<strong>全静态量化框架</strong>，解决现有 PTQ 方法依赖动态激活量化、无法适配 NPU 静态推理约束的根本矛盾。核心技术：① <strong>可学习量化参数 + 旋转矩阵</strong>联合优化，低比特激活-权重量化无需运行时重计算；② <strong>旋转感知比特宽选择初始化</strong>（适应不同激活分布）+ <strong>分布感知选择性优化</strong>两阶段流水线。在真实移动 NPU 上验证：精度与 SOTA PTQ 方法持平，<strong>推理延迟最高降低 15.1%</strong>。部署平台：真实消费级移动 NPU（型号未公开）。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在 <strong>Android 广告端侧推理场景下，将 CTR/意图识别模型的 NPU 量化部署效率提升约 15%</strong>，在不损失精度的前提下压缩推理时间窗口，从而在同一广告请求生命周期内执行更多端侧特征计算。可直接应用（NPU 量化部署模块）：Quant.npu 框架可作为现有 TFLite/LiteRT 量化流程的前置校准工具。</p>
+<hr />
+<h2>5. 【Agent-X：软件层端侧 AI Agent 全链路加速，Prefix Cache + LLM-Free 推测解码实现 1.61x 提速零精度损失（KAIST）】</h2>
+<ul>
+<li><strong>评分</strong>：A3/5 · I3/5 · S=9 · P1 · 价值类型：成本优化 + 用户体验</li>
+<li><strong>来源</strong>：arXiv | <a href="https://arxiv.org/abs/2605.10380">arxiv.org/abs/2605.10380</a> | 2026-05-11（KAIST）</li>
+</ul>
+<p><strong>内容总结（约 130 字）</strong>：
+Agent-X 是<strong>纯软件、零精度损失</strong>的端侧 AI Agent 推理加速框架，同时优化 prefill 和 decode 两阶段。核心技术：① <strong>Agent-Aware Prefix Caching</strong>——将 Agent 输入 token 模式重写以最大化前缀复用，减少重复 prefill；② <strong>LLM-Free 推测解码</strong>——用轻量 draft 推断快速生成候选 token，大幅降低 decode 延迟，几乎无额外开销。在代表性 agentic 任务上验证：<strong>端到端 1.61x 加速，无精度损失</strong>，可无缝集成至现有端侧 AI Agent 系统。部署环境：现有移动端 AI Agent（具体设备未公开）。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在 <strong>广告创意理解 / 端侧多步骤意图识别 Agent 场景下，将 LLM 推理时延降至原来 62%</strong>，使端侧广告 Agent（如素材审核、实时竞价策略推理）在用户交互窗口内完成响应成为可能。借鉴思路（方法论）：Prefix Cache 技术可直接用于广告场景中大量模板化 prompt 的 prefill 复用，降低每次请求的计算成本。</p>
+<hr />
+<h3>其他观察</h3>
+<p>本期三个技术方向高度集中：<strong>NPU 友好量化</strong>（Quant.npu）、<strong>Agent 推理加速</strong>（Agent-X）和<strong>平台生态锁定</strong>（MediaTek MDDC 3.0 + WWDC 2026）。端侧广告落地的瓶颈正在从"模型能否跑"转向"怎样跑得更低功耗、更低延迟"，工具链成熟度是下半年竞争焦点。AdFL 提示隐私监管压力下浏览器/端内 FL 有实际落地路径。</p>
+<h3>近期关注</h3>
+<ul>
+<li><strong>WWDC 2026（6月8日）</strong>：Core AI 框架 API 细节、Apple Intelligence Extensions 开发者权限范围将直接决定 iOS 广告端侧能力边界，建议提前排期技术调研。</li>
+<li><strong>KDD 2026</strong>（8月，预计 5–6 月 DDL 集中放出 arXiv 预印本）：关注端侧推荐/广告方向论文提前发布。</li>
+</ul>
+<hr />
+<p><em>数据截止：2026-05-25 | 已排除近期已报道内容（UxSID arXiv 2605.09040、百度 Efficient LLM Ads arXiv 2605.11582、UniVA arXiv 2605.05803、CR² arXiv 2605.12001、GenLI arXiv 2605.15905、HiSAC arXiv 2602.21009、Arm SME2 × KleidiAI × LiteRT、MiniCPM-V 4.6、Firebase AI Logic GA、ExecuTorch MLSys 2026 Oral、Android 17 android.ai.inference、Gemini Nano 4 AICore DP、Firebase Hybrid Inference SDK 等）</em></p>
+    </article>
+  </div>
+</body>
+</html>
