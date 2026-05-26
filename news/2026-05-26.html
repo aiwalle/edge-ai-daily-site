@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端智能日报 2026-05-26</title>
+  <style>
+:root{
+  --bg:#f4faf8;
+  --surface:#ffffff;
+  --surface-soft:#f8fcfb;
+  --text:#1f2f2b;
+  --muted:#5e726b;
+  --accent:#0f766e;
+  --accent-soft:#dcf2ee;
+  --border:#d8e8e2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #e9f7f2 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, #e5f4ef 0%, transparent 28%),
+    var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.8;
+}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px 56px}
+.top{
+  margin-bottom:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+}
+.brand{
+  margin:0;
+  font-size:14px;
+  letter-spacing:.08em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.back{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px 28px 20px;
+  box-shadow:0 10px 30px rgba(15,118,110,.08);
+}
+h1,h2,h3{line-height:1.35;margin:1.1em 0 .45em}
+h1{font-size:2rem;margin-top:.15em}
+h2{font-size:1.32rem}
+h3{font-size:1.08rem}
+p,li{font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+blockquote{
+  margin:1rem 0;
+  padding:.72rem .95rem;
+  background:var(--surface-soft);
+  border-left:4px solid var(--accent);
+  color:#28433d;
+  border-radius:8px;
+}
+hr{
+  border:none;
+  border-top:1px dashed var(--border);
+  margin:1.3rem 0;
+}
+code{
+  background:#eef7f5;
+  border:1px solid #d7e9e4;
+  color:#1f4f49;
+  border-radius:6px;
+  padding:.14em .42em;
+  font-size:.92em;
+}
+pre{
+  background:#0f1f1d;
+  color:#e9f4f2;
+  border-radius:12px;
+  overflow:auto;
+  padding:14px;
+}
+pre code{
+  background:transparent;
+  border:none;
+  color:inherit;
+  padding:0;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  overflow:hidden;
+  border-radius:12px;
+}
+th,td{
+  border:1px solid var(--border);
+  padding:.6rem .7rem;
+  text-align:left;
+  vertical-align:top;
+}
+th{background:#edf8f5}
+.footer{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:.88rem;
+}
+.list{
+  list-style:none;
+  margin:1rem 0 0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.list a.item{
+  display:block;
+  padding:14px 15px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-soft);
+  transition:.15s ease;
+}
+.item-title{
+  display:block;
+  font-weight:700;
+  margin-top:2px;
+}
+.focus{
+  display:block;
+  margin-top:8px;
+  font-size:.92rem;
+  color:#37524c;
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.list a.item:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(15,118,110,.09);
+  text-decoration:none;
+}
+.date{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  margin-bottom:2px;
+}
+@media (max-width:700px){
+  .wrap{padding:20px 12px 40px}
+  .card{padding:20px 16px 16px;border-radius:14px}
+  h1{font-size:1.62rem}
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <p class="brand">Edge AI Daily</p>
+      <a class="back" href="../index.html">← 返回目录</a>
+    </div>
+    <article class="card">
+      <h1>端智能日报 2026-05-26</h1>
+<blockquote>
+<p><strong>本期聚焦</strong>：两条主线驱动：<strong>广告算法精准化</strong>与<strong>端侧框架工程化</strong>。阿里妈妈在 WWW 2026 提出 READER 级联延迟反馈框架，直接解决后链路 CVR 建模中转化与退款双重时延问题；Influence Function 方法为延迟反馈再训练提供高效工程路径。Google I/O 2026（5月19日）LiteRT-LM 正式 GA，配合 Qualcomm QNN Accelerator，56 款模型在旗舰 NPU 上推理 &lt;5ms，Android 广告端侧推理进入新基准线。</p>
+</blockquote>
+<hr />
+<h2>1. 【WWW 2026 | 阿里妈妈 READER：级联延迟反馈建模新框架，直击展示广告 CVR 后链路痛点】</h2>
+<ul>
+<li><strong>评分</strong>：A5/5 · I4/5 · S=14 · P0 · 价值类型：收入提升</li>
+<li><strong>来源</strong>：阿里妈妈 / ACM Web Conference 2026 | <a href="https://arxiv.org/abs/2601.20307">arxiv.org/abs/2601.20307</a> | 2026-01（WWW 2026 收录）</li>
+</ul>
+<p><strong>内容总结（约 140 字）</strong>：
+阿里妈妈联合团队在 WWW 2026 发表 READER 框架，聚焦"级联延迟反馈"(Cascaded Delayed Feedback, CDF) 问题——展示广告中，<strong>转化(conversion)和退款(refund)均存在时延且顺序依赖</strong>，双重延迟导致训练数据严重失真，传统 DFM 方法只处理单步延迟、无法覆盖此场景。READER 核心：① <strong>双专家塔架构</strong>分别建模转化路径与退款路径；② <strong>去偏模块</strong>（label calibrator + 部分标签遗忘策略 partial label unlearning），纠正训练时可见标签与最终标签的分布偏差。生产场景：阿里妈妈展示广告（淘天平台），是与 TESLA 流式延迟反馈框架配套的后链路精细化模块。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在<strong>广告 CVR/后链路转化预估场景下，将「有延迟转化标签」的样本损失降至最低</strong>，尤其适合有退款/撤单逻辑的电商 &amp; 泛直播广告。可直接应用（CVR 模型训练数据处理模块）：双专家塔 + label calibrator 架构可落地到现有 Post-Click 模型训练流水线；partial label unlearning 可缓解训练/服务标签分布偏移，预计可有效提升 AUC 与线上 CVR 正相关度。<strong>P0：可直接立项参考，代码复现周期 1-2 周。</strong></p>
+<hr />
+<h2>2. 【Delayed Feedback Modeling with Influence Functions：用影响函数高效修正延迟转化偏差，免全量重训练】</h2>
+<ul>
+<li><strong>评分</strong>：A5/5 · I3/5 · S=13 · P1 · 价值类型：成本优化 + 收入提升</li>
+<li><strong>来源</strong>：arXiv | <a href="https://arxiv.org/abs/2502.01669">arxiv.org/abs/2502.01669</a> | 2026-02</li>
+</ul>
+<p><strong>内容总结（约 130 字）</strong>：
+针对广告延迟反馈建模的工程痛点——延迟标签到达后需重新训练模型，成本极高——本文引入 <strong>Influence Functions</strong> 实现高效增量修正。核心思路：用 influence function 估计"新到达的延迟标签"对模型参数的边际影响，直接在参数空间做轻量更新，<strong>避免全量重训练</strong>。方法支持 online 更新节奏，与流式延迟反馈框架（如 TESLA、FNW）兼容。工程信息：参数更新计算量与新到达样本量成比例，相比全量 SGD 显著降低计算开销；无需修改模型结构，可插入现有训练框架。部署环境：适配大规模工业广告系统，训练成本显著节省。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在<strong>广告 CVR/CVR-post-refund 模型的每日/小时级更新周期中，用 Influence Function 替代全量重训练</strong>，节省 GPU 算力同时维持模型新鲜度。借鉴思路（方法论）：与 READER 互补——READER 解决架构问题，Influence Functions 解决再训练效率问题，两者可组合使用于同一 CVR pipeline。</p>
+<hr />
+<h2>3. 【Google I/O 2026：LiteRT-LM 正式 GA + Qualcomm QNN Accelerator，56 款模型 NPU 推理 &lt;5ms】</h2>
+<ul>
+<li><strong>评分</strong>：A3/5 · I5/5 · S=11 · P1 · 价值类型：成本优化 + 用户体验</li>
+<li><strong>来源</strong>：Google Developers Blog | <a href="https://developers.googleblog.com/building-real-world-on-device-ai-with-litert-and-npu/">developers.googleblog.com/building-real-world-on-device-ai-with-litert-and-npu/</a> | 2026-05-19（Google I/O 2026）</li>
+</ul>
+<p><strong>内容总结（约 150 字）</strong>：
+Google I/O 2026（5月19日）宣布 <strong>LiteRT-LM 正式 GA（General Availability）</strong>，同步发布 <strong>LiteRT Qualcomm AI Engine Direct (QNN) Accelerator</strong>，取代旧版 TFLite QNN delegate，并全面兼容 MediaTek 与 Qualcomm 两大 SoC 平台。核心工程数据：① 支持 <strong>90 个 LiteRT ops</strong>，64/72 测试模型可 100% 委托 NPU 执行；② 在 Snapdragon 8 Elite Gen 5 NPU 上，<strong>56 款模型推理延迟 &lt;5ms</strong>（CPU 仅 13 款达到同水平）；③ <strong>FastVLM-0.5B</strong> 多模态视觉模型：TTFT 仅 <strong>0.12 秒</strong>（1024×1024 图像），prefill <strong>&gt;11,000 tok/s</strong>，decode <strong>&gt;100 tok/s</strong>；④ NPU 延迟为 CPU 的 1–20%（等效 5–100x 加速）。LiteRT-LM CLI 和 Python API 同步支持 NPU 后端，覆盖 Linux / macOS / Windows。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在 <strong>Android 广告 SDK 中，将轻量广告模型（意图分类、素材特征抽取、CTR 轻量头）一键部署至 Snapdragon NPU，延迟压至 5ms 级别</strong>，完全满足广告请求生命周期（RTB &lt;100ms）的端侧推理需求。可直接应用（推理部署模块）：LiteRT QNN Accelerator 可替换现有 TFLite QNN delegate，无需改模型结构，只需重新编译与 profiling；LiteRT-LM 的 Python API 可集成到模型上线流水线做部署前验证。</p>
+<hr />
+<h2>4. 【Qualcomm Snapdragon 8 Elite Gen 5：37% NPU 提速 + 70 tok/s LLM 推理，Android 旗舰新基准】</h2>
+<ul>
+<li><strong>评分</strong>：A3/5 · I4/5 · S=10 · P1 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：TechPowerUp / Futurum Group | <a href="https://www.techpowerup.com/341312/qualcomm-unveils-snapdragon-8-elite-gen-5-soc-with-impressive-performance-claims">techpowerup.com/341312</a> | 2026 Q1（CES 2026 Innovation Award）</li>
+</ul>
+<p><strong>内容总结（约 130 字）</strong>：
+Qualcomm 正式发布 Snapdragon 8 Elite Gen 5，2026 年 Android 旗舰机（三星 Galaxy S26 等）主要平台。AI 能力大幅升级：① <strong>Hexagon NPU 较前代提速 37%，功耗降低 16%</strong>；② AI 吞吐量整体提升 <strong>46%</strong>；③ 量化 LLM（7B 量化模型）推理速度达 <strong>70 tokens/sec</strong>，支持端侧 Agentic AI（模型在设备上规划、推理、自校正，无需云端往返）；④ GPU 推理延迟降至 CPU 的 5–70%，NPU 降至 1–20%（与 LiteRT QNN 联合测试数据）。获 CES 2026 Innovation Award（Qualcomm AI Engine）。部署场景：Android 手机 + Windows on Snapdragon PC，面向 on-device Agent 优化。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在 <strong>Android 广告 SDK 设备分层策略中，将搭载 Snapdragon 8 Elite Gen 5 的旗舰机单独划为高能力端设备</strong>，开启更复杂的端侧 CTR 精排模型（参数量可放大至当前 2x）或端侧 Agentic 广告策略（实时竞价策略推理无需回云）。借鉴思路：70 tok/s + 37% NPU 提速意味着 2026 旗舰线已可流畅运行 3B 参数量化 LLM，端侧素材理解模型（图文）可在 100ms 内完成。</p>
+<hr />
+<h2>5. 【MNN-LLM（阿里巴巴）：手机端通用 LLM 推理引擎，比主流框架快 8.6x，DRAM-Flash 混合存储】【延迟发酵】</h2>
+<ul>
+<li><strong>评分</strong>：A3/5 · I3/5 · S=9 · P2 · 价值类型：成本优化</li>
+<li><strong>来源</strong>：阿里巴巴 MNN 团队 / ACM Multimedia in Asia | <a href="https://arxiv.org/abs/2506.10443">arxiv.org/abs/2506.10443</a> | 2025-06（近期技术讨论升温）</li>
+</ul>
+<p><strong>内容总结（约 130 字）</strong>：
+相较 2025-05-25 报道：首次收录，补充工程细节。MNN-LLM 是阿里巴巴开源推理框架 MNN 的 LLM 专用扩展，专为移动设备设计，解决内存不足与推理速度不达标两大痛点。核心技术：① <strong>DRAM-Flash 混合存储</strong>——模型权重按访问频率分级存储，有效降低峰值内存占用；② <strong>指令集感知权重重排</strong>——针对 ARM CPU 指令集和移动 GPU 特性优化计算布局；③ <strong>多核负载均衡 + 混合精度</strong>——充分利用大小核架构与 FP16/INT8 混合推理。对比主流 LLM 框架（llama.cpp 等）最高 <strong>8.6x 加速</strong>。支持 Qwen、Baichuan、Zhipu、LLaMA 等主流模型，iOS + Android 双平台生产验证（阿里巴巴内部）。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在 <strong>Android / iOS 广告 SDK 场景中，用 MNN-LLM 替代 llama.cpp 或 llm.cpp 作为端侧 LLM 推理后端</strong>，8.6x 的速度提升直接拓宽可部署模型参数量上限，或将已部署模型的延迟从 500ms 级压至 100ms 级。借鉴思路（方法论）：DRAM-Flash 混合存储对内存受限设备（&lt;4GB RAM 的中端机型）有直接价值，可借鉴用于广告端侧 embedding 存储的分级缓存设计。</p>
+<hr />
+<h3>其他观察</h3>
+<p>三个技术方向本期高度协同：<strong>广告后链路精准建模</strong>（READER + Influence Functions 互补）、<strong>端侧推理框架工程化</strong>（Google LiteRT-LM GA + MNN-LLM），以及<strong>硬件新基准确立</strong>（Snapdragon 8 Elite Gen 5）。Google I/O 2026 标志着 LiteRT 从"实验性"进入"生产级"，Android 广告 SDK 接入 NPU 加速的工程门槛大幅降低。</p>
+<h3>近期关注</h3>
+<ul>
+<li><strong>WWDC 2026（6月8日）</strong>：Apple Intelligence Core AI 框架开放细节，iOS 27 广告 SDK 端侧能力边界将明确，建议提前准备 Core AI / CoreML 技术预研（参见 2026-05-25 报道）。</li>
+<li><strong>KDD 2026</strong> 投稿截止日期临近，预计下一波工业界广告算法论文（CTR/CVR/召回）将在 5-6 月集中在 arXiv 上涌现，建议持续跟踪 <code>cs.IR</code> 和 <code>cs.LG</code> 分类。</li>
+</ul>
+    </article>
+  </div>
+</body>
+</html>
