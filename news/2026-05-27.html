@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端智能日报 2026-05-27</title>
+  <style>
+:root{
+  --bg:#f4faf8;
+  --surface:#ffffff;
+  --surface-soft:#f8fcfb;
+  --text:#1f2f2b;
+  --muted:#5e726b;
+  --accent:#0f766e;
+  --accent-soft:#dcf2ee;
+  --border:#d8e8e2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #e9f7f2 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, #e5f4ef 0%, transparent 28%),
+    var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.8;
+}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px 56px}
+.top{
+  margin-bottom:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+}
+.brand{
+  margin:0;
+  font-size:14px;
+  letter-spacing:.08em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.back{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px 28px 20px;
+  box-shadow:0 10px 30px rgba(15,118,110,.08);
+}
+h1,h2,h3{line-height:1.35;margin:1.1em 0 .45em}
+h1{font-size:2rem;margin-top:.15em}
+h2{font-size:1.32rem}
+h3{font-size:1.08rem}
+p,li{font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+blockquote{
+  margin:1rem 0;
+  padding:.72rem .95rem;
+  background:var(--surface-soft);
+  border-left:4px solid var(--accent);
+  color:#28433d;
+  border-radius:8px;
+}
+hr{
+  border:none;
+  border-top:1px dashed var(--border);
+  margin:1.3rem 0;
+}
+code{
+  background:#eef7f5;
+  border:1px solid #d7e9e4;
+  color:#1f4f49;
+  border-radius:6px;
+  padding:.14em .42em;
+  font-size:.92em;
+}
+pre{
+  background:#0f1f1d;
+  color:#e9f4f2;
+  border-radius:12px;
+  overflow:auto;
+  padding:14px;
+}
+pre code{
+  background:transparent;
+  border:none;
+  color:inherit;
+  padding:0;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  overflow:hidden;
+  border-radius:12px;
+}
+th,td{
+  border:1px solid var(--border);
+  padding:.6rem .7rem;
+  text-align:left;
+  vertical-align:top;
+}
+th{background:#edf8f5}
+.footer{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:.88rem;
+}
+.list{
+  list-style:none;
+  margin:1rem 0 0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.list a.item{
+  display:block;
+  padding:14px 15px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-soft);
+  transition:.15s ease;
+}
+.item-title{
+  display:block;
+  font-weight:700;
+  margin-top:2px;
+}
+.focus{
+  display:block;
+  margin-top:8px;
+  font-size:.92rem;
+  color:#37524c;
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.list a.item:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(15,118,110,.09);
+  text-decoration:none;
+}
+.date{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  margin-bottom:2px;
+}
+@media (max-width:700px){
+  .wrap{padding:20px 12px 40px}
+  .card{padding:20px 16px 16px;border-radius:14px}
+  h1{font-size:1.62rem}
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <p class="brand">Edge AI Daily</p>
+      <a class="back" href="../index.html">← 返回目录</a>
+    </div>
+    <article class="card">
+      <h1>端智能日报 2026-05-27</h1>
+<blockquote>
+<p><strong>本期聚焦</strong>：两条主线交织——<strong>联邦学习赋能跨市场 CTR 精准预估</strong>（FedMM 首次将 RQ-VAE 编码对齐异构 ID 空间）与<strong>端侧推理框架工程化全面提速</strong>（PyTorch ExecuTorch 论文正式发表、SparKV 端云混合 KV 加载、MiniCPM-V 4.6 超轻量多模态落地）。广告业务关注点：FedMM 对跨平台多市场广告 CTR 建模有直接参考价值；ExecuTorch 作为 Meta 内部生产系统的全面技术披露，为工程落地提供清晰路线。</p>
+</blockquote>
+<hr />
+<h2>1. 【FedMM：联邦协同信号量化 + RQ-VAE 双层码本，跨市场 CTR 预估首次解决 ID 空间不对齐难题】</h2>
+<ul>
+<li><strong>评分</strong>：A5/5 · I3/5 · S=13 · P0 · 价值类型：收入提升</li>
+<li><strong>来源</strong>：arXiv | <a href="https://arxiv.org/abs/2605.11433">arxiv.org/abs/2605.11433</a> | 2026-05-12</li>
+</ul>
+<p><strong>内容总结（约 140 字）</strong>：
+多市场推荐（如 Amazon、Netflix 跨区域）中，各市场 ID 空间完全不相交，传统联邦学习的 embedding 聚合因此失效。FedMM 提出<strong>联邦协同信号量化</strong>方法：① 每市场部署一套 <strong>RQ-VAE（残差量化变分自编码器）</strong> 将用户/物品 embedding 压缩为离散码字（codebook），避免原始 embedding 传输；② <strong>双层码本架构</strong>——全局联邦码本（跨市场共享协同模式）+ 本地码本（捕获市场独特语义）；③ 量化码字替代原始 embedding 在市场间传递，天然实现隐私保护与 ID 对齐。实验场景：多市场电商 CTR 预估，与中心化及传统 FL 基线相比精度持平或略优，同时满足 GDPR 级隐私要求。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在<strong>抖音国际版（TikTok）与抖音国内版多市场广告 CTR 联合建模中，用 FedMM 解决两侧用户 ID 不共享的对齐问题</strong>，在不传输原始 embedding 的前提下共享跨市场协同信号，提升长尾市场（海外小市场）的 CTR 预估质量。可直接应用（跨平台 CTR 联邦建模模块）：RQ-VAE 双层码本可插入现有 DLRM / DCN 等 CTR 模型的 embedding 层，联邦聚合粒度从 gradient 降低到 codebook 更新，通信量压缩显著。<strong>P0：与现有多市场 CTR 建模对比实验周期约 2 周。</strong></p>
+<hr />
+<h2>2. 【ExecuTorch：PyTorch 官方端侧推理系统论文发表，从穿戴设备到旗舰 SoC 的统一部署方案】</h2>
+<ul>
+<li><strong>评分</strong>：A3/5 · I4/5 · S=10 · P1 · 价值类型：成本优化 + 新能力探索</li>
+<li><strong>来源</strong>：arXiv / Meta AI + PyTorch | <a href="https://arxiv.org/abs/2605.08195">arxiv.org/abs/2605.08195</a> | 2026-05-05</li>
+</ul>
+<p><strong>内容总结（约 140 字）</strong>：
+Meta 联合 PyTorch 团队正式发表 ExecuTorch 系统论文，这是其已在 Apple Watch、Meta AR 眼镜、Samsung 设备等大规模生产环境运行的端侧推理引擎首次完整技术披露。核心设计：① 基于 <strong>torch.export</strong> 构建可移植的轻量二进制（.pte 文件），保留 PyTorch 语义，可在桌面/服务器上完全模拟端侧推理行为，大幅降低调试成本；② <strong>可插拔 Backend 体系</strong>——XNNPACK（CPU）、CoreML（Apple）、Vulkan（GPU）、HTP（Qualcomm NPU）等均以统一接口接入；③ 支持量化（INT8/INT4）、动态 shape、LoRA 端侧微调；④ ExecuTorch 1.2 当前最新版本，官方文档支持 Linux/macOS/Windows，iOS + Android 生产路径完整。Arm SME2 联合测试：FP16 推理延迟从 1163ms 降至 298ms（提速 3.9×）。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在 <strong>Android + iOS 广告 SDK 中，用 ExecuTorch 统一管理多平台端侧 CTR 轻量头 / 素材特征提取模型</strong>，通过单一 .pte 工件在 Qualcomm HTP、Apple Neural Engine、ARM CPU 上切换执行，消除多套部署代码维护成本。借鉴思路（方法论）：torch.export 的"研究与生产同源"特性可直接集成到模型上线流水线，端侧推理回归测试可在 CI 服务器上完成，无需真机。</p>
+<hr />
+<h2>3. 【MiniCPM-V 4.6：1.3B 参数多模态端侧模型，19× Token 效率超越同量级 Qwen，iOS/Android/鸿蒙三端开源】</h2>
+<ul>
+<li><strong>评分</strong>：A3/5 · I3/5 · S=9 · P2 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：OpenBMB / 面壁智能 | <a href="https://huggingface.co/openbmb/MiniCPM-V-4.6">huggingface.co/openbmb/MiniCPM-V-4.6</a> | 2026-05-11</li>
+</ul>
+<p><strong>内容总结（约 130 字）</strong>：
+OpenBMB（面壁智能）发布 MiniCPM-V 4.6，定位"手机可跑的最强多模态模型"，基于 SigLIP2-400M 视觉编码器 + Qwen3.5-0.8B LLM，总参数 1.3B。核心突破：① <strong>混合 4×/16× 视觉 Token 压缩</strong>——高信息区域保留细粒度 Token，低信息区域激进压缩，平均推理 FLOPs 显著下降；② Artificial Analysis Intelligence Index 评分 13 分，比 Qwen3.5-0.8B（10 分）高 30% 但 Token 消耗低 <strong>19×</strong>；③ 支持 <strong>262144 Token 超长上下文</strong>；④ 适配 vLLM / SGLang / llama.cpp / Ollama，iOS、Android、HarmonyOS 端侧代码完整开源，开发者可直接复现。延迟数据：主流 Android 旗舰机可流畅运行（1B 量化模型 &lt;100ms 首 Token）。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在<strong>广告素材理解（图文 OCR、主体识别、广告文案合规审核）场景下，将 MiniCPM-V 4.6 作为端侧多模态特征抽取器</strong>，1.3B 参数在旗舰机 NPU 上可实现 100ms 级延迟，替代需要云端调用的素材理解 API，降低延迟和调用成本。借鉴思路：混合 Token 压缩策略可迁移到广告图文 embedding 模型中，对用户上传素材做变分辨率自适应处理。</p>
+<hr />
+<h2>4. 【SparKV：端云协同 KV Cache 按需加载，TTFT 压缩 1.3–5.1×、能耗降低 1.5–3.3×】</h2>
+<ul>
+<li><strong>评分</strong>：A3/5 · I3/5 · S=9 · P2 · 价值类型：成本优化 + 用户体验</li>
+<li><strong>来源</strong>：arXiv | <a href="https://arxiv.org/abs/2604.21231">arxiv.org/abs/2604.21231</a> | 2026-04（近期关注升温）</li>
+</ul>
+<p><strong>内容总结（约 130 字）</strong>：
+端侧 LLM 的 prefill 阶段因需完整构建 KV Cache 导致 TTFT（Time-to-First-Token）极高，限制了交互体验。SparKV 提出<strong>开销感知的 KV Cache 混合加载策略</strong>：① 将 KV Cache 切分为 chunk，建模每个 chunk 的"云端传输成本 vs. 本地计算成本"，动态决定"流式下载（streaming）还是本地重计算"；② 两条路径并行执行，重叠通信与计算以最小化等待时间；③ 运行时根据实时网络质量和设备负载动态重平衡离线调度计划。跨多种数据集、LLM、边缘设备的实验：<strong>TTFT 降低 1.3–5.1×，单请求能耗降低 1.5–3.3×</strong>，对模型精度影响可忽略。部署场景：有云端辅助的端侧 LLM 推理（手机 + 4G/5G/WiFi）。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在<strong>广告端侧 Agent / 实时创意生成场景中，通过 SparKV 的端云协同策略将 LLM 首 Token 延迟从 2–5s 压至亚秒级</strong>，使端云协同 LLM 广告策略在 4G 环境下变得可行。借鉴思路（方法论）："云传输 vs. 本地计算"的动态权衡框架可直接迁移到端云广告特征召回策略——在网络好时优先拉取云端精排特征，网络差时切换为端侧轻量特征，与 CR²（端云路由）形成互补。</p>
+<hr />
+<h2>5. 【Don't Waste Bits!：自适应 KV-Cache 量化（2/4/8-bit per token），端侧 LLM 内存与延迟双降】</h2>
+<ul>
+<li><strong>评分</strong>：A3/5 · I3/5 · S=9 · P2 · 价值类型：成本优化</li>
+<li><strong>来源</strong>：arXiv | <a href="https://arxiv.org/abs/2604.04722">arxiv.org/abs/2604.04722</a> | 2026-04</li>
+</ul>
+<p><strong>内容总结（约 120 字）</strong>：
+端侧 LLM 推理的核心瓶颈之一是 KV Cache 占用随序列长度线性增长，固定位宽量化（全 INT4 或全 FP16）要么精度损失大、要么内存不节省。本文提出<strong>逐 Token 自适应 KV 量化</strong>：① 提取轻量 token 级信号——Token 频率、注意力方差、熵基不确定度；② 用一个小型 MLP 控制器在解码时动态为每个 token 的 K/V 分配 2/4/8-bit 或 FP16 精度；③ 量化策略完全通过数据驱动学习，无需手工规则。对比静态量化和规则 baseline：在保持或提升精度的前提下，<strong>KV 内存占用和延迟均显著下降</strong>（具体数值取决于序列长度和模型规模）。平台：移动端 LLM 通用，无特定硬件依赖。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在<strong>端侧广告 LLM（如用于实时创意生成或意图理解的 3B 量化模型）长对话/长上下文场景中，用自适应 KV 量化将 token 级内存精细化管理</strong>，在不降低广告语义理解精度的前提下将 KV Cache 峰值内存降低 30–50%，解锁更长上下文窗口。借鉴思路：MLP 控制器的"重要性感知量化"设计模式可复用于广告 CTR 特征 embedding 的动态位宽压缩，减少端侧存储占用。</p>
+<hr />
+<h3>其他观察</h3>
+<p>今日内容呈现<strong>联邦隐私计算 + 端侧 LLM 工程化</strong>双线并进：FedMM 证明跨市场 CTR 联邦建模在工程上可行；ExecuTorch、SparKV、"Don't Waste Bits!"三篇工程论文则覆盖了"端侧 LLM 部署全链路"——从模型导出（ExecuTorch）到 prefill 加速（SparKV）再到解码内存优化（自适应 KV 量化）。MiniCPM-V 4.6 的 1.3B 多模态模型是当前端侧素材理解的最优性价比选项。</p>
+<h3>近期关注</h3>
+<p>⚠️ <strong>WWDC 2026（6月8日）</strong> 即将召开——Apple 确认将推出 <strong>Core AI 框架（替代 Core ML）</strong>，支持第三方模型接入 iOS 27，并升级 Foundation Models / Siri。届时广告 SDK 接入 Apple Neural Engine 的工程路径将有重大变化，建议提前关注官方 Session 列表（ML &amp; AI 类目）。</p>
+    </article>
+  </div>
+</body>
+</html>
