@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端智能日报 2026-05-28</title>
+  <style>
+:root{
+  --bg:#f4faf8;
+  --surface:#ffffff;
+  --surface-soft:#f8fcfb;
+  --text:#1f2f2b;
+  --muted:#5e726b;
+  --accent:#0f766e;
+  --accent-soft:#dcf2ee;
+  --border:#d8e8e2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #e9f7f2 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, #e5f4ef 0%, transparent 28%),
+    var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.8;
+}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px 56px}
+.top{
+  margin-bottom:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+}
+.brand{
+  margin:0;
+  font-size:14px;
+  letter-spacing:.08em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.back{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px 28px 20px;
+  box-shadow:0 10px 30px rgba(15,118,110,.08);
+}
+h1,h2,h3{line-height:1.35;margin:1.1em 0 .45em}
+h1{font-size:2rem;margin-top:.15em}
+h2{font-size:1.32rem}
+h3{font-size:1.08rem}
+p,li{font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+blockquote{
+  margin:1rem 0;
+  padding:.72rem .95rem;
+  background:var(--surface-soft);
+  border-left:4px solid var(--accent);
+  color:#28433d;
+  border-radius:8px;
+}
+hr{
+  border:none;
+  border-top:1px dashed var(--border);
+  margin:1.3rem 0;
+}
+code{
+  background:#eef7f5;
+  border:1px solid #d7e9e4;
+  color:#1f4f49;
+  border-radius:6px;
+  padding:.14em .42em;
+  font-size:.92em;
+}
+pre{
+  background:#0f1f1d;
+  color:#e9f4f2;
+  border-radius:12px;
+  overflow:auto;
+  padding:14px;
+}
+pre code{
+  background:transparent;
+  border:none;
+  color:inherit;
+  padding:0;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  overflow:hidden;
+  border-radius:12px;
+}
+th,td{
+  border:1px solid var(--border);
+  padding:.6rem .7rem;
+  text-align:left;
+  vertical-align:top;
+}
+th{background:#edf8f5}
+.footer{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:.88rem;
+}
+.list{
+  list-style:none;
+  margin:1rem 0 0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.list a.item{
+  display:block;
+  padding:14px 15px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-soft);
+  transition:.15s ease;
+}
+.item-title{
+  display:block;
+  font-weight:700;
+  margin-top:2px;
+}
+.focus{
+  display:block;
+  margin-top:8px;
+  font-size:.92rem;
+  color:#37524c;
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.list a.item:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(15,118,110,.09);
+  text-decoration:none;
+}
+.date{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  margin-bottom:2px;
+}
+@media (max-width:700px){
+  .wrap{padding:20px 12px 40px}
+  .card{padding:20px 16px 16px;border-radius:14px}
+  h1{font-size:1.62rem}
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <p class="brand">Edge AI Daily</p>
+      <a class="back" href="../index.html">← 返回目录</a>
+    </div>
+    <article class="card">
+      <h1>端智能日报 2026-05-28</h1>
+<blockquote>
+<p><strong>本期聚焦</strong>：两项战略性动态主导今日格局——Meta 工程博客完整披露 ARM（自适应排序模型）如何在万亿参数级 embedding 下维持广告系统亚秒延迟（Instagram +5% CTR / +3% 转化率）；Apple × Google 合作确认，Gemini 技术驱动 iOS 27 Siri 底层重建，距 WWDC 11 天的技术卡位已实质影响 iOS 广告生态边界。</p>
+</blockquote>
+<hr />
+<h2>1. 【Meta ARM：万亿参数级广告排序，"推理三难困境"破局，Instagram +5% CTR +3% 转化率实测】【延迟发酵】</h2>
+<ul>
+<li><strong>评分</strong>：A5/5 · I5/5 · S=15 · P0 · 价值类型：收入提升</li>
+<li><strong>来源</strong>：Engineering at Meta | <a href="https://engineering.fb.com/2026/03/31/ml-applications/meta-adaptive-ranking-model-bending-the-inference-scaling-curve-to-serve-llm-scale-models-for-ads/">原文链接</a> | 2026-03-31（延迟发酵：首次收录，发布时间先于本日报归档起点 2026-04-20）</li>
+</ul>
+<p><strong>内容总结（约 150 字）</strong>：
+Meta 工程博客正式披露 <strong>Adaptive Ranking Model（ARM）</strong>，目标是在广告实时排序中服务"LLM 级复杂度"模型，同时维持全球服务规模下的亚秒延迟。核心将"推理三难困境"（模型复杂度 vs. 低延迟 vs. 成本效率）拆解为三项技术突破：① <strong>Request-Centric Architecture</strong>——以每次广告请求为推理图单元，避免无效预计算，核心指标：~10B FLOPs/token、万亿参数级 embedding；② <strong>系统-算法协同设计</strong>——硬件感知模型架构 + 多卡架构，实现 O(1T) 参数扩展但不牺牲延迟；③ <strong>推理复杂度自适应调度</strong>——根据实时流量压力动态调整计算路径。线上效果（Instagram，Q4 2025 全量上线）：广告主 <strong>+5% CTR，+3% 转化率</strong>。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在<strong>广告精排系统架构升级时，以 ARM 的"请求中心架构 + 硬件感知协同设计"为参照蓝图</strong>，在不扩大服务成本的前提下将精排模型参数量向 LLM 量级推进。可借鉴思路（方法论）："推理三难困境"分析框架对广告系统架构师有直接参考价值——端侧广告推理同样面临延迟/算力/精度三角，ARM 的自适应调度策略可直接迁移到端云协同动态路由决策中。<strong>P0：建议在下一次精排系统 OKR 制定时将 ARM 架构方案纳入竞品参照。</strong></p>
+<hr />
+<h2>2. 【WWDC 2026【进展更新】：Apple × Google 合作确认，Gemini 驱动 iOS 27 Siri 底层重建，genai.apple.com 域名注册】</h2>
+<ul>
+<li><strong>评分</strong>：A4/5 · I5/5 · S=13 · P0 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：TechTimes / MacObserver / Tom's Guide | <a href="https://www.techtimes.com/articles/317080/20260525/apple-registers-genai-subdomain-ahead-wwdc-siri-overhaul-finally-arrives-ios-27.htm">techtimes.com</a> | 2026-05-25（相较 2026-05-25 报道新增：Apple × Google Gemini 合作细节、genai 子域名注册）</li>
+</ul>
+<p><strong>内容总结（约 150 字）</strong>：
+距 WWDC 2026（6 月 8 日）倒计时 11 天，Apple 于 5 月 25 日注册 <code>genai.apple.com</code> 子域名，被解读为大规模 GenAI 开发者入口即将亮相的信号。关键新增信息：① <strong>Apple × Google Cloud 正式合作</strong>——Google Cloud CEO Thomas Kurian 宣布 Google 将作为 Apple Foundation Models 的首选云供应商，下一代 Foundation Models 将以 Gemini 技术为底座构建；② <strong>Siri 底层架构重建</strong>——iOS 27 Siri 将切换至现代 LLM 架构，支持个人上下文感知、屏幕内容理解（on-screen understanding）、跨 App 任务执行；③ iOS 27 developer beta 将于 6 月 8 日与 keynote 同步发布；④ Tom's Guide 等多方来源印证"Gemini-powered Siri"为当前最高可信度预期。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在 <strong>iOS 广告 SDK 的用户意图建模上，间接受益于 Siri × Gemini 的跨 App 感知能力</strong>——若 iOS 27 Core AI 开放相关 API，将可能获取更丰富的用户当前意图信号（正在搜索什么、正在导航什么）用于广告定向。适配性判断：战略预判，<strong>暂不可直接应用</strong>——需等待 6 月 8 日 WWDC 确认 API 开放边界与隐私约束；建议现在锁定 Core AI 预研团队，beta 发布后第一时间评估接入路径，重点关注 IDFA/PrivacyKit 政策是否随之更新。</p>
+<hr />
+<h2>3. 【Qualcomm QMX (Matrix Extensions)：移动 CPU LLaMA 推理新路径，NPU 不可达时的高性能 Fallback】</h2>
+<ul>
+<li><strong>评分</strong>：A3/5 · I3/5 · S=9 · P1 · 价值类型：成本优化</li>
+<li><strong>来源</strong>：Qualcomm Developer Blog | <a href="https://www.qualcomm.com/developer/blog/2026/04/llama-models-acceleration-on-cpu-qmx">qualcomm.com/developer/blog/2026/04/llama-models-acceleration-on-cpu-qmx</a> | 2026-04（延迟发酵）</li>
+</ul>
+<p><strong>内容总结（约 130 字）</strong>：
+Qualcomm 在开发者博客发布 <strong>QMX（Qualcomm Matrix Extensions）</strong>，一套专为 ARM CPU 设计的矩阵运算指令扩展，目标是在 NPU 不可用或被占用时（如 OEM 锁定、系统任务抢占），通过 CPU 路径实现接近 NPU 级别的 LLM 推理性能。技术原理：QMX 通过向量寄存器复用构建高吞吐矩阵乘法内核，配合 INT4/INT8 混合精度推理减少访存带宽消耗，避免每次推理都依赖 NPU Driver 调度。支持模型：LLaMA 系列（Snapdragon SoC 设备）。工程意义：QMX 提供了"NPU-preferred + CPU-fallback"的双轨推理架构，使广告模型在设备资源争用时不需要完全降级。部署平台：搭载 Snapdragon SoC 的 Android 设备，无需额外硬件。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在<strong>广告 SDK 端侧推理的设备能力分层策略中，针对 Qualcomm 设备的 NPU 不可达情况，引入 QMX CPU 路径作为高性能 fallback</strong>，将 CTR 轻量模型的 CPU 降级延迟从标准 NEON 路径的数倍压降至接近 NPU 水平。借鉴思路（方法论）：QMX 揭示"NPU-less 高性能推理"路径，有助于将设备能力分层从"NPU/no-NPU 二选一"扩展为"NPU-preferred / QMX-fallback / NEON-minimal"三态，提升广告 SDK 在全量设备上的推理质量覆盖。</p>
+<hr />
+<h2>4. 【OpenAI 首款 AI 硬件设备：无屏 + 本地/云混合推理，2026 H2 发布，音频广告新场景雏形】</h2>
+<ul>
+<li><strong>评分</strong>：A2/5 · I3/5 · S=7 · P2 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：TechCrunch / 9to5Mac / Wareable | <a href="https://techcrunch.com/2026/01/21/openai-aims-to-ship-its-first-device-in-2026-and-it-could-be-earbuds/">techcrunch.com</a> | 2026-05 进展追踪</li>
+</ul>
+<p><strong>内容总结（约 120 字）</strong>：
+OpenAI 确认首款消费级 AI 硬件设备将于 <strong>2026 年下半年正式亮相</strong>，主要形态为<strong>无屏或低屏（耳机 / 类钢笔）</strong>，通过内置摄像头和麦克风感知环境。推理架构：轻量化 OpenAI 模型在设备本地执行，计算密集任务按需卸载至云端——典型的端云混合推理范式。硬件规格：2nm 制程定制处理器；制造商从 Luxshare 切换至富士康以应对供应链压力。同期更新：OpenAI AI 手机进度超预期，量产目标提前至 2027 H1。设备定位：屏幕可选，强调<strong>环境感知 + 语音交互</strong>，ChatGPT 深度集成。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在<strong>广告战略层面提前布局"无屏 AI 设备"带来的全新广告形态</strong>——无屏设备的主要交互模式是语音/情境感知，传统视觉广告位完全失效；音频广告、情境化购买意图触发、Agent 型商品推荐将成为核心场景。暂不适用（设备未发布，商业 API 未开放），但建议在 2026 H2 发布后第一时间评估 OpenAI 的广告/推荐 API 开放策略，这是一个"先入局"窗口期。</p>
+<hr />
+<h3>其他观察</h3>
+<p>今日内容以<strong>战略格局动态</strong>为主线：Meta ARM 提供了 LLM 级广告排序工程的完整路径披露，可作为业界参照蓝图；Apple × Google 合作将从底座层重构 iOS AI 基础设施，直接影响 iOS 广告 SDK 的端侧能力边界与数据流合规；Qualcomm QMX 填补了"NPU 不可达时 CPU 降级"的工程空白。三者合并看，端侧广告推理的技术栈正从"是否能跑"进入"精细化调度 + 硬件感知"的精工化阶段。</p>
+<h3>近期关注</h3>
+<p>⚠️ <strong>WWDC 2026（6 月 8 日，倒计时 11 天）</strong>：Core AI 框架 API 细节、Apple × Google Gemini 合作的开发者能力边界将于当天公开。建议提前准备三项调研：① Core AI API 是否开放用户意图信号（对广告定向影响最大）；② App Store 广告投放与 Siri Extensions 的数据流边界；③ iOS 27 是否调整 IDFA / PrivacyKit 政策（直接影响移动广告归因体系）。</p>
+<hr />
+<p><em>数据截止：2026-05-28 | 已排除近期已报道内容（参见 2026-05-25 至 2026-05-27 日报）</em></p>
+    </article>
+  </div>
+</body>
+</html>
