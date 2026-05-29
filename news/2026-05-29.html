@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端智能日报 2026-05-29</title>
+  <style>
+:root{
+  --bg:#f4faf8;
+  --surface:#ffffff;
+  --surface-soft:#f8fcfb;
+  --text:#1f2f2b;
+  --muted:#5e726b;
+  --accent:#0f766e;
+  --accent-soft:#dcf2ee;
+  --border:#d8e8e2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #e9f7f2 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, #e5f4ef 0%, transparent 28%),
+    var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.8;
+}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px 56px}
+.top{
+  margin-bottom:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+}
+.brand{
+  margin:0;
+  font-size:14px;
+  letter-spacing:.08em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.back{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px 28px 20px;
+  box-shadow:0 10px 30px rgba(15,118,110,.08);
+}
+h1,h2,h3{line-height:1.35;margin:1.1em 0 .45em}
+h1{font-size:2rem;margin-top:.15em}
+h2{font-size:1.32rem}
+h3{font-size:1.08rem}
+p,li{font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+blockquote{
+  margin:1rem 0;
+  padding:.72rem .95rem;
+  background:var(--surface-soft);
+  border-left:4px solid var(--accent);
+  color:#28433d;
+  border-radius:8px;
+}
+hr{
+  border:none;
+  border-top:1px dashed var(--border);
+  margin:1.3rem 0;
+}
+code{
+  background:#eef7f5;
+  border:1px solid #d7e9e4;
+  color:#1f4f49;
+  border-radius:6px;
+  padding:.14em .42em;
+  font-size:.92em;
+}
+pre{
+  background:#0f1f1d;
+  color:#e9f4f2;
+  border-radius:12px;
+  overflow:auto;
+  padding:14px;
+}
+pre code{
+  background:transparent;
+  border:none;
+  color:inherit;
+  padding:0;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  overflow:hidden;
+  border-radius:12px;
+}
+th,td{
+  border:1px solid var(--border);
+  padding:.6rem .7rem;
+  text-align:left;
+  vertical-align:top;
+}
+th{background:#edf8f5}
+.footer{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:.88rem;
+}
+.list{
+  list-style:none;
+  margin:1rem 0 0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.list a.item{
+  display:block;
+  padding:14px 15px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-soft);
+  transition:.15s ease;
+}
+.item-title{
+  display:block;
+  font-weight:700;
+  margin-top:2px;
+}
+.focus{
+  display:block;
+  margin-top:8px;
+  font-size:.92rem;
+  color:#37524c;
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.list a.item:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(15,118,110,.09);
+  text-decoration:none;
+}
+.date{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  margin-bottom:2px;
+}
+@media (max-width:700px){
+  .wrap{padding:20px 12px 40px}
+  .card{padding:20px 16px 16px;border-radius:14px}
+  h1{font-size:1.62rem}
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <p class="brand">Edge AI Daily</p>
+      <a class="back" href="../index.html">← 返回目录</a>
+    </div>
+    <article class="card">
+      <h1>端智能日报 2026-05-29</h1>
+<blockquote>
+<p><strong>本期聚焦</strong>：Google I/O '26 后续发酵——Firebase AI Logic Hybrid Inference 正式 GA，为移动广告 SDK 提供"端优先、云兜底"的标准路由 API，是本周最具工程落地价值的端云协同信号；Quant.npu 在真实移动 NPU 上实现全静态量化推理延迟降低 15.1%，为端侧轻量模型（含 CTR/排序模型）的 NPU 部署提供新路径。</p>
+</blockquote>
+<hr />
+<h2>1. 【Firebase AI Logic Hybrid Inference 正式 GA：端云切换路由 SDK 开放，Gemma 4/Gemini Nano 4 可接入】</h2>
+<ul>
+<li><strong>评分</strong>：A/4 · I/4 · S=12 · P0 · 价值类型：新能力探索 / 成本优化</li>
+<li><strong>来源</strong>：Google Firebase Blog / Android Developers Blog | <a href="https://firebase.google.com/docs/ai-logic/hybrid">firebase.google.com/docs/ai-logic/hybrid</a> | 2026-05-19（Google I/O '26）</li>
+</ul>
+<p><strong>内容总结（~130 字）</strong>：
+Google I/O '26 上，Firebase AI Logic Hybrid Inference 升级为正式 GA（General Availability）。核心能力：开发者通过 SDK 配置 <code>PREFER_ON_DEVICE / PREFER_CLOUD / ONLY_ON_DEVICE / ONLY_CLOUD</code> 四种路由模式，动态切换设备端 Gemini Nano（基于 Gemma 4）与云端 Gemini 模型。底层调用 ML Kit Prompt API（Beta），支持 Android 和 iOS 双平台。新增 <strong>Prefix Caching</strong> 优化——复用重复出现的 prompt 前缀中间状态，减少端侧 LLM 重复推理开销。Agent Development Kit（ADK）for Android 同步发布，支持多步 agentic 任务在端侧编排执行。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在<strong>端侧广告决策链路</strong>中，用 <code>PREFER_ON_DEVICE</code> 优先本地执行用户意图建模或素材理解，仅在设备温度/电量/网络不佳时自动 fallback 到云端，兼顾延迟与服务稳定性。适配性判断：<strong>可直接应用</strong>——Firebase AI SDK 可嵌入现有 Android 广告 SDK，接入路径标准化；Prefix Caching 对频繁复用同一 system prompt 的广告意图分类场景尤其有效，建议安排 2 周内完成 PoC。</p>
+<hr />
+<h2>2. 【Android Contextual Suggestions：Gemini Nano v3 驱动系统级行为意图感知，端侧学习用户习惯】【延迟发酵】</h2>
+<ul>
+<li><strong>评分</strong>：A/4 · I/4 · S=12 · P1 · 价值类型：用户体验 / 新能力探索</li>
+<li><strong>来源</strong>：9to5Google / Google Blog | <a href="https://9to5google.com/2026/05/13/android-contextual-suggestions/">9to5google.com/2026/05/13/android-contextual-suggestions/</a> | 2026-05-13（首次报道，本期补入）</li>
+</ul>
+<p><strong>内容总结（~130 字）</strong>：
+Google Android 正式推送 <strong>Contextual Suggestions</strong> 功能，由 <strong>Gemini Nano v3</strong>（Gemini Intelligence 系统核心）在设备端驱动。系统在本地分析用户 App 使用行为、位置和时间规律，主动推送情境化建议：在健身房触发音乐 App、体育赛事时推送投屏建议等。<strong>所有行为分析在端侧完成，数据不上云</strong>。Gemini Intelligence 为 Google 官方对 Gemini Nano v3 的产品化封装，同步支持多步任务自动化（建 widget、语音录入清洗、屏幕内容感知）。覆盖范围：Android 旗舰机型，算力依赖 Snapdragon 8 Elite Gen 5 / Tensor G5 级别 SoC。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在<strong>Android 广告意图定向</strong>层面，关注 Google 是否通过 Android API 向广告 SDK 开放上层情境信号（当前状态：系统内部使用，未对外 API）。适配性判断：<strong>可借鉴思路</strong>——Contextual Suggestions 的「本地行为建模 + 情境触发」架构，与广告侧端侧用户兴趣建模高度同构；建议在 Android 17 developer preview 上追踪 Gemini Nano API 开放边界变化，若系统级意图信号可查询，将直接提升广告命中率。</p>
+<hr />
+<h2>3. 【Quant.npu：移动端 NPU 全静态量化框架，真实硬件推理延迟降低 15.1%】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/3 · S=9 · P1 · 价值类型：成本优化 / 新能力探索</li>
+<li><strong>来源</strong>：arXiv | <a href="https://arxiv.org/abs/2605.20295">arxiv.org/abs/2605.20295</a> | 2026-05（近期发布）</li>
+</ul>
+<p><strong>内容总结（~130 字）</strong>：
+Quant.npu 针对移动端 NPU 的硬件约束提出<strong>全静态量化（Fully Static Quantization）</strong>框架——现有 PTQ 方法依赖动态 activation quantization，与 NPU 硬件不兼容（NPU 要求参数在编译期完全固定）。核心技术：① 可学习量化参数 + 旋转矩阵（learnable rotation matrices），无需运行时重新计算量化参数；② 旋转感知初始化（rotation-and-bit-width-aware init）适配不同 activation 分布；③ 分布感知两阶段量化 pipeline，分别处理旋转/未旋转张量；④ 灵敏度引导自适应混合精度。在真实移动 NPU（具体型号未公开）上测试，推理延迟相较 baseline 降低最高 <strong>15.1%</strong>，精度与 SOTA 方法持平。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在<strong>端侧 CTR/精排轻量模型 NPU 加速</strong>场景中，参考该方案解决 NPU 不支持动态量化的痛点（当前 ExecuTorch/LiteRT 迁移到 NPU 时最常踩的坑）。适配性判断：<strong>可借鉴思路</strong>——方法论直接适用于将广告排序小模型（&lt;100M 参数）量化部署到 Hexagon / MediaTek APU 等 NPU 上；代码尚未公开，建议等待开源后评估接入 ExecuTorch 量化 pipeline 的可行性。</p>
+<hr />
+<h2>4. 【Apple WWDC 2026 倒计时 10 天：端侧 AI 全面加码，Core AI 开放第三方模型 + MCP 集成】【进展更新】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/3 · S=9 · P1 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：AppleInsider / AppleMagazine | <a href="https://appleinsider.com/articles/26/05/28/apple-doubling-down-on-on-device-ai-at-wwdc-2026">appleinsider.com/articles/26/05/28/apple-doubling-down-on-on-device-ai-at-wwdc-2026</a> | 2026-05-28</li>
+<li>相较 2026-05-28 报道新增：Core AI 将支持 <strong>MCP（Model Context Protocol）集成</strong>，允许第三方模型接入，且 Core AI 明确定位为替代 Core ML 的<strong>开发者框架</strong>（而非单纯系统功能升级）。</li>
+</ul>
+<p><strong>内容总结（~110 字）</strong>：
+距 WWDC 2026（6 月 8 日）10 天。最新披露细节：① <strong>Core AI 框架</strong> 将正式替代 Core ML，面向开发者开放 API，设计目标是支持 LLM / 多模态生成任务在 Apple Silicon 上本地执行；② 支持<strong>第三方 AI 模型接入</strong>（Claude、Gemini、Grok 等通过 Siri Extensions 路由）和 <strong>MCP 集成</strong>，打通 ecosystem；③ Apple Foundation Models 以 Gemini 技术为基础，运行在设备端 + Private Cloud Compute 双模；④ iOS 27 developer beta 6 月 8 日与 keynote 同步放出，API 细节届时确认。</p>
+<p><strong>业务价值与适配性</strong>：
+相较 2026-05-28 报道，新增的 <strong>MCP 集成</strong> 意味着广告 SDK 若实现 MCP server，理论上可被 iOS 系统级 AI 调用（场景举例：Siri 通过 MCP 查询广告 SDK 的用户兴趣画像辅助推荐）。适配性判断：<strong>战略预判</strong>，6 月 8 日前不可落地；建议同步关注 App Store 审核政策是否对 MCP 数据传输路径做新的隐私约束。</p>
+<hr />
+<h3>其他观察</h3>
+<p>Google I/O '26 的端云协同工程化（Firebase Hybrid Inference）和 Apple WWDC '26 的端侧开放（Core AI + MCP）形成"双主场"竞争态势：两大平台同时将<strong>端侧 AI 开发者能力</strong>从"实验性"推向"生产级"，移动广告侧的工程窗口正在快速打开。Quant.npu 等学术工作同步填补 NPU 静态量化空白，底层支撑趋于完整。</p>
+<h3>近期关注</h3>
+<p>⚠️ <strong>WWDC 2026（6 月 8 日，倒计时 10 天）</strong>：Core AI API 能力边界（尤其是第三方模型 / MCP 集成的隐私约束）、iOS 广告归因政策（IDFA / PrivacyKit 是否更新）将于当天落地；建议提前准备 Core AI beta 接入方案并在 developer beta 发布后第一时间测试广告 SDK 兼容性。</p>
+    </article>
+  </div>
+</body>
+</html>
