@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端智能日报 2026-05-31</title>
+  <style>
+:root{
+  --bg:#f4faf8;
+  --surface:#ffffff;
+  --surface-soft:#f8fcfb;
+  --text:#1f2f2b;
+  --muted:#5e726b;
+  --accent:#0f766e;
+  --accent-soft:#dcf2ee;
+  --border:#d8e8e2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #e9f7f2 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, #e5f4ef 0%, transparent 28%),
+    var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.8;
+}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px 56px}
+.top{
+  margin-bottom:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+}
+.brand{
+  margin:0;
+  font-size:14px;
+  letter-spacing:.08em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.back{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px 28px 20px;
+  box-shadow:0 10px 30px rgba(15,118,110,.08);
+}
+h1,h2,h3{line-height:1.35;margin:1.1em 0 .45em}
+h1{font-size:2rem;margin-top:.15em}
+h2{font-size:1.32rem}
+h3{font-size:1.08rem}
+p,li{font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+blockquote{
+  margin:1rem 0;
+  padding:.72rem .95rem;
+  background:var(--surface-soft);
+  border-left:4px solid var(--accent);
+  color:#28433d;
+  border-radius:8px;
+}
+hr{
+  border:none;
+  border-top:1px dashed var(--border);
+  margin:1.3rem 0;
+}
+code{
+  background:#eef7f5;
+  border:1px solid #d7e9e4;
+  color:#1f4f49;
+  border-radius:6px;
+  padding:.14em .42em;
+  font-size:.92em;
+}
+pre{
+  background:#0f1f1d;
+  color:#e9f4f2;
+  border-radius:12px;
+  overflow:auto;
+  padding:14px;
+}
+pre code{
+  background:transparent;
+  border:none;
+  color:inherit;
+  padding:0;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  overflow:hidden;
+  border-radius:12px;
+}
+th,td{
+  border:1px solid var(--border);
+  padding:.6rem .7rem;
+  text-align:left;
+  vertical-align:top;
+}
+th{background:#edf8f5}
+.footer{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:.88rem;
+}
+.list{
+  list-style:none;
+  margin:1rem 0 0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.list a.item{
+  display:block;
+  padding:14px 15px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-soft);
+  transition:.15s ease;
+}
+.item-title{
+  display:block;
+  font-weight:700;
+  margin-top:2px;
+}
+.focus{
+  display:block;
+  margin-top:8px;
+  font-size:.92rem;
+  color:#37524c;
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.list a.item:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(15,118,110,.09);
+  text-decoration:none;
+}
+.date{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  margin-bottom:2px;
+}
+@media (max-width:700px){
+  .wrap{padding:20px 12px 40px}
+  .card{padding:20px 16px 16px;border-radius:14px}
+  h1{font-size:1.62rem}
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <p class="brand">Edge AI Daily</p>
+      <a class="back" href="../index.html">← 返回目录</a>
+    </div>
+    <article class="card">
+      <h1>端智能日报 2026-05-31</h1>
+<blockquote>
+<p><strong>本期聚焦</strong>：三条高价值信号——腾讯广告算法大赛 2026 冠军方案公开，FiLM+Gated Fusion+行为条件建模直击工业推荐 94% 噪声痛点，可直接迁移至广告 CVR 精排层；Meta/PyTorch 正式发表 ExecuTorch 系统论文，首次完整披露多后端统一推理框架架构，QNN NPU 路径远优于 LiteRT；Apple WWDC 2026 进一步披露，Private Cloud Compute 明确定位为"数据绝不用于广告投放"，对 iOS 广告生态具有结构性影响。</p>
+</blockquote>
+<hr />
+<h2>1. 【腾讯广告算法大赛 2026 高分方案：FiLM + Gated Fusion + 行为条件赋能多模态生成推荐模型】</h2>
+<ul>
+<li><strong>评分</strong>：A/5 · I/3 · S=13 · P0 · 价值类型：收入提升</li>
+<li><strong>来源</strong>：腾讯云开发者社区 | <a href="https://cloud.tencent.com/developer/article/2667955">原文链接</a> | 2026-05</li>
+</ul>
+<p><strong>内容总结（~130 字）</strong>：
+2026 腾讯广告算法大赛冠军方案分析公开。核心痛点：工业推荐系统存在 <strong>94% 曝光噪声</strong>、仅 <strong>2.5% 高价值转化信号</strong>，现有方法难以从大量无效行为中提炼转化意图。解决路径：① <strong>FiLM（Feature-wise Linear Modulation）</strong> 对行为序列特征进行条件调制，将用户意图注入特征权重；② <strong>Gated Fusion</strong> 多路行为语义解耦，分离浏览/点击/转化异构信号；③ <strong>Attention Biasing</strong> 引导注意力聚焦高价值行为。时间特征：将时间分解为绝对/相对/session 三级，Fourier 编码；多模态语义 ID 使用大模型量化连续 embedding 为离散 ID（Random-k 防 collapse），接入生成式推荐架构。无显式端侧延迟数据，但模块轻量（FiLM &lt;1M 参数），具备端侧可部署性。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在<strong>广告 CVR 精排层</strong>，通过 FiLM 行为条件调制解决点击/安装/付费三类异构行为信号混合建模的精度损失——这正是当前端侧轻量精排模型的核心瓶颈。适配性：<strong>可直接应用</strong>——FiLM 模块轻量，适合嵌入端侧 CTR/CVR 模型；Gated Fusion 的行为语义解耦思路可优先验证在音频广告"收听-点击-转化"三级行为建模中的效果，建议 2 周内完成 offline 实验。</p>
+<hr />
+<h2>2. 【ExecuTorch 系统论文（arXiv 2605.08195）：PyTorch 端侧 AI 统一框架首次完整公开，QNN NPU 远超 LiteRT/ONNX】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/4 · S=10 · P1 · 价值类型：成本优化 / 新能力探索</li>
+<li><strong>来源</strong>：Meta / PyTorch | <a href="https://arxiv.org/abs/2605.08195">arxiv.org/abs/2605.08195</a> | 2026-05-05</li>
+</ul>
+<p><strong>内容总结（~130 字）</strong>：
+Meta PyTorch 团队发表 ExecuTorch 系统论文，首次完整描述统一端侧推理框架架构。核心设计：基于 <code>torch.export</code> 导出模型为 PTE 二进制文件，支持 0.01W（MCU）到 800W 全功耗范围设备。<strong>多后端实测数据</strong>：① <strong>QNN（Qualcomm Hexagon NPU）后端</strong> 在 NPU 推理中显著优于 LiteRT 和 ONNX Runtime——后两者 NPU 执行器仅接管部分算子，大量计算仍落回 CPU；② <strong>CoreML 后端</strong> 在 iPhone 15 Pro 上与原生 CoreML 性能持平甚至略优，Swin-T 等模型仅 ExecuTorch CoreML 路径可完整运行；③ <strong>XNNPACK（CPU）</strong> 全平台稳定一致；<strong>Vulkan（GPU）</strong> 提供移动端高吞吐解码。已在 Meta Ray-Ban 眼镜、Llama 移动端量产部署，端到端 pipeline 覆盖导出→量化→后端优化→运行时。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在<strong>广告端侧 CTR/CVR 模型 NPU 加速</strong>场景，优先采用 ExecuTorch + QNN 路径替代 LiteRT NPU delegate（后者算子接管率低，实际 NPU 加速效果不稳定）。适配性：<strong>可直接应用</strong>——ExecuTorch 支持 PyTorch nn.Module 原生导出，广告侧模型迁移路径清晰；建议对比 ExecuTorch QNN 与 LiteRT GPU/CPU 在 Snapdragon 旗舰上的实际 latency，预期 NPU 路径较 CPU 有 10-100× 改善空间。</p>
+<hr />
+<h2>3. 【Apple WWDC 2026 "ad-free AI" 隐私定位深化：Private Cloud Compute 明确承诺数据不用于广告】【进展更新】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/3 · S=9 · P1 · 价值类型：新能力探索（监管风险）</li>
+<li><strong>来源</strong>：Phemex News / TrustedReviews | <a href="https://phemex.com/news/article/apple-introduces-privacycentric-siri-ai-at-wwdc-2026-82786">phemex.com/news/...</a> | 2026-05-29</li>
+<li>相较 2026-05-29 报道新增：Apple 明确将 Private Cloud Compute 定位为 <strong>"数据绝不存储、记录或用于广告投放"</strong> 的公开承诺，直接与 ChatGPT Ads Manager（05-30 报道）形成竞争叙事；iOS 27 SKAdNetwork v5 细节预计 6 月 8 日公布。</li>
+</ul>
+<p><strong>内容总结（~110 字）</strong>：
+WWDC 2026 前夕多家媒体披露 Apple Intelligence 隐私定位细节：① <strong>Private Cloud Compute（PCC）</strong> 架构：Siri 无法访问其他 App 数据（isolated 沙盒），服务器代码可被第三方审计；② 公开承诺 <strong>"不存储、不记录、不用于广告投放"</strong>，官方口号直接对标 ChatGPT 广告化路线；③ iOS 27 预计更新 <strong>SKAdNetwork v5</strong>（归因精度 vs. 隐私权衡新规则）及 <strong>PrivacyKit API</strong>，细节 6 月 8 日确认。底层：Apple Foundation Models + Core AI 框架（A19 Pro / M5 端侧执行 + PCC 云侧兜底）。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在 <strong>iOS 广告归因与用户定向</strong>上提前布局：PCC 明确隔离广告数据意味着依赖系统级行为信号的广告策略合规路径进一步收窄；SKAdNetwork v5 规则变化将直接影响 iOS 转化归因精度。适配性：<strong>战略预判</strong>——6 月 8 日前无法落地，但建议本周内完成 iOS 广告归因链路影响评估，预备应对 SKAdNetwork v5 的迁移方案。</p>
+<hr />
+<h2>4. 【Gemma 4 E2B/E4B 端侧部署实测参数公开：INT4 仅需 1GB 内存，旗舰机 48 tokens/s】【进展更新】</h2>
+<ul>
+<li><strong>评分</strong>：A/2 · I/3 · S=7 · P2 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：MindStudio Blog | <a href="https://www.mindstudio.ai/blog/gemma-4-edge-deployment-e2b-e4b-models">mindstudio.ai/blog/gemma-4-edge-deployment-e2b-e4b-models</a> | 2026-05</li>
+<li>相较 2026-05-30 LiteRT GA 报道新增：E2B / E4B 具体内存占用和推理速度实测数据。</li>
+</ul>
+<p><strong>内容总结（~100 字）</strong>：
+Gemma 4 Edge 系列详细部署规格：<strong>E2B（2B 参数）</strong> INT4 量化内存占用 <strong>1-1.5 GB</strong>，目标设备为 2023 年后中端 Android（6GB RAM，Snapdragon 8 系或同等），推理速度 15-25 tokens/s（中端）/ <strong>≈48 tokens/s</strong>（Asus ROG Phone 9 Pro 等旗舰）；<strong>E4B（4B）</strong> INT4 占用 <strong>2-3 GB</strong>，质量更优。部署工具链：Google AI Edge SDK（LiteRT 后续版本），自动适配 NPU/GPU，专为 Gemma 架构优化。两款均支持多模态（音视频输入），可离线运行于 Android / iOS。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在<strong>端侧素材理解（图文/视频封面质量评分）</strong>场景，以 E4B 替代服务端大模型做轻量化素材评估，2-3 GB 内存预算在 8GB+ 主流旗舰上完全可接受。适配性：<strong>可借鉴思路</strong>——当前音频广告场景（纯文本意图识别）用 E2B 足够；多模态素材理解需 E4B，建议 AI Edge SDK GA 稳定后评估接入 LiteRT-LM 路径。</p>
+<hr />
+<h3>其他观察</h3>
+<p>今日信号分布：工程落地型（腾讯广告竞赛方案、ExecuTorch 系统论文）占优，配合 Apple 隐私生态收紧形成"攻守两面"格局——一面是推荐算法精度持续提升（FiLM/Gated Fusion 方案成熟可迁移）、端侧推理基础设施趋于成熟（ExecuTorch QNN 量产数据），另一面是 Apple 生态数据访问空间进一步收窄（PCC 广告数据隔离 + SKAdNetwork v5）。建议移动广告团队同步推进算法优化（腾讯 FiLM 方案 offline 实验）与 iOS 合规预案。</p>
+<h3>近期关注</h3>
+<p>⚠️ <strong>WWDC 2026（6 月 8 日，倒计时 8 天）</strong>：Core AI API 文档、SKAdNetwork v5 归因规则、PrivacyKit 约束——三个点将直接影响 iOS 广告 SDK 架构选型和隐私合规策略，建议本周内完成影响评估并提前备案。</p>
+    </article>
+  </div>
+</body>
+</html>
