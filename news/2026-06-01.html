@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端智能日报 2026-06-01</title>
+  <style>
+:root{
+  --bg:#f4faf8;
+  --surface:#ffffff;
+  --surface-soft:#f8fcfb;
+  --text:#1f2f2b;
+  --muted:#5e726b;
+  --accent:#0f766e;
+  --accent-soft:#dcf2ee;
+  --border:#d8e8e2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #e9f7f2 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, #e5f4ef 0%, transparent 28%),
+    var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.8;
+}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px 56px}
+.top{
+  margin-bottom:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+}
+.brand{
+  margin:0;
+  font-size:14px;
+  letter-spacing:.08em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.back{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px 28px 20px;
+  box-shadow:0 10px 30px rgba(15,118,110,.08);
+}
+h1,h2,h3{line-height:1.35;margin:1.1em 0 .45em}
+h1{font-size:2rem;margin-top:.15em}
+h2{font-size:1.32rem}
+h3{font-size:1.08rem}
+p,li{font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+blockquote{
+  margin:1rem 0;
+  padding:.72rem .95rem;
+  background:var(--surface-soft);
+  border-left:4px solid var(--accent);
+  color:#28433d;
+  border-radius:8px;
+}
+hr{
+  border:none;
+  border-top:1px dashed var(--border);
+  margin:1.3rem 0;
+}
+code{
+  background:#eef7f5;
+  border:1px solid #d7e9e4;
+  color:#1f4f49;
+  border-radius:6px;
+  padding:.14em .42em;
+  font-size:.92em;
+}
+pre{
+  background:#0f1f1d;
+  color:#e9f4f2;
+  border-radius:12px;
+  overflow:auto;
+  padding:14px;
+}
+pre code{
+  background:transparent;
+  border:none;
+  color:inherit;
+  padding:0;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  overflow:hidden;
+  border-radius:12px;
+}
+th,td{
+  border:1px solid var(--border);
+  padding:.6rem .7rem;
+  text-align:left;
+  vertical-align:top;
+}
+th{background:#edf8f5}
+.footer{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:.88rem;
+}
+.list{
+  list-style:none;
+  margin:1rem 0 0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.list a.item{
+  display:block;
+  padding:14px 15px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-soft);
+  transition:.15s ease;
+}
+.item-title{
+  display:block;
+  font-weight:700;
+  margin-top:2px;
+}
+.focus{
+  display:block;
+  margin-top:8px;
+  font-size:.92rem;
+  color:#37524c;
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.list a.item:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(15,118,110,.09);
+  text-decoration:none;
+}
+.date{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  margin-bottom:2px;
+}
+@media (max-width:700px){
+  .wrap{padding:20px 12px 40px}
+  .card{padding:20px 16px 16px;border-radius:14px}
+  h1{font-size:1.62rem}
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <p class="brand">Edge AI Daily</p>
+      <a class="back" href="../index.html">← 返回目录</a>
+    </div>
+    <article class="card">
+      <h1>端智能日报 2026-06-01</h1>
+<blockquote>
+<p><strong>本期聚焦</strong>：快手 OneSearch-V2 端到端生成式搜索全量生产落地，75% 运营成本降低为广告排序架构升级提供最直接的路线图参考；面壁智能双线突破——MiniCPM5-1B（1B 参数击败全部 &lt;2B 模型，INT4 仅 0.5 GB）与 BitCPM-CANN（1.58-bit 三值模型 6× 显存降低、国产昇腾全链路训练）同步开源，国产端侧推理在参数效率和比特效率两个维度同日刷新上限。</p>
+</blockquote>
+<hr />
+<h2>1. 【快手 OneSearch-V2 全量上线：端到端生成式搜索替代多阶段级联，75% 运营成本降低、千万级日活生产部署】【延迟发酵】</h2>
+<ul>
+<li><strong>评分</strong>：A/4 · I/4 · S=12 · P0 · 价值类型：收入提升 / 成本优化</li>
+<li><strong>来源</strong>：新浪财经 / 网易 | <a href="https://finance.sina.com.cn/stock/t/2026-05-13/doc-inhxtzpf7502665.shtml">原文链接</a> | 2026-05-13</li>
+</ul>
+<p><strong>内容总结（~130 字）</strong>：
+快手 OneSearch-V2 于 5 月 13 日全量上线，将电商搜索的传统多阶段级联（召回→粗排→精排）架构替换为<strong>端到端生成式搜索模型</strong>，单一模型完成全部搜索排序任务。核心技术：Transformer 自回归解码直接输出排序结果，消除多阶段 pipeline 的信息传递损耗；V2 版本相比 V1 进一步增强多模态理解和显式序列建模（用户行为鲁棒性提升）。生产部署覆盖：<strong>电商详情页搜索（全量）</strong>、<strong>商城搜索（50%）</strong>、<strong>首页搜索（20%）</strong>，每日服务数千万用户。核心指标：<strong>运营成本降低 75%</strong>（单模型替代多模型 pipeline 大幅压缩推理计算量），搜索 CTR、CVR 及订单量均有显著提升。沿袭快手 OneRec 端到端生成式推荐技术体系。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在<strong>广告搜索排序和召回-精排联合建模</strong>场景，参考快手路线将多阶段级联改造为端到端生成式架构，直接降低 pipeline 复杂度与推理成本——75% 成本降低的数量级说明架构替换而非优化调参才是关键杠杆。适配性：<strong>可借鉴思路</strong>——训练方案可参考 OneRec/OneSearch 系列论文；建议近期重点评估在音频广告 "query-ad 匹配" 精排层，能否将现有多模型级联替换为单个生成式排序模型做 offline A/B 对比。</p>
+<hr />
+<h2>2. 【面壁智能 MiniCPM5-1B：1B 参数击败全部 &lt;2B 模型，INT4 量化仅 0.5 GB，可跑在手机和浏览器】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/4 · S=10 · P1 · 价值类型：成本优化 / 新能力探索</li>
+<li><strong>来源</strong>：IT之家 | <a href="https://www.ithome.com/0/955/267.htm">原文链接</a> | 2026-05-26</li>
+</ul>
+<p><strong>内容总结（~130 字）</strong>：
+面壁智能联合清华大学、OpenBMB 于 5 月 26 日开源 <strong>MiniCPM5-1B</strong>。核心成绩：在国际权威 <strong>AA-Index（Artificial Analysis Intelligence Index）</strong> 综合评测中，1B 参数击败全部 &lt;2B 规模模型；相较三个月前的 Qwen3.5-2B，效果持平而参数量仅一半。工程部署规格：INT4 量化后权重 <strong>0.5 GB</strong>，可直接运行于主流智能手机及浏览器（WebAssembly 路径），零云端依赖；完全开源（权重 + 训练数据集 + 部署方案）。推理框架：支持 vLLM、SGLang、llama.cpp、Ollama。与同期开源的 MiniCPM-V 4.6（1.3B 多模态版，6 GB 内存，iOS/Android/HarmonyOS 三平台适配）构成文字+视觉双模型矩阵。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在<strong>端侧用户意图识别和 query 语义理解</strong>场景，以 0.5 GB 内存占用在广告 SDK 中本地运行轻量文本推理，消除云端 API 调用延迟（典型 RTT 50–200 ms），适合频次控制、query 分类等低延迟场景。适配性：<strong>可直接应用</strong>——内存预算与广告 SDK 兼容，全链路开源便于针对广告 query 分类任务进行微调；建议安排 2 周内在音频广告 intent 识别任务上做 offline 精度评估，与当前服务端 API 方案对比 latency-precision trade-off。</p>
+<hr />
+<h2>3. 【面壁智能 BitCPM-CANN：国产昇腾原生 1.58-bit 三值端侧大模型，推理显存降低 6×，8B 可在旗舰机运行】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/4 · S=10 · P1 · 价值类型：成本优化</li>
+<li><strong>来源</strong>：智东西 | <a href="https://zhidx.com/p/560172.html">原文链接</a> | 2026-05-25</li>
+</ul>
+<p><strong>内容总结（~130 字）</strong>：
+面壁智能联合清华大学于 5 月 25 日开源 <strong>BitCPM-CANN</strong>，中国首个<strong>基于华为昇腾（Ascend/CANN）全链路原生训练</strong>的 1.58-bit 三值（ternary）端侧大模型。核心技术：权重量化到三个值（+1、0、-1），量化算子、训练算法、全链路框架均在昇腾 CANN 上原生实现（非 CUDA 移植）。规格：提供 <strong>0.5B / 1B / 3B / 8B</strong> 四个尺寸，推理内存占用相较 BF16 <strong>降低约 6×</strong>（83% 内存节省），模型能力保留率 <strong>90%–97.2%</strong>；<strong>8B 参数版可运行于主流旗舰手机</strong>（6 GB RAM+）。意义：首次在国产 AI 算力上完整验证 BitNet 路线（1-bit/ternary 极限量化）的端侧可用性，并全尺寸全链路开源。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在<strong>麒麟 SoC 设备（华为/荣耀 旗舰机）上的广告推理模型部署</strong>方向获得最直接参考——6× 显存降低意味着 8B 级大模型可无缝下沉至端侧，为端侧 LLM 排序头提供可行性数据支撑。适配性：<strong>可借鉴思路</strong>——1.58-bit 三值量化（BitNet 路线）可参考用于广告侧小模型极限压缩；若目标设备以麒麟 SoC 为主，此路径优先级最高；其他平台（Snapdragon / Apple）需评估 CANN 算子迁移成本，建议跟踪 GGUF / ExecuTorch 适配进展。</p>
+<hr />
+<h2>4. 【Google AI Edge Portal 新增端侧 LLM Benchmarking：120+ Android 设备 × NPU/GPU/CPU 全后端性能测试平台】</h2>
+<ul>
+<li><strong>评分</strong>：A/2 · I/3 · S=7 · P2 · 价值类型：成本优化</li>
+<li><strong>来源</strong>：Google Cloud Blog | <a href="https://cloud.google.com/blog/products/ai-machine-learning/benchmark-llms-on-device-with-ai-edge-portal">原文链接</a> | 2026-05</li>
+</ul>
+<p><strong>内容总结（~110 字）</strong>：
+Google 在 AI Edge Portal 中新增两项面向 LLM 的能力：<strong>端侧 LLM benchmarking</strong> 和<strong>调试工具链</strong>。核心能力：① 开发者上传 <code>.litert</code> 模型文件，即可在 <strong>120+ 代表性 Android 设备</strong>（涵盖 30+ Qualcomm Hexagon NPU 设备、MediaTek NPU、全价位段 GPU/CPU 设备）上批量并行测试；② 新增 <strong>LLM 专属指标</strong>（prefill speed、decode tokens/s、TTFT），区别于传统 ML benchmark；③ 集成 <strong>Model Explorer</strong> 可视化调试，支持节点级 tensor shape 追踪、模型并排对比；④ 当前为 <strong>Private Preview</strong>（需 Google Cloud allowlist 审批）。支持后端：NPU（Qualcomm &amp; MediaTek）/ GPU（ML Drift）/ CPU。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在<strong>广告端侧模型选型和延迟基准测试</strong>阶段，无需自建设备矩阵，即可获取目标用户群真实设备上的推理延迟数据（区别于模拟器和单设备数据）。适配性：<strong>了解即可</strong>——当前 Private Preview 阶段，接入有门槛；申请 allowlist 后可作为对比评估平台，与 Firebase Test Lab 互补，重点测试旗舰 NPU 路径（Snapdragon 8 Elite Gen5 / Dimensity 9400）的实际 prefill/decode 延迟。</p>
+<hr />
+<h3>其他观察</h3>
+<p>今日三条信号共同指向同一趋势：<strong>国产端侧推理生态加速成熟</strong>。面壁智能 MiniCPM5-1B + BitCPM-CANN 双线突破，一条走"更少参数、更强能力"（1B 打 2B），另一条走"更少比特、更省内存"（1.58-bit 打 BF16），两者都已达到旗舰手机可运行门槛。快手 OneSearch-V2 则为如何将大模型从实验室转化为生产系统提供了最具说服力的工业实践案例（75% 成本降低、千万日活）。</p>
+<h3>近期关注</h3>
+<p>⚠️ <strong>WWDC 2026（6 月 8 日，倒计时 7 天）</strong>：Core AI 框架正式亮相（替代 Core ML），Apple Foundation Models API 开放范围、iOS 27 PrivacyKit/SKAdNetwork v5 广告归因新规则将于当天落地。建议本周完成 iOS 广告归因链路影响预评估，6 月 8 日 developer beta 放出后第一时间测试广告 SDK 兼容性。</p>
+    </article>
+  </div>
+</body>
+</html>
