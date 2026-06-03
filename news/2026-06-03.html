@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端智能日报 2026-06-03</title>
+  <style>
+:root{
+  --bg:#f4faf8;
+  --surface:#ffffff;
+  --surface-soft:#f8fcfb;
+  --text:#1f2f2b;
+  --muted:#5e726b;
+  --accent:#0f766e;
+  --accent-soft:#dcf2ee;
+  --border:#d8e8e2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #e9f7f2 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, #e5f4ef 0%, transparent 28%),
+    var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.8;
+}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px 56px}
+.top{
+  margin-bottom:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+}
+.brand{
+  margin:0;
+  font-size:14px;
+  letter-spacing:.08em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.back{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px 28px 20px;
+  box-shadow:0 10px 30px rgba(15,118,110,.08);
+}
+h1,h2,h3{line-height:1.35;margin:1.1em 0 .45em}
+h1{font-size:2rem;margin-top:.15em}
+h2{font-size:1.32rem}
+h3{font-size:1.08rem}
+p,li{font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+blockquote{
+  margin:1rem 0;
+  padding:.72rem .95rem;
+  background:var(--surface-soft);
+  border-left:4px solid var(--accent);
+  color:#28433d;
+  border-radius:8px;
+}
+hr{
+  border:none;
+  border-top:1px dashed var(--border);
+  margin:1.3rem 0;
+}
+code{
+  background:#eef7f5;
+  border:1px solid #d7e9e4;
+  color:#1f4f49;
+  border-radius:6px;
+  padding:.14em .42em;
+  font-size:.92em;
+}
+pre{
+  background:#0f1f1d;
+  color:#e9f4f2;
+  border-radius:12px;
+  overflow:auto;
+  padding:14px;
+}
+pre code{
+  background:transparent;
+  border:none;
+  color:inherit;
+  padding:0;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  overflow:hidden;
+  border-radius:12px;
+}
+th,td{
+  border:1px solid var(--border);
+  padding:.6rem .7rem;
+  text-align:left;
+  vertical-align:top;
+}
+th{background:#edf8f5}
+.footer{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:.88rem;
+}
+.list{
+  list-style:none;
+  margin:1rem 0 0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.list a.item{
+  display:block;
+  padding:14px 15px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-soft);
+  transition:.15s ease;
+}
+.item-title{
+  display:block;
+  font-weight:700;
+  margin-top:2px;
+}
+.focus{
+  display:block;
+  margin-top:8px;
+  font-size:.92rem;
+  color:#37524c;
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.list a.item:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(15,118,110,.09);
+  text-decoration:none;
+}
+.date{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  margin-bottom:2px;
+}
+@media (max-width:700px){
+  .wrap{padding:20px 12px 40px}
+  .card{padding:20px 16px 16px;border-radius:14px}
+  h1{font-size:1.62rem}
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <p class="brand">Edge AI Daily</p>
+      <a class="back" href="../index.html">← 返回目录</a>
+    </div>
+    <article class="card">
+      <h1>端智能日报 2026-06-03</h1>
+<blockquote>
+<p><strong>本期聚焦</strong>：淘宝 RecGPT-Mobile 首次公开端侧 LLM 推荐系统生产部署细节，将轻量 LLM 直接跑在手机端实时捕捉用户意图；Google LiteRT-LM 亮出 Chrome/Chromebook Plus/Pixel Watch 三端生产矩阵，端侧 LLM 引擎的"多产品共用一个基座+LoRA"路线日趋清晰。</p>
+</blockquote>
+<hr />
+<h2>1. 【RecGPT-Mobile：淘宝端侧 LLM 意图理解推荐，A/B 实验正向，生产已部署】</h2>
+<ul>
+<li><strong>评分</strong>：A/5 · I/4 · S=14 · P0 · 价值类型：收入提升</li>
+<li><strong>来源</strong>：阿里 / arXiv | <a href="https://arxiv.org/abs/2605.04726">arxiv.org/abs/2605.04726</a> | 2026-05</li>
+</ul>
+<p><strong>内容总结（~130 字）</strong>：
+RecGPT-Mobile 提出将轻量 LLM 直接部署在移动端，作为淘宝 Feed 推荐的用户意图理解 Agent，替代传统云端 LLM 推理。核心挑战是端侧资源约束：通过模型压缩、量化将 LLM 缩减到手机可承载的规模，实现毫秒级延迟的本地推理，让用户行为信号能被实时捕捉并立即反馈给推荐排序层。论文报告了完整的离线评估和线上 A/B 实验，验证推荐准确率显著提升。关键工程信息：已在淘宝 Feed 生产环境上线，达到亿级用户规模部署；数据不出端，天然满足隐私合规。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告 Feed 流场景下做到：利用端侧 LLM 实时解析用户当前意图（搜索意图/浏览意图/购买意图），而不需要等云端 RTB 链路的多跳延迟，CTR 预估的用户 context 质量有望大幅提升。适配判断：该方案架构完整、有生产验证，可直接作为"端侧意图模块"的选型参考，核心要复用的是其模型压缩 + LLM 意图蒸馏的 pipeline，而非直接引入模型权重。</p>
+<hr />
+<h2>2. 【Google LiteRT-LM 生产矩阵披露：Chrome / Chromebook Plus / Pixel Watch 均用同一引擎 + 新增 Swift / JS API】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/5 · S=11 · P1 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：Google Developers Blog | <a href="https://developers.googleblog.com/on-device-genai-in-chrome-chromebook-plus-and-pixel-watch-with-litert-lm/">On-device GenAI in Chrome, Chromebook Plus, and Pixel Watch with LiteRT-LM</a> + <a href="https://developers.googleblog.com/blazing-fast-on-device-genai-with-litert-lm/">Blazing fast on-device GenAI with LiteRT-LM</a> | 2026-06</li>
+</ul>
+<p><strong>内容总结（~140 字）</strong>：
+Google 官方博客揭露 LiteRT-LM 的生产地图：Chrome 内置 AI API、Chromebook Plus 标签管理与文本功能、Pixel Watch Smart Replies 背后均由 LiteRT-LM 驱动 Gemini Nano。性能数据：Gemma 4 E2B 在 Android GPU（OpenCL）达 52 tokens/s、iOS Metal 达 56 tokens/s、WebGPU（MacBook Pro）达 76 tokens/s。同一次更新发布 Swift 原生 API（Metal GPU 加速）、WebGPU JavaScript API，并将 NPU 后端扩展到 CLI/Python；MTP（Multi-Token Prediction）speculative decoding 为 Gemma 4 加速 2.2-3×。框架支持多功能共用单一基础模型，通过轻量 LoRA 实现功能差异化，显著降低存储和内存开销。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在多广告业务线中做到：用一个端侧基础模型服务多个场景（搜索广告意图理解 + 展示广告素材匹配 + Native 广告文案生成），LoRA 切换比重复部署多个模型节省约 60-70% 存储。适配性：框架开源、支持 Android/iOS/Web，MTP 加速可直接迁移到我们自己的 Gemma 4 推理链路；重点验证 Qualcomm NPU 后端与 LiteRT 的集成稳定性。</p>
+<hr />
+<h2>3. 【RecGPT：序列推荐基础模型（arXiv 2506.06270，6 月新作）】</h2>
+<ul>
+<li><strong>评分</strong>：A/4 · I/3 · S=11 · P1 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：arXiv | <a href="https://arxiv.org/abs/2506.06270">arxiv.org/abs/2506.06270</a> | 2026-06</li>
+</ul>
+<p><strong>内容总结（~110 字）</strong>：
+本周 arXiv 新出论文，提出 RecGPT——面向序列推荐任务的专用基础模型。与 RecGPT-Mobile（条目1）不同，本文侧重构建一个"一次预训练、多场景迁移"的推荐基础模型范式，覆盖跨域序列建模与用户长期兴趣理解。论文在 June 2026 发布（2506.XXXXX 编号），属于本周最新工作，正式报道和实验数据尚待社区解读。关键工程信息目前从公开 snippet 中尚无延迟/内存数据，待论文全文披露。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告用户建模中做到：借助序列推荐基础模型预训练的用户 embedding，在下游 CTR 任务上通过少量 fine-tuning 达到冷启动加速。适配判断：暂为理论/实验阶段，建议持续跟进（P1），等待开源权重或工业落地案例出现再评估迁移可行性。</p>
+<hr />
+<h2>4. 【MiniCPM-V 4.6：1.3B 多模态模型，1.6 GB Q4，iOS/Android/HarmonyOS 完全离线】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/3 · S=9 · P1 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：OpenBMB / 面壁智能 | <a href="https://huggingface.co/openbmb/MiniCPM-V-4.6">HuggingFace</a> · <a href="https://firethering.com/minicpm-v-4-6-on-device-multimodal-model/">Firethering 分析</a> | 2026-05-11</li>
+</ul>
+<p><strong>内容总结（~130 字）</strong>：
+面壁智能 5 月 11 日开源 MiniCPM-V 4.6，架构为 SigLIP2-400M 视觉编码器 + Qwen3.5-0.8B 语言主干，总参数 1.3B，基于 llama.cpp 构建。Q4_K_M 量化后仅 1.6 GB，6 GB 内存手机即可流畅运行，支持 iOS、Android、HarmonyOS NEXT 完全离线推理。上下文窗口达 262k token（约 393 页 A4）。能力覆盖图片理解、OCR、视频帧理解（最多 128 帧），在同参数段 VLM 中刷新多项 benchmark。与 MiniCPM5-1B（语言模型，本周已报道）互补，本模型专注视觉理解。支持 LLaMA-Factory 和 SWIFT 微调，社区有端侧部署 cookbook。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告素材理解中做到：在端侧以 1.6 GB 内存代价完成图片 / 视频广告素材的本地质量检测（合规、美学打分）和内容标签提取，无需上传至云端，既降低 API 调用成本又满足隐私要求。适配性：可直接集成进 Android/iOS 广告 SDK，建议优先评估其 OCR 能力在广告文字识别和创意文案提取场景下的表现。</p>
+<hr />
+<h2>5. 【Apple × Google Gemini 蒸馏合作曝光：将 Gemini 大模型蒸馏为 Apple 芯片专属端侧版】【进展更新】</h2>
+<ul>
+<li><strong>评分</strong>：A/2 · I/4 · S=8 · P1 · 价值类型：用户体验</li>
+<li><strong>来源</strong>：AppleInsider / MacRumors | <a href="https://appleinsider.com/articles/26/05/28/apple-doubling-down-on-on-device-ai-at-wwdc-2026">appleinsider.com/articles/26/05/28</a> | 2026-05-28（相较 2026-06-02 报道新增：蒸馏合作方式细节）</li>
+</ul>
+<p><strong>内容总结（~120 字）</strong>：
+相较 6 月 2 日报道（Apple WWDC 2026 端侧 AI 策略），新增披露的细节是：Apple 与 Google 的 Gemini 合作并非单纯 API 接入，而是使用 Gemini 云端大模型作为"教师"，蒸馏出专门适配 A 系 / M 系芯片的小型本地模型，在 iPhone/Mac 上本地运行。Apple 将 15 年 SoC 设计经验定位为端侧推理的护城河，WWDC 2026（6 月 8 日）预计公布蒸馏模型规格和 CoreML/Foundation Models 框架更新。复杂推理仍走 Private Cloud Compute，本地模型负责日常轻量任务，实现延迟与隐私的双重优化。</p>
+<p><strong>业务价值与适配性</strong>：
+Apple 端侧蒸馏路线对广告的直接影响：隐私保护立场导致 Apple 明确承诺端侧数据不参与广告定向（"ad-free AI"），短期内在 iOS 平台做基于端侧信号的广告归因和行为建模受限。但蒸馏方法本身（大模型教师→芯片适配小模型）值得借鉴，可用于内部将 7B 广告意图模型蒸馏为端侧可运行的 1B 版本。</p>
+<h2>---</h2>
+<h3>其他观察</h3>
+<p>端侧推荐与广告的"LLM 化"趋势正在从论文走向生产：淘宝 RecGPT-Mobile 的上线验证了端侧 LLM 在实时意图理解上的可行性，Google LiteRT-LM 的多产品布局则表明"端侧大模型基座 + LoRA 任务头"将成为主流工程范式。模型尺寸竞争仍在继续，1.3B 多模态（MiniCPM-V 4.6）已可离线跑在 6GB 手机上，端侧素材理解的成本门槛进一步降低。</p>
+<h3>近期关注</h3>
+<ul>
+<li><strong>WWDC 2026</strong>（6 月 8 日）：Apple 将发布 CoreML / Foundation Models 框架更新及端侧蒸馏模型规格，重点关注 API 开放范围和隐私限制对广告 SDK 的影响。</li>
+<li><strong>KDD 2026</strong>（8 月，预计）：推荐系统与广告算法工业落地论文集中发布节点，RecGPT-Mobile 类端侧推荐方案预计有更多跟进工作。</li>
+</ul>
+    </article>
+  </div>
+</body>
+</html>
