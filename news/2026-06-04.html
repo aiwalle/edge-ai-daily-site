@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端智能日报 2026-06-04</title>
+  <style>
+:root{
+  --bg:#f4faf8;
+  --surface:#ffffff;
+  --surface-soft:#f8fcfb;
+  --text:#1f2f2b;
+  --muted:#5e726b;
+  --accent:#0f766e;
+  --accent-soft:#dcf2ee;
+  --border:#d8e8e2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #e9f7f2 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, #e5f4ef 0%, transparent 28%),
+    var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.8;
+}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px 56px}
+.top{
+  margin-bottom:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+}
+.brand{
+  margin:0;
+  font-size:14px;
+  letter-spacing:.08em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.back{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px 28px 20px;
+  box-shadow:0 10px 30px rgba(15,118,110,.08);
+}
+h1,h2,h3{line-height:1.35;margin:1.1em 0 .45em}
+h1{font-size:2rem;margin-top:.15em}
+h2{font-size:1.32rem}
+h3{font-size:1.08rem}
+p,li{font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+blockquote{
+  margin:1rem 0;
+  padding:.72rem .95rem;
+  background:var(--surface-soft);
+  border-left:4px solid var(--accent);
+  color:#28433d;
+  border-radius:8px;
+}
+hr{
+  border:none;
+  border-top:1px dashed var(--border);
+  margin:1.3rem 0;
+}
+code{
+  background:#eef7f5;
+  border:1px solid #d7e9e4;
+  color:#1f4f49;
+  border-radius:6px;
+  padding:.14em .42em;
+  font-size:.92em;
+}
+pre{
+  background:#0f1f1d;
+  color:#e9f4f2;
+  border-radius:12px;
+  overflow:auto;
+  padding:14px;
+}
+pre code{
+  background:transparent;
+  border:none;
+  color:inherit;
+  padding:0;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  overflow:hidden;
+  border-radius:12px;
+}
+th,td{
+  border:1px solid var(--border);
+  padding:.6rem .7rem;
+  text-align:left;
+  vertical-align:top;
+}
+th{background:#edf8f5}
+.footer{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:.88rem;
+}
+.list{
+  list-style:none;
+  margin:1rem 0 0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.list a.item{
+  display:block;
+  padding:14px 15px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-soft);
+  transition:.15s ease;
+}
+.item-title{
+  display:block;
+  font-weight:700;
+  margin-top:2px;
+}
+.focus{
+  display:block;
+  margin-top:8px;
+  font-size:.92rem;
+  color:#37524c;
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.list a.item:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(15,118,110,.09);
+  text-decoration:none;
+}
+.date{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  margin-bottom:2px;
+}
+@media (max-width:700px){
+  .wrap{padding:20px 12px 40px}
+  .card{padding:20px 16px 16px;border-radius:14px}
+  h1{font-size:1.62rem}
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <p class="brand">Edge AI Daily</p>
+      <a class="back" href="../index.html">← 返回目录</a>
+    </div>
+    <article class="card">
+      <h1>端智能日报 2026-06-04</h1>
+<blockquote>
+<p><strong>本期聚焦</strong>：WWDC 2026（6月8日）倒计时4天，Apple Core AI 替代 CoreML 将直接重塑 iOS 广告 SDK 的端侧模型集成方式；微软 Build 2026 同日落地浏览器原生 AI 意图 API（Aion-1.0-Instruct，CPU 可运行）。Meta AI MobileMoE 从架构层打通手机端 MoE 推理的效率瓶颈，端侧广告模型的设计空间再次扩大。</p>
+</blockquote>
+<hr />
+<h2>1. 【Apple Core AI：CoreML 替代框架，WWDC 2026（6月8日）正式发布，第三方模型集成开放】【进展更新】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/4 · S=10 · P1 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：9to5Mac / AppleInsider / iLounge | <a href="https://9to5mac.com/2026/03/01/apple-replacing-core-ml-with-modernized-core-ai-framework-for-ios-27-at-wwdc/">9to5Mac 原文</a> | 2026-03-01（相较 2026-06-02 报道新增：开发者 SDK 层面的 CoreML→Core AI 重构细节，支持第三方模型集成）</li>
+</ul>
+<p><strong>内容总结（~140 字）</strong>：
+Apple 将在 iOS 27 中以 Core AI 框架替代沿用多年的 CoreML，正式 API 随 WWDC 2026（6月8日）developer beta 发布。与前两日报道（mxfp4 量化硬件、Apple×Google Gemini 蒸馏）不同，本次关注<strong>开发者 SDK 层</strong>的变化：① <strong>第三方 AI 模型集成</strong>——Core AI 允许开发者将任意自定义模型（含内部 CTR/意图识别模型）原生嵌入 iOS App，不再限于 Apple 官方模型；② <strong>LLM 原生运行时</strong>——重新设计以支持自回归生成式任务，CoreML 的传统分类/回归推理路径依然保留；③ <strong>多模态任务 API</strong>——系统级视觉-语言多模态接口预计开放。CoreML 与 Core AI 在 iOS 27 过渡期内共存。工程层面：Apple Neural Engine（ANE）加速路径在 Core AI 中向第三方开放，预计在 A18/A19 Pro 设备上有 2-5x 延迟改善。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在 iOS 广告 SDK 中做到：通过 Core AI 框架将内部轻量 CTR 推理头或意图识别模型直接接入 ANE，消除当前 CoreML 对自定义架构的格式限制。适配性：<strong>等待正式 API</strong>——建议 6月8日 developer beta 发布当天测试模型导出（torchao → Core AI 格式），重点验证 mxfp4 量化路径下 CTR 模型精度保留；Core AI 对第三方模型的开放程度将决定 iOS 端侧广告模型的长期架构选择。</p>
+<hr />
+<h2>2. 【Microsoft Build 2026：Aion-1.0-Instruct 上线 Edge，浏览器 Prompt/Intent API 全面端侧化，145 语言本地翻译】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/4 · S=10 · P1 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：Microsoft Edge Blog | <a href="https://blogs.windows.com/msedgedev/2026/06/02/expanding-on-device-ai-in-microsoft-edge-new-models-and-apis-for-the-web/">原文链接</a> | 2026-06-02</li>
+</ul>
+<p><strong>内容总结（~140 字）</strong>：
+微软在 Build 2026（6月2日）为 Edge 浏览器推出两大端侧 AI 更新。① <strong>Aion-1.0-Instruct</strong>（参数量未公开）：专为日常文本智能设计的 SLM，作为 Edge Prompt API、Summarizer、Writer、Rewriter 等全部 API 的底层模型，关键工程亮点是<strong>支持 CPU 推理</strong>——无独立 GPU 的设备也可运行，大幅扩展可用设备覆盖面；权重计划 7月在 HuggingFace 开源。② <strong>Language Detector + Translator API（Edge 148）</strong>：本地设备端运行，支持 145+ 语言，零云端请求，推理延迟从传统 API 的网络 RTT（50-200ms）降至毫秒级。并列发布的 <strong>Aion 1.0 Plan（14B）</strong> 专注推理和 tool-calling（32K 上下文），处理复杂任务。整体将 Edge 定位为"浏览器级 AI 推理平台"。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在 <strong>Web 端广告场景</strong>中做到：利用浏览器原生 Prompt API 实现 ad copy 的端侧生成和用户意图分级，无需调用云端 API，符合即将到来的浏览器隐私沙盒要求。适配性：<strong>可借鉴思路</strong>——将 Edge Prompt API 集成模式迁移到 Web 广告创意生成/意图理解模块；Aion-1.0-Instruct 的 CPU 推理能力值得在低端 PC 广告场景测试；移动端广告短期不受影响，但多语言本地翻译 API 对国际化广告素材适配有直接价值。</p>
+<hr />
+<h2>3. 【MobileMoE：端侧混合专家模型首次在手机实现，1.8-3.8x 推理加速（Meta AI，arXiv 2605.27358）】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/4 · S=10 · P1 · 价值类型：成本优化 / 新能力探索</li>
+<li><strong>来源</strong>：Meta AI / arXiv | <a href="https://arxiv.org/abs/2605.27358">arxiv.org/abs/2605.27358</a> | 2026-05</li>
+</ul>
+<p><strong>内容总结（~150 字）</strong>：
+Meta AI 提出 MobileMoE，针对移动端内存和算力约束推导<strong>端侧 MoE 扩展定律</strong>（on-device MoE scaling law），确定最优稀疏度与专家粒度的联合优化点——"适度稀疏 + 细粒度 + 共享专家"同时满足内存最优和算力最优。模型规格：<strong>0.3-0.9B 活跃参数</strong>，总参数 1.3-5.3B（稀疏激活保证每次推理仅使用小模型的计算量）。性能实测：相同 INT4 权重内存预算下，MobileMoE-S 比稠密基线 MobileLLM-Pro 实现 <strong>1.8-3.8x prefill 加速、2.2-3.4x decode 加速</strong>；在 14 项 benchmark 上以 2-4x 更少 FLOPs 匹配或超越现有 SOTA on-device 稠密 LLM；比 SOTA MoE（OLMoE-1B-7B）少 60% 参数。论文提供首个在真实手机上的完整端侧 MoE 推理实现与 profiling（含详细延迟/内存 breakdown）。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告端侧模型中做到：利用 MoE 稀疏激活思路，为不同用户群体或广告类型分配专门的"专家"子网络，在相同内存预算下 2-4x 降低 CTR 推理的 FLOPs。适配性：<strong>可借鉴思路</strong>——端侧 MoE 适合"多场景广告 CTR 共用一个基座 + 场景专家头"架构；建议参考论文 scaling law 部分确定自有场景的活跃参数比例，待开源权重（论文未提开源计划）可落地验证。</p>
+<hr />
+<h2>4. 【ExecuTorch：首篇完整学术论文发布，揭示 decode 内存带宽瓶颈与 12+ 硬件后端设计（arXiv 2605.08195）】</h2>
+<ul>
+<li><strong>评分</strong>：A/2 · I/4 · S=8 · P2 · 价值类型：成本优化</li>
+<li><strong>来源</strong>：Meta / PyTorch / arXiv | <a href="https://arxiv.org/abs/2605.08195">arxiv.org/abs/2605.08195</a> | 2026-05</li>
+</ul>
+<p><strong>内容总结（~130 字）</strong>：
+继 ExecuTorch 1.0 GA（2025年10月）之后，Meta/PyTorch 团队于 2026年5月发布其<strong>首篇完整系统论文</strong>，系统性阐述设计哲学与生产实践。关键工程数据：<strong>运行时基础库仅 50KB</strong>；支持 12+ 硬件后端（Apple CoreML/ANE、Qualcomm QNN/Hexagon NPU、Arm XNNPACK + KleidiAI、MediaTek、Samsung Exynos、Vulkan、NXP 等），跨越 wearable→smartphone→SoC 全谱系；支持 INT4/INT8/FP8 及 HQQ 量化；已在 Meta 全家桶 App（Facebook/Instagram）和 Quest VR/AR 设备生产部署；80%+ HuggingFace 热门端侧 LLM 开箱即用。论文揭示的根本性能瓶颈：<strong>decode 阶段受内存带宽制约</strong>——生成每个 token 需完整 stream 一次模型权重，NPU 高算力优势在此阶段大幅折损。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告 SDK 的 iOS/Android 端侧推理中做到：用 ExecuTorch 作为统一部署框架，一套 PyTorch 训练流程同时导出 Qualcomm NPU 和 Apple ANE 两条路径，消除双平台维护成本。适配性：<strong>可直接应用</strong>——框架已 GA、学术文档完整；优先验证 Qualcomm Hexagon NPU 后端与广告 CTR 模型的 INT4 量化精度，关注论文指出的 decode 内存带宽瓶颈对 LLM-enhanced CTR 实时推理链路的影响。</p>
+<hr />
+<h2>5. 【Vision LLMs 颠覆端侧 AI 硬件设计假设：TOPS 已失效，内存带宽成真正瓶颈】</h2>
+<ul>
+<li><strong>评分</strong>：A/2 · I/3 · S=7 · P2 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：Edge AI and Vision Alliance / Semiconductor Engineering | <a href="https://semiengineering.com/why-vision-llms-force-a-rethink-of-edge-ai-hardware/">semiengineering.com</a> | 2026-06</li>
+</ul>
+<p><strong>内容总结（~120 字）</strong>：
+Edge AI and Vision Alliance 与 Semiconductor Engineering 于2026年6月同步发布分析文章，指出 Vision LLMs（视觉-语言融合模型）在端侧运行时打破了第一代边缘加速器的所有设计假设。核心论点：① <strong>峰值 TOPS 已失效</strong>——在真实 Vision LLM 推理图上，如果芯片无法跨 pipeline 阶段维持数据局部性（locality），高 TOPS 在综合 benchmark 表现依然平庸；② <strong>真正瓶颈是内存流量和利用率</strong>，而非算术吞吐；③ 行业开始探索新执行单元架构（如 Expedera Origin 的 packet-based AI processing，dependency-aware fragments 垂直穿过计算图）来应对利用率问题。Deloitte 预测2026年推理优化芯片市场将超 500 亿美元（2025年~200亿）。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在<strong>端侧广告素材视觉理解的硬件选型</strong>中做到：评估芯片时从"比 TOPS"升级为"比内存带宽、DRAM 访问模式与模型 batch size 的适配度"。适配性：<strong>暂为战略参考</strong>——当前重点仍是软件层的模型压缩；但当端侧视觉广告素材理解（图片/视频 CTR 特征提取）进入规划时，硬件选型依据应以此文作为框架起点。</p>
+<hr />
+<h3>其他观察</h3>
+<p>端侧 AI 开发者生态本周迎来"双平台重构信号"：Apple 即将以 Core AI 替代 CoreML（支持第三方模型），Microsoft 已上线 Edge 浏览器端侧 AI API 套件。两个信号共同指向同一趋势——主流平台厂商开始向第三方开发者（含广告 SDK 开发者）开放端侧 AI 基础设施的控制权。MobileMoE 与 ExecuTorch 论文则从模型架构和部署框架两个维度提供了学术支撑：端侧 AI 的效率边界在2026年仍在快速移动。</p>
+<h3>近期关注</h3>
+<ul>
+<li>⚠️ <strong>WWDC 2026（6月8日，4天后）</strong>：三个关键发布节点——① Core AI 框架正式 API 与第三方模型接入方式；② mxfp4 量化格式 developer beta（对 iOS 广告 CTR 模型精度的实际改善幅度）；③ SKAdNetwork v5 归因规则（iOS 广告转化链路精度变化）。建议 6月8日 developer beta 发布当天立即测试广告 SDK 兼容性。</li>
+<li><strong>KDD 2026</strong>（8月，预计）：推荐/广告算法工业落地论文集中节点，MobileMoE + LLM-enhanced CTR 系列预计有更多跟进工作。</li>
+</ul>
+    </article>
+  </div>
+</body>
+</html>
