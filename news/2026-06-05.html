@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端智能日报 2026-06-05</title>
+  <style>
+:root{
+  --bg:#f4faf8;
+  --surface:#ffffff;
+  --surface-soft:#f8fcfb;
+  --text:#1f2f2b;
+  --muted:#5e726b;
+  --accent:#0f766e;
+  --accent-soft:#dcf2ee;
+  --border:#d8e8e2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #e9f7f2 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, #e5f4ef 0%, transparent 28%),
+    var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.8;
+}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px 56px}
+.top{
+  margin-bottom:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+}
+.brand{
+  margin:0;
+  font-size:14px;
+  letter-spacing:.08em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.back{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px 28px 20px;
+  box-shadow:0 10px 30px rgba(15,118,110,.08);
+}
+h1,h2,h3{line-height:1.35;margin:1.1em 0 .45em}
+h1{font-size:2rem;margin-top:.15em}
+h2{font-size:1.32rem}
+h3{font-size:1.08rem}
+p,li{font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+blockquote{
+  margin:1rem 0;
+  padding:.72rem .95rem;
+  background:var(--surface-soft);
+  border-left:4px solid var(--accent);
+  color:#28433d;
+  border-radius:8px;
+}
+hr{
+  border:none;
+  border-top:1px dashed var(--border);
+  margin:1.3rem 0;
+}
+code{
+  background:#eef7f5;
+  border:1px solid #d7e9e4;
+  color:#1f4f49;
+  border-radius:6px;
+  padding:.14em .42em;
+  font-size:.92em;
+}
+pre{
+  background:#0f1f1d;
+  color:#e9f4f2;
+  border-radius:12px;
+  overflow:auto;
+  padding:14px;
+}
+pre code{
+  background:transparent;
+  border:none;
+  color:inherit;
+  padding:0;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  overflow:hidden;
+  border-radius:12px;
+}
+th,td{
+  border:1px solid var(--border);
+  padding:.6rem .7rem;
+  text-align:left;
+  vertical-align:top;
+}
+th{background:#edf8f5}
+.footer{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:.88rem;
+}
+.list{
+  list-style:none;
+  margin:1rem 0 0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.list a.item{
+  display:block;
+  padding:14px 15px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-soft);
+  transition:.15s ease;
+}
+.item-title{
+  display:block;
+  font-weight:700;
+  margin-top:2px;
+}
+.focus{
+  display:block;
+  margin-top:8px;
+  font-size:.92rem;
+  color:#37524c;
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.list a.item:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(15,118,110,.09);
+  text-decoration:none;
+}
+.date{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  margin-bottom:2px;
+}
+@media (max-width:700px){
+  .wrap{padding:20px 12px 40px}
+  .card{padding:20px 16px 16px;border-radius:14px}
+  h1{font-size:1.62rem}
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <p class="brand">Edge AI Daily</p>
+      <a class="back" href="../index.html">← 返回目录</a>
+    </div>
+    <article class="card">
+      <h1>端智能日报 2026-06-05</h1>
+<blockquote>
+<p><strong>本期聚焦</strong>：腾讯2026广告算法大赛高分方案公布，多模态语义ID（RQ-KMeans）+行为条件建模组合在真实广告pCVR任务上拿下最优解，为广告算法团队提供了直接可复用的工程路线；On-Device LLMs年度综述确认推理框架与量化已从"可用"迈入"量产工程化"阶段，Computex 2026硬件端NPU下沉至入门级设备，正在扩大端侧广告模型的设备覆盖面。</p>
+</blockquote>
+<hr />
+<h2>1. 【腾讯广告算法大赛2026高分方案解析：行为条件建模 + RQ-KMeans多模态语义ID + 多频傅里叶时间编码】【进展更新】</h2>
+<ul>
+<li><strong>评分</strong>：A/5 · I/4 · S=14 · P0 · 价值类型：收入提升 / 新能力探索</li>
+<li><strong>来源</strong>：腾讯云开发者社区 | <a href="https://cloud.tencent.com/developer/article/2667955">原文链接</a> | 2026-06</li>
+<li><strong>相较 2026-05-31 报道新增</strong>：竞赛结果出炉，第一名方案技术细节完整披露</li>
+</ul>
+<p><strong>内容总结（~150 字）</strong>：
+腾讯广告算法大赛2026（KDD联合举办）赛题为"统一序列建模与特征交互的大规模推荐"，以真实脱敏广告 pCVR 数据为评判依据，且设严格推理延迟上限（超时自动判负）。第一名方案三大核心技术：①<strong>行为条件建模</strong>——每条行为附带"所属 Session + Session内位置"上下文，让模型感知用户访问的宏观结构；②<strong>RQ-KMeans 语义 ID</strong>——用多模态大模型（图文统一 Embedding）为每个广告生成残差量化语义 ID，替代传统 ID 特征，对冷启动广告尤为有效；③<strong>多频傅里叶时间编码</strong>——覆盖小时/日/周多时间尺度，同时学习短期爆发与长期周期行为规律。工程约束：在线推理延迟受竞赛平台强制限制，方案需在精度和速度之间做真实权衡。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告 CTR/CVR 预估中做到：将 RQ-KMeans 语义 ID 方案引入冷启动广告的特征工程，结合行为条件 Session 建模提升序列特征利用率，预期改善冷启动 CTR 预估 3-8%（参考方案 AUC 提升幅度）。适配性：<strong>可直接借鉴</strong>——三项技术均有独立模块实现路径，语义 ID 方案可在离线 Feature Engineering 层落地，不依赖端侧部署；延迟约束设计思路可直接迁移到我们的端侧推理预算管理。</p>
+<hr />
+<h2>2. 【On-Device LLMs: State of the Union 2026 — 推理框架+量化进入量产工程化，移动端实用 LLM 综述（Vikas Chandra, Meta AI Research）】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/4 · S=10 · P1 · 价值类型：新能力探索 / 成本优化</li>
+<li><strong>来源</strong>：Vikas Chandra (Meta AI Research) | <a href="https://v-chandra.github.io/on-device-llms/">原文链接</a> + <a href="https://news.ycombinator.com/item?id=46860907">HN 讨论</a> | 2026</li>
+</ul>
+<p><strong>内容总结（~140 字）</strong>：
+Meta AI Research 首席研究员 Vikas Chandra 发布2026年端侧 LLM 年度综述，结论为"手机端跑大模型已从新奇变成实用工程"。关键数据点：① <strong>MobileLLM-R1/R1.5</strong>（Meta）在推理 benchmark 上以同等手机 CPU 资源比2倍大小的模型高出 2-5x，关键在于训练数据质量与蒸馏方法而非参数量；② <strong>ExecuTorch 1.0 GA</strong>（2025年10月）确立 50KB 基础运行时 + 12+ 硬件后端的量产基线，80%+ HuggingFace 热门端侧 LLM 开箱即用；③ <strong>量化结论</strong>：GPTQ/AWQ INT4 实现 4x 内存节省、精度几乎无损，成为端侧部署实际标准；④ <strong>根本瓶颈仍是 decode 阶段内存带宽</strong>，高 TOPS 不等于高吞吐。Hacker News 讨论活跃，工程实践层面确认上述结论。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在端侧广告模型选型中做到：以"训练数据质量和蒸馏路径"而非"参数量堆砌"作为端侧推理模型的优化主轴，结合 ExecuTorch INT4 作为 Android + iOS 双平台量产基线。适配性：<strong>可借鉴思路</strong>——MobileLLM-Pro/R1 训练方法论可作为我们端侧 CTR 意图理解模型的设计参考；decode 内存带宽瓶颈分析对 LLM-enhanced 实时广告推理链路的延迟预算设定有直接参考价值。</p>
+<hr />
+<h2>3. 【Qualcomm Computex 2026：宣布"Agent之年" + Snapdragon C（NPU 内置入门级 $300 笔记本）+ Dragonwing IQ10（700 TOPS 工业机器人）】</h2>
+<ul>
+<li><strong>评分</strong>：A/2 · I/3 · S=7 · P2 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：Pulse2.com / The Gadgeteer / AllAboutCircuits | <a href="https://pulse2.com/qualcomm-agentic-ai-and-dragonfly-data-center-push-highlighted-at-computex-2026/">Computex Highlights</a> | 2026-06-01</li>
+</ul>
+<p><strong>内容总结（~120 字）</strong>：
+Qualcomm CEO Cristiano Amon 在 Computex 2026 宣告2026年是 "Year of the Agent"（Agent 之年），AI 从响应提示转向主动行动。主要产品发布：① <strong>Snapdragon C</strong>——首款面向 $300 预算入门级 Windows 笔记本的芯片，集成专用 NPU，支持始终在线的 Agent 任务（本地生成式工作流、音视频实时增强），大幅扩展可跑端侧 AI 的设备基数；② <strong>Dragonwing IQ10</strong>（工业机器人处理器）——700 TOPS NPU + 18核 Oryon CPU，面向工厂/物流等企业级边缘场景，6月起向企业客户发送早期接入样品；③ <strong>CES 2026 Innovation Award</strong>：Snapdragon 8 Elite Gen 5 AI Engine（Galaxy S26 使用，220 tok/s，NPU 比上代快 37%）是 2026 旗舰手机端 AI 能力标杆。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在端侧广告模型部署规划中做到：以 Snapdragon C 覆盖的入门级笔记本设备作为 PC Web 广告端侧 AI 的新覆盖区间——原本只有旗舰设备有 NPU，现在 $300 笔记本也有；Snapdragon 8 Elite Gen 5 的 220 tok/s 可作为 2026 Android 旗舰的推理 SLA 设计基准。适配性：<strong>战略参考</strong>——当前设备准入策略可开始将"有 NPU"而非"有独显"作为端侧模型启用门槛。</p>
+<hr />
+<h2>4. 【MediaTek Computex 2026：Edge-to-Cloud Agentic AI + Kompanio Ultra 910（50 TOPS 平板 NPU）+ MT8893（48 TOPS）】</h2>
+<ul>
+<li><strong>评分</strong>：A/2 · I/3 · S=7 · P2 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：MediaTek | <a href="https://www.mediatek.com/press-room/mediatek-to-empower-the-agentic-ai-era-with-edge-to-cloud-tech-at-computex-2026">原文链接</a> | 2026 Computex</li>
+</ul>
+<p><strong>内容总结（~110 字）</strong>：
+MediaTek 在 Computex 2026 以"AI Without Limits"为主题，展示面向 Agentic AI 时代的端到云协同技术路线。核心产品：① <strong>Kompanio Ultra 910</strong>——面向高性能 Android 平板 / Chromebook 的 SoC，集成 GenAI 与 AI Agent 专用 NPU（50 TOPS），支持双外接 4K 显示；② <strong>MT8893</strong>——48 TOPS NPU + 12核 CPU（4× Cortex-X + 4× Cortex-A），锁定高端平板市场。战略层面，MediaTek 强调"端侧处理减轻云端压力 + 隐私数据不出设备"的端云协同叙事，与其在手机芯片（Dimensity 9400 系列）的方向一致。注：MediaTek MDDC 2026 双 NPU + eNPU Toolkit 等手机端更新已于 6月2日简报报道。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在 Android 平板广告场景中做到：利用 Kompanio Ultra 910 的 50 TOPS NPU 运行素材理解（图文多模态）+意图识别的联合推理，延迟目标可设定在 20-50ms 范围。适配性：<strong>暂为参考</strong>——平板广告场景体量相对手机较小；核心价值在于 MediaTek 的端云协同 API 框架（尤其是 Dimensity AI Partner 部署工具链）对广告 SDK 端侧模型分发的流程优化潜力。</p>
+<hr />
+<h2>5. 【Qwen3量化实证研究（arXiv 2505.02214，Springer 2026刊出）：手机端 Q4_0 达 24.5 tok/s，低比特量化对思维链精度影响分析】</h2>
+<ul>
+<li><strong>评分</strong>：A/2 · I/3 · S=7 · P2 · 价值类型：成本优化</li>
+<li><strong>来源</strong>：arXiv / Springer Visual Intelligence | <a href="https://arxiv.org/abs/2505.02214">arxiv.org/abs/2505.02214</a> | 2026-05</li>
+</ul>
+<p><strong>内容总结（~120 字）</strong>：
+首篇系统性 Qwen3 量化实证研究，填补了 Qwen3 低比特量化对推理（Thinking Mode）精度影响的空白。关键工程数据：① <strong>手机端实测</strong>：RedMagic 8S Pro 运行 Qwen3 Q4_0 格式，达 24.5 tokens/s（CPU 推理）；② <strong>量化精度保留</strong>：官方 INT4/INT8 权重在 &gt;98.5% 基线精度下，VRAM 需求降低 55-70%；③ <strong>关键发现</strong>：低比特量化对标准文本任务精度几乎无损，但对 Thinking Mode（CoT 推理链）的影响值得关注——复杂推理任务在 INT4 下会出现轻微精度下滑；④ <strong>部署推荐</strong>：Qwen3 8B INT4 在 M3 Pro/Max 上可流畅运行，3B 变体适合移动端 ollama/llama.cpp 路径。本研究于2026年正式刊出于 Springer Visual Intelligence 期刊。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告端侧模型中做到：将 Qwen3 3B-8B INT4 作为端侧广告意图理解 / 素材分析的候选骨干，24.5 tok/s 的手机端实测速度满足非实时理解场景（如后台用户兴趣建模）。适配性：<strong>可借鉴方法</strong>——量化精度测试框架可复用到我们自己的广告模型量化实验设计；CoT 精度下滑提示在需要多步推理的广告策略优化模型中，INT4 量化需要额外验证。</p>
+<hr />
+<h3>其他观察</h3>
+<p>今日处于 WWDC 2026（6月8日，3天后）窗口前夜，端侧 AI 新闻节奏偏轻，重心已向苹果开发者侧预期聚集。Qualcomm 与 MediaTek 同期在 Computex 推出入门级/平板级 NPU 产品，印证"NPU 民主化"正从旗舰向中低端蔓延，端侧广告模型的设备覆盖天花板正在持续抬升。腾讯广告算法大赛高分方案则提供了罕见的"工业数据+严格延迟约束"双重评估体系，其工程结论对内部广告算法优化的参考价值高于大多数纯学术论文。</p>
+<h3>近期关注</h3>
+<ul>
+<li>⚠️ <strong>WWDC 2026（6月8日，3天后）</strong>：Core AI 框架正式 API（第三方模型接入 ANE）、Foundation Models 工具调用/结构化输出 beta、SKAdNetwork v5 归因规则。建议 6月8日 developer beta 发布当天立即测试广告 SDK 模型导出兼容性（torchao → Core AI）。</li>
+<li><strong>KDD 2026</strong>（8月，预计）：腾讯广告算法大赛与 KDD 联合举办，获奖方案将在 KDD Workshop 发表，届时可获取完整代码与更详尽的工程细节。</li>
+</ul>
+    </article>
+  </div>
+</body>
+</html>
