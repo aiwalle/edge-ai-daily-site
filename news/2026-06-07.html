@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端智能日报 2026-06-07</title>
+  <style>
+:root{
+  --bg:#f4faf8;
+  --surface:#ffffff;
+  --surface-soft:#f8fcfb;
+  --text:#1f2f2b;
+  --muted:#5e726b;
+  --accent:#0f766e;
+  --accent-soft:#dcf2ee;
+  --border:#d8e8e2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #e9f7f2 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, #e5f4ef 0%, transparent 28%),
+    var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.8;
+}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px 56px}
+.top{
+  margin-bottom:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+}
+.brand{
+  margin:0;
+  font-size:14px;
+  letter-spacing:.08em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.back{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px 28px 20px;
+  box-shadow:0 10px 30px rgba(15,118,110,.08);
+}
+h1,h2,h3{line-height:1.35;margin:1.1em 0 .45em}
+h1{font-size:2rem;margin-top:.15em}
+h2{font-size:1.32rem}
+h3{font-size:1.08rem}
+p,li{font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+blockquote{
+  margin:1rem 0;
+  padding:.72rem .95rem;
+  background:var(--surface-soft);
+  border-left:4px solid var(--accent);
+  color:#28433d;
+  border-radius:8px;
+}
+hr{
+  border:none;
+  border-top:1px dashed var(--border);
+  margin:1.3rem 0;
+}
+code{
+  background:#eef7f5;
+  border:1px solid #d7e9e4;
+  color:#1f4f49;
+  border-radius:6px;
+  padding:.14em .42em;
+  font-size:.92em;
+}
+pre{
+  background:#0f1f1d;
+  color:#e9f4f2;
+  border-radius:12px;
+  overflow:auto;
+  padding:14px;
+}
+pre code{
+  background:transparent;
+  border:none;
+  color:inherit;
+  padding:0;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  overflow:hidden;
+  border-radius:12px;
+}
+th,td{
+  border:1px solid var(--border);
+  padding:.6rem .7rem;
+  text-align:left;
+  vertical-align:top;
+}
+th{background:#edf8f5}
+.footer{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:.88rem;
+}
+.list{
+  list-style:none;
+  margin:1rem 0 0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.list a.item{
+  display:block;
+  padding:14px 15px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-soft);
+  transition:.15s ease;
+}
+.item-title{
+  display:block;
+  font-weight:700;
+  margin-top:2px;
+}
+.focus{
+  display:block;
+  margin-top:8px;
+  font-size:.92rem;
+  color:#37524c;
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.list a.item:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(15,118,110,.09);
+  text-decoration:none;
+}
+.date{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  margin-bottom:2px;
+}
+@media (max-width:700px){
+  .wrap{padding:20px 12px 40px}
+  .card{padding:20px 16px 16px;border-radius:14px}
+  h1{font-size:1.62rem}
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <p class="brand">Edge AI Daily</p>
+      <a class="back" href="../index.html">← 返回目录</a>
+    </div>
+    <article class="card">
+      <h1>端智能日报 2026-06-07</h1>
+<blockquote>
+<p><strong>本期聚焦</strong>：WWDC 2026 明日开幕，今日曝光最后一批技术细节——Siri "Campo" 确认整合进 Dynamic Island、iOS 27 砍掉 iPhone 11 支持（A18/A19 Pro 将成 CoreAI 重点机型），开发者需立即更新最低支持版本规划；arXiv 热节流实证研究同期浮出，iPhone 16 Pro 持续推理性能实测降速 44%，为端侧广告推理 SLA 设计敲响警钟——高 TOPS 不等于高吞吐，热管理才是手机端 LLM 的真实瓶颈。</p>
+</blockquote>
+<hr />
+<h2>1. 【WWDC 2026 前夜最终曝光：Siri "Campo" 整合 Dynamic Island + iOS 27 砍掉 iPhone 11 + Apple-Google $50 亿协议细节】【进展更新】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/4 · S=10 · P0 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：Tom's Guide / TechTimes / MacRumors | <a href="https://www.tomsguide.com/ai/i-thought-siri-was-finished-these-5-leaked-wwdc-2026-features-are-its-biggest-update-since-2011">Tom's Guide：5 大 Siri 泄露功能</a> · <a href="https://www.techtimes.com/articles/317902/20260606/wwdc-2026-opens-monday-gemini-powers-rebuilt-siri-iphone-11-faces-ios-27-cut.htm">TechTimes：WWDC 前日综述</a> · <a href="https://www.macrumors.com/guide/wwdc-2026-what-to-expect/">MacRumors What to Expect</a> | 2026-06-06 至 06-07</li>
+<li><strong>相较 2026-06-06 Bloomberg 报道新增</strong>：① Siri 的 UI 交互形态——整合进 Dynamic Island 动态岛（而非独立全屏界面）；② iOS 27 设备兼容范围收窄——iPhone 11（A13 Bionic）被移除支持名单，A18/A19 Pro 确立为 CoreAI 的重点硬件目标；③ Apple-Google 协议总价值更新为约 <strong>$50 亿</strong>（$10 亿/年 × 5 年多年框架协议）</li>
+</ul>
+<p><strong>内容总结（~150 字）</strong>：
+距 WWDC 2026 keynote（明日 10am PT）不足 24 小时，最后一批技术细节经由 Tom's Guide、TechTimes、MacRumors 等多方交叉确认：① <strong>Siri "Campo" 的视觉形态</strong>——激活 Siri 将在 Dynamic Island 内触发动画，形成语音 + 文字双通道的"动态岛助手"，而非独立聊天界面；② <strong>iOS 27 设备门槛</strong>——iPhone 11（A13 Bionic）从支持名单中移除，意味着 CoreAI SDK 的 ANE 加速路径面向 A15 Bionic 及以上机型（iPhone 13+），开发者需更新最低部署版本；③ <strong>Apple-Gemini 协议规模</strong>：多年框架协议总价值约 $50 亿，Google 定制版 Gemini 1.2T 参数处理 Siri 复杂推理（云端走 Private Cloud Compute），本地轻量模型负责日常任务；④ <strong>CoreAI 第三方开放</strong>——明日 developer beta 后，第三方 AI Agent 可经由系统 API 接入 Siri 调度层。工程节点：iOS 27 beta 1 将在 keynote 结束后数小时内推送。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在 iOS 广告 SDK 中做到：① 明确将最低支持版本规划锁定到 iOS 17 / iPhone 13+（A15+），与 CoreAI ANE 加速路径对齐，抛弃 iPhone 11 的 edge case 测试路径；② 今天即可部署 beta 真机测试计划——优先验证三件事：CoreAI 自定义模型格式兼容性、Foundation Models 多模态 API 延迟（目标 &lt;50ms）、AdAttributionKit 最新归因规则变化。适配性：<strong>今日等待 beta</strong>——建议 6月8日 keynote 后第一时间下载 iOS 27 Beta，当晚完成 CoreAI 模型导出验证。</p>
+<hr />
+<h2>2. 【端侧 LLM 推理热节流实证：iPhone 16 Pro 持续推理掉速 44%，热管理超越 TOPS 成真实瓶颈（arXiv 2603.23640）】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/3 · S=9 · P1 · 价值类型：成本优化 / 用户体验</li>
+<li><strong>来源</strong>：arXiv | <a href="https://arxiv.org/abs/2603.23640">arxiv.org/abs/2603.23640</a> | 2026-03</li>
+</ul>
+<p><strong>内容总结（~150 字）</strong>：
+来自 2026 年 3 月的基准测试论文，近期在工程社区持续发酵。研究对 <strong>Qwen 2.5 1.5B（INT4 量化）</strong>在四类设备上进行 20 轮持续推理实测，关键发现如下：① <strong>iPhone 16 Pro</strong>——峰值 40.35 tok/s，但热节流在第 2 次推理后即触发，65% 的测试时间处于降速状态，最终稳定在 <strong>22.56 tok/s（掉速 44%）</strong>；② <strong>Samsung Galaxy S24 Ultra</strong>——OS 强制执行 GPU 频率下限（OS-enforced freq floor），极端情况会直接终止推理；③ <strong>Hailo-10H NPU（Raspberry Pi 5 附加板）</strong>——吞吐稳定性 CV 仅 <strong>0.04%</strong>（比任何其他平台低 2 个数量级），270 mJ/token，表现最稳定；④ <strong>NVIDIA RTX 4050 笔记本</strong>——受电池功率上限约束，与 Hailo-10H 能效相近（259 vs 270 mJ/token）但吞吐差 19×。结论：<strong>高 TOPS 不等于高持续吞吐</strong>，移动端 LLM 的真实瓶颈是热管理，而非算力。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在端侧广告推理 SLA 设计中做到：① 将设备端推理<strong>吞吐 SLA 基准从峰值改为持续值</strong>——iPhone 设计目标应基于 22 tok/s 而非 40 tok/s，避免上线后性能劣化导致广告展示延迟；② 为端侧 CTR 推理设定<strong>热状态 SLA</strong>（连续 5+ 次推理后的延迟上限），并在 SDK 层加入热状态检测逻辑，动态降级到云端推理。适配性：<strong>可直接指导工程规划</strong>——建议将此论文的持续推理 profiling 方法引入内部端侧模型压测 CI 流程，覆盖"冷启动"和"连续重复推理"两种场景。</p>
+<hr />
+<h2>3. 【Chrome for Android Gemini AI 自动浏览（6月底美国首发）：浏览器内用户意图执行首次端侧量产】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/3 · S=9 · P1 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：Google Chrome Blog | <a href="https://blog.google/products-and-platforms/products/chrome/bringing-chrome-ai-to-android/">Gemini in Chrome with auto browse comes to Android</a> | 2026-06</li>
+</ul>
+<p><strong>内容总结（~130 字）</strong>：
+Google 宣布将 Gemini AI 能力引入 Chrome for Android，<strong>6月底面向美国用户开始灰度</strong>，覆盖条件：Android 12+ / 4GB RAM 以上设备（无需旗舰芯片，显著扩大覆盖面）。核心功能：① <strong>Auto Browse（自动浏览）</strong>——用户以自然语言描述目标（如"帮我预订最近的停车位""更新我的订单地址"），Gemini 在浏览器内自主执行多步网页任务，首次将"意图→操作"闭环能力下沉至手机浏览器层；② <strong>Article Summarizer</strong>——当前页文章即时摘要，端侧处理，零云端请求；③ <strong>Image Customizer / Task Manager</strong>——页面内图片编辑与任务追踪。底层推理框架为 LiteRT-LM（即 6月3日报道的 Gemini Nano 生产矩阵），确保端侧推理延迟 &lt;200ms。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在 Web 广告场景中做到：① 利用 Chrome Gemini 的<strong>用户意图感知能力</strong>为 Web 广告提供更精准的页面级上下文信号——用户"让 Gemini 预订停车位"这一动作本身就是强意图信号，可接入浏览器端广告竞价策略；② Auto Browse 的多步操作链路可与广告落地页深度绑定，探索"AI 辅助转化"新交互模式（类似导购 Agent）。适配性：<strong>中期关注</strong>——6月底仅限美国，功能对应广告侧的 API 尚待 Chrome 开放；建议今天即注册 Chrome Canary 内测资格，提前熟悉 Prompt API 与 Auto Browse 的能力边界。</p>
+<hr />
+<h2>4. 【2026 移动端 AI 推理范式转移：端侧作为默认选项成行业共识，30ms vs 800ms 分水岭确立】</h2>
+<ul>
+<li><strong>评分</strong>：A/4 · I/2 · S=10 · P1 · 价值类型：成本优化 / 用户体验</li>
+<li><strong>来源</strong>：SEM Nexus / Edge AI and Vision Alliance / On-Device LLMs 2026 综合 | <a href="https://semnexus.com/on-device-ai-in-mobile-privacy-first-pattern">SEM Nexus：On-Device AI in Mobile Privacy-First Pattern</a> · <a href="https://www.edge-ai-vision.com/2026/01/on-device-llms-in-2026-what-changed-what-matters-whats-next/">Edge AI Vision Alliance</a> | 2026</li>
+</ul>
+<p><strong>内容总结（~130 字）</strong>：
+多方 2026 年行业综述交叉印证同一结论：端侧推理在移动 AI 应用中已从"可选项"切换为"默认选项"。关键技术转折点：① <strong>性能分水岭确立</strong>——情感分类/意图识别等轻量 NLP 任务，端侧推理约 <strong>30ms</strong>（iPhone 15+/近两年 Android 旗舰，30+ TOPS），而服务端 API 往返含网络 RTT 约 <strong>800ms</strong>，差距超 25×；② <strong>隐私监管倒逼</strong>——App Tracking Transparency（ATT）、GDPR 严格执行、Privacy Sandbox 落地，使"用户行为数据上云"的合规成本持续攀升，端侧推理本身即满足"数据不离端"要求；③ <strong>80% 推理本地化</strong>：2026 年预测全球 AI 推理中约 80% 将在设备端完成；④ 推理框架成熟——ExecuTorch 1.0 GA + LiteRT 2.1 生产毕业 + CoreML/Core AI 同时演进，双平台 INT4 量化量产路径均已打通。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告系统架构决策中做到：① 以"端侧优先，云端兜底"作为 2026-2027 广告意图识别 / 实时 CTR 推理的架构原则——30ms 端侧延迟远低于任何云端实时竞价链路的容忍上限（通常 &lt;100ms），意味着端侧不仅是隐私方案，还是性能优化方案；② 将设备 NPU 算力（TOPS）从"广告侧可选加分项"升级为 SDK 能力分级的强依赖——建议在 SDK 设备能力矩阵中新增"端侧推理等级"维度（NPU ≥ 10 TOPS = 全功能，CPU 降级 = 简化特征），对应差异化广告策略。适配性：<strong>可直接应用于架构规划</strong>——将此框架纳入下一版 SDK 技术设计文档，作为端侧 AI 能力分层的依据。</p>
+<hr />
+<h3>其他观察</h3>
+<p>今日端侧 AI 生态整体处于"WWDC 前一天"的静默期：所有开发者视线集中在明日 keynote。arXiv 热节流实测和 Chrome Auto Browse 代表了两个维度的"工程现实"——一个揭示了当前端侧推理的硬性约束（热管理），一个展示了下一个 UI 范式（浏览器原生 AI Agent）。两者合并阅读的启示：端侧广告推理 SDK 的下一个设计挑战，不是"能不能跑模型"，而是"连续跑 10 次之后还能不能稳定在 SLA 内"，以及"当用户已经有浏览器原生 AI Agent 时，广告如何接入这一新交互层"。</p>
+<h3>近期关注</h3>
+<ul>
+<li>🔴 <strong>WWDC 2026（明日 6月8日 10am PT）</strong>——最高优先级节点，建议全程跟进：</li>
+<li><strong>CoreAI SDK 格式</strong>：自定义模型导出路径（torchao → Core AI）是否打通</li>
+<li><strong>Foundation Models 多模态延迟</strong>：图文理解 API 是否 &lt;50ms（素材扫描场景目标）</li>
+<li><strong>AdAttributionKit 最新归因规则</strong>：iOS 广告转化链路精度直接影响</li>
+<li><strong>设备兼容新基线</strong>：iPhone 11 出局后，iOS 广告 SDK 的最低设备要求如何更新</li>
+<li><strong>KDD 2026</strong>（8月，预计）：RecGPT-Mobile 等端侧推荐论文及腾讯广告大赛方案完整版预计在 Workshop 发布。</li>
+</ul>
+    </article>
+  </div>
+</body>
+</html>
