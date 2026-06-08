@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端智能日报 2026-06-08</title>
+  <style>
+:root{
+  --bg:#f4faf8;
+  --surface:#ffffff;
+  --surface-soft:#f8fcfb;
+  --text:#1f2f2b;
+  --muted:#5e726b;
+  --accent:#0f766e;
+  --accent-soft:#dcf2ee;
+  --border:#d8e8e2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #e9f7f2 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, #e5f4ef 0%, transparent 28%),
+    var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.8;
+}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px 56px}
+.top{
+  margin-bottom:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+}
+.brand{
+  margin:0;
+  font-size:14px;
+  letter-spacing:.08em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.back{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px 28px 20px;
+  box-shadow:0 10px 30px rgba(15,118,110,.08);
+}
+h1,h2,h3{line-height:1.35;margin:1.1em 0 .45em}
+h1{font-size:2rem;margin-top:.15em}
+h2{font-size:1.32rem}
+h3{font-size:1.08rem}
+p,li{font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+blockquote{
+  margin:1rem 0;
+  padding:.72rem .95rem;
+  background:var(--surface-soft);
+  border-left:4px solid var(--accent);
+  color:#28433d;
+  border-radius:8px;
+}
+hr{
+  border:none;
+  border-top:1px dashed var(--border);
+  margin:1.3rem 0;
+}
+code{
+  background:#eef7f5;
+  border:1px solid #d7e9e4;
+  color:#1f4f49;
+  border-radius:6px;
+  padding:.14em .42em;
+  font-size:.92em;
+}
+pre{
+  background:#0f1f1d;
+  color:#e9f4f2;
+  border-radius:12px;
+  overflow:auto;
+  padding:14px;
+}
+pre code{
+  background:transparent;
+  border:none;
+  color:inherit;
+  padding:0;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  overflow:hidden;
+  border-radius:12px;
+}
+th,td{
+  border:1px solid var(--border);
+  padding:.6rem .7rem;
+  text-align:left;
+  vertical-align:top;
+}
+th{background:#edf8f5}
+.footer{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:.88rem;
+}
+.list{
+  list-style:none;
+  margin:1rem 0 0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.list a.item{
+  display:block;
+  padding:14px 15px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-soft);
+  transition:.15s ease;
+}
+.item-title{
+  display:block;
+  font-weight:700;
+  margin-top:2px;
+}
+.focus{
+  display:block;
+  margin-top:8px;
+  font-size:.92rem;
+  color:#37524c;
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.list a.item:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(15,118,110,.09);
+  text-decoration:none;
+}
+.date{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  margin-bottom:2px;
+}
+@media (max-width:700px){
+  .wrap{padding:20px 12px 40px}
+  .card{padding:20px 16px 16px;border-radius:14px}
+  h1{font-size:1.62rem}
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <p class="brand">Edge AI Daily</p>
+      <a class="back" href="../index.html">← 返回目录</a>
+    </div>
+    <article class="card">
+      <h1>端智能日报 2026-06-08</h1>
+<blockquote>
+<p><strong>本期聚焦</strong>：WWDC 2026 今日正式开幕，Apple 宣布 CoreAI（替代 CoreML）+ Siri 第三方 Agent API + iOS 27 Beta 当天推送，iOS 广告 SDK 迭代窗口正式打开；腾讯混元发布业界首个产业级 2Bit 端侧量化模型 HY-1.8B-2Bit（600MB / 天玑 9500 首字加速 1.5-2×），将端侧低比特量化推至量产可用门槛；Meta 同步发布 ExecuTorch 技术论文（arXiv 2605.08195），以 Instagram/WhatsApp 亿级 DAU 量产数据验证 50KB 运行时的生产可靠性。</p>
+</blockquote>
+<hr />
+<h2>1. 【WWDC 2026 正式发布：CoreAI 替代 CoreML + Siri 第三方 Agent API 开放 + iOS 27 Developer Beta 上线】【进展更新】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/5 · S=11 · P0 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：Apple / AppleInsider / Newsweek / IndexBox | <a href="https://appleinsider.com/articles/26/03/01/wwdc-2026-to-introduce-core-ai-as-replacement-for-core-ml">AppleInsider：CoreAI 替代 CoreML</a> · <a href="https://www.newsweek.com/wwdc-2026-everything-apple-is-expected-to-announce-on-june-8-12016937">Newsweek：WWDC 2026 全部公告</a> · <a href="https://www.indexbox.io/blog/apple-wwdc-2026-tim-cooks-last-keynote-to-debut-ai-powered-siri-on-google-gemini/">IndexBox：AI Siri 首秀</a> | 2026-06-08</li>
+<li><strong>相较 2026-06-07 报道新增</strong>：从预期变为正式公告——① CoreAI SDK 正式发布，开发者通过标准 API 接入 Apple Neural Engine（ANE）；② Siri 正式开放第三方 AI Agent（Claude / Gemini）接入调度层；③ iOS 27 Developer Beta 1 于 keynote 结束后当天推送；④ Apple 内置 AI 网页搜索正式上线（摘要+图像+AI 生成答案，端侧优先）。</li>
+</ul>
+<p><strong>内容总结（~150 字）</strong>：
+Apple WWDC 2026 今日（6月8日 10am PT）正式开幕，核心 AI 工程发布：① <strong>CoreAI SDK</strong>——替代 CoreML，新框架标准化第三方开发者将自定义模型接入 ANE 的路径，对 A16 Bionic 及以上设备完全优化（iPhone 14 Pro+），A15 以下设备降级模式运行；② <strong>Siri Agent 开放 API</strong>——用户可将特定指令路由至 Claude、Gemini 等第三方 AI 助手，标志苹果 AI 平台首次向外部模型开放系统调度层；③ <strong>Siri "Campo" 正式发布</strong>——聊天机器人交互界面，集成 Google Gemini 1.2T 定制版（复杂推理走 Private Cloud Compute），日常任务走本地轻量 Foundation Model；④ <strong>iOS 27 Developer Beta 1</strong> 当天推送，包含 CoreAI SDK 完整 API；⑤ <strong>Apple AI 网页搜索</strong>——端侧摘要推理优先，无云端请求的隐私模式。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在 iOS 广告 SDK 中做到：① 今天下载 iOS 27 Beta，验证现有广告侧 CoreML 模型是否可直接在 CoreAI 路径运行，或需要重新导出（torchao → CoreAI 格式）；② 通过 Siri Agent API 探索"用户意图信号→广告竞价"系统级接入——用户触发 Siri 执行购买/搜索任务时，广告系统可获取更强的实时意图信号；③ 以 A16 Bionic 作为广告 SDK 端侧 AI 功能的完整功能门槛更新设备分级矩阵。适配性：<strong>立即行动</strong>——iOS 27 Beta 已发布，建议当天完成 CoreAI SDK 兼容性测试，重点验证广告模型导出、ANE 延迟（目标 &lt;50ms）、AdAttributionKit 规则变化。</p>
+<hr />
+<h2>2. 【腾讯混元 HY-1.8B-2Bit：业界首个产业级 2Bit 端侧模型，存储仅 600MB，天玑 9500 首字时延加速 1.5-2×】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/4 · S=10 · P1 · 价值类型：成本优化</li>
+<li><strong>来源</strong>：腾讯混元 / 雷峰网 / IT之家 | <a href="https://www.leiphone.com/category/industrynews/l9jyZlcDsoDFMzjU.html">雷峰网：首个产业级 2Bit 量化突破</a> · <a href="https://www.ithome.com/0/920/727.htm">IT之家：0.3B 端侧模型详情</a> · <a href="https://ai-bot.cn/hy-1-8b-2bit/">ai-bot.cn：模型介绍</a> | 2026年6月</li>
+</ul>
+<p><strong>内容总结（~140 字）</strong>：
+腾讯混元正式开源 <strong>HY-1.8B-2Bit</strong>，定位"面向消费级硬件的产业级端侧量化模型"。核心工程数据：① <strong>极致压缩</strong>——原始 1.8B 参数经 2Bit 量化感知训练（QAT）后等效参数量约 0.3B，存储仅 <strong>600MB</strong>（Q4 约 1.1GB，降幅 45%）；② <strong>量化创新</strong>：采用"数据优化 + 弹性拉伸量化 + 训练策略三重创新"，精度保留显著优于传统 PTQ 2Bit 方案；③ <strong>实测加速</strong>：MacBook M4 首字时延 <strong>3-8× 加速</strong>（vs BF16 原始精度），生成速度 <strong>≥2× 稳定加速</strong>；天玑 9500 对比 Q4 格式，首字时延 <strong>1.5-2×</strong>，生成速度约 <strong>1.5×</strong>；④ <strong>部署格式</strong>：gguf-int2 与 BF16 伪量化权重均已开源，<strong>Arm SME2</strong>（天玑 9500 / 部分 Cortex-X5 设备）适配完成，llama.cpp 路径可直接加载；⑤ 腾讯称这是业界首个通过 QAT 达到产业部署门槛的 2Bit 端侧模型——此前 2Bit PTQ 精度损失过大，QAT 才实现突破。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告端侧模型压缩中做到：参考腾讯的 QAT + 弹性拉伸量化路线，将轻量 CTR/意图识别模型从 INT4 进一步压缩至 2Bit——相比 Q4 额外减少 45% 存储，使广告模型可部署设备范围从 6GB+ RAM 扩展至 3-4GB 中端机（国内 Android 主流机型覆盖率显著提升）。适配性：<strong>中期可借鉴方法论</strong>——QAT 路线需重新训练，短期可先在 Arm SME2 设备测试 HY-1.8B-2Bit 的推理延迟作为目标基准；长期建议将 2Bit QAT 纳入广告模型压缩路线图研究。</p>
+<hr />
+<h2>3. 【ExecuTorch arXiv 2605.08195：Meta 亿级 DAU 量产实证——Instagram SqueezeSAM 端侧加速后 DAU 上升，50KB 运行时支撑 4 大 App】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/4 · S=10 · P1 · 价值类型：成本优化 / 新能力探索</li>
+<li><strong>来源</strong>：Meta AI Research / arXiv | <a href="https://arxiv.org/abs/2605.08195">arxiv.org/abs/2605.08195</a> | 2026-05-05</li>
+</ul>
+<p><strong>内容总结（~140 字）</strong>：
+Meta AI 于 5 月 5 日在 arXiv 发布 ExecuTorch 官方技术论文，首次公开亿级 DAU 规模的端侧量产数据。关键工程信息：① <strong>量产覆盖范围</strong>：ExecuTorch 已部署在 <strong>Instagram、WhatsApp、Messenger、Facebook</strong> 四大 App 端侧推理路径；② <strong>Instagram Cutouts（SqueezeSAM）</strong>——轻量版 Segment Anything Model 通过 ExecuTorch 替代原推理栈后，因推理速度提升导致 <strong>DAU 显著增长</strong>（端侧性能直接驱动用户活跃度的最强工业证明）；③ <strong>运行时规格</strong>：50KB 基础运行时，<strong>12+ 硬件后端</strong>（Qualcomm NPU、Apple ANE、MediaTek APU、Arm NN、Vulkan、CoreML 等）；④ <strong>测试设备基准</strong>：Samsung Galaxy S25 Ultra（Snapdragon 8 Elite，16GB RAM）与 Google Pixel 9 Pro XL（Tensor G4，16GB RAM）——2026 年 Android 旗舰基准机型；⑤ 80%+ HuggingFace 热门端侧 LLM 开箱即用；论文由 Meta AI Research（含 Vikas Chandra）联合撰写。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告端侧推理栈决策中做到：① 以 ExecuTorch 为 Android + iOS 双平台量产推理栈的优选方案——Meta 社交 App 的规模验证消除了"量产可靠性"顾虑，比任何内部 PoC 更有说服力；② SqueezeSAM → DAU 提升的直接关联是立项广告端侧推理优化的最强 ROI 论证：端侧延迟降低→广告响应速度提升→点击率/留存率改善的链路已有工业实证。适配性：<strong>可直接应用</strong>——建议评估将广告侧 CTR 轻量模型的 Android NPU 推理路径从 ONNX Runtime Mobile 迁移至 ExecuTorch（PyTorch 训练管线直接导出，改造成本低）。</p>
+<hr />
+<h2>4. 【Edge LLM Runtime Stack 2026：7 大框架全景对比，选错运行时损失 3× 吞吐，明确各场景最优选择】</h2>
+<ul>
+<li><strong>评分</strong>：A/2 · I/2 · S=6 · P2 · 价值类型：成本优化</li>
+<li><strong>来源</strong>：Edge AI Stack | <a href="https://edgeaistack.ai/blog/edge-llm-runtime-stack-2026/">The Edge LLM Runtime Stack 2026</a> | 2026</li>
+</ul>
+<p><strong>内容总结（~120 字）</strong>：
+行业技术博客发布 2026 年边缘 LLM 推理框架横评，覆盖 7 大运行时：<strong>llama.cpp / Ollama / TensorRT Edge-LLM / ExecuTorch / vLLM / MLX / LiteRT-LM</strong>。核心结论与选型指南：① <strong>选错运行时可损失 3× 以上吞吐</strong>——各框架的硬件加速路径差异巨大，不能随意互换；② <strong>llama.cpp</strong>：CPU-first、GGUF 格式，跨平台可移植性最强，适合"兼容性优先"场景；③ <strong>ExecuTorch</strong>：PyTorch 原生，50KB footprint，12+ 后端，移动端与 MCU 场景最优；④ <strong>LiteRT-LM</strong>：Android NPU 加速默认路径（NNAPI / 厂商 delegate），Gemini Nano 官方生产框架；⑤ <strong>混合栈策略</strong>：原型期 Ollama → 多并发服务端 vLLM → 离线 / 端侧 ExecuTorch / llama.cpp，是 2026 年 AI 团队推荐部署模式；⑥ Ollama 与 vLLM 设计目标均为服务器并发，不适合移动端嵌入。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在端侧广告推理栈选型中做到：明确框架分工——Android 端侧推理首选 LiteRT-LM（NNAPI 直通 NPU）或 ExecuTorch（PyTorch 管线兼容）；iOS 端首选 ExecuTorch + CoreAI；避免在广告移动 SDK 内嵌入 Ollama / vLLM（设计目标是服务器）。适配性：<strong>参考决策框架</strong>——建议将"训练栈 + 硬件目标 + 并发需求"三维度框架纳入内部端侧广告模型运行时选型文档。</p>
+<hr />
+<h3>其他观察</h3>
+<p>今日是 WWDC 2026 keynote 日，端侧 AI 生态迎来苹果平台最重要的年度工程节点。CoreAI SDK 正式发布为 iOS 广告 SDK 团队打开了新工程通道——ANE 接入从 CoreML 的私有路径变为标准开发者 API。同一周内，腾讯混元 HY-1.8B-2Bit 的量产发布与 Meta ExecuTorch 的亿级 DAU 技术论文，标志"2Bit 量化工业可用"与"端侧框架规模验证"两个历史节点同时确立。对广告算法团队而言，现在的问题不再是"端侧能不能跑模型"，而是"用哪个框架、压缩到哪个比特、跑在哪代 SoC 上"——这是工程规划问题，而非可行性问题。</p>
+<h3>近期关注</h3>
+<ul>
+<li>🔴 <strong>今日行动（WWDC Day 1）</strong>：下载 iOS 27 Beta 1，测试 CoreAI SDK 对现有广告模型格式兼容性；验证 Foundation Models 多模态 API 首字延迟（目标 &lt;50ms）；确认 AdAttributionKit 归因规则变化范围。</li>
+<li><strong>本周</strong>：评估 ExecuTorch vs LiteRT-LM 作为内部 Android CTR 推理栈迁移目标；参考腾讯 HY-1.8B-2Bit QAT 路线，规划广告模型 2Bit 量化可行性评估。</li>
+<li><strong>WWDC Day 2-5（6月9-12日）</strong>：关注 CoreAI SDK 的具体量化格式要求（是否支持 INT4/INT2 自定义模型）以及 Foundation Models 工具调用（Function Calling）API 文档。</li>
+<li><strong>KDD 2026</strong>（8月预计）：腾讯广告算法大赛完整方案 Workshop 发表，届时可获取代码实现。</li>
+</ul>
+    </article>
+  </div>
+</body>
+</html>
