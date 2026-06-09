@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端智能日报 2026-06-09</title>
+  <style>
+:root{
+  --bg:#f4faf8;
+  --surface:#ffffff;
+  --surface-soft:#f8fcfb;
+  --text:#1f2f2b;
+  --muted:#5e726b;
+  --accent:#0f766e;
+  --accent-soft:#dcf2ee;
+  --border:#d8e8e2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #e9f7f2 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, #e5f4ef 0%, transparent 28%),
+    var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.8;
+}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px 56px}
+.top{
+  margin-bottom:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+}
+.brand{
+  margin:0;
+  font-size:14px;
+  letter-spacing:.08em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.back{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px 28px 20px;
+  box-shadow:0 10px 30px rgba(15,118,110,.08);
+}
+h1,h2,h3{line-height:1.35;margin:1.1em 0 .45em}
+h1{font-size:2rem;margin-top:.15em}
+h2{font-size:1.32rem}
+h3{font-size:1.08rem}
+p,li{font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+blockquote{
+  margin:1rem 0;
+  padding:.72rem .95rem;
+  background:var(--surface-soft);
+  border-left:4px solid var(--accent);
+  color:#28433d;
+  border-radius:8px;
+}
+hr{
+  border:none;
+  border-top:1px dashed var(--border);
+  margin:1.3rem 0;
+}
+code{
+  background:#eef7f5;
+  border:1px solid #d7e9e4;
+  color:#1f4f49;
+  border-radius:6px;
+  padding:.14em .42em;
+  font-size:.92em;
+}
+pre{
+  background:#0f1f1d;
+  color:#e9f4f2;
+  border-radius:12px;
+  overflow:auto;
+  padding:14px;
+}
+pre code{
+  background:transparent;
+  border:none;
+  color:inherit;
+  padding:0;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  overflow:hidden;
+  border-radius:12px;
+}
+th,td{
+  border:1px solid var(--border);
+  padding:.6rem .7rem;
+  text-align:left;
+  vertical-align:top;
+}
+th{background:#edf8f5}
+.footer{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:.88rem;
+}
+.list{
+  list-style:none;
+  margin:1rem 0 0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.list a.item{
+  display:block;
+  padding:14px 15px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-soft);
+  transition:.15s ease;
+}
+.item-title{
+  display:block;
+  font-weight:700;
+  margin-top:2px;
+}
+.focus{
+  display:block;
+  margin-top:8px;
+  font-size:.92rem;
+  color:#37524c;
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.list a.item:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(15,118,110,.09);
+  text-decoration:none;
+}
+.date{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  margin-bottom:2px;
+}
+@media (max-width:700px){
+  .wrap{padding:20px 12px 40px}
+  .card{padding:20px 16px 16px;border-radius:14px}
+  h1{font-size:1.62rem}
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <p class="brand">Edge AI Daily</p>
+      <a class="back" href="../index.html">← 返回目录</a>
+    </div>
+    <article class="card">
+      <h1>端智能日报 2026-06-09</h1>
+<blockquote>
+<p><strong>本期聚焦</strong>：WWDC Day 2 开发者会话深挖揭示 Apple AFM-3 关键工程细节（3B 端侧 2-bit QAT + MCP 全平台化），与 Google LiteRT QNN Accelerator 将多模态视觉推理压至 0.12s TTFT 形成共振；Apple / Google / Microsoft 三方同步推进"小模型 + 推理时增强"路线，广告端侧素材理解与意图识别的工程可行性窗口正在快速收窄。</p>
+</blockquote>
+<hr />
+<h2>1. 【LiteRT QNN Accelerator + FastVLM 0.5B：Snapdragon 8 Elite Gen 5 NPU 将视觉理解压至 0.12s TTFT，56 款模型 &lt;5ms 延迟】</h2>
+<ul>
+<li><strong>评分</strong>：A/4 · I/4 · S=12 · P0 · 价值类型：成本优化 / 用户体验</li>
+<li><strong>来源</strong>：Google Developers Blog | <a href="https://developers.googleblog.com/unlocking-peak-performance-on-qualcomm-npu-with-litert/">Unlocking Peak Performance on Qualcomm NPU with LiteRT</a> | 2026</li>
+</ul>
+<p><strong>内容总结（~150 字）</strong>：
+Google AI Edge 与 Qualcomm 深度联合开发 <strong>LiteRT QNN Accelerator</strong>，替代旧 TFLite QNN delegate，在 Snapdragon 8 Elite Gen 5 上实现以下工程突破：① <strong>Attention 原生 NPU kernel</strong>——专为 Transformer Attention 层设计 NPU 专属算子，而非通用 delegation，彻底解决矩阵乘单元利用率不足的问题；② <strong>延迟分位数</strong>：56+ 款模型 NPU 路径延迟 &lt;5ms（CPU 仅 13 款达标），NPU 整体延迟约为 CPU 基线的 <strong>1–20%</strong>；③ <strong>FastVLM-0.5B 多模态基准</strong>：1024×1024 高分辨率图像首字时延 <strong>0.12s</strong>，预填充 <strong>11,000 tok/s</strong>，解码 <strong>&gt;100 tok/s</strong>——0.5B 参数模型首次在移动 NPU 上达成可用级多模态视觉理解；④ <strong>Google AI Edge Portal</strong>：提供 100+ 热门机型在线基准查询服务，可按设备/加速器/模型配置检索生产目标延迟。硬件平台：Galaxy S26 Ultra / Snapdragon 8 Elite Gen 5，已量产。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告素材理解中做到：用单个 FastVLM-0.5B 在用户 Android 设备端以 0.12s 完成广告图片/视频帧视觉特征提取，替代目前云端素材分析管线的前置阶段，延迟从 800ms 降至 120ms 级别，同时数据不离端（隐私合规）。适配性：<strong>可直接测试</strong>——LiteRT + QNN Accelerator 组合已随 Galaxy S26 量产，建议优先在 Snapdragon 8 Elite Gen 5 设备上验证 FastVLM-0.5B 的品牌/产品/情绪分类精度，作为广告 SDK 创意评分模块端侧原型。</p>
+<hr />
+<h2>2. 【Apple AFM-3 技术细节揭示：3B 端侧 2-bit QAT + 20B 稀疏云模型 + MCP 全平台化（WWDC Day 2 进展）】【进展更新】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/5 · S=11 · P0 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：Apple ML Research / Apple Developer | <a href="https://machinelearning.apple.com/research/introducing-third-generation-of-apple-foundation-models">AFM-3 技术博客</a> · <a href="https://developer.apple.com/wwdc26/">WWDC26 开发者会话</a> | 2026-06-08/09</li>
+<li><strong>相较 2026-06-08 报道新增</strong>：① 3B 端侧模型量化方案确认（2-bit QAT + KV-cache sharing）；② 云端模型架构（20B PT-MoE，动态激活 1-4B 参数）；③ MCP 全平台化 Developer Session 细节；④ AFM-3B MMLU 超越 Qwen-2.5-3B / Gemma-3-4B / Gemma-3n-E4B；⑤ Apple 官方确认模型完全自研，无 Gemini 权重</li>
+</ul>
+<p><strong>内容总结（~140 字）</strong>：
+WWDC Day 2 开发者会话与 Apple ML Research 博客同步披露 AFM-3 核心工程细节：① <strong>端侧 3B 模型</strong>：采用 <strong>2-bit QAT + KV-cache sharing</strong> 压缩，iPhone 15 Pro 上约 <strong>30 tok/s</strong>，无需 API 成本；② <strong>云端 AFM-3 Core Advanced（20B 稀疏 MoE）</strong>：基于 Parallel-Track MoE 架构，按请求复杂度动态激活 <strong>1–4B 参数</strong>，同时实现大模型能力与小模型算力；③ <strong>精度表现</strong>：AFM-3B 在 MMLU / MMMLU 上超越 Qwen-2.5-3B、Gemma-3-4B、Gemma-3n-E4B；④ <strong>MCP 全平台化</strong>：Developer Session"MCP in Apple platforms"宣布 MCP 协议成为 iOS/macOS/Siri 系统级标准接口，"Meet agentic coding in Xcode"开放 IDE 内 MCP Agent 开发；⑤ 模型支持图文多模态输入，natively multimodal（音频/图像/工具调用），所有权重完全自研。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在 iOS 广告 SDK 中做到：① <strong>MCP 协议接入用户意图信号</strong>——Siri/Agent 触发用户动作时，广告 SDK 通过标准 MCP 接口获取系统级意图信号，升级竞价实时特征；② <strong>FoundationModels.framework 零成本素材分析</strong>——AFM-3 多模态 API 可直接对广告图片/视频帧做质量评估，无需自带模型；③ <strong>2-bit QAT 路线复用</strong>——苹果与腾讯同期独立采用 QAT 实现 2Bit 量化，产业收敛信号明确，广告轻量模型可启动同等量化方案评估。适配性：<strong>今日可行动</strong>——从 iOS 27 Beta 1 测试 FoundationModels 多模态 API（图片输入、工具调用延迟）。</p>
+<hr />
+<h2>3. 【Microsoft EuroSys '26：手机 NPU 推理时计算扩展——19× GEMM 加速 + 小模型对齐大模型精度（arXiv 2509.23324）】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/4 · S=10 · P1 · 价值类型：成本优化 / 新能力探索</li>
+<li><strong>来源</strong>：Microsoft Research / EuroSys '26 | <a href="https://arxiv.org/abs/2509.23324">arxiv.org/abs/2509.23324</a> | 2026-04-26</li>
+</ul>
+<p><strong>内容总结（~140 字）</strong>：
+微软研究院在 EuroSys 2026（欧洲顶级系统会议）发布端侧 LLM 推理系统，首次将 <strong>test-time compute scaling（推理时计算扩展）</strong>引入 Qualcomm Hexagon NPU：① <strong>核心问题</strong>：移动 NPU 的矩阵乘单元在标准 LLM 推理中存在空闲（underutilized），同时缺乏细粒度量化和通用计算（Softmax）的硬件原生支持，使 beam search、迭代验证等 test-time 技术无法高效运行；② <strong>系统设计</strong>：端到端 LLM 推理系统，针对 Hexagon 架构实现<strong>混合精度 GEMM 调度 + Softmax 专用 NPU kernel</strong>；③ <strong>关键性能</strong>：混合精度 GEMM 加速 <strong>19×</strong>，Softmax 加速 <strong>2.2×</strong>；④ <strong>核心结论</strong>：小模型（如 1B INT4 量化）通过 test-time scaling 可在精度上对齐更大参数模型，建立新的"端侧性能 vs 算力成本 Pareto 前沿"；⑤ 目标硬件：Qualcomm Hexagon NPU（Snapdragon 8 Elite 系列）。论文发表于 ACM EuroSys '26。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告端侧推理中做到：用 1B 量化小模型 + test-time scaling（多候选生成 + 自验证）在端侧 NPU 上实现接近 3B 模型的 CTR/意图识别精度，同时内存减少约 2/3；Hexagon NPU 19× GEMM 加速也使自回归特征生成在广告 SLA 内变得可行（目标延迟 &lt;50ms）。适配性：<strong>中期跟踪</strong>——当内部广告模型从 2B 以上参数向 1B 量化迁移时，此方案是精度补偿的重要候选路线，建议在端侧广告模型量化路线图评估中纳入 test-time compute 选项。</p>
+<hr />
+<h2>4. 【字节跳动豆包 Gen 2 端云协同架构落地：简单任务端侧，复杂推理上云，6月底开启付费服务】</h2>
+<ul>
+<li><strong>评分</strong>：A/2 · I/2 · S=6 · P2 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：新浪科技 / 未来半导体 | <a href="https://finance.sina.com.cn/tech/roll/2026-06-02/doc-inhzzqcn4736837.html">新浪：豆包付费化探索</a> · <a href="https://www.fsemi.tech/cms/xinwenkuaixun/5277.html">未来半导体：豆包手机 Gen 2</a> | 2026-06</li>
+</ul>
+<p><strong>内容总结（~100 字）</strong>：
+字节跳动豆包日活突破 <strong>1 亿</strong>，第二代豆包手机正式与中兴努比亚联合研发（中兴负责硬件，豆包专注 AI 能力），核心架构为<strong>端云协同混合推理</strong>：简单日常操作本地 NPU 完成，复杂推理任务路由至云端大参数模型。字节计划于 6 月底上线豆包付费内容服务，探索以订阅制覆盖持续增长的端侧算力与云端算力成本。硬件合作扩展至 AI 眼镜、AI 耳机（已开始与其他手机厂商洽谈），复制端云协同架构至多形态终端。豆包 AI 助手已通过系统级调度绕过传统 App 流量入口，对广告竞价模式产生结构性冲击。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告系统中认知到：当 AI 助手通过系统级意图执行绕过 App 广告展示层，传统展示/信息流广告的流量池将被侵蚀；字节豆包的商业化转型（DAU → 订阅付费）提示广告算法团队关注"Agent 拦截广告流量"这一长期趋势。适配性：<strong>战略观察</strong>——建议将 Agent-native 广告接入（类似 Siri MCP 接口）列为广告系统 2027 年规划议题。</p>
+<hr />
+<h3>其他观察</h3>
+<p>今日最值得关注的技术收敛信号：<strong>2-bit QAT 成为端侧量化行业标准</strong>——Apple AFM-3（3B 端侧）与腾讯 HY-1.8B（昨日报道）独立选择相同路线，说明 2Bit 量化感知训练已从实验进入产业收敛期，广告轻量模型量化路线图应将 2Bit QAT 列为 2026H2 评估优先项。与此同时，MCP 从 Anthropic 开源协议升级为 Apple 系统级 API，iOS 平台 AI Agent 与广告 SDK 的标准化接入通道正式打开。</p>
+<h3>近期关注</h3>
+<ul>
+<li>🔴 <strong>WWDC 2026 Day 3–5（6月10–12日）</strong>：重点关注 Foundation Models 多模态 API 文档细节（图片 token 上限、素材分析调用方式）与 CoreAI 自定义模型格式规范（是否支持 INT4/INT2 量化权重导入）。</li>
+<li><strong>WWDC 结束后</strong>：评估 LiteRT QNN Accelerator 在内部 Android CTR 模型上的替换收益（对比现有 ONNX Runtime Mobile 路径）；参考 EuroSys '26 论文设计 Hexagon NPU test-time compute 对比实验。</li>
+<li><strong>KDD 2026</strong>（8月预计）：端侧推荐 / 广告 Workshop，多项工业界论文预计在此发布完整代码与工程细节。</li>
+</ul>
+    </article>
+  </div>
+</body>
+</html>
