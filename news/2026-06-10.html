@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端智能日报 2026-06-10</title>
+  <style>
+:root{
+  --bg:#f4faf8;
+  --surface:#ffffff;
+  --surface-soft:#f8fcfb;
+  --text:#1f2f2b;
+  --muted:#5e726b;
+  --accent:#0f766e;
+  --accent-soft:#dcf2ee;
+  --border:#d8e8e2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #e9f7f2 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, #e5f4ef 0%, transparent 28%),
+    var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.8;
+}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px 56px}
+.top{
+  margin-bottom:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+}
+.brand{
+  margin:0;
+  font-size:14px;
+  letter-spacing:.08em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.back{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px 28px 20px;
+  box-shadow:0 10px 30px rgba(15,118,110,.08);
+}
+h1,h2,h3{line-height:1.35;margin:1.1em 0 .45em}
+h1{font-size:2rem;margin-top:.15em}
+h2{font-size:1.32rem}
+h3{font-size:1.08rem}
+p,li{font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+blockquote{
+  margin:1rem 0;
+  padding:.72rem .95rem;
+  background:var(--surface-soft);
+  border-left:4px solid var(--accent);
+  color:#28433d;
+  border-radius:8px;
+}
+hr{
+  border:none;
+  border-top:1px dashed var(--border);
+  margin:1.3rem 0;
+}
+code{
+  background:#eef7f5;
+  border:1px solid #d7e9e4;
+  color:#1f4f49;
+  border-radius:6px;
+  padding:.14em .42em;
+  font-size:.92em;
+}
+pre{
+  background:#0f1f1d;
+  color:#e9f4f2;
+  border-radius:12px;
+  overflow:auto;
+  padding:14px;
+}
+pre code{
+  background:transparent;
+  border:none;
+  color:inherit;
+  padding:0;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  overflow:hidden;
+  border-radius:12px;
+}
+th,td{
+  border:1px solid var(--border);
+  padding:.6rem .7rem;
+  text-align:left;
+  vertical-align:top;
+}
+th{background:#edf8f5}
+.footer{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:.88rem;
+}
+.list{
+  list-style:none;
+  margin:1rem 0 0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.list a.item{
+  display:block;
+  padding:14px 15px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-soft);
+  transition:.15s ease;
+}
+.item-title{
+  display:block;
+  font-weight:700;
+  margin-top:2px;
+}
+.focus{
+  display:block;
+  margin-top:8px;
+  font-size:.92rem;
+  color:#37524c;
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.list a.item:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(15,118,110,.09);
+  text-decoration:none;
+}
+.date{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  margin-bottom:2px;
+}
+@media (max-width:700px){
+  .wrap{padding:20px 12px 40px}
+  .card{padding:20px 16px 16px;border-radius:14px}
+  h1{font-size:1.62rem}
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <p class="brand">Edge AI Daily</p>
+      <a class="back" href="../index.html">← 返回目录</a>
+    </div>
+    <article class="card">
+      <h1>端智能日报 2026-06-10</h1>
+<blockquote>
+<p><strong>本期聚焦</strong>：Meta 今日两连炸——ARM（LLM 级广告排名，+5% CTR / +3% 转化）与 KernelEvolve（AI 自主优化推理内核，60% 吞吐提升），从"排名模型升级"和"推理基础设施自动化"两个维度同步重塑广告 AI 架构；Apple WWDC 持续释放开发者 API 细节，Foundation Models 图像输入 + Python SDK + 提供方无缝切换的组合，正在将端侧素材分析的工程门槛降至可立即试验的水平。</p>
+</blockquote>
+<hr />
+<h2>1. 【Meta Adaptive Ranking Model (ARM)：LLM 级广告排名量产，Instagram +5% CTR / +3% 转化，sub-second 延迟破解"推理三角困境"】</h2>
+<ul>
+<li><strong>评分</strong>：A/5 · I/5 · S=15 · P0 · 价值类型：收入提升</li>
+<li><strong>来源</strong>：Engineering at Meta | <a href="https://engineering.fb.com/2026/03/31/ml-applications/meta-adaptive-ranking-model-bending-the-inference-scaling-curve-to-serve-llm-scale-models-for-ads/">Meta ARM 技术博客</a> | 2026-03-31</li>
+</ul>
+<p><strong>内容总结（~150 字）</strong>：
+Meta 在 Engineering Blog 披露 <strong>Adaptive Ranking Model (ARM)</strong> 的生产架构细节，核心是破解广告排名的"<strong>推理三角困境</strong>"（模型复杂度 × 低延迟 × 算力成本三者难以同时满足）。技术路线：<strong>request-centric 架构</strong>——根据每个请求的用户上下文和意图，动态调整模型激活的计算路径（类似 MoE 按需路由），使同一套 LLM 级模型在不同请求上激活不同复杂度，实现全局 sub-second 延迟；硬件规模：多卡 GPU 架构，可扩展至 <strong>&gt;1T 参数</strong>；部署时间：<strong>2025Q4 已在 Instagram 全量</strong>，处理亿级 DAU 日常广告排名请求，完成数十亿次请求验证；核心业务指标：目标用户 <strong>CTR +5%、广告转化率 +3%</strong>；Meta 计划 2026 年将 ARM 扩展至 Facebook 及其他 Meta 旗下平台。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告排名系统中做到：将 request-centric 动态复杂度调度的思路引入内部排名模型——对高价值/高置信请求投入更多算力（激活更多 attention head 或更深路径），对低质量流量走轻量路径，在相同 P99 延迟 SLA 内整体提升精度。适配性：<strong>可借鉴思路</strong>——ARM 的 request-centric 架构与 MoE 路由逻辑可直接映射至内部 CTR/CVR 双塔模型的推理调度层，建议将"请求级动态算力分配"作为 2026H2 广告排名架构评审议题。</p>
+<hr />
+<h2>2. 【Meta KernelEvolve：AI 自主优化广告推理内核，60% 吞吐提升 / 数小时替代专家数周，支撑万亿级日推理请求】</h2>
+<ul>
+<li><strong>评分</strong>：A/4 · I/4 · S=12 · P0 · 价值类型：成本优化</li>
+<li><strong>来源</strong>：Engineering at Meta / arXiv 2512.23236 | <a href="https://engineering.fb.com/2026/04/02/developer-tools/kernelevolve-how-metas-ranking-engineer-agent-optimizes-ai-infrastructure/">KernelEvolve 技术博客</a> | 2026-04-02</li>
+</ul>
+<p><strong>内容总结（~140 字）</strong>：
+Meta 发布 <strong>KernelEvolve</strong>，一套将 AI Agent 用于<strong>自主生成和优化推理/训练内核</strong>的生产系统，已在支撑 Meta 万亿级日推理请求的广告基础设施中投入使用。核心设计：将内核优化建模为<strong>搜索问题</strong>（非单次代码生成），Agent 迭代探索数百种内核实现，找到匹配或超越人类专家水平的方案；支持异构硬件：NVIDIA GPU、AMD GPU、Meta 自研 MTIA silicon、CPU；核心性能指标：① <strong>Andromeda 广告模型推理吞吐 +60%</strong>（NVIDIA GPU，数小时完成，人类专家需数周）；② <strong>广告训练吞吐 +25%</strong>（MTIA silicon）；③ 零人工干预，直接从代码库中的模型描述生成可部署 kernel。论文发表于 ISCA 2026（顶级计算机体系结构会议）。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告推理基础设施优化中做到：用 AI Agent 替代手工 kernel 调优——当广告模型迁移到新 NPU 硬件（如华为昇腾、联发科 APU）时，KernelEvolve 类方案可自动生成高性能算子，将适配周期从数月压缩至数天。适配性：<strong>中期跟踪</strong>——直接复用需要 Meta 级基础设施，但方法论（agentic kernel search）可在内部广告 NPU 适配项目中参考，优先关注开源 kernel 搜索框架（如 OpenAI Triton + 自动调优）是否可承接类似工作。</p>
+<hr />
+<h2>3. 【WWDC 2026 Foundation Models 开发者 API 重大扩展：图像输入 + Python SDK + 提供方无缝切换（进展更新）】【进展更新】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/4 · S=10 · P0 · 价值类型：新能力探索 / 用户体验</li>
+<li><strong>来源</strong>：Apple Developer / TechTimes | <a href="https://developer.apple.com/documentation/updates/foundationmodels">Foundation Models 更新文档</a> · <a href="https://developer.apple.com/videos/play/wwdc2026/241/">WWDC26 视频 241</a> | 2026-06-08/09</li>
+<li><strong>相较 2026-06-09 报道新增</strong>：① 图像输入 API 详细类型列表（UIImage / NSImage / CGImage / CVPixelBuffer / 文件 URL）；② Python SDK 正式发布 + Swift 开源运行时支持 Linux；③ 提供方抽象层（无代码切换至 Anthropic Claude / Google Gemini）；④ Core AI 框架集成第三方模型权重细节</li>
+</ul>
+<p><strong>内容总结（~130 字）</strong>：
+苹果在 WWDC 2026 开发者 State of the Union 中进一步公开 <strong>Foundation Models framework</strong> 的九项更新细节。核心工程扩展：① <strong>多模态图像输入 API</strong>：接受 UIImage / NSImage / CGImage / Core Image / CVPixelBuffer / 文件 URL，用例涵盖视觉商品推荐、小票解析、图像搜索——全部<strong>端侧无需服务器调用</strong>；② <strong>Python SDK</strong>：同步开源 Foundation Models 工具包，Swift 运行时支持 Linux 服务器部署；③ <strong>提供方抽象层</strong>：开发者可在 Anthropic Claude 或 Google Gemini 之间无代码切换，下游逻辑零改动；④ <strong>动态 Session</strong>：支持指令级 profile 配置和 Private Cloud Compute 路由，按任务复杂度自动决策端侧 vs 云侧；⑤ Core AI 框架正式支持插入<strong>第三方模型权重</strong>（Llama / Mistral 变体），不再锁定苹果 .mlmodel 格式，但目前仍是 developer preview。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在 iOS 广告 SDK 中做到：① <strong>图像输入 API 直接用于广告素材质量评分</strong>——CVPixelBuffer 接口可直接对接相机 / 视频解码帧，端侧实时评估广告视频内容相关度，替代上云分析；② <strong>提供方切换层可作为 A/B 测试基础</strong>——用同一业务代码在 AFM-3 / Claude / Gemini 间切换，快速对比广告意图理解精度；③ Linux Python SDK 可复用至服务端广告素材预处理管线。适配性：<strong>今日可行动</strong>——基于 iOS 27 Beta 建立广告素材分析端侧 PoC 的工程基础已就位，建议本周从 UIImage → AFM-3 图像分析 API 验证广告图片品牌识别延迟。</p>
+<hr />
+<h2>4. 【Apple Core AI 替代 CoreML 工程细节：逐层量化控制 + 第三方权重插件 + 异步推理 API（进展更新）】【进展更新】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/4 · S=10 · P1 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：Apple Developer / byteiota | <a href="https://developer.apple.com/core-ai/">Core AI 开发者页面</a> · <a href="https://byteiota.com/apple-core-ai-replaces-core-ml-migrate-or-miss-out/">byteiota 详细解读</a> | 2026-06-08/09</li>
+<li><strong>相较 2026-06-08 报道新增</strong>：① 逐层量化/palettization 细粒度配置细节；② 第三方模型权重插件机制（Llama/Mistral 变体）；③ 明确 CoreML 与 Core AI 共存，无 deprecation 时间表；④ 异步推理原生支持大模型内存占用</li>
+</ul>
+<p><strong>内容总结（~120 字）</strong>：
+<strong>Core AI</strong> 是苹果在 WWDC 2026 发布的新一代端侧 ML 框架，直接替代运行 9 年的 CoreML，专为 LLM 时代重构：① <strong>异步推理原生</strong>：API 设计支持流式 token 生成和 agent-style tool calling，CoreML 的同步调用模式无法满足这些需求；② <strong>逐层精细量化</strong>：Core AI Optimization 支持开发者对每一层独立配置 量化（INT8/INT4）或 palettization，粒度控制远超 CoreML；③ <strong>第三方模型权重插件</strong>（Developer Preview）：可插入 fine-tuned Llama 变体或自定义 Mistral 部署，不再强制绑定 .mlmodel 格式；④ <strong>与 CoreML 共存</strong>：现有 .mlmodel 和 MLModel API 在 iOS 27 上继续运行，无 deprecation 公告，迁移窗口宽松；目标硬件：Apple Neural Engine（ANE）+ Apple Silicon；Swift API 设计，内存安全。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告 iOS SDK 中做到：将内部广告轻量模型（如用户兴趣分类、素材质量评估）以自定义权重插件形式部署至 Core AI，绕过苹果模型格式限制，同时享受 ANE 加速和苹果隐私框架保证。适配性：<strong>中期规划</strong>——第三方权重插件当前为 Developer Preview，建议跟踪 iOS 27 GA 后的 API 稳定性；逐层量化细节可现在参考，用于内部 INT4 量化实验的层敏感性分析设计。</p>
+<hr />
+<h2>5. 【阿里 MNN-LLM：手机端 LLM 通用推理引擎，CPU 预填充 8.6× / 解码 2.3× 超 llama.cpp，DRAM-Flash 混合存储】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/3 · S=9 · P1 · 价值类型：成本优化</li>
+<li><strong>来源</strong>：Alibaba / arXiv / ACM MMAsia | <a href="https://arxiv.org/abs/2506.10443">arxiv.org/abs/2506.10443</a> | 2025-06（ACM MMAsia '24 Workshop）</li>
+</ul>
+<p><strong>内容总结（~130 字）</strong>：
+阿里巴巴 MNN 团队在 ACM MMAsia Workshop 发布 <strong>MNN-LLM</strong>，专为移动设备 LLM 部署设计的通用推理引擎，基于已在阿里内部多场景量产的 MNN 框架。核心技术：① <strong>DRAM-Flash 混合存储</strong>：将模型权重分层存储在 DRAM 和 Flash 中，按需加载，有效突破移动端 DRAM 容量瓶颈（旗舰安卓通常 8-12GB RAM）；② <strong>CPU 指令集专项优化</strong>：针对 ARM Cortex-A 大核的向量指令重排权重和输入，结合多核负载均衡 + 混合精度浮点 + 几何计算加速；③ <strong>性能基准</strong>（CPU 路径）：预填充速度超 llama.cpp <strong>8.6×</strong>，超 fastllm <strong>20.5×</strong>；解码速度超 llama.cpp <strong>2.3×</strong>，超 fastllm <strong>8.9×</strong>；④ 框架已集成至阿里电商、淘宝、支付宝等多个 App，工程量产背景。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告端侧推理中做到：在 CPU-only 场景（中低端机型，无 NPU 加速路径）用 MNN-LLM 替代 llama.cpp，将轻量广告意图分类模型的首字时延从 CPU 基线压缩 8× 以上，显著扩展端侧推理的机型覆盖范围（NPU 旗舰 + CPU 中端双路径）。适配性：<strong>中期评估</strong>——MNN 框架为阿里开源（Apache 2.0），建议在中端安卓机型（Snapdragon 7 Gen 系列）上评估 MNN-LLM 对内部 1B 级广告意图模型的 CPU 推理延迟，作为 LiteRT NPU 路径的 fallback 方案。</p>
+<hr />
+<h3>其他观察</h3>
+<p>今日最强信号：<strong>Meta 同时在"模型层"（ARM）和"基础设施层"（KernelEvolve）发力广告 AI 现代化</strong>，且两者均已在生产环境验证。ARM 证明 LLM 级复杂度在广告排名中可工程落地（sub-second 延迟 + 亿级 DAU），KernelEvolve 则用 AI 自动化解决了伴随 LLM 规模扩张而来的内核优化人力瓶颈——两者合力使"持续扩大广告模型规模而不线性增加工程投入"首次具备工业可行性。Apple 侧，Foundation Models 图像输入 API + Core AI 逐层量化的工程细节持续落地，iOS 广告 SDK 接入端侧多模态分析的工程条件已基本就绪。</p>
+<h3>近期关注</h3>
+<ul>
+<li>🔴 <strong>WWDC 2026 Day 4–5（6月11–12日）</strong>：重点 session——Core AI 第三方权重插件的 API 稳定性文档、Foundation Models 工具调用 latency benchmark、ANE 算力规格（与 A18 Pro 对比）。</li>
+<li><strong>ARM 跟进实验</strong>：参考 Meta ARM 的 request-centric 架构，在内部 CTR 双塔模型中设计"高/低价值流量差异化算力分配"A/B 实验方案。</li>
+<li><strong>KDD 2026</strong>（8月预计）：端侧推荐 / 广告 Workshop，预计将有更多工业界论文详述端侧 CTR 部署工程细节。</li>
+</ul>
+    </article>
+  </div>
+</body>
+</html>
