@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端智能日报 2026-06-11</title>
+  <style>
+:root{
+  --bg:#f4faf8;
+  --surface:#ffffff;
+  --surface-soft:#f8fcfb;
+  --text:#1f2f2b;
+  --muted:#5e726b;
+  --accent:#0f766e;
+  --accent-soft:#dcf2ee;
+  --border:#d8e8e2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #e9f7f2 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, #e5f4ef 0%, transparent 28%),
+    var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.8;
+}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px 56px}
+.top{
+  margin-bottom:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+}
+.brand{
+  margin:0;
+  font-size:14px;
+  letter-spacing:.08em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.back{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px 28px 20px;
+  box-shadow:0 10px 30px rgba(15,118,110,.08);
+}
+h1,h2,h3{line-height:1.35;margin:1.1em 0 .45em}
+h1{font-size:2rem;margin-top:.15em}
+h2{font-size:1.32rem}
+h3{font-size:1.08rem}
+p,li{font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+blockquote{
+  margin:1rem 0;
+  padding:.72rem .95rem;
+  background:var(--surface-soft);
+  border-left:4px solid var(--accent);
+  color:#28433d;
+  border-radius:8px;
+}
+hr{
+  border:none;
+  border-top:1px dashed var(--border);
+  margin:1.3rem 0;
+}
+code{
+  background:#eef7f5;
+  border:1px solid #d7e9e4;
+  color:#1f4f49;
+  border-radius:6px;
+  padding:.14em .42em;
+  font-size:.92em;
+}
+pre{
+  background:#0f1f1d;
+  color:#e9f4f2;
+  border-radius:12px;
+  overflow:auto;
+  padding:14px;
+}
+pre code{
+  background:transparent;
+  border:none;
+  color:inherit;
+  padding:0;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  overflow:hidden;
+  border-radius:12px;
+}
+th,td{
+  border:1px solid var(--border);
+  padding:.6rem .7rem;
+  text-align:left;
+  vertical-align:top;
+}
+th{background:#edf8f5}
+.footer{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:.88rem;
+}
+.list{
+  list-style:none;
+  margin:1rem 0 0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.list a.item{
+  display:block;
+  padding:14px 15px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-soft);
+  transition:.15s ease;
+}
+.item-title{
+  display:block;
+  font-weight:700;
+  margin-top:2px;
+}
+.focus{
+  display:block;
+  margin-top:8px;
+  font-size:.92rem;
+  color:#37524c;
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.list a.item:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(15,118,110,.09);
+  text-decoration:none;
+}
+.date{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  margin-bottom:2px;
+}
+@media (max-width:700px){
+  .wrap{padding:20px 12px 40px}
+  .card{padding:20px 16px 16px;border-radius:14px}
+  h1{font-size:1.62rem}
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <p class="brand">Edge AI Daily</p>
+      <a class="back" href="../index.html">← 返回目录</a>
+    </div>
+    <article class="card">
+      <h1>端智能日报 2026-06-11</h1>
+<blockquote>
+<p><strong>本期聚焦</strong>：WWDC Day 4 持续放料——Apple M5 Neural Accelerator 架构基准首次公开（TTFT 较 M4 快 4×），MLXLanguageModel 协议将 HuggingFace 4,316 个社区量化模型直接接入 Foundation Models 框架；Microsoft Build 2026 发布 Phi-4-mini 继任者 Aion-1.0-Instruct，CPU 兼容设计将端侧 SLM 覆盖范围推向主流 PC 设备。</p>
+</blockquote>
+<hr />
+<h2>1. 【Apple M5 Neural Accelerator 架构基准首公开：TTFT 较 M4 快 4×，MLX 打通 HuggingFace 4316 个量化模型直连 Foundation Models】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/5 · S=11 · P0 · 价值类型：新能力探索 / 成本优化</li>
+<li><strong>来源</strong>：Apple Machine Learning Research | <a href="https://machinelearning.apple.com/research/exploring-llms-mlx-m5">Exploring LLMs with MLX and the Neural Accelerators in the M5 GPU</a> | WWDC 2026 Session 232 | 2026-06</li>
+</ul>
+<p><strong>内容总结（~150 字）</strong>：
+Apple ML Research 正式发布 M5 Neural Accelerator 推理基准报告。架构变化：M5 将神经加速单元从独立 NEU 模块改造为嵌入 <strong>40 个 GPU 核心、每核一组 Neural Accelerator（Fusion 架构）</strong>，153 GB/s 内存带宽，通过 Metal 4 TensorOps 与 GPU pipeline 深度耦合。性能数据（MLX Q4）：8B 模型生成速度 <strong>230 tok/s</strong>，70B 模型 <strong>28 tok/s</strong>；TTFT 较 M4 快 <strong>3.3–4×</strong>（Qwen3-14B-4bit 实测 TTFT 加速 4.06×）；llama.cpp 对比推理 <strong>快 20–30%</strong>，Ollama 对比最高 <strong>快 50%</strong>。WWDC Session 232「Run local agentic AI on Mac using MLX」同步宣布 Foundation Models 框架新增 <strong>MLXLanguageModel</strong> 后端：开发者一行代码将 HuggingFace mlx-community 上 <strong>4,316 个</strong>社区量化模型接入 FoundationModels.framework，与 AFM-3 后端 API 完全兼容、可无缝切换。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在 iOS/macOS 广告 SDK 中做到：① 用 MLXLanguageModel 路由任意开源模型（如 Qwen3-1.7B Q4、Gemma-3-2B Q4）到 Foundation Models 同一推理接口，在设备侧进行广告素材语义评分，无额外服务端成本；② M5 的 TTFT 4× 加速使"请求时"LLM 特征生成在广告 SLA 内（目标 &lt;50ms）首次具备工程可行性。适配性：<strong>今日可行动</strong>——iOS 27 Beta 环境下 MLXLanguageModel API 已可调用，建议本周用 Qwen3-1.7B Q4 验证广告标题语义相关度评估延迟（目标 &lt;100ms）。</p>
+<hr />
+<h2>2. 【WWDC Core AI Session 326：LanguageModelSession 自定义模型 API 细节公开，Python 转换工具链就绪（进展更新）】【进展更新】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/4 · S=10 · P0 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：Apple Developer | <a href="https://developer.apple.com/videos/play/wwdc2026/326/">Integrate on-device AI models into your app using Core AI (Session 326)</a> · <a href="https://developer.apple.com/videos/play/wwdc2026/324/">Meet Core AI (Session 324)</a> | 2026-06-11</li>
+<li><strong>相较 2026-06-10 报道新增</strong>：① LanguageModelSession API 统一接口——同一 Session API 同时承载 AFM-3 与开发者自定义 CoreAI 模型；② Python 模型转换与优化工具链正式文档化；③ "Core AI 是驱动 on-device Apple Intelligence 的推理框架"官方定位明确；④ 推理路径覆盖 CPU/GPU/Neural Engine 三端自动调度。</li>
+</ul>
+<p><strong>内容总结（~130 字）</strong>：
+WWDC Day 4 发布 Core AI 开发者接入会话（Session 326），公开自定义模型部署的完整工程细节。<strong>LanguageModelSession API</strong>：与调用 AFM-3 完全相同的接口，传入自定义 CoreAI 模型权重即可切换推理后端，下游代码零改动；<strong>Python 工具链</strong>：model conversion（torch → CoreAI 格式）、profiling、量化配置（层级粒度 INT8/INT4/palettization）统一收录于官方 Python SDK；<strong>推理路径</strong>：CoreAI runtime 自动调度 CPU/GPU/ANE，开发者无需手动 delegate 配置；<strong>延迟目标</strong>：Apple 官方描述"blazing fast inference…no server, no cost per token"；<strong>硬件覆盖</strong>：A16 Bionic 及以上全功能（iPhone 14 Pro+），A15 降级模式运行。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告 iOS SDK 中做到：将已有 PyTorch 训练的广告轻量模型（如 CTR scoring 头、素材分类器）通过官方 Python 工具链转换为 CoreAI 格式后，用 LanguageModelSession 接入——推理由 ANE 承接，无服务端成本。适配性：<strong>中期可行动</strong>——Python 工具链文档今日即可评估，建议将广告侧最小可行模型（1B 以内分类/评分模型）纳入 CoreAI 转换实验计划。</p>
+<hr />
+<h2>3. 【Microsoft Aion-1.0-Instruct (Build 2026)：Phi-4-mini 继任者内置 Windows + Edge，CPU 推理打通主流 PC 覆盖，7月开源】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/4 · S=10 · P1 · 价值类型：新能力探索 / 成本优化</li>
+<li><strong>来源</strong>：Microsoft Edge Blog | <a href="https://blogs.windows.com/msedgedev/2026/06/02/expanding-on-device-ai-in-microsoft-edge-new-models-and-apis-for-the-web/">Expanding on-device AI in Microsoft Edge: New models and APIs for the web</a> | 2026-06-02 (Build 2026)</li>
+</ul>
+<p><strong>内容总结（~140 字）</strong>：
+微软在 Build 2026 发布 <strong>Aion 1.0 SLM 系列</strong>，面向 Windows 和 Edge 浏览器内置的下一代端侧语言模型。<strong>Aion-1.0-Instruct</strong>：Phi-4-mini 直接继任者，"更小、更快、更省资源"，<strong>支持 CPU 推理</strong>（不强依赖 GPU/NPU），可在更多普通 PC 上运行；<strong>Edge 内置场景</strong>：摘要、改写、用户意图识别、无障碍辅助——即端侧意图理解的工业化参考；<strong>API</strong>：Prompt API + Writing Assistance API，Edge 148+ 开发者预览可用；<strong>开源计划</strong>：权重 7月上线 HuggingFace；<strong>配套</strong>：① Language Detector + Translator API（145+ 语言，Edge 148，零服务端成本）；② 实验性 Web Speech API（Edge Canary，英/德/意/葡/西/韩）。另有 <strong>Aion 1.0（14B 推理模型）</strong> 作为 Windows 系统级 AI 中枢处理复杂任务。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在跨平台广告 SDK（PC/桌面端扩展）中做到：参考 Aion-1.0-Instruct 的 CPU 兼容设计思路，将广告轻量意图识别模型目标定为"无 GPU/NPU 依赖、CPU 可运行"，大幅扩大端侧广告特征生成的设备覆盖（含老旧 PC、Chromebook 级 Android 设备）；Language Detector API 可直接用于广告多语言素材自动分类。适配性：<strong>中期可借鉴</strong>——7月 Aion-1.0-Instruct 开源后评估与内部广告意图模型的精度对比；CPU-first 设计理念可作为中低端设备模型选型原则。</p>
+<hr />
+<h2>4. 【Xcode 27 Neural Engine 本地代码补全：零数据外传 + 端云分级策略（WWDC Day 3）】</h2>
+<ul>
+<li><strong>评分</strong>：A/2 · I/3 · S=7 · P2 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：TechTimes | <a href="https://www.techtimes.com/articles/318110/20260610/wwdc-2026-day-3-xcode-27-neural-engine-completes-code-without-sending-source-any-server.htm">WWDC 2026 Day 3: Xcode 27 Neural Engine Completes Code Without Sending Source to Any Server</a> | 2026-06-10</li>
+</ul>
+<p><strong>内容总结（~120 字）</strong>：
+苹果 WWDC Day 3 展示 <strong>Xcode 27</strong> 的端云分级 AI 辅助编码系统：① <strong>端侧路径</strong>：Inline 代码补全完全运行于开发者 Apple Silicon 设备 Neural Engine，<strong>源代码零外传</strong>，响应实时；② <strong>云侧路径（Opt-in）</strong>：复杂多文件架构分析、跨文件重构路由至 Claude / Gemini / OpenAI，开发者显式授权激活；③ <strong>Agentic 能力</strong>：Agent 可模拟整个 App、执行测试、与 iOS Simulator 交互（Device Hub），实现"本地快速 + 云端深度"双模式；④ <strong>隐私保障</strong>：默认端侧路径确保代码 IP 不外泄，符合企业合规要求；⑤ Xcode 27 Developer Beta 已发布，正式版随 iOS 27 GA（预计 2026年9月）。</p>
+<p><strong>业务价值与适配性</strong>：
+Xcode 27 的端云分级模式是"端侧快速推理 + 云侧深度推理"的最佳工业参考——与广告系统"端侧轻量 CTR 快速预估 + 云侧精排延迟补偿"架构高度同构。适配性：<strong>了解即可</strong>——具体模式（默认本地、复杂上云、用户显式授权）可作为广告端云协同策略的设计参考，无直接代码复用。</p>
+<hr />
+<h3>其他观察</h3>
+<p>今日最强信号：<strong>Apple 将端侧 AI 从"单一 AFM-3 锁定"推向"开放生态"</strong>——MLXLanguageModel 让 HuggingFace 上的任意量化模型通过 Foundation Models 运行，CoreAI Session 326 将 PyTorch 训练→端侧部署全链路文档化，iOS 广告 SDK 的端侧模型选型从"只能用苹果自带模型"正式进入"任意开源模型 + ANE 加速"新阶段。与此同时，Microsoft Aion-1.0-Instruct 的 CPU-first 设计提示：下一个竞争维度是"无 NPU 依赖的轻量端侧意图理解"，广告模型的设备覆盖率（而非绝对精度）将成为 2026H2 重要工程指标。</p>
+<h3>近期关注</h3>
+<ul>
+<li>🔴 <strong>WWDC 2026 Day 5（6月12日，最后一天）</strong>：关注 Foundation Models 工具调用（Function Calling）详细 API、MLXLanguageModel 在 iPhone（非 Mac）上的性能数据、Core AI INT4 自定义模型部署 demo。</li>
+<li><strong>Aion-1.0-Instruct 开源（7月）</strong>：评估 CPU 推理性能 vs MNN-LLM 在中端 Android 设备延迟对比，确定广告意图识别模型在无 NPU 设备上的最优运行时。</li>
+<li><strong>KDD 2026</strong>（8月预计）：端侧推荐 / 广告 Workshop，Meta ARM + KernelEvolve 工程细节预计将有配套 Workshop 论文。</li>
+</ul>
+    </article>
+  </div>
+</body>
+</html>
