@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端智能日报 2026-06-12</title>
+  <style>
+:root{
+  --bg:#f4faf8;
+  --surface:#ffffff;
+  --surface-soft:#f8fcfb;
+  --text:#1f2f2b;
+  --muted:#5e726b;
+  --accent:#0f766e;
+  --accent-soft:#dcf2ee;
+  --border:#d8e8e2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #e9f7f2 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, #e5f4ef 0%, transparent 28%),
+    var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.8;
+}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px 56px}
+.top{
+  margin-bottom:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+}
+.brand{
+  margin:0;
+  font-size:14px;
+  letter-spacing:.08em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.back{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px 28px 20px;
+  box-shadow:0 10px 30px rgba(15,118,110,.08);
+}
+h1,h2,h3{line-height:1.35;margin:1.1em 0 .45em}
+h1{font-size:2rem;margin-top:.15em}
+h2{font-size:1.32rem}
+h3{font-size:1.08rem}
+p,li{font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+blockquote{
+  margin:1rem 0;
+  padding:.72rem .95rem;
+  background:var(--surface-soft);
+  border-left:4px solid var(--accent);
+  color:#28433d;
+  border-radius:8px;
+}
+hr{
+  border:none;
+  border-top:1px dashed var(--border);
+  margin:1.3rem 0;
+}
+code{
+  background:#eef7f5;
+  border:1px solid #d7e9e4;
+  color:#1f4f49;
+  border-radius:6px;
+  padding:.14em .42em;
+  font-size:.92em;
+}
+pre{
+  background:#0f1f1d;
+  color:#e9f4f2;
+  border-radius:12px;
+  overflow:auto;
+  padding:14px;
+}
+pre code{
+  background:transparent;
+  border:none;
+  color:inherit;
+  padding:0;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  overflow:hidden;
+  border-radius:12px;
+}
+th,td{
+  border:1px solid var(--border);
+  padding:.6rem .7rem;
+  text-align:left;
+  vertical-align:top;
+}
+th{background:#edf8f5}
+.footer{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:.88rem;
+}
+.list{
+  list-style:none;
+  margin:1rem 0 0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.list a.item{
+  display:block;
+  padding:14px 15px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-soft);
+  transition:.15s ease;
+}
+.item-title{
+  display:block;
+  font-weight:700;
+  margin-top:2px;
+}
+.focus{
+  display:block;
+  margin-top:8px;
+  font-size:.92rem;
+  color:#37524c;
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.list a.item:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(15,118,110,.09);
+  text-decoration:none;
+}
+.date{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  margin-bottom:2px;
+}
+@media (max-width:700px){
+  .wrap{padding:20px 12px 40px}
+  .card{padding:20px 16px 16px;border-radius:14px}
+  h1{font-size:1.62rem}
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <p class="brand">Edge AI Daily</p>
+      <a class="back" href="../index.html">← 返回目录</a>
+    </div>
+    <article class="card">
+      <h1>端智能日报 2026-06-12</h1>
+<blockquote>
+<p><strong>本期聚焦</strong>：WWDC 2026 落幕后，端侧 LLM 推理框架竞速加剧——Google LiteRT-LM 以 Multi-Token Prediction 实现 2.2× 提速并正式取代 MediaPipe LLM Inference API，Meta ExecuTorch v1.2 同步打通端侧实时语音部署；国内侧，AICon 2026 上海站披露京东/华为/阿里云三套推理优化方案，为广告 LLM 精排链路端侧加速提供工程参照。</p>
+</blockquote>
+<hr />
+<h2>1. 【Google LiteRT-LM v0.13：Multi-Token Prediction 实现 2.2× 推理提速，正式替代 MediaPipe LLM Inference API】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/4 · S=10 · P1 · 价值类型：成本优化 / 新能力探索</li>
+<li><strong>来源</strong>：InfoQ / Google Developers Blog | <a href="https://www.infoq.com/news/2026/06/google-litertlm-gemma4/">Google LiteRT-LM Speeds up Local Inference up to 2.2x with Gemma 4 MTP</a> | 2026-06</li>
+</ul>
+<p><strong>内容总结（~150 字）</strong>：
+Google AI Edge 发布 LiteRT-LM v0.13，正式作为生产级端侧 LLM 推理框架替代已废弃的 MediaPipe LLM Inference API。核心亮点：① <strong>Multi-Token Prediction (MTP) drafter</strong> 将端侧推理速度提升 <strong>2.2×</strong>，无需更换模型权重；② Android GPU（OpenCL 后端）运行 Gemma 4 E2B 达 <strong>52 tok/s</strong> 解码速度；③ v0.13 新增 Gemma4 12B 支持、Android agent skill demo、<strong>OpenAI API 兼容 CLI server</strong>（便于端云接口统一）；④ Swift + JavaScript API 预览（v0.12 引入），覆盖 iOS / Web / Desktop / IoT 全栈；⑤ Qualcomm QNN NPU 后端联合优化支持 Gemma 4 E2B 多模态推理；框架已开源于 GitHub（google-ai-edge/LiteRT-LM）。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在 Android 广告 SDK 中做到：① 迁移至 LiteRT-LM 接入 Gemma 4 E2B，借助 MTP 实现广告图文语义评分 2.2× 提速，满足 SLA 要求；② OpenAI API 兼容 server 为端云广告推理接口提供统一抽象，降低切换成本。适配性：<strong>中期可行动</strong>——v0.13 已在 GitHub 可用，建议评估从废弃的 MediaPipe LLM Inference API 迁移路径，并验证广告素材理解延迟（目标 &lt;200ms）。</p>
+<hr />
+<h2>2. 【ExecuTorch v1.2.0：Voxtral Realtime 端侧实时语音（&lt;500ms，INT4），Cortex-M 升为一等目标，CSE 优化压缩模型体积】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/4 · S=10 · P1 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：Meta / PyTorch | <a href="https://github.com/pytorch/executorch/releases">Releases · pytorch/executorch</a> | 2026-04</li>
+</ul>
+<p><strong>内容总结（~150 字）</strong>：
+Meta 发布 ExecuTorch v1.2.0，主要新增：① <strong>Voxtral Realtime</strong>（Mistral 4B 流式语音模型）通过 XNNPACK / Metal / CUDA 后端实现端侧 <strong>&lt;500ms</strong> 端到端延迟，INT4 量化、实时麦克风输入，预导出 .pte 文件开箱即用；② <strong>Cortex-M 升级为一等目标</strong>（first-class embedded target），IoT / 可穿戴 / TWS 耳机场景正式进入支持矩阵；③ NVIDIA NeMo Parakeet（ASR）+ Silero VAD（语音活动检测）可跨后端导出；④ <strong>Flatbuffer 序列化</strong>加速模型导出与加载；⑤ <strong>CSE pass</strong>（Common Subexpression Elimination）消除冗余计算，降低模型体积。参考数据：Galaxy S24+ 上 Llama 3.2 1B INT4 prefill <strong>350+ tok/s</strong>，600 token 消息摘要 TTFT <strong>&lt;2s</strong>；框架支持 12+ 硬件后端（Apple Core ML / Qualcomm QNN / Arm XNNPACK / Samsung Exynos / Vulkan）。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在跨平台广告 SDK 中做到：① 将语音广告意图识别（语音搜索 query 理解）通过 Voxtral Realtime 部署到端侧，&lt;500ms 延迟满足实时广告触发 SLA；② Cortex-M 一等支持意味着低端设备（耳机/IoT 屏）也可运行轻量广告意图模型，拓展端侧广告覆盖场景。适配性：<strong>中期可借鉴</strong>——.pte 文件可今日下载验证 WER 与延迟，建议对比云端 ASR 在语音广告场景的成本差异。</p>
+<hr />
+<h2>3. 【AICon 2026 上海站：京东 xLLM 投机推理 / 华为 Omni Cache / 阿里云 KVCache——国内端侧推理优化技术图谱首次集中披露】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/3 · S=9 · P1 · 价值类型：成本优化 / 新能力探索</li>
+<li><strong>来源</strong>：InfoQ 中文 | <a href="https://www.infoq.cn/article/C2WQHsZF6ruKr61USuSa">AICon 2026 上海站正式启动</a> | 2026-06-02</li>
+</ul>
+<p><strong>内容总结（~130 字）</strong>：
+InfoQ AICon 2026 上海站全日程公布，推理优化专项揭示国内三大方案：① <strong>京东 xLLM 投机推理</strong>——针对大参数量 LLM 精排链路的推理加速，通过小模型 draft + 大模型 verify 机制大幅降低端到端延迟；② <strong>华为 Omni Cache KV 管理优化</strong>——新型 KV cache 调度策略，专攻 long-context 场景内存占用过高问题；③ <strong>阿里云记忆感知 KVCache 优化</strong>——内存感知型 KVCache 压缩，降低资源受限环境下的 DRAM 压力。端侧议题：端侧系统级助手权限边界探讨、感知驱动 LUI 演进、移动端 AI 开发新范式。参与企业：腾讯、阿里云、华为、京东等头部机构（具体数值待大会披露）。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告 LLM 推理链路中做到：① 投机推理（xLLM）直接适用于广告 LLM 精排加速，目标是相同精度下降低 P99 延迟；② Omni Cache / 记忆感知 KVCache 适用于多轮广告意图对话历史 KV 压缩，降低端侧内存压力。适配性：<strong>关注并跟进</strong>——跟踪大会后 InfoQ 发布的技术文章，重点关注京东 xLLM 投机推理在广告精排场景的可迁移度，以及华为 Omni Cache 的落地数据。</p>
+<hr />
+<h2>4. 【ExecuTorch 技术论文 (arXiv 2605.08195)：统一 PyTorch 端侧方案，Galaxy S25 Ultra / Pixel 9 Pro / iPhone 15 Pro 三机跨框架实测基准】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/3 · S=9 · P1 · 价值类型：成本优化</li>
+<li><strong>来源</strong>：arXiv | <a href="https://arxiv.org/abs/2605.08195">arXiv 2605.08195 — ExecuTorch: A Unified PyTorch Solution to Run AI Models On-Device</a> | 2026-05</li>
+</ul>
+<p><strong>内容总结（~130 字）</strong>：
+Meta / PyTorch 团队发布 ExecuTorch 技术论文，系统比较与 LiteRT 在三款旗舰设备上的实测差异（基准日期 2026-03-31）。测试模型：<strong>Qwen3 0.6B、Llama 3.2 1B、Phi4 Mini</strong>；指标：prefill throughput 与 decode throughput。核心发现：① ExecuTorch 采用<strong>离线编译</strong>（为具体硬件后端生成 .pte 文件），LiteRT 采用<strong>运行时 JIT</strong>（GPU 侧 graph rewriting）；② 离线编译在 prefill 阶段优势明显，消除运行时 graph rewrite overhead；③ LiteRT 在 Swin-T 视觉模型导出时报错，ExecuTorch 正常运行；④ 两框架均支持 INT4/INT8，ExecuTorch 额外支持 <strong>HQQ 4-bit</strong> 量化；⑤ Galaxy S24+ 参考值：Llama 3.2 1B INT4 prefill <strong>350+ tok/s</strong>，600 token TTFT <strong>&lt;2s</strong>。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告 Android SDK 推理框架选型中做到：以实测数据为依据——prefill 密集型任务（广告素材批量语义评分）优先 ExecuTorch（离线编译优势更大）；decode 密集型任务（用户意图流式生成）两框架差异较小。适配性：<strong>今日可参考</strong>——论文基准数据可直接用于广告模型选型决策，建议以 Qwen3 0.6B 为基准模型在 Galaxy S 系列设备上验证广告评分延迟。</p>
+<hr />
+<h2>5. 【MediaTek Dimensity 9500s + LiteRT 联合优化：Speculative Decoding+ 内置 + NPU 性能 +7%，覆盖 2026 年 Android 旗舰阵营】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/3 · S=9 · P2 · 价值类型：成本优化</li>
+<li><strong>来源</strong>：Google Developers Blog / ABI Research | <a href="https://developers.googleblog.com/mediatek-npu-and-litert-powering-the-next-generation-of-on-device-ai/">MediaTek NPU and LiteRT: Powering the next generation of on-device AI</a> | 2026</li>
+</ul>
+<p><strong>内容总结（~130 字）</strong>：
+Google 与 MediaTek 宣布在 Dimensity 9500 系列平台上深度联合优化 LiteRT NPU 推理路径，端侧 AI 性能提升约 <strong>7%</strong>；Dimensity 9500s（2026 年 1 月发布）内置 <strong>Speculative Decoding+</strong> 技术，加速多模态 LLM 推理（SDXL 图生、生成式视频、文生图）。硬件位置：Dimensity 9500s 定位 2026 年 vivo / OPPO / 小米旗舰 Android 阵营。LiteRT GPU 后端较 TFLite 提速 <strong>1.4×</strong>，NPU 后端（Qualcomm / MediaTek 联合优化）将模型延迟进一步压缩至 CPU 基线的 <strong>1–20%</strong>；ABI Research 预测 AI 推理优化芯片市场 2026 年将超 <strong>500 亿美元</strong>（较 2025 年约 200 亿翻倍）。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在 Android 广告 SDK 中做到：在 Dimensity 9500/9500s 旗舰机型上，通过 LiteRT NPU delegate 将广告轻量模型（CTR 评分、素材分类）推理延迟进一步降低 7%+，扩大高质量端侧广告特征覆盖范围（2026 年新上市的国内旗舰机型）。适配性：<strong>中期可规划</strong>——建议在 LiteRT NPU delegate 配置中测试 Dimensity 9500s 性能，与 Qualcomm QNN 路径对比，制定 Android 广告 SDK 双路由 NPU 策略。</p>
+<hr />
+<h3>其他观察</h3>
+<p>后 WWDC 周端侧 AI 格局进一步分化：iOS/macOS 侧（Core AI + MLX + Foundation Models）vs. Android 侧（LiteRT-LM + ExecuTorch + LiteRT）已形成两套平行生态，各有完整从框架到硬件的优化链路。国内企业（京东/华为/阿里）在推理效率上的工程化积累正在系统性披露，投机推理与 KVCache 优化将是下半年端侧广告推理优化的主要技术杠杆。</p>
+<h3>近期关注</h3>
+<ul>
+<li><strong>KDD 2026</strong>（8 月，巴塞罗那）：端侧广告/推荐系统论文预计大量披露，重点关注端云协同 CTR/CVR 预估 track。</li>
+<li><strong>WWDC 后续</strong>：Apple Core AI Python 工具链与 LanguageModelSession API 文档逐步完善，建议跟踪 developer.apple.com/documentation/coreai 动态。</li>
+<li><strong>AICon 2026 上海</strong>：会后技术文章将披露京东 xLLM / 华为 Omni Cache 具体数值，预计 6 月下旬。</li>
+</ul>
+    </article>
+  </div>
+</body>
+</html>
