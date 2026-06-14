@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端智能日报 2026-06-14</title>
+  <style>
+:root{
+  --bg:#f4faf8;
+  --surface:#ffffff;
+  --surface-soft:#f8fcfb;
+  --text:#1f2f2b;
+  --muted:#5e726b;
+  --accent:#0f766e;
+  --accent-soft:#dcf2ee;
+  --border:#d8e8e2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #e9f7f2 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, #e5f4ef 0%, transparent 28%),
+    var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.8;
+}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px 56px}
+.top{
+  margin-bottom:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+}
+.brand{
+  margin:0;
+  font-size:14px;
+  letter-spacing:.08em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.back{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px 28px 20px;
+  box-shadow:0 10px 30px rgba(15,118,110,.08);
+}
+h1,h2,h3{line-height:1.35;margin:1.1em 0 .45em}
+h1{font-size:2rem;margin-top:.15em}
+h2{font-size:1.32rem}
+h3{font-size:1.08rem}
+p,li{font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+blockquote{
+  margin:1rem 0;
+  padding:.72rem .95rem;
+  background:var(--surface-soft);
+  border-left:4px solid var(--accent);
+  color:#28433d;
+  border-radius:8px;
+}
+hr{
+  border:none;
+  border-top:1px dashed var(--border);
+  margin:1.3rem 0;
+}
+code{
+  background:#eef7f5;
+  border:1px solid #d7e9e4;
+  color:#1f4f49;
+  border-radius:6px;
+  padding:.14em .42em;
+  font-size:.92em;
+}
+pre{
+  background:#0f1f1d;
+  color:#e9f4f2;
+  border-radius:12px;
+  overflow:auto;
+  padding:14px;
+}
+pre code{
+  background:transparent;
+  border:none;
+  color:inherit;
+  padding:0;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  overflow:hidden;
+  border-radius:12px;
+}
+th,td{
+  border:1px solid var(--border);
+  padding:.6rem .7rem;
+  text-align:left;
+  vertical-align:top;
+}
+th{background:#edf8f5}
+.footer{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:.88rem;
+}
+.list{
+  list-style:none;
+  margin:1rem 0 0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.list a.item{
+  display:block;
+  padding:14px 15px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-soft);
+  transition:.15s ease;
+}
+.item-title{
+  display:block;
+  font-weight:700;
+  margin-top:2px;
+}
+.focus{
+  display:block;
+  margin-top:8px;
+  font-size:.92rem;
+  color:#37524c;
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.list a.item:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(15,118,110,.09);
+  text-decoration:none;
+}
+.date{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  margin-bottom:2px;
+}
+@media (max-width:700px){
+  .wrap{padding:20px 12px 40px}
+  .card{padding:20px 16px 16px;border-radius:14px}
+  h1{font-size:1.62rem}
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <p class="brand">Edge AI Daily</p>
+      <a class="back" href="../index.html">← 返回目录</a>
+    </div>
+    <article class="card">
+      <h1>端智能日报 2026-06-14</h1>
+<blockquote>
+<p><strong>本期聚焦</strong>：WWW 2026 联邦推荐体系收官——FCUCR 攻克用户偏好时序漂移，arXiv 2603.11610 首次将机器遗忘（Machine Unlearning）引入端侧联邦推荐；OpenAI+Qualcomm AI-native 手机架构格局初定（代理替代 App、端轻云重），预示广告 SDK 底层交互层将于 2027-2028 年面临结构性重构。</p>
+</blockquote>
+<hr />
+<h2>1. 【FCUCR：WWW 2026 联邦持续推荐框架——时序感知自蒸馏 + 用户原型跨设备传递，解决联邦用户建模"时序遗忘"核心痛点】</h2>
+<ul>
+<li><strong>评分</strong>：A/4 · I/3 · S=11 · P1 · 价值类型：收入提升 / 用户体验</li>
+<li><strong>来源</strong>：ACM Web Conference 2026 | <a href="https://arxiv.org/abs/2603.17315">arXiv 2603.17315</a> · <a href="https://dl.acm.org/doi/10.1145/3774904.3792575">ACM DL DOI 10.1145/3774904.3792575</a> | 2026-03</li>
+</ul>
+<p><strong>内容总结（~140 字）</strong>：
+Chunxu Zhang 等人发表 FCUCR（Federated Continual User-Centric Recommendation），WWW 2026 联邦推荐第三篇核心论文（前两篇 SAM-FedRec / KE-FedRS 已于 6-13 报道）。核心问题：现有联邦推荐方法忽略用户行为的时序动态性，导致本地模型在新交互数据上产生"时序遗忘"（historical preference drift），同时跨设备协同能力因数据异构而退化。解决方案：① <strong>时序感知自蒸馏（time-aware self-distillation）</strong>：在本地模型更新时隐式保留历史偏好，无需存储历史 embedding；② <strong>跨用户原型迁移（inter-user prototype transfer）</strong>：从相似用户的设备提取行为原型，丰富当前用户表示，同时保留个体决策逻辑。在 4 个公开 benchmark 上均达到 SOTA，工程侧无需额外服务器存储用户历史。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在端侧广告联邦推荐中做到：① 自蒸馏策略直接适用于广告 CTR 联邦模型——用户行为在不同时段存在明显 drift（节假日/促销），时序感知机制可减少模型在长尾冷淡期崩塌的风险；② 跨用户原型迁移为广告冷启动用户（新设备激活、长时未活跃用户）提供行为先验，改善首次广告曝光质量。适配性：<strong>中期可借鉴思路</strong>——论文方法与 SAM-FedRec / KE-FedRS 正交可叠加，建议将三篇 WWW 2026 联邦推荐论文作为整体方法论储备纳入广告联邦用户建模技术方案。</p>
+<hr />
+<h2>2. 【端侧联邦推荐"可遗忘"新维度：arXiv 2603.11610 将 Machine Unlearning 引入联邦推荐，个性化数据共享 + 合规删除同步实现】</h2>
+<ul>
+<li><strong>评分</strong>：A/4 · I/3 · S=11 · P1 · 价值类型：收入提升 / 用户体验 / 新能力探索</li>
+<li><strong>来源</strong>：arXiv | <a href="https://arxiv.org/abs/2603.11610">arXiv 2603.11610</a> | 2026-03</li>
+</ul>
+<p><strong>内容总结（~140 字）</strong>：
+"Federated Learning and Unlearning for Recommendation with Personalized Data Sharing"将两个方向合并：① <strong>Federated Learning（学习）</strong>：实现跨设备个性化推荐协同，同时允许设备级个性化数据共享策略（不同用户可配置哪些特征维度参与联邦聚合，而非全量上传梯度）；② <strong>Machine Unlearning（遗忘）</strong>：用户行使"被遗忘权"（GDPR Article 17 / 国内数据安全法）时，无需全量重训模型即可从联邦模型中"擦除"目标用户的数据贡献，方法基于梯度校正或数据合成近似，而非代价极高的从头重训。工程特点：个性化数据共享机制使不同隐私敏感度的用户可选择参与深度（完整特征 / 脱敏特征 / 仅梯度），兼顾推荐效果与隐私预算控制。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告端侧联邦推荐中做到：① 满足"用户注销账号后广告模型必须消除其数据影响"的合规要求，规避监管风险，同时避免全量重训（成本不可接受）；② 个性化数据共享分级机制可映射到广告 SDK 隐私授权级别——高授权用户参与更深层联邦聚合，提升 CTR 精度；低授权用户仅贡献脱敏梯度，降低合规风险。适配性：<strong>中期可借鉴思路</strong>——合规遗忘是广告系统 2026-2027 年的刚需（欧盟/国内均有立法压力），建议将此框架纳入联邦用户建模合规方案评审。</p>
+<hr />
+<h2>3. 【OpenAI + Qualcomm AI-Native 手机架构确立：代理替代 App、端轻云重，2027 年或提前量产，广告 SDK 底层交互层面临重构】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/4 · S=10 · P1 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：TechCrunch / CNBC / Fortune | <a href="https://techcrunch.com/2026/04/27/openai-could-be-making-a-phone-with-ai-agents-replacing-apps/">TechCrunch: OpenAI could be making a phone with AI agents replacing apps</a> · <a href="https://www.cnbc.com/2026/04/27/qualcomm-qcom-openai-smartphone-chip-partnership-stock.html">CNBC: Qualcomm +7% on OpenAI partnership</a> | 2026-04-27（更新：2026-05-05 Kuo note）</li>
+</ul>
+<p><strong>内容总结（~140 字）</strong>：
+OpenAI 确认与 Qualcomm（及潜在独家芯片供应商 MediaTek）合作开发 AI-native 智能手机，核心架构颠覆传统 App 网格：① <strong>操作层</strong>：AI 代理（Agent）替代传统应用，用户通过意图描述触发代理完成任务，而非逐 App 操作；② <strong>端侧职责</strong>：上下文感知、记忆管理、轻量 AI 模型（实时感知 + 个人偏好推断）；③ <strong>云侧职责</strong>：复杂推理任务路由上云，与端侧形成典型"端轻云重"协同；④ <strong>芯片</strong>：定制处理器（非现有 SoC 改版），面向持续、低功耗 AI 推理设计；⑤ <strong>供应链</strong>：Qualcomm / MediaTek（芯片）+ 台湾富士康替代方案 + 中国立讯精密（代工）；⑥ <strong>时间线</strong>：Ming-Chi Kuo 5 月 5 日更新——芯片或独家交给 MediaTek，量产时间提前至 2027 年初；目标出货 3–4 亿台/年（苹果量级）。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告产品规划中做到：① 代理替代 App 意味着广告触达入口将从"App 内插屏/信息流"转向"代理调用广告 API"——端侧代理可基于用户意图主动召回最相关广告，而非依赖 App 内被动展示；② 端侧上下文感知（记忆 + 偏好推断）是新一代广告 CTR 特征的天然来源，且无需上传原始数据，天然隐私友好。适配性：<strong>长期关注</strong>——2027 年量产前无法落地，但代理广告 API 接口标准将于 2026 下半年逐步浮现，建议今年底关注 OpenAI / Qualcomm 开发者文档动态，提前布局代理广告 SDK 接口设计。</p>
+<hr />
+<h2>4. 【端侧量化 LLM 能耗-精度-延迟三角实测（ACM ToIoT）：首次系统量化边缘设备真实能耗，为广告 SDK 电量预算提供决策依据】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/3 · S=9 · P2 · 价值类型：成本优化</li>
+<li><strong>来源</strong>：ACM Transactions on Internet of Things | <a href="https://dl.acm.org/doi/10.1145/3767742">doi 10.1145/3767742</a> | 2026</li>
+</ul>
+<p><strong>内容总结（~130 字）</strong>：
+"Sustainable LLM Inference for Edge AI: Evaluating Quantized LLMs for Energy Efficiency, Output Accuracy, and Inference Latency"是迄今首篇系统量化边缘端 LLM 三角指标的 ACM 期刊论文。研究背景：现有端侧 LLM benchmark（ExecuTorch、LiteRT-LM 等）大多聚焦延迟与吞吐，忽略能耗——而广告 SDK 部署在用户手机上，电量预算是仅次于延迟的第一优先约束。核心贡献：① 在真实边缘设备（手机/嵌入式板）上横向对比 <strong>PTQ（Post-Training Quantization）</strong>不同精度（FP16 / INT8 / INT4）对能耗、输出精度和推理延迟的联动影响；② 揭示"量化越低、延迟越短、能耗越低，但精度损失在低精度区域急剧非线性增加"的实测曲线；③ 指出当前学界对端侧量化模型能耗研究的严重空白，并建议将 Joule/token 作为端侧 LLM 标准化 benchmark 指标。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告 SDK 端侧模型设计中做到：① 以 Joule/token 替代单纯延迟作为端侧广告推理 SLA 指标，避免广告 SDK 因频繁后台推理导致用户电量投诉（影响留存）；② 利用论文实测曲线确定广告轻量模型量化精度下限——对于广告 CTR 评分（对精度敏感），建议保守止步于 INT8；对于广告意图分类（容错较高），可降至 INT4。适配性：<strong>今日可参考</strong>——ACM DL 可访问，结论可直接用于广告 SDK 端侧推理电量预算设计。</p>
+<hr />
+<h2>5. 【Snapdragon 8 Elite Gen 6 Pro 详细规格泄露：TSMC 2nm + Hexagon NPU 升级 + LPDDR6，2027 Android 旗舰广告端侧算力基线】</h2>
+<ul>
+<li><strong>评分</strong>：A/2 · I/3 · S=7 · P2 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：GSMArena / Gizmochina / Notebookcheck | <a href="https://www.gizmochina.com/2026/05/20/snapdragon-8-elite-gen-6-specs-benchmarks-and-more/">Gizmochina 详细规格</a> · <a href="https://www.notebookcheck.net/More-details-of-the-Snapdragon-8-Elite-Gen-6-surface-in-new-leak.1274392.0.html">Notebookcheck 最新泄露</a> | 2026-03～06</li>
+</ul>
+<p><strong>内容总结（~130 字）</strong>：
+多方爆料汇总 Snapdragon 8 Elite Gen 6（预计 2026 年 9 月 Snapdragon Summit 发布）详细规格：① <strong>制程</strong>：TSMC N2P（2nm），较 N3E 功耗降低约 5%，热功耗控制明显改善；② <strong>CPU</strong>：2+3+3 架构（2 主核 + 3 性能核 + 3 效率核），峰值频率 <strong>5.0 GHz</strong>（超越当前 Elite Gen 5 的 4.6–4.7 GHz）；③ <strong>GPU</strong>：Pro 型号（SM8975）搭载 Adreno 850，<strong>18MB GMEM</strong>，支持 LPDDR6（4×24 配置）；④ <strong>Hexagon NPU</strong>：升级后大幅提升功效比，支持更大规模 LLM 的端侧推理，完整 TOPS 数据待官宣；⑤ <strong>OEM 覆盖</strong>：三星、小米、OPPO、vivo、一加、荣耀预计均搭载；⑥ <strong>Gen 6 Pro vs 标准版</strong>：Pro 含额外 8MB LLC cache，专攻旗舰 AI 应用性能。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告端侧算力规划中做到：① 以 Snapdragon 8 Elite Gen 6（TSMC 2nm + LPDDR6）作为 2027 年 Android 旗舰广告 SDK 端侧推理的硬件基线，指导 2025 年底/2026 年初的模型参数量上限规划（LPDDR6 带宽提升预计支撑更大 token throughput）；② Hexagon NPU 的 TOPS 正式数据（9月发布后）将是广告端侧 CTR 模型延迟估算的关键输入。适配性：<strong>了解即可</strong>——当前仍为泄露规格，9 月 Snapdragon Summit 正式发布后再评估具体 NPU 能力与广告模型适配性。</p>
+<hr />
+<h3>其他观察</h3>
+<p><strong>WWW 2026 联邦推荐三连收官</strong>：过去三天日报覆盖了 SAM-FedRec（embedding 泛化）、KE-FedRS（数据稀疏）和今日的 FCUCR（时序遗忘），加上 arXiv 2603.11610（合规遗忘），WWW 2026 在联邦推荐方向已形成完整的四维方法论体系——这是学界对端侧广告用户建模核心工程挑战最集中的一次突破，与内部联邦学习团队对齐的时机已成熟。<strong>AI-native 手机生态分化</strong>：OpenAI+Qualcomm/MediaTek 与 Apple（Core AI + Foundation Models）正形成两条平行的 AI-native 手机生态，广告 SDK 的接口标准分化压力将在 2026-2027 年显著加剧。</p>
+<h3>近期关注</h3>
+<ul>
+<li><strong>Snapdragon Summit 2026</strong>（预计 9 月）：Gen 6 Pro 正式 NPU TOPS 数据披露，是广告端侧 CTR 模型算力预算更新的关键节点</li>
+<li><strong>KDD 2026</strong>（8 月，巴塞罗那）：预计有端侧广告/推荐联邦学习大量落地论文，关注 Meta、阿里、腾讯的端云协同广告工程实践</li>
+<li><strong>OpenAI 开发者文档动态</strong>（2026 下半年）：AI-native 手机代理 API 规范与广告接口标准化进展，决定广告 SDK 重构节奏</li>
+</ul>
+    </article>
+  </div>
+</body>
+</html>
