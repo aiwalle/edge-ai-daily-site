@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端智能日报 2026-06-15</title>
+  <style>
+:root{
+  --bg:#f4faf8;
+  --surface:#ffffff;
+  --surface-soft:#f8fcfb;
+  --text:#1f2f2b;
+  --muted:#5e726b;
+  --accent:#0f766e;
+  --accent-soft:#dcf2ee;
+  --border:#d8e8e2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #e9f7f2 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, #e5f4ef 0%, transparent 28%),
+    var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.8;
+}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px 56px}
+.top{
+  margin-bottom:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+}
+.brand{
+  margin:0;
+  font-size:14px;
+  letter-spacing:.08em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.back{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px 28px 20px;
+  box-shadow:0 10px 30px rgba(15,118,110,.08);
+}
+h1,h2,h3{line-height:1.35;margin:1.1em 0 .45em}
+h1{font-size:2rem;margin-top:.15em}
+h2{font-size:1.32rem}
+h3{font-size:1.08rem}
+p,li{font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+blockquote{
+  margin:1rem 0;
+  padding:.72rem .95rem;
+  background:var(--surface-soft);
+  border-left:4px solid var(--accent);
+  color:#28433d;
+  border-radius:8px;
+}
+hr{
+  border:none;
+  border-top:1px dashed var(--border);
+  margin:1.3rem 0;
+}
+code{
+  background:#eef7f5;
+  border:1px solid #d7e9e4;
+  color:#1f4f49;
+  border-radius:6px;
+  padding:.14em .42em;
+  font-size:.92em;
+}
+pre{
+  background:#0f1f1d;
+  color:#e9f4f2;
+  border-radius:12px;
+  overflow:auto;
+  padding:14px;
+}
+pre code{
+  background:transparent;
+  border:none;
+  color:inherit;
+  padding:0;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  overflow:hidden;
+  border-radius:12px;
+}
+th,td{
+  border:1px solid var(--border);
+  padding:.6rem .7rem;
+  text-align:left;
+  vertical-align:top;
+}
+th{background:#edf8f5}
+.footer{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:.88rem;
+}
+.list{
+  list-style:none;
+  margin:1rem 0 0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.list a.item{
+  display:block;
+  padding:14px 15px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-soft);
+  transition:.15s ease;
+}
+.item-title{
+  display:block;
+  font-weight:700;
+  margin-top:2px;
+}
+.focus{
+  display:block;
+  margin-top:8px;
+  font-size:.92rem;
+  color:#37524c;
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.list a.item:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(15,118,110,.09);
+  text-decoration:none;
+}
+.date{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  margin-bottom:2px;
+}
+@media (max-width:700px){
+  .wrap{padding:20px 12px 40px}
+  .card{padding:20px 16px 16px;border-radius:14px}
+  h1{font-size:1.62rem}
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <p class="brand">Edge AI Daily</p>
+      <a class="back" href="../index.html">← 返回目录</a>
+    </div>
+    <article class="card">
+      <h1>端智能日报 2026-06-15</h1>
+<blockquote>
+<p><strong>本期聚焦</strong>：快手 GR4AD 将生成式推荐正式引入广告主链路（+4.2% 营收，400M 用户量产），完成"端侧推荐→广告系统"最高优先级工程落地；SCaLRec、CoCorrRec、OD-LLM 三篇端云协同推荐论文集中入池；Apple Foundation Models 完成 WWDC 2026 后续扩展——Python SDK（<code>pip install apple-fm-sdk</code>）+ <code>fm serve</code> OpenAI 兼容服务 + 多模态图文输入，为广告 SDK 跨平台素材理解提供全新工程路径。</p>
+</blockquote>
+<hr />
+<h2>1. 【GR4AD：快手生成式广告推荐量产落地——LazyAR + RSPO + 广告原生语义 ID，A/B +4.2% 营收，400M 用户全量部署】</h2>
+<ul>
+<li><strong>评分</strong>：A/5 · I/4 · S=14 · P0 · 价值类型：收入提升</li>
+<li><strong>来源</strong>：快手 / arXiv | <a href="https://arxiv.org/abs/2602.22732">arXiv 2602.22732</a> | 2026-02</li>
+</ul>
+<p><strong>内容总结（~150 字）</strong>：
+快手发布 GR4AD（Generative Recommendation for Large-Scale ADvertising），将生成式检索范式完整引入广告主链路并量产，颠覆传统 DLRM 架构。三大核心创新：① <strong>UA-SID（广告原生语义 ID）</strong>：面向广告优化目标（而非内容推荐）重新设计语义 token，将广告 bid、CTR 先验、创意特征融入 ID 体系；② <strong>LazyAR（懒自回归解码器）</strong>：放宽逐层依赖约束，支持多候选同时生成，降低广告检索延迟；③ <strong>RSPO（Ranking-guided Softmax Preference Optimization）</strong>：排序感知的 list-wise 强化学习算法，对齐广告曝光序列的全局 RPM 目标而非单条曝光 CTR。工程数据：快手广告系统（400M+ 用户规模）全量部署，在线 A/B 测试广告营收提升 <strong>4.2%</strong>。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告系统中做到：① 生成式检索直接作用于广告召回层，传统 ANN 检索被替换为自回归 token 生成，大幅提升长尾创意覆盖率；② RSPO 列表级 RL 优化目标与我们现有 CTR/CVR 分开优化的范式互补——可借鉴思路，将全局 RPM 作为端侧广告策略优化奖励信号。适配性：<strong>P0 立项调研</strong>——快手已工程验证 4.2% 营收提升，且方法论（语义 ID + 生成式检索 + RL 对齐）在音频/内容流媒体广告场景中高度可迁移，建议本周拉通广告算法和推荐基建团队同步该论文，评估召回层重构可行性。</p>
+<hr />
+<h2>2. 【Apple Foundation Models WWDC 2026 后续扩展：Python SDK + <code>fm serve</code> OpenAI 兼容 + 多模态图文输入 + 开源路线图】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/5 · S=11 · P1 · 价值类型：新能力探索 / 成本优化</li>
+<li><strong>来源</strong>：Apple Developer / MacRumors / ChatForest | <a href="https://developer.apple.com/videos/play/wwdc2026/241/">WWDC26 Foundation Models</a> · <a href="https://developer.apple.com/videos/play/wwdc2026/334/">fm CLI &amp; Python SDK session</a> · <a href="https://github.com/apple/python-apple-fm-sdk">python-apple-fm-sdk</a> | 2026-06-08~12</li>
+</ul>
+<p><strong>内容总结（~150 字）</strong>：
+Apple 在 WWDC 2026 Platforms State of the Union 宣布 Foundation Models 框架四项重大扩展：① <strong>Python SDK</strong>（<code>pip install apple-fm-sdk</code>，GitHub 已开源 apple/python-apple-fm-sdk）：开发者可在 macOS 上用 Python 直接调用端侧 Foundation Model，同时提供 <code>fm</code> CLI 工具；② <strong><code>fm serve</code></strong>：一行命令本地启动 <strong>Chat Completions 兼容 API server</strong>，与 OpenAI API 接口规范一致，便于端云接口统一；③ <strong>多模态图文输入</strong>：开发者可传入图片+文本 prompt，Vision framework（OCR/条码识别）可由模型直接调用，全程端侧；④ <strong>第三方模型支持 + 开源</strong>：LanguageModel 协议统一抽象 Apple 端侧模型、Claude、Gemini 调用，Foundation Models 框架核心将于"今年夏末"开源（支持 Linux 服务端运行）；⑤ 100 万次以下 App Store 首次下载开发者可<strong>免费使用 Private Cloud Compute</strong>。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在 iOS 广告 SDK 中做到：① <code>fm serve</code> 的 OpenAI 兼容接口使广告端侧推理接口与云侧 API 完全统一——A/B 测试中可无缝切换端/云模型，降低双路由维护成本；② 多模态图文端侧推理直接用于广告素材品牌安全检测和 OCR 信息提取，无需上传图片到云端；③ Python SDK 大幅降低广告算法工程师的端侧 PoC 门槛（无需 Swift 开发）。适配性：<strong>中期可行动</strong>——<code>fm serve</code> + Python SDK 今日可在 macOS 上验证广告意图分类延迟基线，建议以商品图片 OCR + 品牌识别为第一个端侧广告素材理解 demo 任务。</p>
+<hr />
+<h2>3. 【CoCorrRec（arXiv 2506.12687）：端侧 SCN + 云侧 GCN 双网络协同纠错，解决长序列端侧推荐的算力-精度失衡】</h2>
+<ul>
+<li><strong>评分</strong>：A/4 · I/3 · S=11 · P1 · 价值类型：收入提升 / 成本优化</li>
+<li><strong>来源</strong>：arXiv | <a href="https://arxiv.org/abs/2506.12687">arXiv 2506.12687</a> | 2026-06</li>
+</ul>
+<p><strong>内容总结（~140 字）</strong>：
+浙大/字节系团队（Tianyu Zhan, Shengyu Zhang, Zheqi Lv, Jieming Zhu, Fan Wu 等）发布 CoCorrRec（Device-Cloud Collaborative Correction Framework），专攻端侧推荐的长序列困境：Transformer-based 序列推荐模型随序列增长，空间和计算开销呈二次增长，端侧无法承载。解决方案：② <strong>SCN（Self-Correction Network）端侧部署</strong>——基于用户近期行为进行实时个性化校正，轻量，低延迟；③ <strong>GCN（Global Correction Network）云侧部署</strong>——在历史行为预训练后提炼跨用户全局泛化知识，通过异步同步下推到设备；双网络在推理时结合端侧实时性与云侧全局视野，解决传统端云协同"每次请求必须云端参与"的延迟问题。论文于 2026 年 6 月提交，是本周最新端云协同推荐成果。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告端侧推荐中做到：① SCN+GCN 框架直接映射到广告 CTR 模型的端云分工——端侧 SCN 捕捉用户最近广告互动的实时信号（点击、停留），云侧 GCN 提炼跨用户广告偏好先验，异步同步保障离线可用性；② 解决端侧广告长序列行为（用户历史广告交互序列可达数百条）的内存压力，是广告用户建模端侧化的重要前置技术。适配性：<strong>中期可借鉴思路</strong>——论文发布 1-2 个月内可跟进完整实验数据，建议同步至内部端侧广告用户建模技术方案，与联邦学习方向（WWW 2026 FCUCR / SAM-FedRec）组成完整方法论矩阵。</p>
+<hr />
+<h2>4. 【SCaLRec（arXiv 2601.22543）：端侧语义校准解决云侧 LLM Embedding 过期问题，端云协同推荐精度可靠性提升】</h2>
+<ul>
+<li><strong>评分</strong>：A/4 · I/3 · S=11 · P1 · 价值类型：收入提升 / 用户体验</li>
+<li><strong>来源</strong>：arXiv | <a href="https://arxiv.org/abs/2601.22543">arXiv 2601.22543</a> | 2026-01</li>
+</ul>
+<p><strong>内容总结（~140 字）</strong>：
+"SCaLRec: Semantic Calibration for LLM-enabled Cloud-Device Sequential Recommendation"精准定位端云协同推荐的一个核心工程痛点——<strong>云端语义过期效应（cloud semantic staleness）</strong>：LLM 每次推断用户 embedding 成本极高，工程上必须复用缓存 embedding，但用户最新行为（刚刚浏览/购买/收藏）与旧缓存 embedding 不再对齐，导致排序质量可测量地下降。SCaLRec 的解法：① <strong>端侧可靠性估算器</strong>：判断当前缓存云 embedding 与用户最新行为的对齐度，决定是否需要校正；② <strong>端侧语义校正模块</strong>：在无需重新调用云 LLM 的前提下，用端侧最新交互证据动态调整缓存 embedding，消除过期偏差。实验：在真实数据集上比强基线有显著提升，且全程无需每次请求触发云 LLM，延迟可控。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告端云协同中做到：① 广告用户 embedding 同样面临过期问题——用户刚完成购买后，云侧广告 embedding 仍反映购买前偏好，导致广告重复展示已购商品；SCaLRec 的端侧校正思路可将广告 embedding 过期损失从分钟级降至秒级；② 端侧可靠性估算器可作为广告 SDK 的"embedding 新鲜度"监控模块，动态决策何时触发云侧 embedding 刷新，控制云端 LLM 调用成本。适配性：<strong>中期可借鉴思路</strong>——方法与当前主流端云广告协同框架正交可叠加，建议与 CoCorrRec 同批进行内部方法论评审。</p>
+<hr />
+<h2>5. 【OD-LLM（arXiv 2601.09306，WSDM'26）：首个针对序列推荐的端侧 LLM 任务自适应压缩框架——SVD 低秩 + Token 归一化】</h2>
+<ul>
+<li><strong>评分</strong>：A/4 · I/3 · S=11 · P1 · 价值类型：成本优化 / 收入提升</li>
+<li><strong>来源</strong>：WSDM 2026 / arXiv | <a href="https://arxiv.org/abs/2601.09306">arXiv 2601.09306</a> | 2026-01</li>
+</ul>
+<p><strong>内容总结（~140 字）</strong>：
+Xin Xia、Hongzhi Yin、Shane Culpepper 在 WSDM'26 发表 OD-LLM（On-Device Large Language Models for Sequential Recommendation），首个专为序列推荐任务设计的端侧 LLM 压缩框架，解决通用 LLM 压缩方法对推荐任务适配性差的问题。核心创新：① <strong>任务自适应 SVD 低秩结构压缩</strong>：基于奇异值分解（SVD）识别模型中与序列推荐任务高度相关的参数子空间，在低秩压缩时优先保留推荐任务关键权重，而非通用 LLM 能力；② <strong>Token 归一化技术</strong>：将用户历史行为 token 归一化，消除用户序列长度差异造成的表示偏差，提升端侧模型对冷热用户的鲁棒性。WSDM'26 会议发表，在公开推荐 benchmark 上验证端侧部署精度与通用压缩方法相比显著提升，具体延迟/内存数据待论文正文查阅。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告端侧序列推荐中做到：① 任务自适应压缩思路直接迁移到广告 LLM 精排——通用 LLM 在广告任务上压缩后精度损失大，而 OD-LLM 的 SVD 保留推荐任务关键权重，可用于广告序列 CTR 预估 LLM 的端侧化压缩；② Token 归一化对广告低活用户（历史曝光序列短）的表示改善，可缓解广告冷启动端侧精度崩塌问题。适配性：<strong>中期可借鉴思路</strong>——建议以 Qwen3-0.6B 或 Phi4-Mini 为基础模型，复现 OD-LLM SVD 压缩在内部广告行为序列上的精度-体积 Pareto 曲线。</p>
+<hr />
+<h2>6. 【工信部《"AI+信息通信"创新发展实施意见（2026-2028）》：首次将"云网边端协同推理"纳入国家政策框架】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/4 · S=10 · P1 · 价值类型：新能力探索 / 成本优化</li>
+<li><strong>来源</strong>：工业和信息化部 / 网易 163 | <a href="https://www.163.com/dy/article/KV7QBFSV05198CJN.html">工信部新政指向"端侧推理"报道</a> | 2026</li>
+</ul>
+<p><strong>内容总结（~130 字）</strong>：
+工业和信息化部正式印发《"人工智能+信息通信"创新发展实施意见（2026-2028 年）》，首次在国家层面将<strong>云网边端协同推理</strong>明确为技术发展目标：探索云网边端协同推理技术，降低推理时延和终端算力需求，增强网络边缘推理能力。政策核心信号：① 端侧推理从"公司自研选项"升格为国家技术路线，运营商与设备厂商将跟进；② 文件强调"终端算力已达数十 TOPS，推动 AI 大模型快速向终端部署"，官方承认端侧算力已具备规模化推理条件；③ 覆盖 2026-2028 三年，将带动国内电信运营商（中国移动/联通/电信）在 5G 网络侧部署边缘推理节点，构成广告端云协同的基础设施层；④ 与欧盟 AI 法案形成政策叠加，国内广告数据安全合规压力下，端侧推理同时具备技术优势与政策合规优势。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告端侧战略规划中做到：① 国家政策背书使广告 SDK 端侧化立项在内部更易获得资源支持——合规优势（不上传用户数据）+ 政策趋势（国家推动端侧）= 最强说服力组合；② 运营商边缘节点的基础设施建设将在 2026-2027 年提供广告端云协同的新计算层（边缘云），值得评估是否纳入广告系统架构规划。适配性：<strong>中期关注</strong>——政策文件可今日下载作为内部立项资料，建议在广告 SDK 端侧化立项 PRD 中引用此政策框架。</p>
+<hr />
+<h3>其他观察</h3>
+<p><strong>"端侧推荐×广告"落地元年</strong>：GR4AD（快手，400M 用户量产）标志着"生成式推荐进入广告主链路"从理论进入规模工程验证。结合本周三篇端云协同推荐论文（CoCorrRec / SCaLRec / OD-LLM），端侧广告推荐的完整技术栈——"压缩部署（OD-LLM）→ 端云协同校正（CoCorrRec/SCaLRec）→ 生成式广告检索（GR4AD）"——已初步成形，是广告算法侧下半年最值得系统性投入的技术方向。<strong>Apple 生态对广告 SDK 的系统性开放</strong>：Python SDK + fm serve OpenAI 兼容接口将 iOS Foundation Models 的接入门槛从 Swift-only 降至 Python 可用，对广告算法工程师尤其友好，预计 2026Q3 将有大量广告 PoC 涌现。</p>
+<h3>近期关注</h3>
+<ul>
+<li><strong>KDD 2026</strong>（8 月，巴塞罗那）：GR4AD 类端侧广告生成式推荐落地论文预计大量出现，重点关注快手/字节/阿里的端云协同广告工程实践 track</li>
+<li><strong>Apple Foundation Models 开源</strong>（预计 2026 夏末）：开源后可在 Linux 服务端运行，将带来广告端侧模型与云侧推理统一框架的可能性</li>
+<li><strong>工信部配套政策</strong>（2026 下半年）：云网边端协同推理的具体技术标准与测评体系，预计由中国信通院于 Q3-Q4 发布，是广告 SDK 端侧合规认证的重要依据</li>
+</ul>
+    </article>
+  </div>
+</body>
+</html>
