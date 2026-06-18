@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端智能日报 2026-06-18</title>
+  <style>
+:root{
+  --bg:#f4faf8;
+  --surface:#ffffff;
+  --surface-soft:#f8fcfb;
+  --text:#1f2f2b;
+  --muted:#5e726b;
+  --accent:#0f766e;
+  --accent-soft:#dcf2ee;
+  --border:#d8e8e2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #e9f7f2 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, #e5f4ef 0%, transparent 28%),
+    var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.8;
+}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px 56px}
+.top{
+  margin-bottom:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+}
+.brand{
+  margin:0;
+  font-size:14px;
+  letter-spacing:.08em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.back{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px 28px 20px;
+  box-shadow:0 10px 30px rgba(15,118,110,.08);
+}
+h1,h2,h3{line-height:1.35;margin:1.1em 0 .45em}
+h1{font-size:2rem;margin-top:.15em}
+h2{font-size:1.32rem}
+h3{font-size:1.08rem}
+p,li{font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+blockquote{
+  margin:1rem 0;
+  padding:.72rem .95rem;
+  background:var(--surface-soft);
+  border-left:4px solid var(--accent);
+  color:#28433d;
+  border-radius:8px;
+}
+hr{
+  border:none;
+  border-top:1px dashed var(--border);
+  margin:1.3rem 0;
+}
+code{
+  background:#eef7f5;
+  border:1px solid #d7e9e4;
+  color:#1f4f49;
+  border-radius:6px;
+  padding:.14em .42em;
+  font-size:.92em;
+}
+pre{
+  background:#0f1f1d;
+  color:#e9f4f2;
+  border-radius:12px;
+  overflow:auto;
+  padding:14px;
+}
+pre code{
+  background:transparent;
+  border:none;
+  color:inherit;
+  padding:0;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  overflow:hidden;
+  border-radius:12px;
+}
+th,td{
+  border:1px solid var(--border);
+  padding:.6rem .7rem;
+  text-align:left;
+  vertical-align:top;
+}
+th{background:#edf8f5}
+.footer{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:.88rem;
+}
+.list{
+  list-style:none;
+  margin:1rem 0 0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.list a.item{
+  display:block;
+  padding:14px 15px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-soft);
+  transition:.15s ease;
+}
+.item-title{
+  display:block;
+  font-weight:700;
+  margin-top:2px;
+}
+.focus{
+  display:block;
+  margin-top:8px;
+  font-size:.92rem;
+  color:#37524c;
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.list a.item:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(15,118,110,.09);
+  text-decoration:none;
+}
+.date{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  margin-bottom:2px;
+}
+@media (max-width:700px){
+  .wrap{padding:20px 12px 40px}
+  .card{padding:20px 16px 16px;border-radius:14px}
+  h1{font-size:1.62rem}
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <p class="brand">Edge AI Daily</p>
+      <a class="back" href="../index.html">← 返回目录</a>
+    </div>
+    <article class="card">
+      <h1>端智能日报 2026-06-18</h1>
+<blockquote>
+<p><strong>本期聚焦</strong>：LoopCTR 的"训练多循环、推理零循环"将 CTR 模型的精度-参数 Pareto 曲线向右上方移动——端侧广告 CTR 精度可在不增加参数量（部署成本）的前提下显著提升；Apple Core AI（CoreML 的继任者）在 WWDC 2026 落地，第三方模型（Llama/Mistral）+ MCP 协议支持让广告 SDK 真正具备"端侧接入任意 LLM"的能力。</p>
+</blockquote>
+<hr />
+<h2>1. 【LoopCTR：循环缩放解锁 CTR 预估的精度-参数 Pareto——训练多循环 · 推理零循环，工业数据集 SOTA（arXiv 2604.19550）】</h2>
+<ul>
+<li><strong>评分</strong>：A/5 · I/3 · S=13 · P1 · 价值类型：收入提升 / 成本优化</li>
+<li><strong>来源</strong>：arXiv | <a href="https://arxiv.org/abs/2604.19550">arXiv 2604.19550</a> | 2026-04</li>
+</ul>
+<p><strong>内容总结（~140 字）</strong>：
+LoopCTR 提出 CTR 预估模型的<strong>循环缩放（Loop Scaling）</strong>范式，核心思路：共享同一组参数，训练时通过多次递归调用（多循环）注入大计算量；推理时只过一次（零循环）直接输出——将训练时的多循环收益蒸馏进参数，推理开销与普通单层模型相同。架构采用 Sandwich 结构 + Hyper-Connected Residuals + MoE，并在每个循环深度施加过程监督（process supervision）使多循环优势编码进共享权重。实验：3 个公开 benchmark + 1 个工业数据集，达到 SOTA，oracle 分析显示尚有 0.02-0.04 AUC 的未挖掘天花板。工程信息：推理侧无额外参数、无额外 FLOP，与主流 DLRM/Transformer 架构兼容。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告端侧 CTR 模型中做到：相同参数量（= 相同端侧内存占用/推理延迟）获得更高 AUC——本质是"免费"提升端侧 CTR 精度，无需扩大模型体积或增加推理算力。适配性：<strong>中期可行动</strong>——LoopCTR 与当前 DLRM/xDeepFM 架构正交，建议以现有广告 CTR 模型为基础实施循环训练策略，优先在离线实验中验证 AUC 增益，再评估端侧部署可行性（参数量不变，端侧集成成本极低）。</p>
+<hr />
+<h2>2. 【Apple Core AI：CoreML 九年后正式退场——iOS 27 原生 LLM 框架，第三方模型 + MCP 协议支持，广告 SDK 端侧接入 LLM 零门槛】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/5 · S=11 · P1 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：9to5Mac / ChatForest / AppleInsider | <a href="https://9to5mac.com/2026/03/01/apple-replacing-core-ml-with-modernized-core-ai-framework-for-ios-27-at-wwdc/">9to5Mac 报道</a> · <a href="https://aiautomationglobal.com/blog/apple-core-ai-framework-wwdc-2026">AI Automation Global 技术解析</a> | 2026-06-09（WWDC 2026）</li>
+</ul>
+<p><strong>内容总结（~150 字）</strong>：
+Apple 在 WWDC 2026 正式发布 <strong>Core AI 框架</strong>，取代使用了 9 年的 Core ML 成为 iOS/iPadOS/macOS 的 AI 主推理框架，随 <strong>iOS 27</strong> 发布（CoreML 同期继续可用，暂无弃用时间表）。三大关键工程变化：① <strong>LLM 原生支持</strong>——异步 token 生成、流式输出、大模型内存调度，CoreML 无法原生处理的 LLM 场景全部覆盖；② <strong>第三方模型开放</strong>——开发者可直接接入自定义 Llama 微调版、Mistral 部署等，不再锁定 Apple <code>.mlmodel</code> 格式；③ <strong>MCP（Model Context Protocol）平台级集成</strong>——Siri 与所有支持 MCP 的 App 实现工具调用互通。模型格式：<code>.coreaimodel</code>（int4 量化 + Metal 4 优化，Neural Engine 路由），相比 GPU 路径可节省 <strong>20-30% 电量</strong>。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在 iOS 广告 SDK 中做到：① 直接将开源广告意图 LLM（如 Qwen3-0.6B INT4 微调版）通过 Core AI 部署至用户设备，无需走 Apple Foundation Models 专有接口——广告端侧个性化 LLM 的 iOS 集成路径首次真正打通；② MCP 支持意味着广告 SDK 可将广告意图查询工具注册为 MCP tool，被 Siri 等系统级 AI 主动调用。适配性：<strong>中期可行动</strong>——建议 iOS 广告 SDK 团队跟进 WWDC26 Session 326「Integrate on-device AI models into your app using Core AI」，优先评估广告 CTR 轻量模型的 Core AI 迁移路径。</p>
+<hr />
+<h2>3. 【端侧推荐系统综合综述（Springer DSE 2025）：Embedding 压缩五类方法全景 + 部署工程路径系统化梳理】</h2>
+<ul>
+<li><strong>评分</strong>：A/4 · I/3 · S=11 · P1 · 价值类型：成本优化 / 新能力探索</li>
+<li><strong>来源</strong>：Hongzhi Yin 等 / Springer Data Science and Engineering | <a href="https://link.springer.com/article/10.1007/s41019-025-00308-8">Springer 全文</a> · <a href="https://arxiv.org/abs/2401.11441">arXiv 2401.11441</a> | 2025（Springer 正式出版）</li>
+</ul>
+<p><strong>内容总结（~130 字）</strong>：
+Hongzhi Yin（OD-LLM 作者）等人在 Springer Data Science and Engineering 出版完整综述，系统梳理端侧推荐系统的部署与训练方法论。<strong>Embedding 压缩五类路径</strong>：① Binary code（低比特量化）；② Embedding sparsification（稀疏化，剪掉低重要性行）；③ Variable size（特征粒度自适应 embedding 维度）；④ Compositional（跨 embedding table 权重共享）；⑤ Sustainable deployment（支持实时增量更新的长期部署）。<strong>端侧训练</strong>：本地差分隐私、FedRec 联邦方案均纳入评估。工程信息：综述覆盖从内存约束建模到真实手机部署的完整 pipeline，含具体延迟/内存目标范围，是迄今端侧推荐领域覆盖最全的工程参考文献。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告端侧用户建模中做到：广告 Embedding 体积是端侧部署的最大障碍——综述的五类压缩方法（尤其 Variable size + Compositional）直接可用于广告用户 embedding 的体积-精度权衡设计。适配性：<strong>今日可参考</strong>——建议将此综述加入广告端侧用户建模技术方案参考书目，与 OD-LLM（arXiv 2601.09306）配合作为端侧广告 embedding 压缩的方法论双支柱。</p>
+<hr />
+<h2>4. 【MediaTek Dimensity 9500s + LiteRT NPU 集成：Gemma 3n E2B 在移动 APU 上达 1,600 tok/s prefill，比 CPU 快 12x（Google Developers Blog）】【进展更新】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/4 · S=10 · P1 · 价值类型：成本优化 / 新能力探索</li>
+<li><strong>来源</strong>：Google Developers Blog / MediaTek | <a href="https://developers.googleblog.com/mediatek-npu-and-litert-powering-the-next-generation-of-on-device-ai/">Google Developers Blog 原文</a> · <a href="https://www.mediatek.com/press-room/mediatek-unveils-dimensity-9500s-and-dimensity-8500-to-propel-performance-gaming-and-efficiency-in-flagship-and-premium-smartphones">MediaTek 旗舰 NPU 公告</a> | 2026</li>
+<li><strong>相较 2026-06-16 报道新增</strong>：6-16 已报道 LiteRT-LM v0.11.0 Gemma MTP 2.2x decode 加速；本条聚焦 MediaTek APU（Dimensity 9500s）与 LiteRT 的联合集成及完整 prefill 性能数据。</li>
+</ul>
+<p><strong>内容总结（~130 字）</strong>：
+Google AI Edge 与 MediaTek 联合发布 <strong>LiteRT + Dimensity 9500s APU</strong> 集成方案，为 Android 旗舰端侧 LLM 部署补全最后一块拼图。关键性能数据：Gemma 模型在 Dimensity APU 上相比 CPU <strong>快 12x</strong>、比 GPU <strong>快 10x</strong>；<strong>Gemma 3n E2B</strong> 具体实测：prefill 超 <strong>1,600 tokens/s</strong>，decode <strong>28 tokens/s</strong>（4K context）——后者达人类阅读速度 4x，广告端侧流式输出完全可用。工程背景：Dimensity 9500s NPU 专为生成式推理与多模态模型优化；MediaTek 同期发布中端 Dimensity 7450/7450X，6 代 NPU 效率提升 7%（Gemma 快 12x vs CPU），端侧推理下沉至中端机型。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在 Android 广告 SDK 中做到：Dimensity 9500s 设备（vivo X200/realme GT7 Pro 等）可在 APU 上以 1,600 tok/s prefill 速度完成批量广告素材语义评分——意味着 100 条广告素材的质量预审可在 &lt;50ms 内完成。适配性：<strong>中期可行动</strong>——LiteRT-LM v0.11.0 + MediaTek APU 集成今日可在开发板上验证，建议以 Gemma 3n E2B 为基座模型建立 Dimensity 9500s 上的广告推理延迟基线，补全 Android 旗舰端的 NPU 覆盖版图。</p>
+<hr />
+<h2>5. 【Qualcomm QMX（Matrix Extensions）：移动 CPU 上 Llama 推理 TTFT 提升 2.9x——NPU/GPU 之外的 CPU 推理加速新路径】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/4 · S=10 · P1 · 价值类型：成本优化</li>
+<li><strong>来源</strong>：Qualcomm Developer Blog | <a href="https://www.qualcomm.com/developer/blog/2026/04/llama-models-acceleration-on-cpu-qmx">Qualcomm QMX 技术博客</a> | 2026-04</li>
+</ul>
+<p><strong>内容总结（~130 字）</strong>：
+Qualcomm 发布 <strong>QMX（Qualcomm Matrix Extensions）</strong> 技术详解，展示在 <strong>Snapdragon 8 Elite Gen 5</strong> 移动平台上通过 CPU SME（Scalable Matrix Extension）指令集加速 Llama 推理的完整工程方案。核心性能数据：<strong>Time-to-First-Token（TTFT）</strong> — Q8 模型提升 <strong>2.9x</strong>，Q4 模型提升 <strong>1.5x</strong>（对比 NEON SIMD 基线）。工程价值：QMX 是 CPU 推理路径（无需 NPU/GPU 驱动）——在 NPU 驱动不稳定、GPU 被其他任务占用时提供可靠的降级路径；开发者可通过 llama.cpp 启用 <code>--sme</code> 选项，30 分钟内在设备上验证 Qualcomm + Meta 长期合作背景下，Llama 3.2 已验证在 Snapdragon 设备端侧完整运行。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告 SDK 的端侧推理降级策略中做到：当旗舰 Android 设备 NPU 被系统占用时，QMX CPU 路径可将广告意图分类的 TTFT 控制在人类感知阈值内（&lt;200ms），保障端侧广告请求的时效性，而非因 NPU 不可用而降级到云端请求（增加延迟和成本）。适配性：<strong>今日可验证</strong>——llama.cpp 已集成 QMX/SME 支持，建议在 Snapdragon 8 Elite Gen 5 设备上对广告意图分类轻量模型（Qwen3-0.6B Q8）测试 TTFT 改善幅度，评估能否满足端侧广告实时请求 SLA。</p>
+<hr />
+<h3>其他观察</h3>
+<p><strong>三大推理框架形成"iOS / Android / CPU 三角覆盖"</strong>：本周 Apple Core AI（iOS 27）+ MediaTek APU + LiteRT + Qualcomm QMX 三路进展合力，使广告 SDK 的端侧推理在 iOS 旗舰（Neural Engine）、Android 旗舰（MediaTek/Qualcomm NPU）、CPU 降级路径上均获得具体的工程方案，框架选型格局基本确定。<strong>CTR 精度提升的新思路</strong>：LoopCTR 以"参数不变、推理计算不增加"的方式提升 AUC，是端侧广告精度优化迄今最有吸引力的技术路径，建议与 OD-LLM SVD 压缩方案同批评估，选优先级最高的路线纳入 H2 实验计划。</p>
+<h3>近期关注</h3>
+<ul>
+<li><strong>KDD 2026</strong>（8 月，巴塞罗那）：生成式推荐（GR4AD 类）、端云协同用户建模、联邦广告推荐等工程落地论文预计密集亮相，关注快手/字节/阿里/Meta 的 Oral/Applied Data Science Track</li>
+<li><strong>iOS 27 / Core AI SDK 正式发布</strong>（预计 2026 秋季）：Core AI 开放第三方模型接入后广告 SDK 可立即启动 iOS 端侧 LLM PoC，关注 WWDC26 Session 326 的代码示例</li>
+<li><strong>Snapdragon Summit 2026</strong>（预计 2026 年 9 月）：Snapdragon 8 Elite Gen 6 NPU TOPS 数据，是广告端侧 CTR 模型下一代算力预算更新节点</li>
+</ul>
+    </article>
+  </div>
+</body>
+</html>
