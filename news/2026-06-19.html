@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端智能日报 2026-06-19</title>
+  <style>
+:root{
+  --bg:#f4faf8;
+  --surface:#ffffff;
+  --surface-soft:#f8fcfb;
+  --text:#1f2f2b;
+  --muted:#5e726b;
+  --accent:#0f766e;
+  --accent-soft:#dcf2ee;
+  --border:#d8e8e2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #e9f7f2 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, #e5f4ef 0%, transparent 28%),
+    var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.8;
+}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px 56px}
+.top{
+  margin-bottom:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+}
+.brand{
+  margin:0;
+  font-size:14px;
+  letter-spacing:.08em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.back{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px 28px 20px;
+  box-shadow:0 10px 30px rgba(15,118,110,.08);
+}
+h1,h2,h3{line-height:1.35;margin:1.1em 0 .45em}
+h1{font-size:2rem;margin-top:.15em}
+h2{font-size:1.32rem}
+h3{font-size:1.08rem}
+p,li{font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+blockquote{
+  margin:1rem 0;
+  padding:.72rem .95rem;
+  background:var(--surface-soft);
+  border-left:4px solid var(--accent);
+  color:#28433d;
+  border-radius:8px;
+}
+hr{
+  border:none;
+  border-top:1px dashed var(--border);
+  margin:1.3rem 0;
+}
+code{
+  background:#eef7f5;
+  border:1px solid #d7e9e4;
+  color:#1f4f49;
+  border-radius:6px;
+  padding:.14em .42em;
+  font-size:.92em;
+}
+pre{
+  background:#0f1f1d;
+  color:#e9f4f2;
+  border-radius:12px;
+  overflow:auto;
+  padding:14px;
+}
+pre code{
+  background:transparent;
+  border:none;
+  color:inherit;
+  padding:0;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  overflow:hidden;
+  border-radius:12px;
+}
+th,td{
+  border:1px solid var(--border);
+  padding:.6rem .7rem;
+  text-align:left;
+  vertical-align:top;
+}
+th{background:#edf8f5}
+.footer{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:.88rem;
+}
+.list{
+  list-style:none;
+  margin:1rem 0 0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.list a.item{
+  display:block;
+  padding:14px 15px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-soft);
+  transition:.15s ease;
+}
+.item-title{
+  display:block;
+  font-weight:700;
+  margin-top:2px;
+}
+.focus{
+  display:block;
+  margin-top:8px;
+  font-size:.92rem;
+  color:#37524c;
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.list a.item:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(15,118,110,.09);
+  text-decoration:none;
+}
+.date{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  margin-bottom:2px;
+}
+@media (max-width:700px){
+  .wrap{padding:20px 12px 40px}
+  .card{padding:20px 16px 16px;border-radius:14px}
+  h1{font-size:1.62rem}
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <p class="brand">Edge AI Daily</p>
+      <a class="back" href="../index.html">← 返回目录</a>
+    </div>
+    <article class="card">
+      <h1>端智能日报 2026-06-19</h1>
+<blockquote>
+<p><strong>本期聚焦</strong>：MobileMoE 将 Mixture-of-Experts 架构压缩至 0.9B 活跃参数并在 Galaxy S25 / iPhone 16 Pro 量产验证，给端侧广告多任务模型设计提供全新 Pareto 曲线；Apple Foundation Models 3rd Gen 公开 AFM 3 Core Advanced 完整架构（20B 稀疏 / 1-4B 活跃）并开源 CoreAILanguageModel，端侧 LLM 开发者生态进一步开放。</p>
+</blockquote>
+<hr />
+<h2>1. 【MobileMoE：端侧 MoE 架构新 Pareto 曲线——0.9B 活跃参数匹敌密集 LLM，decode 速度提升 2.2-3.4x，Galaxy S25 + iPhone 16 Pro 量产（arXiv 2605.27358）】</h2>
+<ul>
+<li><strong>评分</strong>：A/4 · I/4 · S=12 · P0 · 价值类型：成本优化 / 新能力探索</li>
+<li><strong>来源</strong>：Meta AI 等 | <a href="https://arxiv.org/abs/2605.27358">arXiv 2605.27358</a> · <a href="https://huggingface.co/papers/2605.27358">HuggingFace 论文页</a> | 2026-05</li>
+</ul>
+<p><strong>内容总结（~150 字）</strong>：
+MobileMoE 提出一系列专为移动端设计的 Mixture-of-Experts 语言模型，活跃参数范围 <strong>0.3-0.9B</strong>，总参数 1.3-5.3B（稀疏激活）。核心贡献：① <strong>14 个 benchmark 上以 2-4x 更少 FLOPs 匹配或超越同等内存预算的主流密集端侧 LLM</strong>（MobileLLM、Qwen3-0.6B 等）；② <strong>推理速度</strong>：MobileMoE-S 相比密集基线 MobileLLM-Pro（INT4 等内存）prefill 快 <strong>1.8-3.8x</strong>，decode 快 <strong>2.2-3.4x</strong>；③ <strong>量产验证</strong>：Samsung Galaxy S25（Snapdragon 8 Elite）和 iPhone 16 Pro（A18 Pro）通过 <strong>INT4 QAT + ExecuTorch</strong> 完整部署，是"首个在消费级手机上实现高效 MoE 推理"的工程落地成果；④ 同时达到或超越更大 MoE 模型 OLMoE-1B-7B，参数量减少 60%。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告端侧多任务 LLM 中做到：① MoE 的"专家路由"天然匹配广告多任务需求——CTR 评分、用户意图分类、素材品质评估、对话广告应答可分别由不同专家承担，总参数预算（≤5B）不变但任务覆盖面扩大；② 2.2-3.4x decode 加速直接缩短广告 Agent 响应延迟，有望将端侧广告对话从 &gt;1s 降至 &lt;400ms；③ ExecuTorch 量产验证意味着 iOS + Android 统一部署路径今日可复用。适配性：<strong>今日可行动（P0）</strong>——建议以 MobileMoE 开源权重 + ExecuTorch 为基础，在 Snapdragon 8 Elite 开发板上做广告意图分类任务的 MoE PoC，对比 MobileLLM-Pro 密集模型的精度-延迟 trade-off。</p>
+<hr />
+<h2>2. 【Apple Foundation Models 3rd Gen：AFM 3 Core Advanced 20B 稀疏模型完整架构公开，CoreAILanguageModel 开源——端侧 AI 开发者平台进入"任意模型可部署"时代】【进展更新】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/5 · S=11 · P1 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：Apple Machine Learning Research / 9to5Mac | <a href="https://machinelearning.apple.com/research/introducing-third-generation-of-apple-foundation-models">Apple ML Research 原文</a> · <a href="https://9to5mac.com/2026/06/11/apples-new-foundation-models-explained-on-device-ai-cloud-ai-and-everything-in-between/">9to5Mac 解析</a> · <a href="https://gigazine.net/gsc_news/en/20260610-apple-foundation-models">GIGAZINE 工程细节</a> | 2026-06-08（发布）/ 2026-06-11（深度报道）</li>
+<li><strong>相较 2026-06-15/06-18 报道新增</strong>：06-15 已覆盖 Python SDK + <code>fm serve</code>；06-18 已覆盖 Core AI 框架（替代 CoreML）；本条聚焦 AFM 3 <strong>完整五模型家族架构</strong>、<strong>20B 稀疏模型工程细节</strong>、<strong>CoreAILanguageModel + MLXLanguageModel 开源</strong>及多模态能力细节。</li>
+</ul>
+<p><strong>内容总结（~140 字）</strong>：
+Apple 在 WWDC 2026（6 月 8 日）发布第三代 Foundation Models，完整家族五款：<strong>端侧</strong>——AFM 3 Core（轻量）、<strong>AFM 3 Core Advanced</strong>（旗舰端侧，20B 参数稀疏架构，运行时激活 <strong>1-4B</strong>，原生多模态，可在 iPhone 16 Pro+ 上离线运行）；<strong>云侧</strong>——AFM 3 Cloud、ADM 3 Cloud（图像生成/编辑专用）、AFM 3 Cloud Pro（最强推理）。多模态能力：开发者可向端侧模型同时传入图像 + 文本，支持物体识别、OCR、截图分析，集成 Vision 框架工具。关键开放：<strong>CoreAILanguageModel + MLXLanguageModel 开源</strong>，允许开发者将任意第三方模型（Qwen、Llama 微调版等）直接运行在 Apple Neural Engine / Mac GPU 上，无需锁定 AFM 格式；小型开发者获免费 Private Cloud Compute 配额。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在 iOS 广告 SDK 中做到：① CoreAILanguageModel 开源意味着广告团队可将内部微调的广告意图 LLM（如 Qwen3-0.6B INT4 广告意图分类版）直接接入 Apple Neural Engine，无需走苹果私有接口——iOS 广告端侧个性化 LLM 的集成路径首次完全打通；② AFM 3 Core Advanced 多模态能力支持广告素材图像 + 文案的本地联合质量评估（图文一致性 / 低质素材过滤），延迟在 ANE 上预计 &lt;100ms；③ 免费 PCC 配额可用于广告 A/B 测试阶段的云侧 LLM 调用，降低试验成本。适配性：<strong>中期可行动</strong>——建议 iOS 广告 SDK 团队跟进 CoreAILanguageModel 开源仓库，优先评估广告 CTR 轻量模型在 ANE 上的迁移路径；多模态能力 PoC 可在 iPhone 16 Pro 设备上立即启动。</p>
+<hr />
+<h2>3. 【MNN 3.5.0 + 高通 NPU 加速 LLM：阿里端侧推理框架 NPU 路径工程解析——Prefill 全 NPU 执行，面向十亿级中国 Android 生态】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/3 · S=9 · P1 · 价值类型：成本优化</li>
+<li><strong>来源</strong>：知乎技术博客 / Alibaba MNN GitHub | <a href="https://zhuanlan.zhihu.com/p/1992707767165810005">知乎工程深度解析</a> · <a href="https://github.com/alibaba/MNN/releases">MNN GitHub Releases</a> | 2026-04（v3.5.0 发布）/ 近期深度分析</li>
+</ul>
+<p><strong>内容总结（~130 字）</strong>：
+MNN 3.5.0（2026-04）正式加入 <strong>Qualcomm QNN NPU 后端 LLM 支持</strong>，填补此前 LLM 推理仅走 CPU/GPU 的路径缺口。近期知乎技术文章深度解析工程实现：① <strong>模型导出</strong>：<code>llmexport.py</code> 支持将 HuggingFace 格式 LLM 一键转换为 MNN 可执行格式；② <strong>NPU 适配转换</strong>：激活值静态化（Static Activation Quantization）+ Hexagon 图优化，实现 Prefill 阶段全程 NPU 执行；③ <strong>异构计算调度</strong>：Prefill（计算密集）→ NPU，Decode（内存密集）→ CPU 大核，针对移动 SoC 特性优化调度策略；④ 实测 Qwen2.5-1.5B INT4 在 Snapdragon 8 Gen 3 设备 Prefill 加速约 <strong>3-5x</strong>（vs GPU-only 基线）。MNN 广泛部署于淘宝、支付宝、钉钉及众多头部 App，是中国端侧 AI 最大生产分发路径。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在 Android 广告 SDK 中做到：① 如果广告端侧意图分类模型（Qwen2.5-1.5B INT4）通过 MNN QNN 后端部署，Prefill 延迟可从 GPU 的 ~150ms 降至 NPU 的 ~30-50ms，满足广告实时请求 SLA；② MNN 的国内超大规模 App 生态覆盖意味着广告 SDK 通过 MNN 推理的集成阻力最低（无需额外引入 ExecuTorch / LiteRT，与宿主 App 共用推理框架）；③ <code>llmexport.py</code> 工具链可复用于广告微调模型的 MNN 格式转换，标准化内部模型导出流程。适配性：<strong>中期可行动</strong>——建议以 MNN 3.5.0 QNN 后端为目标，在 Snapdragon 8 Elite Gen 5 测试机上验证广告意图分类模型的 NPU Prefill 延迟，对比 ExecuTorch/LiteRT 基线，选最低集成成本路径。</p>
+<hr />
+<h2>4. 【LPDDR6 量产 H2 2026 在即：端侧 AI 内存带宽瓶颈的下一次拐点——SK Hynix 首发优化版本，旗舰 iPhone / Android 有望年内搭载】</h2>
+<ul>
+<li><strong>评分</strong>：A/2 · I/4 · S=8 · P2 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：AndroidHeadlines / SK Hynix / JEDEC | <a href="https://www.androidheadlines.com/2026/06/lpddr6-memory-double-capacity-ai-datacenters.html">AndroidHeadlines 最新报道</a> · <a href="https://www.jedec.org/news/pressreleases/jedec%C2%AE-releases-new-lpddr6-standard-enhance-mobile-and-ai-memory-performance">JEDEC JESD209-6 标准</a> · <a href="https://finance.biggo.com/news/RNjc2ZwBJouf4oEhGaoV">SK Hynix on-device AI 版本</a> | 2026-06（最新行业进展）</li>
+</ul>
+<p><strong>内容总结（~130 字）</strong>：
+JEDEC 于 2025 年 7 月发布 JESD209-6（LPDDR6）标准，三星和 SK Hynix 均已完成开发认证，<strong>量产准备预计 2026H1 完成，出货 2026H2 开始</strong>。关键性能数据：基础速率 <strong>10.7 Gbps</strong>（比 LPDDR5X 快 33%），上限可达 14.4 Gbps；采用双子通道架构（Dual Sub-Channel），访问粒度 32B，有利于 LLM Decode 的内存密集型访问。SK Hynix 专门针对端侧 AI 优化的 LPDDR6 版本预计搭载于 <strong>Apple H2 旗舰产品</strong>（iPhone 17 Pro 系列），据行业研究机构预测需求将在 2026H2 随下一代旗舰集中爆发。工程背景：当前 Snapdragon 8 Elite Gen 5 + LPDDR5X 的内存带宽（~68-75 GB/s）已成为 LLM Decode 首要瓶颈；LPDDR6 切换后带宽可突破 100 GB/s，理论上线性提升 decode token/s。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告端侧 LLM 规划中做到：① LPDDR6 旗舰手机 H2 2026 上市后，同等 LLM（如 Qwen3-1.7B INT4）的 decode 速度理论提升 30-40%，广告 Agent 对话响应将首次普遍满足 200ms 内 SLA；② 这是端侧广告 LLM 产品节奏规划的硬件锚点——建议将 H2 2026 旗舰发布时间纳入广告端侧 LLM 功能上线窗口评估。适配性：<strong>了解即可（P2）</strong>——LPDDR6 是硬件背景信息，短期无可行动点；但对 H2 产品路线图有规划参考价值。</p>
+<hr />
+<h3>其他观察</h3>
+<p><strong>MoE 架构端侧化正成为 2026H2 的技术主线</strong>：MobileMoE 落地量产、MediaTek Dimensity 9500 原生支持 BitNet（另类稀疏），两项在不同技术路线上都指向同一结论——"以总参数换活跃参数"的稀疏/MoE 思路在端侧已经工程成熟，广告多任务模型的架构演进路线图需要将 MoE 纳入 2026H2 实验计划。<strong>Apple 端侧开发者平台加速开放</strong>：从 Python SDK（fm serve）→ Core AI 框架 → CoreAILanguageModel 开源，Apple 在 WWDC 2026 发布的端侧 AI 工具链已形成完整闭环；广告 SDK 在 iOS 上做端侧 LLM 的技术壁垒在本周进一步降低。</p>
+<h3>近期关注</h3>
+<ul>
+<li><strong>ICDCS 2026 Workshop: Federated Foundation Models at the Edge</strong>（2026-06-25，首尔）：本周四召开，聚焦联邦学习 × 端侧基础模型，含隐私保护、个性化、通信效率等议题；广告端侧联邦用户建模方向的最新进展有望在此发布，建议关注 proceedings</li>
+<li><strong>KDD 2026</strong>（8 月，巴塞罗那）：端侧广告推荐、联邦学习、端云协同用户建模论文将密集亮相，关注快手/字节/阿里 Applied Data Science Track 的工业论文</li>
+<li><strong>LPDDR6 旗舰发布</strong>（2026H2）：iPhone 17 Pro / 下一代 Galaxy S 搭载 LPDDR6，是端侧广告 LLM 功能规划的硬件拐点，建议提前建立新旧内存带宽下的性能基线对比</li>
+</ul>
+    </article>
+  </div>
+</body>
+</html>
