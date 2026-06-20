@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端智能日报 2026-06-20</title>
+  <style>
+:root{
+  --bg:#f4faf8;
+  --surface:#ffffff;
+  --surface-soft:#f8fcfb;
+  --text:#1f2f2b;
+  --muted:#5e726b;
+  --accent:#0f766e;
+  --accent-soft:#dcf2ee;
+  --border:#d8e8e2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #e9f7f2 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, #e5f4ef 0%, transparent 28%),
+    var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.8;
+}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px 56px}
+.top{
+  margin-bottom:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+}
+.brand{
+  margin:0;
+  font-size:14px;
+  letter-spacing:.08em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.back{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px 28px 20px;
+  box-shadow:0 10px 30px rgba(15,118,110,.08);
+}
+h1,h2,h3{line-height:1.35;margin:1.1em 0 .45em}
+h1{font-size:2rem;margin-top:.15em}
+h2{font-size:1.32rem}
+h3{font-size:1.08rem}
+p,li{font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+blockquote{
+  margin:1rem 0;
+  padding:.72rem .95rem;
+  background:var(--surface-soft);
+  border-left:4px solid var(--accent);
+  color:#28433d;
+  border-radius:8px;
+}
+hr{
+  border:none;
+  border-top:1px dashed var(--border);
+  margin:1.3rem 0;
+}
+code{
+  background:#eef7f5;
+  border:1px solid #d7e9e4;
+  color:#1f4f49;
+  border-radius:6px;
+  padding:.14em .42em;
+  font-size:.92em;
+}
+pre{
+  background:#0f1f1d;
+  color:#e9f4f2;
+  border-radius:12px;
+  overflow:auto;
+  padding:14px;
+}
+pre code{
+  background:transparent;
+  border:none;
+  color:inherit;
+  padding:0;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  overflow:hidden;
+  border-radius:12px;
+}
+th,td{
+  border:1px solid var(--border);
+  padding:.6rem .7rem;
+  text-align:left;
+  vertical-align:top;
+}
+th{background:#edf8f5}
+.footer{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:.88rem;
+}
+.list{
+  list-style:none;
+  margin:1rem 0 0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.list a.item{
+  display:block;
+  padding:14px 15px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-soft);
+  transition:.15s ease;
+}
+.item-title{
+  display:block;
+  font-weight:700;
+  margin-top:2px;
+}
+.focus{
+  display:block;
+  margin-top:8px;
+  font-size:.92rem;
+  color:#37524c;
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.list a.item:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(15,118,110,.09);
+  text-decoration:none;
+}
+.date{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  margin-bottom:2px;
+}
+@media (max-width:700px){
+  .wrap{padding:20px 12px 40px}
+  .card{padding:20px 16px 16px;border-radius:14px}
+  h1{font-size:1.62rem}
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <p class="brand">Edge AI Daily</p>
+      <a class="back" href="../index.html">← 返回目录</a>
+    </div>
+    <article class="card">
+      <h1>端智能日报 2026-06-20</h1>
+<blockquote>
+<p><strong>本期聚焦</strong>：大模型推荐系统效率革命——Meta ULTRA-HSTU 将推荐模型 inference scaling 提速 21x，首次让十万级用户序列建模在亚秒延迟下成为生产现实；同期端侧推理框架（ExecuTorch v1.2.0）走向成熟，音频/内容流媒体广告团队可同时从"云侧大序列建模"与"端侧轻量推荐 LLM"两条路径寻找落地点。</p>
+</blockquote>
+<hr />
+<h2>1. 【ULTRA-HSTU：Meta 推荐系统 Scaling Law 新突破——21x Inference 加速，十万级用户序列亚秒延迟生产部署（arXiv 2602.16986）】</h2>
+<ul>
+<li><strong>评分</strong>：A5 · I5 · S=15 · P0 · 价值类型：收入提升 / 成本优化</li>
+<li><strong>来源</strong>：Meta AI | <a href="https://arxiv.org/abs/2602.16986">arXiv 2602.16986</a> | 2026-02-19</li>
+</ul>
+<p><strong>内容总结（100-150 字）</strong>：
+Meta 提出 ULTRA-HSTU（Ultra-Efficient Hierarchical Sequential Transducer），通过端到端模型与系统协同设计，解决 Transformer 自注意力 O(L²) 复杂度在 O(10k-100k) 用户行为序列下的实用性瓶颈。核心技术包括：半局部注意力（Semi-Local Attention）将稠密 attention 替换为块稀疏结构、负载均衡随机采样（Load-Balanced Stochastic Sampling）优化输入序列、以及混合精度 kernel 优化。结果：5x 训练 scaling 效率、21x 推理 scaling 效率，已在 Meta 生产环境以 18 层自注意力 + 16k 用户序列规模部署，每日服务数十亿推荐请求，延迟维持亚秒级。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告粗排/精排阶段利用更长的用户历史（千级 → 万级行为事件）建模，显著提升用户兴趣捕捉精度而不增加延迟预算。半局部注意力机制可直接借鉴到音频/内容平台用户长序列 CTR 模型（尤其是跨 session 行为建模）；目前该技术依赖 H100 集群训练，需等待开源实现或参考架构思路落地到自有平台。</p>
+<hr />
+<h2>2. 【OD-LLM：首个端侧序列推荐 LLM 压缩框架——SVD 结构压缩 + 逐层渐进对齐，WSDM '26 入选（arXiv 2601.09306）】</h2>
+<ul>
+<li><strong>评分</strong>：A4 · I3 · S=11 · P1 · 价值类型：新能力探索 / 用户体验</li>
+<li><strong>来源</strong>：arXiv / WSDM '26 | <a href="https://arxiv.org/abs/2601.09306">arXiv 2601.09306</a> | 2026-01（WSDM '26 收录）</li>
+</ul>
+<p><strong>内容总结（100-150 字）</strong>：
+OD-LLM 是首个专为端侧部署设计的序列推荐 LLM 压缩框架，针对 LLM 参数量大、推理成本高无法在移动设备直接运行的痛点。核心技术三件套：①SVD 低秩结构压缩——分解权重矩阵消除参数冗余；②Tokenization Normalization——统一 item token 表示解决 LLM tokenizer 与推荐 ID 映射不兼容问题；③渐进对齐算法（Progressive Alignment）——逐层迭代微调，保持压缩后模型对推荐目标的精度。数据与推理全部在设备端，满足隐私合规要求。WSDM '26 于 2026 年 2 月正式发表。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在用户设备本地运行轻量级序列推荐 LLM，实现离线可用、低延迟的个性化意图预测（尤其适合弱网场景广告预加载）。SVD 压缩与渐进对齐的思路可借鉴到广告团队的端侧 CTR 模型压缩流程；直接应用需解决 item ID embedding 的端侧同步问题，建议先做 intent-level 预测再映射广告类目。</p>
+<hr />
+<h2>3. 【Versioned Late Materialization：超长用户序列工业推荐训练新范式——解决万级事件序列的版本一致性瓶颈（arXiv 2604.24806）】</h2>
+<ul>
+<li><strong>评分</strong>：A4 · I3 · S=11 · P1 · 价值类型：成本优化 / 收入提升</li>
+<li><strong>来源</strong>：arXiv | <a href="https://arxiv.org/abs/2604.24806">arXiv 2604.24806</a> | 2026-04</li>
+</ul>
+<p><strong>内容总结（100-150 字）</strong>：
+工业推荐系统训练中，用户行为序列在训练过程中持续更新（用户实时有新行为），导致同一条训练样本在不同 epoch/worker 中读取到不同版本的序列——这个"版本不一致"问题在超长序列（万级以上事件/用户）下会严重放大噪声并浪费 I/O。本文提出 Versioned Late Materialization（版本化延迟物化）范式：训练时记录样本对应的序列版本号，在 worker 侧按需"延迟物化"正确版本的序列，在保证版本一致性的同时大幅降低重复数据加载开销。论文聚焦大规模工业推荐场景的训练系统工程，有明确的效率数据（减少冗余 I/O 和 GPU 空转）。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告排序模型训练时引入更长的用户历史序列（跨天、跨 session），提升长期兴趣建模能力，同时不增加训练 pipeline 的数据一致性负担。思路可直接借鉴到数据层工程改造；目前无开源实现，需参考论文自行实现或等待大厂开源基础设施跟进。</p>
+<hr />
+<h2>4. 【ExecuTorch v1.2.0：Voxtral 实时语音 + Qwen3.5 端侧支持，Cortex-M 升格一类目标，Meta 生产级框架再扩容】</h2>
+<ul>
+<li><strong>评分</strong>：A3 · I4 · S=10 · P1 · 价值类型：新能力探索 / 成本优化</li>
+<li><strong>来源</strong>：Meta / PyTorch | <a href="https://github.com/pytorch/executorch/releases">pytorch/executorch Releases</a> | 2026-04-01</li>
+</ul>
+<p><strong>内容总结（100-150 字）</strong>：
+ExecuTorch v1.2.0（与 PyTorch 2.11 对齐）是 1.0 GA 后的第二个重大版本。新增亮点：①Voxtral Realtime——Mistral 实时流式语音模型，支持 XNNPACK / Metal / CUDA 三后端，int4 量化 + fp32/bf16 混精度，内置麦克风输入，提供预导出 .pte 文件；②Qwen3.5 三档（0.8B / 2B / 4B）完整导出支持；③Cortex-M 升格为一类嵌入式目标（embedded first-class）；④Binary size 整体压缩（面向资源受限设备）。框架已在 WhatsApp / Instagram / Messenger / Facebook 生产环境支撑数十亿用户端侧推理，基础 footprint 50KB。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在音频/视频广告场景中用 Voxtral 实现端侧实时语音理解（用户语音搜索意图、内容语音摘要），零服务器成本且隐私合规。Qwen3.5 端侧版本可作为广告素材理解、用户 Query 改写的轻量基座；ExecuTorch 50KB footprint 证明 SDK 集成成本极低，建议优先评估 Android/iOS 双平台接入路径。</p>
+<hr />
+<h2>5. 【Gemma 4 E2B/E4B vs Phi-4 Mini vs Qwen3：2026 端侧小模型精度-效率 Pareto 实测（arXiv 2604.07035）】</h2>
+<ul>
+<li><strong>评分</strong>：A3 · I3 · S=9 · P2 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：arXiv | <a href="https://arxiv.org/abs/2604.07035">arXiv 2604.07035</a> | 2026-04</li>
+</ul>
+<p><strong>内容总结（100-150 字）</strong>：
+系统性评测 Gemma 4-E2B、Gemma 4-E4B、Phi-4-mini-reasoning、Qwen3 等七款推理导向端侧模型，在 ARC-Challenge、GSM8K、Math L1-3、TruthfulQA MC1 四项基准上横向比较。关键数字：Gemma 4-E2B Q4_K_M 约 1.3GB 磁盘 / 运行时 2-3GB RAM，Gemma 4-E4B Q4_K_M 约 2.5GB / 4-5GB RAM；Phi-4 Mini 3.8B 在 MMLU（73% vs 65%）和 MATH（62% vs 48%）上全面超越 Llama 3.2 3B，是微软官方推荐的"7B 装不下"场景首选。三款模型均支持 MLC-LLM 或 MediaPipe 部署，旗舰 Android 可跑 15-40 tok/s。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告素材理解、Query 扩展、用户意图分类场景快速选型端侧 LLM——Phi-4 Mini 3.8B 是精度优先选项，Gemma 4-E2B 是内存受限设备（≤3GB 可用 RAM）的最优解。可直接应用到广告 SDK 中的本地意图分类模块，建议以 Phi-4 Mini INT4 量化版本作为基线评测起点。</p>
+<hr />
+<h2>6. 【生产环境端侧 LLM 推理选型指南：INT4 快 2-3x、内存降 75%，端云协同分层策略工程实践（TianPan.co）】</h2>
+<ul>
+<li><strong>评分</strong>：A3 · I2 · S=8 · P2 · 价值类型：成本优化 / 用户体验</li>
+<li><strong>来源</strong>：TianPan.co 工程博客 | <a href="https://tianpan.co/zh/blog/2026-04-19-on-device-llm-inference-production">原文链接</a> | 2026-04-19</li>
+</ul>
+<p><strong>内容总结（100-150 字）</strong>：
+一篇聚焦工程落地的中文实践总结，系统梳理 2026 年端侧 LLM 推理的实际部署决策树。核心结论：①量化精度：INT4 vs FP16 推理速度提升 2-3x，内存占用降低约 75%，大多数 NLP 任务 INT4 是最佳平衡点；②框架选型：ExecuTorch（50KB footprint，NPU 调度支持，生产最验证）优先；③端云协同分层：简单任务（意图分类、摘要、情绪判断）→ 端侧本地；复杂任务（长上下文推理、多模态生成）→ 云端；④性能瓶颈：内存带宽 &gt; NPU 利用率 &gt; Compute，优化顺序应遵循此优先级。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告 SDK 落地时用结构化决策框架快速判断哪些能力下沉端侧（意图识别、CTR 轻量特征提取）、哪些保留云端（大模型精排、创意生成）。可直接应用于团队端云协同架构评审；INT4 量化结论可作为端侧广告模型量化精度的工程基准参考。</p>
+<hr />
+<h3>其他观察</h3>
+<p>今日内容整体处于"2026 Q1-Q2 技术蓄积期"：云侧大序列推荐（ULTRA-HSTU）与端侧压缩推荐（OD-LLM）形成互补路线，端侧推理框架（ExecuTorch）成熟度显著提升。音频/内容广告团队短期最值得落地的点是 ExecuTorch + Phi-4 Mini INT4 的意图识别 demo，长期应关注 ULTRA-HSTU 架构对现有用户序列建模模块的升级空间。</p>
+<h3>近期关注</h3>
+<ul>
+<li><strong>KDD 2026</strong>（2026-08，Washington D.C.）：搜广推方向历年最重要工业论文集中投稿节点，预计 6-7 月陆续 arXiv 预印本放出，建议持续关注 RecSys / Ads Track。</li>
+<li><strong>RecSys 2026</strong>（2026-09）：端侧推荐专题近两年持续升温，OD-LLM 类工作将是主流议题。</li>
+</ul>
+    </article>
+  </div>
+</body>
+</html>
