@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端智能日报 2026-06-21</title>
+  <style>
+:root{
+  --bg:#f4faf8;
+  --surface:#ffffff;
+  --surface-soft:#f8fcfb;
+  --text:#1f2f2b;
+  --muted:#5e726b;
+  --accent:#0f766e;
+  --accent-soft:#dcf2ee;
+  --border:#d8e8e2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #e9f7f2 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, #e5f4ef 0%, transparent 28%),
+    var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.8;
+}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px 56px}
+.top{
+  margin-bottom:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+}
+.brand{
+  margin:0;
+  font-size:14px;
+  letter-spacing:.08em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.back{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px 28px 20px;
+  box-shadow:0 10px 30px rgba(15,118,110,.08);
+}
+h1,h2,h3{line-height:1.35;margin:1.1em 0 .45em}
+h1{font-size:2rem;margin-top:.15em}
+h2{font-size:1.32rem}
+h3{font-size:1.08rem}
+p,li{font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+blockquote{
+  margin:1rem 0;
+  padding:.72rem .95rem;
+  background:var(--surface-soft);
+  border-left:4px solid var(--accent);
+  color:#28433d;
+  border-radius:8px;
+}
+hr{
+  border:none;
+  border-top:1px dashed var(--border);
+  margin:1.3rem 0;
+}
+code{
+  background:#eef7f5;
+  border:1px solid #d7e9e4;
+  color:#1f4f49;
+  border-radius:6px;
+  padding:.14em .42em;
+  font-size:.92em;
+}
+pre{
+  background:#0f1f1d;
+  color:#e9f4f2;
+  border-radius:12px;
+  overflow:auto;
+  padding:14px;
+}
+pre code{
+  background:transparent;
+  border:none;
+  color:inherit;
+  padding:0;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  overflow:hidden;
+  border-radius:12px;
+}
+th,td{
+  border:1px solid var(--border);
+  padding:.6rem .7rem;
+  text-align:left;
+  vertical-align:top;
+}
+th{background:#edf8f5}
+.footer{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:.88rem;
+}
+.list{
+  list-style:none;
+  margin:1rem 0 0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.list a.item{
+  display:block;
+  padding:14px 15px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-soft);
+  transition:.15s ease;
+}
+.item-title{
+  display:block;
+  font-weight:700;
+  margin-top:2px;
+}
+.focus{
+  display:block;
+  margin-top:8px;
+  font-size:.92rem;
+  color:#37524c;
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.list a.item:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(15,118,110,.09);
+  text-decoration:none;
+}
+.date{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  margin-bottom:2px;
+}
+@media (max-width:700px){
+  .wrap{padding:20px 12px 40px}
+  .card{padding:20px 16px 16px;border-radius:14px}
+  h1{font-size:1.62rem}
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <p class="brand">Edge AI Daily</p>
+      <a class="back" href="../index.html">← 返回目录</a>
+    </div>
+    <article class="card">
+      <h1>端智能日报 2026-06-21</h1>
+<blockquote>
+<p><strong>本期聚焦</strong>：端侧推理进入"可靠工程化"阶段——谷歌 LiteRT 打通高通 QNN 全路径（56 模型 &lt;5ms）、Snapdragon 8 Elite Gen 5 将 LLM decode 速率推至 220 tok/s；同时，美团情景感知 CTR 交互网络与联邦学习广告商业落地提示"端侧精准推断 × 隐私保护"双轮驱动格局正在成型。</p>
+</blockquote>
+<hr />
+<h2>1. 【Deep Situation-Aware Interaction Network for CTR Prediction：美团情景感知 CTR——场景上下文驱动行为序列建模（arXiv 2604.12298）】</h2>
+<ul>
+<li><strong>评分</strong>：A/5 · I/3 · S=13 · P0 · 价值类型：收入提升</li>
+<li><strong>来源</strong>：中科院 / 美团 | <a href="https://arxiv.org/abs/2604.12298">arXiv 2604.12298</a> | 2026-04</li>
+</ul>
+<p><strong>内容总结（约 130 字）</strong>：
+提出 Deep Situation-Aware Interaction Network（DSAIN），专门解决电商 CTR 预估中用户行为序列与情景（时段、位置、上下文）交互不充分的问题。核心技术：引入"情景感知注意力"机制，以当前情景 embedding 动态加权历史行为 item；特征交叉层新增门控交互，抑制噪声行为干扰。在美团内部数据集及 Amazon、Taobao 公开集上 AUC 提升 0.3–0.8 个点，达到 SOTA。论文未报告端侧部署路径；架构属于重量级序列模型，适合作为端云协同中"云侧精排"或"端侧轻量蒸馏目标"来用。</p>
+<p><strong>业务价值与适配性</strong>：
+可让我们在晚高峰、节假日等"情景差异大"的广告场景下，借助情景 embedding 做到更精准的序列 CTR 建模，减少与当前情景不匹配的历史行为噪声。可直接借鉴思路：在现有序列 CTR 模型的注意力层中注入时段/设备型号/位置 embedding，改造成本低；端侧蒸馏目标选型时可参考其 AUC 增益量级。</p>
+<hr />
+<h2>2. 【Google LiteRT + 高通 QNN Accelerator：NPU 100x CPU 加速、64/72 模型全量委托——Android 端侧 AI 部署统一范式确立】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/5 · S=11 · P1 · 价值类型：成本优化 / 新能力探索</li>
+<li><strong>来源</strong>：Google AI Edge | <a href="https://developers.googleblog.com/unlocking-peak-performance-on-qualcomm-npu-with-litert/">Google Developers Blog</a> | 2026</li>
+</ul>
+<p><strong>内容总结（约 130 字）</strong>：
+Google AI Edge 发布 LiteRT Qualcomm AI Engine Direct (QNN) Accelerator，统一 Android 端高通 NPU 调用路径，开发者无需接触底层 QNN SDK。关键指标：支持 90 个 LiteRT op，72 个测试模型中 64 个可完全委托 NPU 执行；Snapdragon 8 Elite Gen 5 上 56 个模型推理延迟 &lt;5ms；NPU 路径 vs GPU 平均提速 2x+，vs CPU 最高 100x。API 统一覆盖 Google Tensor / MediaTek / Qualcomm 三大 SoC。生产案例：Google Meet 端侧人像分割模型规模扩大 25x，推理延迟不变。平台：Android + LiteRT，已量产可用。</p>
+<p><strong>业务价值与适配性</strong>：
+可让我们在 Android 广告 SDK 中，将素材理解（目标检测、OCR）等视觉模型延迟从 CPU 的 50–100ms 级别压缩至 &lt;5ms，直接支持端侧实时特征提取。可直接应用：将现有 TFLite/LiteRT 广告推理模型切换至 QNN 委托，API 兼容，改造成本低；优先测试目标检测（YOLO 系列）与文字识别两条链路。</p>
+<hr />
+<h2>3. 【Snapdragon 8 Elite Gen 5 AI Engine：220 tok/s（前代 3x）、FastVLM TTFT 0.12s——旗舰 SoC AI 算力基线全面重设】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/4 · S=10 · P1 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：Qualcomm / CES 2026 Innovation Awards | <a href="https://www.ces.tech/ces-innovation-awards/2026/qualcomm-ai-engine-in-snapdragon-8-elite-gen-5/">CES Innovation Award 详情</a> | 2026</li>
+</ul>
+<p><strong>内容总结（约 130 字）</strong>：
+Snapdragon 8 Elite Gen 5（3nm，Galaxy S26 搭载）刷新旗舰移动端 AI 算力基线。NPU 较前代提速 37%，配合 LiteRT QNN 路径 56 个模型 &lt;5ms；LLM decode 吞吐达 220 tok/s（前代 70 tok/s，提升 3x）；FastVLM 多模态：高分辨率图像 TTFT 0.12s，Prefill 11,000 tok/s，Decode 100 tok/s；AnTuTu &gt;400 万分。中国安卓旗舰（小米、OPPO、vivo、华为旗舰产品线）预计 H2 2026 陆续跟进，形成新一轮端侧 AI 算力基线。Hexagon NPU 支持 48 TOPS，内存带宽大幅提升。</p>
+<p><strong>业务价值与适配性</strong>：
+可让我们将 H2 2026 旗舰机型作为"端侧广告高能力"首批目标——220 tok/s 使端侧意图识别 LLM（1B 参数量化版）达到 &lt;50ms 响应，具备广告竞价前实时运行条件；FastVLM TTFT 0.12s 使端侧素材理解从视频帧级向实时流分析演进。适配建议：启动旗舰 Android（Galaxy S26）端侧广告特征模型性能基线测试。</p>
+<hr />
+<h2>4. 【联邦学习 2026 时刻：隐私优先广告定向基础设施商业成熟——数据清洁室协同训练进入生产部署】</h2>
+<ul>
+<li><strong>评分</strong>：A/4 · I/2 · S=10 · P1 · 价值类型：用户体验 / 成本优化</li>
+<li><strong>来源</strong>：Praxen@Medium / Spinta Digital | <a href="https://medium.com/@Praxen/federated-learnings-2026-moment-a10f0c617ad0">Medium 原文</a> | 2026</li>
+</ul>
+<p><strong>内容总结（约 120 字）</strong>：
+多方行业分析指出 2026 年是联邦学习（FL）广告商业落地的拐点。核心机制：各广告主/发布商将数据保存在独立"数据清洁室"，FL 跨节点协同训练，只传递梯度而非原始行为数据；端侧个性化：本地微调可根据用户设备、语言、使用习惯定制 embedding，无需上传行为数据。商业动因：三方 Cookie 退出进程加速 + 隐私法规收紧，FL 成本（无数据传输）优于云侧集中训练。品牌–发布商数据 clean room 协作场景已有商业部署案例。注意：本条来源为行业评论，缺乏具体延迟/精度工程数据。</p>
+<p><strong>业务价值与适配性</strong>：
+可让我们在后 Cookie 时代，通过端侧 FL 保留用户个性化 embedding，同时满足隐私合规——对跨平台 CTR/CVR 预估尤其有价值。可借鉴思路：探索端侧本地 embedding 每日异步更新（FL round），结合 LiteRT/MNN 推理；主要障碍是缺乏开箱即用的生产级开源方案，可关注 Google FL / PySyft 进展。</p>
+<hr />
+<h2>5. 【LLM 端侧持续推理热管理：iPhone 16 Pro 热节流 41.5%、Hailo-10H NPU 稳定 &lt;2W——移动 AI 部署的热管理工程洞察（arXiv 2603.23640）】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/3 · S=9 · P1 · 价值类型：成本优化</li>
+<li><strong>来源</strong>：arXiv（3 月提交，6 月 7 日修订）| <a href="https://arxiv.org/abs/2603.23640">arXiv 2603.23640</a> | 2026-03 / rev. 2026-06-07</li>
+</ul>
+<p><strong>内容总结（约 130 字）</strong>：
+对 Qwen 2.5 1.5B（4-bit 量化）在 4 个平台上做持续压测，量化热管理对 token 吞吐的实际影响。关键数据：iPhone 16 Pro 峰值吞吐经 20 轮迭代后损失 41.5%，热稳态约 23.7 tok/s；Samsung Galaxy S24 Ultra 温和下降 15%，热稳态约 10 tok/s；Hailo-10H NPU（Raspberry Pi 5 协处理器）6.914 tok/s、功耗 &lt;2W、方差接近零——热稳定性显著优于移动 SoC；NVIDIA RTX 4050（笔电）受电池功率墙制约。结论：专用边缘 NPU 适合"常开型"低功耗代理，旗舰手机不适合高频持续推理任务。</p>
+<p><strong>业务价值与适配性</strong>：
+可让我们在端侧广告推理架构设计中明确区分"单次触发推理"（页面展示时瞬时一次）与"持续 agent 推理"——手机 NPU 持续高负载下性能衰退显著，广告 SDK 应采用 burst-then-idle 模式。可借鉴思路：为端侧广告竞价推理任务设计热状态感知队列，避免连续竞价场景下 NPU 热节流导致延迟抖动影响收益。</p>
+<hr />
+<h2>6. 【Microsoft Aion 1.0：比 Phi-4-mini 更小的端侧 SLM 内置 Windows——CPU 推理，Edge 浏览器 145+ 语言翻译原生支持（Build 2026）】</h2>
+<ul>
+<li><strong>评分</strong>：A/2 · I/4 · S=8 · P1 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：Microsoft / Build 2026 | <a href="https://blogs.windows.com/msedgedev/2026/06/02/expanding-on-device-ai-in-microsoft-edge-new-models-and-apis-for-the-web/">Microsoft Edge Blog</a> | 2026-06-02</li>
+</ul>
+<p><strong>内容总结（约 120 字）</strong>：
+微软于 Build 2026（6 月 2 日）发布 Aion-1.0-Instruct，定位为内置于 Windows 的端侧小语言模型（SLM）。关键特性：比 Phi-4-mini 更小、更快，纯 CPU 推理（无需独立 GPU），覆盖低端设备；Edge 148 内置 Language Detector + Translator API，145+ 语言，由端侧任务特定模型驱动；Web Speech API 端侧语音识别实验性支持；Edge Canary / Dev 通道已可用，7 月计划在 HuggingFace 开源。平台：Windows PC（x86/ARM），非 Android/iOS 移动端。未公布具体延迟指标，需待开源版本实测。</p>
+<p><strong>业务价值与适配性</strong>：
+当前与移动音频/流媒体广告场景匹配度有限（平台不同）。了解即可：Aion 开源后可评估其在 Windows 端搜索广告意图理解场景的能力，与 Phi-4-mini 的 benchmark 对比可为端侧 SLM 选型（参数量、CPU 延迟）提供参考依据。</p>
+<hr />
+<h3>其他观察</h3>
+<p>端侧推理已从"能否跑起来"进入"如何稳定跑"的工程深水区：热管理（Thermal Throttling）成为 production 质量的关键变量，高频持续推理场景需要 burst-then-idle 模式设计。LiteRT 统一 Google Tensor / MediaTek / Qualcomm 三大 SoC API 层，Android 端 NPU 调用进入标准化阶段，降低广告 SDK 多机型适配成本。联邦学习广告商业落地在 2026 年迎来拐点，"端侧 embedding + 梯度协同"的隐私计算路径值得在业务战略层面提前布局。</p>
+<h3>近期关注</h3>
+<ul>
+<li><strong>KDD 2026</strong>（8 月，预计）：工业界推荐/广告系统论文批量落地，关注端侧 CTR/CVR 模型、用户行为序列压缩方向</li>
+<li><strong>Snapdragon Summit 2026</strong>（通常 10 月）：下一代高通 NPU 路线图，决定 2027 旗舰端侧 AI 能力基线</li>
+<li><strong>Aion 1.0 HuggingFace 开源</strong>（计划 7 月）：公开 benchmark 后可评估其在端侧意图识别的适用性</li>
+</ul>
+    </article>
+  </div>
+</body>
+</html>
