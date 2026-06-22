@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端智能日报 2026-06-22</title>
+  <style>
+:root{
+  --bg:#f4faf8;
+  --surface:#ffffff;
+  --surface-soft:#f8fcfb;
+  --text:#1f2f2b;
+  --muted:#5e726b;
+  --accent:#0f766e;
+  --accent-soft:#dcf2ee;
+  --border:#d8e8e2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #e9f7f2 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, #e5f4ef 0%, transparent 28%),
+    var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.8;
+}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px 56px}
+.top{
+  margin-bottom:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+}
+.brand{
+  margin:0;
+  font-size:14px;
+  letter-spacing:.08em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.back{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px 28px 20px;
+  box-shadow:0 10px 30px rgba(15,118,110,.08);
+}
+h1,h2,h3{line-height:1.35;margin:1.1em 0 .45em}
+h1{font-size:2rem;margin-top:.15em}
+h2{font-size:1.32rem}
+h3{font-size:1.08rem}
+p,li{font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+blockquote{
+  margin:1rem 0;
+  padding:.72rem .95rem;
+  background:var(--surface-soft);
+  border-left:4px solid var(--accent);
+  color:#28433d;
+  border-radius:8px;
+}
+hr{
+  border:none;
+  border-top:1px dashed var(--border);
+  margin:1.3rem 0;
+}
+code{
+  background:#eef7f5;
+  border:1px solid #d7e9e4;
+  color:#1f4f49;
+  border-radius:6px;
+  padding:.14em .42em;
+  font-size:.92em;
+}
+pre{
+  background:#0f1f1d;
+  color:#e9f4f2;
+  border-radius:12px;
+  overflow:auto;
+  padding:14px;
+}
+pre code{
+  background:transparent;
+  border:none;
+  color:inherit;
+  padding:0;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  overflow:hidden;
+  border-radius:12px;
+}
+th,td{
+  border:1px solid var(--border);
+  padding:.6rem .7rem;
+  text-align:left;
+  vertical-align:top;
+}
+th{background:#edf8f5}
+.footer{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:.88rem;
+}
+.list{
+  list-style:none;
+  margin:1rem 0 0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.list a.item{
+  display:block;
+  padding:14px 15px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-soft);
+  transition:.15s ease;
+}
+.item-title{
+  display:block;
+  font-weight:700;
+  margin-top:2px;
+}
+.focus{
+  display:block;
+  margin-top:8px;
+  font-size:.92rem;
+  color:#37524c;
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.list a.item:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(15,118,110,.09);
+  text-decoration:none;
+}
+.date{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  margin-bottom:2px;
+}
+@media (max-width:700px){
+  .wrap{padding:20px 12px 40px}
+  .card{padding:20px 16px 16px;border-radius:14px}
+  h1{font-size:1.62rem}
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <p class="brand">Edge AI Daily</p>
+      <a class="back" href="../index.html">← 返回目录</a>
+    </div>
+    <article class="card">
+      <h1>端智能日报 2026-06-22</h1>
+<blockquote>
+<p><strong>本期聚焦</strong>：腾讯工业团队将"隐式负反馈"（跳过、划走、低停留）系统引入 CTR 序列建模（arXiv 2606.15252），打破行业长期"只用正样本"的序列建模范式——对音频/内容流媒体广告尤为适用，用户跳广告即是最丰富的负信号；同期 Liquid AI 发布端侧 MoE 旗舰 LFM2.5-8B-A1B（1.5B 活跃参数、iPhone 30 tok/s），与上周 Meta MobileMoE 共同将"端侧稀疏推理工业化"推入多玩家竞争阶段。</p>
+</blockquote>
+<hr />
+<h2>1. 【Beyond Positive Signals：腾讯将隐式负反馈引入 CTR 序列建模——跳过/划走行为首次系统建模，弥补行业正样本偏置盲区（arXiv 2606.15252）】</h2>
+<ul>
+<li><strong>评分</strong>：A/5 · I/3 · S=13 · P0 · 价值类型：收入提升</li>
+<li><strong>来源</strong>：Tencent Inc.（郑泽轩、刘悦、张骏、蒋杰）| <a href="https://arxiv.org/abs/2606.15252">arXiv 2606.15252</a> | 2026-06-13</li>
+</ul>
+<p><strong>内容总结（约 140 字）</strong>：
+现有 CTR 序列建模几乎清一色只用正交互（点击、购买、完成播放）构建行为序列，而数量远超正样本的隐式负反馈——跳过、低停留时长、划走——几乎从未被系统利用。本文提出将隐式负反馈信号引入序列 Modeling 的完整框架，通过设计专用的负反馈感知注意力机制，让模型同时理解"用户喜欢什么"和"用户明确不喜欢什么"，从而更精准地区分兴趣与厌恶边界。论文在腾讯内部工业数据集上验证，AUC 及 GAUC 均有显著提升；序列模型兼容性好，可插入 DIN / DIEN / SIM 等主流架构。工程信息：腾讯内部部署，涵盖大规模工业数据集，未公开具体延迟数字（因负反馈建模主要在云侧精排）。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在音频/内容流媒体广告 CTR 中做到：用户跳过广告、静音播放、停留 &lt;2 秒等行为正是天然的负反馈信号，将其编码进序列后，CTR 模型能更精准区分"不感兴趣"与"未曝光"，直接减少无效展示并提升 CPM。可直接借鉴思路：在现有 DIN/SIM 行为序列注意力层中，将负反馈行为以独立 token 类型引入，加掩码区分正负交互；工程改造成本低，建议作为下一季度精排迭代的实验候选。</p>
+<hr />
+<h2>2. 【LFM2.5-8B-A1B：Liquid AI 端侧 MoE 旗舰——8.3B 总参数 / 1.5B 活跃，iPhone 30 tok/s、&lt;6GB 内存，匹敌 Gemma 4-26B 指令跟随】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/4 · S=10 · P1 · 价值类型：新能力探索 / 成本优化</li>
+<li><strong>来源</strong>：Liquid AI | <a href="https://www.liquid.ai/blog/lfm2-5-8b-a1b">Liquid AI 博客</a> · <a href="https://www.marktechpost.com/2026/05/28/liquid-ai-releases-lfm2-5-8b-a1b-an-on-device-moe-model-with-8-3b-total-and-1-5b-active-parameters/">MarkTechPost</a> | 2026-05-28</li>
+</ul>
+<p><strong>内容总结（约 140 字）</strong>：
+LFM2.5-8B-A1B 是 Liquid AI 最新端侧 MoE 旗舰，"A1B"代表"Active 1B"——每次前向传播只激活 1.5B 参数（总量 8.3B）。关键指标：iPhone 上约 30 tok/s（&lt;6GB 内存），128K 上下文窗口，在 38T token 数据上预训练；指令跟随 benchmark 媲美 Google Gemma 4-26B（活跃参数约 3x 更多）；在 Tau2-Telecom 多步工具调用 agentic benchmark 上表现突出。推理支持：Liquid 自家 LEAP 平台（iOS/Android）、llama.cpp、MLX（Apple Silicon）、ONNX，与 AMD、Nexa AI 合作加速 CPU 和 NPU 推理。1.2B 参数轻量版在 AMD CPU 上达 239 tok/s，移动 NPU 达 82 tok/s。架构训练细节：从 LFM2 基础升级，后训练阶段大规模 RL scaling。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告 SDK 中做到：以 MoE 稀疏激活特性匹配广告多任务需求——同一个 LFM2.5-8B-A1B 模型可通过路由机制并行支持意图分类、素材质量评估、对话广告应答，比多个独立小模型内存占用更低；&lt;6GB 内存限制意味着主流旗舰 Android（8GB RAM）可直接部署。可借鉴思路：对比上期报道的 Meta MobileMoE（arXiv 2605.27358），两者提供不同 Pareto 点——MobileMoE 更小（0.9B 活跃），LFM2.5 语言能力更强；广告意图 LLM 选型时建议并行 benchmark 两款。</p>
+<hr />
+<h2>3. 【Multi-SPIN：端云协同投机推理新范式——设备小模型起草 Token、边缘大模型并行验证多用户草稿，通信效率显著提升（arXiv 2606.04581）】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/3 · S=9 · P1 · 价值类型：成本优化 / 新能力探索</li>
+<li><strong>来源</strong>：香港大学（Haotian Zheng 等）| <a href="https://arxiv.org/abs/2606.04581">arXiv 2606.04581</a> | 2026-06-03（修订 06-07）</li>
+</ul>
+<p><strong>内容总结（约 130 字）</strong>：
+传统投机解码（Speculative Decoding）在单机场景可加速 LLM 2-3x；Multi-SPIN 将其扩展到多用户边缘系统：①设备端运行轻量草稿模型（Small LM），生成整段候选 Token 序列后一次性上传至边缘服务器（减少往返通信）；②边缘服务器用主模型（Large LM）在单次前向传播中同时验证多个用户的草稿——形成天然批处理，服务器 GPU 利用率显著提升；③ 拒绝采样保证输出分布与主模型完全等价。架构优势：上行通信量仅为文本 token 序列（极小），无需传输中间激活；服务器端批量验证将单用户延迟分摊到多用户，适合广告请求高并发场景。论文已在 HKU 内部仿真环境验证，尚无实机部署数据。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在端云协同广告推理中做到：广告竞价请求高度并发，Multi-SPIN 的"多用户草稿并行验证"恰好与此匹配——设备端轻量模型先行预测意图/素材偏好 Token，批量上传至广告服务器统一核验，相比现有"设备→服务器逐轮交互"路径减少延迟和带宽成本。可借鉴思路：将架构中的 Large LM 替换为广告侧 CTR 精排模型，Small LM 替换为端侧意图分类轻量模型，构建"设备草稿 + 服务器核验"的 CTR 竞价协议；目前仍为学术原型，建议纳入端云协同推理研究路线图观察。</p>
+<hr />
+<h3>其他观察</h3>
+<p>本周端侧广告/推荐技术呈"精排建模"与"端侧 MoE 推理"双线并进：负反馈序列建模（2606.15252）填补了 CTR 训练数据层的长期盲区，MoE 端侧化（LFM2.5-8B-A1B）则继续压缩"大模型在手机上跑"的内存-算力代价。Multi-SPIN 的端云协同投机推理为广告高并发场景提供了新的通信优化思路，尽管尚在学术验证阶段。中文工业来源：腾讯（2606.15252）本期有覆盖。</p>
+<h3>近期关注</h3>
+<ul>
+<li><strong>ICDCS 2026 Workshop: Federated Foundation Models at the Edge</strong>（2026-06-25，首尔）：本周四即将召开，联邦学习 × 端侧基础模型，含隐私保护广告建模方向，关注 proceedings</li>
+<li><strong>KDD 2026</strong>（2026-08-09～13，济州）：搜广推应用型论文主场，预计 6-7 月 arXiv 预印本持续释出；AdKDD Workshop 聚焦隐私优先广告技术、FL、生成式 AI</li>
+<li><strong>LFM2.5 NPU 优化版本</strong>（Nexa AI 合作）：AMD + 移动 NPU 端的量化优化版本若有公开 benchmark，可补充评估与 MobileMoE 的精度-延迟对比</li>
+</ul>
+    </article>
+  </div>
+</body>
+</html>
