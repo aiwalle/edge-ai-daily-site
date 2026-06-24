@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端智能日报 2026-06-24</title>
+  <style>
+:root{
+  --bg:#f4faf8;
+  --surface:#ffffff;
+  --surface-soft:#f8fcfb;
+  --text:#1f2f2b;
+  --muted:#5e726b;
+  --accent:#0f766e;
+  --accent-soft:#dcf2ee;
+  --border:#d8e8e2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #e9f7f2 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, #e5f4ef 0%, transparent 28%),
+    var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.8;
+}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px 56px}
+.top{
+  margin-bottom:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+}
+.brand{
+  margin:0;
+  font-size:14px;
+  letter-spacing:.08em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.back{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px 28px 20px;
+  box-shadow:0 10px 30px rgba(15,118,110,.08);
+}
+h1,h2,h3{line-height:1.35;margin:1.1em 0 .45em}
+h1{font-size:2rem;margin-top:.15em}
+h2{font-size:1.32rem}
+h3{font-size:1.08rem}
+p,li{font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+blockquote{
+  margin:1rem 0;
+  padding:.72rem .95rem;
+  background:var(--surface-soft);
+  border-left:4px solid var(--accent);
+  color:#28433d;
+  border-radius:8px;
+}
+hr{
+  border:none;
+  border-top:1px dashed var(--border);
+  margin:1.3rem 0;
+}
+code{
+  background:#eef7f5;
+  border:1px solid #d7e9e4;
+  color:#1f4f49;
+  border-radius:6px;
+  padding:.14em .42em;
+  font-size:.92em;
+}
+pre{
+  background:#0f1f1d;
+  color:#e9f4f2;
+  border-radius:12px;
+  overflow:auto;
+  padding:14px;
+}
+pre code{
+  background:transparent;
+  border:none;
+  color:inherit;
+  padding:0;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  overflow:hidden;
+  border-radius:12px;
+}
+th,td{
+  border:1px solid var(--border);
+  padding:.6rem .7rem;
+  text-align:left;
+  vertical-align:top;
+}
+th{background:#edf8f5}
+.footer{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:.88rem;
+}
+.list{
+  list-style:none;
+  margin:1rem 0 0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.list a.item{
+  display:block;
+  padding:14px 15px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-soft);
+  transition:.15s ease;
+}
+.item-title{
+  display:block;
+  font-weight:700;
+  margin-top:2px;
+}
+.focus{
+  display:block;
+  margin-top:8px;
+  font-size:.92rem;
+  color:#37524c;
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.list a.item:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(15,118,110,.09);
+  text-decoration:none;
+}
+.date{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  margin-bottom:2px;
+}
+@media (max-width:700px){
+  .wrap{padding:20px 12px 40px}
+  .card{padding:20px 16px 16px;border-radius:14px}
+  h1{font-size:1.62rem}
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <p class="brand">Edge AI Daily</p>
+      <a class="back" href="../index.html">← 返回目录</a>
+    </div>
+    <article class="card">
+      <h1>端智能日报 2026-06-24</h1>
+<blockquote>
+<p><strong>本期聚焦</strong>：Meta 将 Scaling Laws 从 LLM 研究带入广告推荐工程现实——LLaTTE 以两段式异步架构部署最大规模用户序列模型，Facebook Feed/Reels 转化提升 4.3%；同期，MLPerf Mobile v6.0 首次将端侧 LLM 纳入标准 benchmark 体系，ExecuTorch 斩获 MLSys 2026 Oral，阿里 MNN-AECS 提供全框架横向能耗 benchmark——端侧推理从"实验可行"正式迈入"可量化、可比较、可量产"工程化阶段。</p>
+</blockquote>
+<hr />
+<h2>1. 【LLaTTE：Meta 将 Scaling Laws 带入大规模广告推荐序列建模——两段式架构生产部署，Facebook Feed/Reels 4.3% 转化提升（arXiv 2601.20083）】</h2>
+<ul>
+<li><strong>评分</strong>：A/5 · I/4 · S=14 · P0 · 价值类型：收入提升</li>
+<li><strong>来源</strong>：Meta AI | <a href="https://arxiv.org/abs/2601.20083">arXiv 2601.20083</a> | 2026-01-27（Meta 最大用户模型已生产部署）</li>
+</ul>
+<p><strong>内容总结（约 140 字）</strong>：
+LLaTTE（LLM-Style Latent Transformers for Temporal Events）系统性证明广告推荐序列建模遵循与 LLM 相同的幂律 Scaling——但前提是必须引入语义特征（Semantic Features），其"弯曲 Scaling 曲线"，使更深、更长上下文的架构真正获益。工程难点：LLM 级参数量/长上下文无法在广告实时精排中直接运行。解法：两段式架构——大参数用户模型异步运行在上游（前置计算、缓存），下游实时精排只接收压缩后的用户向量，serving 开销极小。生产指标：已部署为 Meta 最大用户模型，Facebook Feed 和 Reels 转化提升 4.3%，经历数十亿 Instagram 级别请求验证。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在音频/内容流媒体广告精排中做到：将重量级用户序列模型从实时竞价路径剥离，异步预计算用户向量并缓存，精排只接收压缩表示——在不牺牲用户建模深度的同时满足端侧或云侧的竞价延迟预算。两个直接行动项：①语义特征（音频/素材内容向量）是 Scaling 收益的前提，应优先引入下一代 CTR 特征工程；②Async User Model 两段式架构与现有离线 embedding 更新机制高度兼容，建议作为下季度精排架构升级的主线方向。</p>
+<hr />
+<h2>2. 【MLPerf Mobile v6.0：首次引入端侧 LLM GenAI Benchmark——Llama 3.1 8B @ Snapdragon 8 Elite Gen 5 NPU，MediaTek Dimensity 9500 正式纳入标准化测试】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/4 · S=10 · P1 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：MLCommons | <a href="https://mlcommons.org/2026/06/mlperf-mobile-v6/">MLPerf Mobile v6.0</a> | 2026-06-15</li>
+</ul>
+<p><strong>内容总结（约 140 字）</strong>：
+MLPerf Mobile v6.0 是 MLCommons 发布的最新移动端 AI 推理基准，本版核心变化：首次引入生成式 AI LLM 测试套件——以 Llama 3.1 8B Instruct 为标准模型，在 TinyMMLU 和 IFEval 数据集上量化设备端 LLM 精度与吞吐；优先验证 Qualcomm Snapdragon 8 Elite Gen 5 SoC NPU 加速路径，同时新增 MediaTek Dimensity 9500 系列支持；无 NPU 设备可通过 CPU 路径运行（需充足内存）。测试 App 已上架 Google Play 和 Apple App Store，开发者可直接在真机运行标准化 benchmark。此前 MLPerf Mobile v5.x 仅覆盖传统 CV/ASR/NLP 任务，v6.0 将 LLM 正式纳入移动端 AI 标准测试体系，标志着"端侧 LLM 可量化比较"时代正式开启。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告 SDK 端侧模型选型中做到：以 MLPerf Mobile v6.0 作为统一第三方基准，在 Snapdragon 8 Elite Gen 5 / Dimensity 9500 等目标旗舰机型上，客观对比端侧广告意图分类模型（Llama 3.1 8B / Gemma 4 E2B / Qwen3）的实际 NPU 推理表现，规避厂商自有 benchmark 的数字失真。可借鉴思路：MLPerf v6.0 开放 App 可低成本评估目标设备覆盖率，与 LLaTTE Async User Model 结合，可测量目标旗舰机型上前置用户向量计算的实际延迟窗口。</p>
+<hr />
+<h2>3. 【ExecuTorch MLSys 2026 Oral：PyTorch 原生统一端侧 AI 推理系统获顶会最高荣誉，支持 MCU 至旗舰手机全谱系（arXiv 2605.08195）】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/4 · S=10 · P1 · 价值类型：成本优化 / 新能力探索</li>
+<li><strong>来源</strong>：Meta / PyTorch Team（39 位作者含 Anthropic）| <a href="https://arxiv.org/abs/2605.08195">arXiv 2605.08195</a> | <a href="https://mlsys.org/virtual/2026/oral/3768">MLSys 2026 Oral</a> | 2026-05</li>
+</ul>
+<p><strong>内容总结（约 130 字）</strong>：
+ExecuTorch 论文在 MLSys 2026 获 Oral（&lt;5% 录取率），全面系统化了这套 PyTorch 原生端侧推理框架的设计理念。核心特性：①保留完整 PyTorch 语义，量化与自定义 Backend 均无缝集成；②设备谱系从 MCU（嵌入式芯片）到 SoC（iOS/Android）再到 AI PC 全覆盖，核心 footprint 仅 50KB；③生产验证：Llama 3、Gemma 3、Qwen 3、Phi-4-mini、LFM2 等主流 LLM 以及 CV/ASR/VLM 多模态均已通过量产验证；④提交时 39 位共同作者，涵盖 Meta、Qualcomm、Apple 生态合作方。与此同时，ONNX 在 LLM 时代凭借 LFM2 ONNX 格式社区采用出现复兴迹象，两者形成"PyTorch 原生路线 vs 格式通用路线"的互补格局。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告 SDK 端侧 AI 框架选型中做到：ExecuTorch MLSys Oral 意味着其"训练→量化→推理一体化"的 PyTorch 链路已获学术与工程双重验证，是目前文档最完整、社区最活跃的端侧方案；搭配 MNN-AECS（见下条）的多框架横向能耗 benchmark，建议将 ExecuTorch 作为 H2 2026 广告模型端侧化的首选框架，LiteRT 作为 Android 高通 NPU 路径的互补选项。</p>
+<hr />
+<h2>4. 【MNN-AECS：阿里 MNN 框架引入自适应 CPU 核心选择——端侧 LLM Decode 降能耗 23–78%，首次提供 ExecuTorch / llama.cpp / MediaPipe 全框架横向能耗 Benchmark（arXiv 2506.19884）】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/3 · S=9 · P1 · 价值类型：成本优化</li>
+<li><strong>来源</strong>：Alibaba MNN 团队 | <a href="https://arxiv.org/abs/2506.19884">arXiv 2506.19884</a> | 2026-06</li>
+</ul>
+<p><strong>内容总结（约 130 字）</strong>：
+端侧 LLM 推理的能耗痛点长期被忽视——decode 阶段因内存受限的 GEMV 操作持续高功耗，而既有优化只关注 prefill 速度。MNN-AECS（Adaptive Energy-Centric Core Selection）在 MNN 引擎内实现系统级解法：动态选择激活 CPU 大核/小核组合，在保持 decode 速度基本不降的前提下最小化能耗，无需 root 权限或 OS 修改。7 台真机设备、4 个数据集实测：相较原始 MNN 降能耗 23%，速度零损耗；与 llama.cpp、ExecuTorch、mllm、MediaPipe 横向对比，MNN-AECS 实现 39–78% 节能 + 12–363% 加速。首次在同一论文中给出覆盖主流端侧框架（MNN/ExecuTorch/llama.cpp/MediaPipe）的全框架能耗横向 benchmark，是目前最可靠的框架选型参考数据。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在端侧广告 SDK 能耗管理中做到：广告 SDK 需在全程用户会话内保持后台推理能力，MNN-AECS 动态核心选择策略可将端侧意图识别模型功耗降低 23%+，直接减少用户电量投诉与应用被系统后台杀死的风险。可直接借鉴思路：MNN 在中国 Android 生态（淘宝/阿里系）已大规模部署，本论文横向 benchmark 数据可直接支撑 ExecuTorch vs LiteRT vs MNN 三框架选型决策——尤其在功耗约束场景（直播间广告、长视频前贴片）下，MNN-AECS 的优势数据具有决策参考价值。</p>
+<hr />
+<h2>5. 【工信部《"人工智能+信息通信"创新发展实施意见(2026–2028)》：云网边端协同推理纳入国家政策——端侧推理芯片与轻量模型部署获明确政策背书】</h2>
+<ul>
+<li><strong>评分</strong>：A/2 · I/4 · S=8 · P1 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：中国工业和信息化部 | <a href="https://news.qq.com/rain/a/20260612A055DG00">腾讯新闻报道</a> | 2026-06</li>
+</ul>
+<p><strong>内容总结（约 120 字）</strong>：
+中国工业和信息化部发布《"人工智能+信息通信"创新发展实施意见(2026–2028)》，明确将"云网边端协同推理"列为核心探索方向：降低推理延迟、降低终端算力需求、增强网络边缘推理能力。政策支持领域覆盖：端侧推理专用芯片（面向移动设备）、AI 服务器、高速互联；推动轻量化模型落地，鼓励边端一体机与智能网关规模部署；面向工业场景支持生产设备、传感器、无人运输的端侧实时数据处理智能化。这是中国首次在"信息通信"专项政策中明确将云网边端协同推理作为 AI 核心基础设施方向，将带动运营商 MEC 与手机厂商 NPU 持续投入。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告 SDK 长期规划中做到：政策驱动的 MEC 投入意味着端侧广告特征计算的基础设施支撑更有保障，端云协同广告推理架构的长期可靠性提升；MNN/LiteRT 等国产推理框架将获政策背景下的持续演进动力。可借鉴思路：在内部 OKR 或汇报中引用此政策作为"端云协同广告"方向的外部战略背书，降低立项阻力；同时关注工信部随配政策中可能落地的移动端 AI 推理互操作标准（影响框架选型）。</p>
+<hr />
+<h3>其他观察</h3>
+<p>今日端侧 AI 呈现算法与基础设施双线并进：算法侧，LLaTTE 的 Scaling Laws 落地证明广告推荐系统与 LLM 遵循相同的规律，语义特征是 Scaling 收益的前提——这对内容流媒体广告团队具有直接指导价值；基础设施侧，MLPerf Mobile v6.0 + ExecuTorch MLSys Oral + MNN-AECS 横向 benchmark 三项成果共同宣告端侧 LLM 推理进入可量化阶段。中文来源：工信部政策（腾讯新闻）、MNN-AECS（阿里 MNN 团队）本期均有覆盖。</p>
+<h3>近期关注</h3>
+<ul>
+<li><strong>ICDCS 2026 Workshop: Federated Foundation Models at the Edge</strong>（<strong>明日 2026-06-25，首尔</strong>）：联邦基础模型 × 端侧部署专题，含隐私保护广告建模方向，关注当日 proceedings 与 Talk 录像</li>
+<li><strong>KDD 2026</strong>（2026-08-09~13，济州岛）：搜广推工业论文主场，AdKDD Workshop 聚焦隐私优先广告技术，预计 6-7 月 arXiv 预印本持续释出</li>
+<li><strong>Apple iOS 27 beta</strong>：Core AI 框架开发者 beta 可用，建议尽早评估 PyTorch 广告模型 → coreai-torch 转换流程</li>
+</ul>
+    </article>
+  </div>
+</body>
+</html>
