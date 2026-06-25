@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端智能日报 2026-06-25</title>
+  <style>
+:root{
+  --bg:#f4faf8;
+  --surface:#ffffff;
+  --surface-soft:#f8fcfb;
+  --text:#1f2f2b;
+  --muted:#5e726b;
+  --accent:#0f766e;
+  --accent-soft:#dcf2ee;
+  --border:#d8e8e2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #e9f7f2 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, #e5f4ef 0%, transparent 28%),
+    var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.8;
+}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px 56px}
+.top{
+  margin-bottom:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+}
+.brand{
+  margin:0;
+  font-size:14px;
+  letter-spacing:.08em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.back{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px 28px 20px;
+  box-shadow:0 10px 30px rgba(15,118,110,.08);
+}
+h1,h2,h3{line-height:1.35;margin:1.1em 0 .45em}
+h1{font-size:2rem;margin-top:.15em}
+h2{font-size:1.32rem}
+h3{font-size:1.08rem}
+p,li{font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+blockquote{
+  margin:1rem 0;
+  padding:.72rem .95rem;
+  background:var(--surface-soft);
+  border-left:4px solid var(--accent);
+  color:#28433d;
+  border-radius:8px;
+}
+hr{
+  border:none;
+  border-top:1px dashed var(--border);
+  margin:1.3rem 0;
+}
+code{
+  background:#eef7f5;
+  border:1px solid #d7e9e4;
+  color:#1f4f49;
+  border-radius:6px;
+  padding:.14em .42em;
+  font-size:.92em;
+}
+pre{
+  background:#0f1f1d;
+  color:#e9f4f2;
+  border-radius:12px;
+  overflow:auto;
+  padding:14px;
+}
+pre code{
+  background:transparent;
+  border:none;
+  color:inherit;
+  padding:0;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  overflow:hidden;
+  border-radius:12px;
+}
+th,td{
+  border:1px solid var(--border);
+  padding:.6rem .7rem;
+  text-align:left;
+  vertical-align:top;
+}
+th{background:#edf8f5}
+.footer{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:.88rem;
+}
+.list{
+  list-style:none;
+  margin:1rem 0 0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.list a.item{
+  display:block;
+  padding:14px 15px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-soft);
+  transition:.15s ease;
+}
+.item-title{
+  display:block;
+  font-weight:700;
+  margin-top:2px;
+}
+.focus{
+  display:block;
+  margin-top:8px;
+  font-size:.92rem;
+  color:#37524c;
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.list a.item:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(15,118,110,.09);
+  text-decoration:none;
+}
+.date{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  margin-bottom:2px;
+}
+@media (max-width:700px){
+  .wrap{padding:20px 12px 40px}
+  .card{padding:20px 16px 16px;border-radius:14px}
+  h1{font-size:1.62rem}
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <p class="brand">Edge AI Daily</p>
+      <a class="back" href="../index.html">← 返回目录</a>
+    </div>
+    <article class="card">
+      <h1>端智能日报 2026-06-25</h1>
+<blockquote>
+<p><strong>本期聚焦</strong>：Google Firebase Hybrid Inference 正式将端云推理路由升级为生产级工程能力——统一 API 在 Gemini Nano（端侧）与云端 Gemini 之间动态切换，覆盖 Android + iOS；同期 LiteRT-LM 以 52 tok/s + 2.2x 投机解码正式替代 TFLite 成为 Google 端侧 LLM 推理基础设施，Qualcomm NPU 加速路径达 CPU 的 100x。学术侧，SCaLRec 与 OD-LLM 双双系统化解决"端侧序列推荐模型如何从云端获益而不牺牲实时性"的核心矛盾——广告端云协同架构正从"框架选型"进入"API 设计与语义校准"的工程深水区。</p>
+</blockquote>
+<hr />
+<h2>1. 【Firebase AI Logic Hybrid Inference：Google 端云混合推理 SDK 正式上线 Android + iOS，统一 API 实现 PREFER_ON_DEVICE/PREFER_CLOUD 四模式路由——广告 SDK 端云协同架构的工程参考范本】</h2>
+<ul>
+<li><strong>评分</strong>：A/4 · I/4 · S=12 · P0 · 价值类型：新能力探索 / 成本优化</li>
+<li><strong>来源</strong>：Google Firebase / Android Developers Blog | <a href="https://firebase.google.com/docs/ai-logic/hybrid-on-device-inference">Firebase Hybrid Inference 文档</a> · <a href="https://android-developers.googleblog.com/2026/04/Hybrid-inference-and-new-AI-models-are-coming-to-Android.html">Android Developers Blog</a> | Android 2026-04，iOS 2026-05</li>
+</ul>
+<p><strong>内容总结（约 140 字）</strong>：
+Firebase AI Logic Hybrid Inference 于 2026 年 4 月登陆 Android、5 月扩展到 iOS，实现"端侧优先、云端兜底"的统一推理路由。核心机制：SDK 持有 4 种调度模式——PREFER_ON_DEVICE（优先 Gemini Nano，不可用时自动降级云端）、PREFER_CLOUD、ONLY_ON_DEVICE、ONLY_CLOUD；路由决策基于设备是否支持 Gemini Nano 及当前资源状态，无需开发者手动检测。端侧路径：Gemini Nano 本地运行，零延迟、零 API 费用、数据绝对不出域；云端路径：Firebase AI Logic 统一接入所有 Gemini 云端模型。底层推理引擎为 ML Kit Prompt API（端侧）+ Firebase SDK（云端），Chrome v139+ 同步支持 Web 侧混合推理。当前标记 Experimental，已在 Google 内部产品线广泛使用。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告 SDK 中做到：以 PREFER_ON_DEVICE 模式运行广告意图分类——旗舰机（支持 Gemini Nano）本地推理，中低端机自动云端降级，单一 SDK 调用覆盖全设备矩阵，SDK 维护成本大幅下降。可直接应用：将广告意图识别迁移至 Firebase Hybrid Inference API，建议优先在旗舰 Android 评估 ONLY_ON_DEVICE 下的意图识别精度与延迟；中长期，PREFER_ON_DEVICE 模式可作为广告 SDK 端云协同路由设计的标准参考。</p>
+<hr />
+<h2>2. 【SCaLRec：云端语义发酵问题首次系统化建模——端侧在线语义校准让缓存 LLM Embedding 持续贴近用户最新兴趣，无需每次请求触发云端推理（arXiv 2601.22543）】</h2>
+<ul>
+<li><strong>评分</strong>：A/4 · I/3 · S=11 · P0 · 价值类型：收入提升 / 成本优化</li>
+<li><strong>来源</strong>：浙大 / Ruiqi Zheng 等 | <a href="https://arxiv.org/abs/2601.22543">arXiv 2601.22543</a> | 2026-01-30</li>
+</ul>
+<p><strong>内容总结（约 140 字）</strong>：
+SCaLRec（Semantic Calibration for LLM-enabled Cloud-Device Sequential Recommendation）命名并系统化了一个被忽视的端云协同痛点："云端语义发酵"（cloud semantic staleness）——云端 LLM 生成的用户 embedding 被缓存后随时间偏离最新行为，造成排序质量下降，而重触发云端 LLM 推理成本过高。解法：在端侧部署轻量化"语义校准模块"，利用设备上最近的交互记录实时调整缓存 embedding，无需每次请求触发云端 LLM 重计算。在真实工业数据集上实验：相比复用缓存 embedding 的强基线，SCaLRec 显著提升推荐精度，推理开销集中在端侧轻量模块。工程信息：云端 LLM 异步周期性重计算（离线批处理）+ 端侧在线校准（实时轻推理），架构模式与 Meta LLaTTE 两段式异步方案高度互补。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告精排中做到：用户兴趣向量由云端大模型离线生成并缓存，端侧或精排层部署 SCaLRec 校准模块，基于用户近期 K 次广告交互在线更新向量，将用户向量失效时间从天级压缩到分钟级，同时免去每次竞价触发云端 LLM 的延迟与成本。可借鉴思路：结合昨期 LLaTTE（arXiv 2601.20083）形成完整链路——LLaTTE 解决离线大模型用户建模，SCaLRec 解决在线语义对齐，两者叠加可在不增加实时推理成本的前提下持续维持用户向量时效性。</p>
+<hr />
+<h2>3. 【OD-LLM（WSDM '26）：首个面向序列推荐的端侧 LLM 自适应压缩框架——SVD 结构化压缩 + Tokenization 归一化，资源受限设备上实现 LLM 级推荐精度（arXiv 2601.09306）】</h2>
+<ul>
+<li><strong>评分</strong>：A/4 · I/3 · S=11 · P1 · 价值类型：收入提升 / 成本优化</li>
+<li><strong>来源</strong>：Xin Xia, Hongzhi Yin, Shane Culpepper（昆士兰大学等）| <a href="https://arxiv.org/abs/2601.09306">arXiv 2601.09306</a> | WSDM 2026（2026-02, Boise, ID）</li>
+</ul>
+<p><strong>内容总结（约 130 字）</strong>：
+端侧序列推荐面临两难：LLM 具备出色的用户行为建模能力，但动辄数 GB 内存占用让移动部署几乎不可行。OD-LLM 是首个针对"序列推荐任务"专门设计的 LLM 自适应压缩框架，核心创新两点：①低秩结构化压缩——SVD 识别并剔除参数冗余，在保持推荐精度的前提下大幅压缩模型尺寸；②Tokenization 归一化——优化词元化流程，降低推理阶段序列处理开销。区别于通用 LLM 量化（GPTQ/AWQ），OD-LLM 针对推荐任务的 item 序列特征做定制化压缩，在资源受限设备上取得比通用压缩更优的精度-效率权衡。工程信息：WSDM '26 正式发表，面向移动端部署设计，未公开具体延迟数字。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告端侧用户建模中做到：对广告 CTR 序列模型的 LLM 升级版做任务自适应压缩，而非通用量化盲目削减精度——SVD 结构化压缩对广告 item embedding 矩阵的低秩特性尤为适配，有望在相同压缩率下保留更高 CTR 预估精度。可借鉴思路：OD-LLM 与上期 ExecuTorch（MLSys 2026 Oral）互补——ExecuTorch 解决推理框架层，OD-LLM 解决模型压缩层；建议将 SVD + tokenization normalization 纳入广告端侧序列模型压缩实验池，与 INT4 量化对比 AUC 损失。</p>
+<hr />
+<h2>4. 【LiteRT-LM：Google 端侧 LLM 推理框架正式取代 TFLite——52 tok/s（Android GPU）/ 2.2x 投机解码，Qualcomm NPU 路径达 CPU 的 100x 提速】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/4 · S=10 · P1 · 价值类型：成本优化 / 新能力探索</li>
+<li><strong>来源</strong>：Google AI Edge | <a href="https://ai.google.dev/edge/litert-lm">LiteRT-LM 官方文档</a> · <a href="https://developers.googleblog.com/blazing-fast-on-device-genai-with-litert-lm/">博客：Blazing Fast GenAI</a> · <a href="https://developers.googleblog.com/unlocking-peak-performance-on-qualcomm-npu-with-litert/">博客：Qualcomm NPU 加速</a> | Google I/O 2026（2026-05）</li>
+</ul>
+<p><strong>内容总结（约 140 字）</strong>：
+LiteRT-LM 是 Google 正式开源的生产级端侧 LLM 推理框架，已用于 Chrome、ChromeOS、Pixel Watch 及 Google AI Edge Gallery app。关键性能：Android OpenCL GPU 后端 52 tok/s，iOS Metal 后端 56 tok/s；Gemma 4 Multi-Token Prediction（MTP）投机解码 E4B 版本 2.2x 提速（E2B 为 1.6x）；技术实现：先进量化 + 加速 XNNPACK/MLDrift 内核 + CPU-GPU 内存局部化（drafter 与主模型在同一硬件 IP）。Qualcomm NPU 加速路径（与 Qualcomm 联合开发 QNN Accelerator）：Snapdragon 8 Elite Gen 5 上 56 个模型 &lt;5ms（NPU）vs 13 个（CPU），NPU vs CPU 约 100x 提速，NPU vs GPU 约 10x 提速。跨平台：Android、iOS（Swift API 开源）、Web（JavaScript API），Firebase AI Logic 作为上层路由 SDK。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告 SDK 的 Android 端侧推理路径中做到：接入 LiteRT-LM 的 Qualcomm QNN 加速后端，在 Snapdragon 旗舰机上将广告意图分类 LLM 推理延迟从 CPU 数百毫秒压缩到 NPU 毫秒级，满足竞价前置推理实时性要求。可直接应用：LiteRT-LM 已是 Gemma 4 官方推理框架，建议作为 Android 广告 SDK 端侧 LLM 路径（替代此前 TFLite），搭配 Firebase Hybrid Inference（第 1 条）做端云路由，形成"LiteRT-LM 本地执行 + Firebase 降级策略"双保险架构。</p>
+<hr />
+<h2>5. 【Microsoft Build 2026：Aion-1.0-Instruct 浏览器端侧 SLM 发布——比 Phi-4-mini 更小更快，Language Detector API 支持 145 语言零云端依赖】</h2>
+<ul>
+<li><strong>评分</strong>：A/2 · I/4 · S=8 · P1 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：Microsoft Edge Blog | <a href="https://blogs.windows.com/msedgedev/2026/06/02/expanding-on-device-ai-in-microsoft-edge-new-models-and-apis-for-the-web/">Microsoft Edge Blog 原文</a> | 2026-06-02</li>
+</ul>
+<p><strong>内容总结（约 120 字）</strong>：
+Microsoft 在 Build 2026（2026 年 6 月 2 日）发布 Aion-1.0-Instruct，定位为继 Phi-4-mini 之后的新一代浏览器端侧 SLM：体积更小、速度更快，且扩展到无 GPU 的低端设备（通过 CPU 推理路径）。同期发布 Language Detector API 和 Translator API，内置 Edge 148，支持 145+ 语言端侧检测与翻译，JavaScript 调用，零网络依赖、零数据出域、零翻译 API 费用。Aion-1.0-Instruct 将于 2026 年 7 月在 Hugging Face 开源，目前开放开发者预览用于 Edge 148 真机测试与 API 兼容性验证。推理框架：内置 Windows AI 基础设施，与 Web ML API（Prompt API）互通。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在 PC/桌面端广告 SDK 中做到：利用 Language Detector API 实现广告素材语言自动检测与多语言定向，零云端成本——在程序化广告多语言场景（尤其出海平台）有直接价值。暂不适用于移动广告主链路（Aion 为浏览器/Windows 环境），但"SLM 越做越小、CPU 路径全面铺开"的趋势验证了端侧推理向低端设备下沉的方向；7 月 Hugging Face 开源后可评估移植 Android/iOS 的可行性（参照 ExecuTorch 跨平台能力）。</p>
+<hr />
+<h3>其他观察</h3>
+<p>今日端侧广告呈现两条清晰主线：<strong>工程基础设施侧</strong>，Google LiteRT-LM + Firebase Hybrid Inference 构成"推理引擎 + 路由策略"完整闭环，为广告 SDK 提供开箱即用的端云协同参考实现；<strong>算法架构侧</strong>，SCaLRec 与 OD-LLM 分别从"语义时效性维护"与"任务自适应压缩"两角度填补端侧序列推荐部署的关键缺口。中文来源：本期搜索中文信息密度较低，工信部政策（国内端侧推理政策背书）已于 06/24 期报道，本期无新增重要中文独家来源。</p>
+<h3>近期关注</h3>
+<ul>
+<li><strong>KDD 2026</strong>（2026-08，Barcelona）：AdKDD Workshop 是广告端侧算法最集中的学术场景，SCaLRec / OD-LLM 等工作的工业落地 demo 值得追踪。</li>
+<li><strong>Aion-1.0-Instruct 开源</strong>（预计 2026-07，Hugging Face）：开源后评估移动端迁移可行性。</li>
+<li><strong>Firebase Hybrid Inference 稳定版</strong>：当前 Experimental，关注 Stable 发布节点，届时可评估纳入广告 SDK 的工程风险。</li>
+</ul>
+    </article>
+  </div>
+</body>
+</html>
