@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端智能日报 2026-06-26</title>
+  <style>
+:root{
+  --bg:#f4faf8;
+  --surface:#ffffff;
+  --surface-soft:#f8fcfb;
+  --text:#1f2f2b;
+  --muted:#5e726b;
+  --accent:#0f766e;
+  --accent-soft:#dcf2ee;
+  --border:#d8e8e2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #e9f7f2 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, #e5f4ef 0%, transparent 28%),
+    var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.8;
+}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px 56px}
+.top{
+  margin-bottom:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+}
+.brand{
+  margin:0;
+  font-size:14px;
+  letter-spacing:.08em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.back{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px 28px 20px;
+  box-shadow:0 10px 30px rgba(15,118,110,.08);
+}
+h1,h2,h3{line-height:1.35;margin:1.1em 0 .45em}
+h1{font-size:2rem;margin-top:.15em}
+h2{font-size:1.32rem}
+h3{font-size:1.08rem}
+p,li{font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+blockquote{
+  margin:1rem 0;
+  padding:.72rem .95rem;
+  background:var(--surface-soft);
+  border-left:4px solid var(--accent);
+  color:#28433d;
+  border-radius:8px;
+}
+hr{
+  border:none;
+  border-top:1px dashed var(--border);
+  margin:1.3rem 0;
+}
+code{
+  background:#eef7f5;
+  border:1px solid #d7e9e4;
+  color:#1f4f49;
+  border-radius:6px;
+  padding:.14em .42em;
+  font-size:.92em;
+}
+pre{
+  background:#0f1f1d;
+  color:#e9f4f2;
+  border-radius:12px;
+  overflow:auto;
+  padding:14px;
+}
+pre code{
+  background:transparent;
+  border:none;
+  color:inherit;
+  padding:0;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  overflow:hidden;
+  border-radius:12px;
+}
+th,td{
+  border:1px solid var(--border);
+  padding:.6rem .7rem;
+  text-align:left;
+  vertical-align:top;
+}
+th{background:#edf8f5}
+.footer{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:.88rem;
+}
+.list{
+  list-style:none;
+  margin:1rem 0 0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.list a.item{
+  display:block;
+  padding:14px 15px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-soft);
+  transition:.15s ease;
+}
+.item-title{
+  display:block;
+  font-weight:700;
+  margin-top:2px;
+}
+.focus{
+  display:block;
+  margin-top:8px;
+  font-size:.92rem;
+  color:#37524c;
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.list a.item:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(15,118,110,.09);
+  text-decoration:none;
+}
+.date{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  margin-bottom:2px;
+}
+@media (max-width:700px){
+  .wrap{padding:20px 12px 40px}
+  .card{padding:20px 16px 16px;border-radius:14px}
+  h1{font-size:1.62rem}
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <p class="brand">Edge AI Daily</p>
+      <a class="back" href="../index.html">← 返回目录</a>
+    </div>
+    <article class="card">
+      <h1>端智能日报 2026-06-26</h1>
+<blockquote>
+<p><strong>本期聚焦</strong>：Apple AFM3 Core Advanced 以"Instruction-Following Pruning（IFP）"实现20B稀疏参数的端侧推理——每次推理仅激活1-4B参数，通过NAND Flash按需页调度规避DRAM容量上限，开创端侧大模型架构新范式；后WWDC 2026端侧AI三强格局明朗：Apple走向开放生态、Google以Tensor G5（TSMC 3nm）深化垂直整合、中国厂商以极端量化冲破5GB上限——广告SDK端侧化的硬件选型路线正在清晰分层。</p>
+</blockquote>
+<hr />
+<h2>1. 【Apple AFM3 Core Advanced：Instruction-Following Pruning + NAND-to-DRAM路由——20B稀疏参数只激活1-4B，重新定义端侧LLM部署上限】</h2>
+<ul>
+<li><strong>评分</strong>：A/4 · I/5 · S=13 · P0 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：Apple Machine Learning Research | <a href="https://machinelearning.apple.com/research/introducing-third-generation-of-apple-foundation-models">Apple ML Research Blog</a> · <a href="https://9to5mac.com/2026/06/11/apples-new-foundation-models-explained-on-device-ai-cloud-ai-and-everything-in-between/">9to5Mac深度解读</a> | 2026-06-08（WWDC 2026）</li>
+</ul>
+<p><strong>内容总结（约 150 字）</strong>：
+Apple第三代Foundation Models（AFM3）于WWDC 2026（6月8日）正式发布，核心突破是AFM3 Core Advanced：20B参数稀疏模型，通过Instruction-Following Pruning（IFP）使每次推理仅激活1-4B参数。推理机制：全量参数存于NAND Flash，仅"always-active shared experts"常驻DRAM；每次请求由路由器（predictor）基于任务复杂度决定激活哪些专家，将对应权重从NAND按需页调度至DRAM——让20B模型在手机8-12GB DRAM内运行，规避标准MoE逐token换页的带宽瓶颈。与之对比：AFM3 Core为3B dense（全量DRAM），Core Advanced为20B稀疏（NAND+DRAM混合）；服务器侧另有AFM3 Cloud / ADM3 Cloud（图像）/ AFM3 Cloud Pro通过Private Cloud Compute运行。工程信息：需iPhone 16 Pro及以上或M系列Mac，基于同期发布的Core AI框架（详见2026-06-23期）调用。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在iOS广告SDK中做到：在iPhone 16 Pro+上以AFM3 Core Advanced作为广告意图理解与素材质量评估基座——20B参数的语义理解能力远超此前3B dense模型，对"模糊搜索→广告意图"的理解精度有本质提升，且数据完全不出域。可借鉴思路：IFP的"按指令激活参数子集"是MoE端侧化的关键工程路径——不同广告场景（品牌/效果/直播电商）可对应不同专家子集激活模式；NAND-DRAM路由方案为国内端侧超越DRAM限制提供重要工程参考，建议在H2 2026端侧LLM评估中纳入Flash-based推理方案对比。</p>
+<hr />
+<h2>2. 【端侧AI三强格局成型（36kr/钛媒体，2026年6月）：Apple开放生态、Google Tensor G5垂直整合（TSMC 3nm，TPU+60%）、中国厂商4-bit极端量化冲破5GB——广告SDK选型路线清晰分层】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/4 · S=10 · P1 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：钛媒体 / 36氪 | <a href="https://www.tmtpost.com/8025483.html">钛媒体：端侧AI三强对决</a> · <a href="https://www.36kr.com/p/3864280705520640">36kr：2026端侧AI战事升级</a> | 2026-06</li>
+</ul>
+<p><strong>内容总结（约 140 字）</strong>：
+后WWDC2026时期，端侧AI三强格局明朗：①Apple"开放合作"路线——Core AI统一框架允许接入Gemini、Claude、ChatGPT等第三方LLM，Siri可设第三方引擎为默认，Apple每年向Google支付约10亿美元合作费；②Google"垂直整合"路线——Pixel 10搭载Tensor G5，首次完全转向TSMC 3nm工艺，CPU性能+20-35%，TPU推理能力+60%，Gemini Nano端侧版与硬件深度co-designed；③中国厂商"参数规模竞赛"路线——小米MiMo-V2.5-Pro以1T参数/42B激活、FP4选择性量化（仅量化MoE Expert层），将端侧可用模型压缩至5GB以内；华为麒麟持续迭代NPU效能。工程信息：三条路线对应不同生态——iOS（Core AI）/ Android全球（LiteRT+Gemini Nano）/ 国内Android（MNN+Qwen/MiMo量化模型）。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告SDK端侧框架选型中做到：明确不同目标市场的最优路径——iOS高端机（iPhone 16 Pro+）走Apple Core AI + AFM3路线；Android全球旗舰走LiteRT-LM + Gemini Nano路线；国内Android生态走MNN + Qwen/MiMo量化模型路线。可借鉴思路：Google Tensor G5的"TPU+60%"意味着下一代Pixel设备能以更低延迟运行端侧CTR模型——建议将Pixel 10上市（Q3 2026预期）列入端侧广告推理测试计划，与Snapdragon 8 Elite Gen 5形成双旗舰Android benchmark对照组。</p>
+<hr />
+<h2>3. 【llada.cpp（arXiv 2606.13740）：首个面向Diffusion LLM的移动端NPU推理框架——dLLM并行多token去噪天然适配NPU高吞吐，清华/北航 2026-06-11】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/3 · S=9 · P1 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：Tuowei Wang, Yanfan Sun, Ju Ren（清华大学 / 北京航空航天大学）| <a href="https://arxiv.org/abs/2606.13740">arXiv 2606.13740</a> | 2026-06-11</li>
+</ul>
+<p><strong>内容总结（约 130 字）</strong>：
+Diffusion LLM（dLLM，如LLaDA）通过迭代去噪并行生成多个token，比自回归LLM理论上更快——但在手机NPU高效运行面临三大障碍：①Token Commitment Shrinking（每block随迭代确认token数减少，NPU工作负载碎片化）；②Token Revision KV Cache（已生成token可被修改，标准KV cache失效）；③NPU地址空间受限（频繁数据迁移高开销）。llada.cpp是首个专为dLLM设计的NPU-aware推理框架：通过block-wise推理将dLLM的并行解码与NPU张量计算高吞吐特性对齐，构建per-block执行图消除碎片化工作负载的NPU调度开销，实现affinity-guided弹性加速器映射。工程信息：面向搭载Mobile NPU的Android智能手机，2026-06-11发布预印本，当前未公开具体延迟数字与代码仓库。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告素材生成场景中做到：若llada.cpp验证dLLM在移动NPU上可达实用推理速度，端侧广告文案实时A/B变体生成将首次在移动端成为可能——传统自回归LLM的顺序解码是端侧内容生成的主要延迟来源，而dLLM的并行多token去噪可直接压缩首屏时间。暂不适用于当前广告主链路（实验阶段，无公开延迟基准），建议跟踪代码仓库开源与延迟benchmark公布节点；dLLM × NPU"并行解码天然适配高吞吐硬件"的核心洞察值得纳入端侧生成式广告技术路线图。</p>
+<hr />
+<h3>其他观察</h3>
+<p>今日端侧广告以"架构级范式"更新为主：Apple AFM3的IFP稀疏方案与NAND-DRAM路由是端侧参数规模破纪录的关键工程路径；三强格局明朗化意味着广告SDK多平台策略需要清晰的生态分层（iOS / Google Android / 国内Android），而非寻求统一方案。中文来源：36kr + 钛媒体（本期覆盖）。</p>
+<h3>近期关注</h3>
+<ul>
+<li><strong>Pixel 10上市（Q3 2026预期）</strong>：搭载Tensor G5 TSMC 3nm + TPU+60%，是端侧广告CTR模型在Android旗舰机上的重要测试目标，建议届时与Snapdragon 8 Elite Gen 5对照评测。</li>
+<li><strong>llada.cpp代码开源</strong>：关注延迟数字公布，评估dLLM在广告文案生成中的可行性。</li>
+<li><strong>KDD 2026</strong>（2026-08-09~13，济州岛）：AdKDD Workshop广告端侧论文主场，预印本持续释出中。</li>
+</ul>
+    </article>
+  </div>
+</body>
+</html>
