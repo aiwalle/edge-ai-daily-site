@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端智能日报 2026-06-27</title>
+  <style>
+:root{
+  --bg:#f4faf8;
+  --surface:#ffffff;
+  --surface-soft:#f8fcfb;
+  --text:#1f2f2b;
+  --muted:#5e726b;
+  --accent:#0f766e;
+  --accent-soft:#dcf2ee;
+  --border:#d8e8e2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #e9f7f2 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, #e5f4ef 0%, transparent 28%),
+    var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.8;
+}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px 56px}
+.top{
+  margin-bottom:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+}
+.brand{
+  margin:0;
+  font-size:14px;
+  letter-spacing:.08em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.back{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px 28px 20px;
+  box-shadow:0 10px 30px rgba(15,118,110,.08);
+}
+h1,h2,h3{line-height:1.35;margin:1.1em 0 .45em}
+h1{font-size:2rem;margin-top:.15em}
+h2{font-size:1.32rem}
+h3{font-size:1.08rem}
+p,li{font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+blockquote{
+  margin:1rem 0;
+  padding:.72rem .95rem;
+  background:var(--surface-soft);
+  border-left:4px solid var(--accent);
+  color:#28433d;
+  border-radius:8px;
+}
+hr{
+  border:none;
+  border-top:1px dashed var(--border);
+  margin:1.3rem 0;
+}
+code{
+  background:#eef7f5;
+  border:1px solid #d7e9e4;
+  color:#1f4f49;
+  border-radius:6px;
+  padding:.14em .42em;
+  font-size:.92em;
+}
+pre{
+  background:#0f1f1d;
+  color:#e9f4f2;
+  border-radius:12px;
+  overflow:auto;
+  padding:14px;
+}
+pre code{
+  background:transparent;
+  border:none;
+  color:inherit;
+  padding:0;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  overflow:hidden;
+  border-radius:12px;
+}
+th,td{
+  border:1px solid var(--border);
+  padding:.6rem .7rem;
+  text-align:left;
+  vertical-align:top;
+}
+th{background:#edf8f5}
+.footer{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:.88rem;
+}
+.list{
+  list-style:none;
+  margin:1rem 0 0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.list a.item{
+  display:block;
+  padding:14px 15px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-soft);
+  transition:.15s ease;
+}
+.item-title{
+  display:block;
+  font-weight:700;
+  margin-top:2px;
+}
+.focus{
+  display:block;
+  margin-top:8px;
+  font-size:.92rem;
+  color:#37524c;
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.list a.item:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(15,118,110,.09);
+  text-decoration:none;
+}
+.date{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  margin-bottom:2px;
+}
+@media (max-width:700px){
+  .wrap{padding:20px 12px 40px}
+  .card{padding:20px 16px 16px;border-radius:14px}
+  h1{font-size:1.62rem}
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <p class="brand">Edge AI Daily</p>
+      <a class="back" href="../index.html">← 返回目录</a>
+    </div>
+    <article class="card">
+      <h1>端智能日报 2026-06-27</h1>
+<blockquote>
+<p><strong>本期聚焦</strong>：Qualcomm 在 48 小时内完成两项生态级动作——以 $3.9B 收购 Modular（MAX Engine + Mojo，6 月 26 日成交）、扩展 Hugging Face 战略合作，Snapdragon NPU 软件护城河正式启动全面建设；Meta RankGraph-2 首次公开十亿节点图推荐系统的完整生命周期协同设计，为广告检索召回架构提供工业级参考。</p>
+</blockquote>
+<hr />
+<h2>1. 【RankGraph-2（Meta，arXiv 2606.18379）：十亿节点图推荐全生命周期协同设计——图构建 + 表征学习 + 实时 Serving 三阶段统一优化，直接对标广告检索用户建模基础架构】</h2>
+<ul>
+<li><strong>评分</strong>：A/4 · I/4 · S=12 · P0 · 价值类型：收入提升 / 新能力探索</li>
+<li><strong>来源</strong>：Meta AI | <a href="https://arxiv.org/abs/2606.18379">arXiv 2606.18379</a> | 2026-06-16</li>
+</ul>
+<p><strong>内容总结（约 140 字）</strong>：
+Meta 发布 RankGraph-2，针对十亿节点规模相似度检索图推荐系统提出"生命周期协同设计（Lifecycle Co-Design）"框架，覆盖三个阶段：① 图构建——十亿实体规模下高效建立关联图；② 表征学习——在图结构约束下训练 embedding，保证线上 serving 时近邻检索精度；③ 实时 Serving——低延迟高吞吐图检索推理路径。通过三阶段联合优化（而非分别独立设计），系统性解决工业推荐系统中"表征训练目标 vs 线上 ANN 检索指标"不一致的核心矛盾。工程信息：Meta 生产系统级别规模，十亿节点；实时 serving 路径明确，适配广告检索召回阶段。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告检索/召回阶段做到：以统一生命周期协同设计取代当前"离线训练 embedding + 在线 ANN 检索"的分离架构，系统性消除训练目标与检索指标的 gap，提升 Top-K 召回精度。可借鉴思路：Meta 的协同设计方法论对广告系统中"用户 embedding 更新频率 vs ANN 索引重建成本"的权衡有直接指导价值；结合上期 SCaLRec 端侧语义校准方案，可形成"云侧 RankGraph-2 召回 + 端侧实时校准"的完整端云协同链路。</p>
+<hr />
+<h2>2. 【Qualcomm × Modular 收购（$3.9B，6 月 26 日成交）：MAX Engine + Mojo 实现端侧推理"一次开发全硬件运行"，直接挑战 NVIDIA CUDA 软件护城河】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/5 · S=11 · P0 · 价值类型：新能力探索 / 成本优化</li>
+<li><strong>来源</strong>：TechTimes / CNBC / BusinessWire | <a href="https://www.techtimes.com/articles/319166/20260626/qualcomm-closes-39-billion-modular-deal-meta-validates-full-stack-cuda-challenge.htm">TechTimes（成交报道）</a> · <a href="https://www.cnbc.com/2026/06/24/qualcomm-ai-chip-modular-software.html">CNBC（原始公告）</a> | 2026-06-24 宣布，2026-06-26 成交</li>
+</ul>
+<p><strong>内容总结（约 150 字）</strong>：
+Qualcomm 以 $3.9B 全股票收购 AI 软件初创公司 Modular，交易于 2026-06-26 正式成交。核心资产：① <strong>MAX Engine</strong>——AI 推理编译器，无需任何 NVIDIA 供应商库即可将模型优化部署至 CPU、GPU、NPU、ASIC，是首个在架构层面真正规避 CUDA 依赖的挑战者；② <strong>Mojo 语言</strong>——面向 AI 系统开发的高性能语言（兼容 Python 生态），大幅降低跨硬件推理开发门槛。联合创始人：Chris Lattner（LLVM 发明者、Swift 创始人）+ Tim Davis，团队约 150 人。配套动作：Meta 同期宣布采购 Qualcomm Dragonfly C1000 服务器 CPU（250+ 核 Arm 架构，多代协议），Qualcomm 将 FY2029 非手机业务收入目标上调至 $40B（含数据中心 $15B+）。工程信息：Snapdragon Hexagon NPU 将获 MAX Engine 软件栈加持，预计 H2 2026 集成至开发者工具链。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告 SDK 端侧推理路径中做到：MAX Engine 与 Hexagon NPU 深度整合后，广告侧 PyTorch/TF 训练的 CTR/CVR 模型可一键编译至 Snapdragon NPU，省去当前繁琐的 QNN SDK 手动适配工作，将模型从训练到端侧部署的迭代周期大幅压缩。可借鉴思路：短期继续以 LiteRT + QNN Accelerator 为 Android 主路径；中期（H2 2026）关注 MAX Engine 开发者工具集成节奏，将 Mojo 编写端侧推理算子纳入评估，与 ExecuTorch 形成双轨技术储备。</p>
+<hr />
+<h2>3. 【Representation Curriculum（eBay，arXiv 2606.09891）：多阶段课程训练提升数字市场 Ranking 鲁棒性——CTR/CVR 聚合动态曝光分配，解决排序与分配协同优化难题】</h2>
+<ul>
+<li><strong>评分</strong>：A/4 · I/3 · S=11 · P1 · 价值类型：收入提升</li>
+<li><strong>来源</strong>：eBay AI Research | <a href="https://arxiv.org/abs/2606.09891">arXiv 2606.09891</a> | 2026-06-03</li>
+</ul>
+<p><strong>内容总结（约 130 字）</strong>：
+eBay 提出 Representation Curriculum，将数字市场 Ranking 建模为"动态曝光分配机制"：排序结果不只影响单次点击，而是持续改变用户曝光分布，进而影响长期 CTR/CVR 聚合指标。核心方法：多阶段课程式训练（Stagewise Curriculum Training）——先训练粗粒度表征（鲁棒性优先），再逐步细化排序目标（精度优先），使模型在分布偏移下保持稳健；关键创新是将 CTR 和 CVR 聚合信号作为动态反馈纳入排序训练循环，而非静态标签。工程信息：eBay 生产系统验证，面向电商商品排序；适配大规模稀疏特征的多塔 DNN 结构 + curriculum scheduler。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告精排层做到：以 Curriculum 多阶段训练替代单阶段端到端训练——先在粗粒度 CTR 标签上建立鲁棒的 ad embedding 表征，再精调至 CVR 目标，降低数据稀疏对 CVR 模型的负面影响，在新广告 cold-start 场景下尤为有效。可借鉴思路："将排序建模为动态曝光分配机制"的视角同样适用于广告 pacing / frequency cap 优化；Curriculum 的多阶段计算预算分配思路也可与端侧实时排序结合，在设备算力约束下分配不同阶段的推理资源。</p>
+<hr />
+<h2>4. 【Qualcomm × Hugging Face 战略合作扩展（2026-06-24）：HuggingFace 模型零手动集成上 Snapdragon NPU + 端云 Agentic AI 协同调度框架正式落地】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/4 · S=10 · P1 · 价值类型：新能力探索 / 成本优化</li>
+<li><strong>来源</strong>：Qualcomm 官方 / BusinessWire / HPCWire | <a href="https://www.qualcomm.com/news/releases/2026/06/qualcomm-and-hugging-face-expand-relationship-to-advance-open--d">Qualcomm 新闻稿</a> · <a href="https://www.hpcwire.com/aiwire/2026/06/26/qualcomm-and-hugging-face-expand-relationship-to-advance-open-developer-driven-ai-from-device-to-cloud/">HPCWire 报道</a> | 2026-06-24</li>
+</ul>
+<p><strong>内容总结（约 130 字）</strong>：
+Qualcomm 与 Hugging Face 宣布扩展战略合作，三大支柱：① <strong>零手动集成</strong>——AI Agent 自动完成 HuggingFace 模型在 Qualcomm 平台的配置、优化和部署，无需开发者手动适配 SDK；② <strong>数据中心整合</strong>——Hugging Face 存储与推理服务映射至 Qualcomm Dragonfly 数据中心产品，打通"模型实验 → 生产部署"端到端路径；③ <strong>端云 Agentic AI 协同调度</strong>——分布式 AI Agent 框架，智能体可跨设备 NPU 与云端动态编排，基于性能、成本、隐私、延迟多维决策。用户侧：Qualcomm 平台（设备端 + 云端）用户获赠 Hugging Face PRO 权限。工程信息：2026-06-24 宣布；与 Modular MAX Engine 整合后将进一步降低 HuggingFace 模型部署至 Snapdragon NPU 的门槛。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告端侧 SDK 中做到：HuggingFace 上的广告意图分类、素材理解开源模型（Qwen2.5、MiniCPM-V 等）可通过 Qualcomm AI Agent 自动优化并部署至旗舰 Android 设备 NPU，将模型 POC 周期从当前 2-4 周压缩至数天。可借鉴思路：结合上条 Modular 收购来看，Qualcomm 软件侧（MAX Engine + HuggingFace 生态 + Mojo）与硬件侧（Hexagon NPU, Snapdragon 8 Elite Gen 5）正形成完整闭环，建议将此视为 Android 广告端侧推理的中长期主路径之一。</p>
+<hr />
+<h2>5. 【m²LLM（IEEE Transactions on PDS）：四维联合优化端侧 LLM 推理——硬件感知模型定制 + 弹性 Chunk Pipeline + 延迟引导 Prompt 压缩 + 层级资源调度，系统性打破内存-延迟-能耗三角约束】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/3 · S=9 · P1 · 价值类型：成本优化 / 新能力探索</li>
+<li><strong>来源</strong>：IEEE Transactions on Parallel &amp; Distributed Systems | <a href="https://ieeexplore.ieee.org/document/11075620/">IEEE Xplore 11075620</a> | 2026</li>
+</ul>
+<p><strong>内容总结（约 130 字）</strong>：
+m²LLM 是专门针对移动设备 LLM 推理的四维联合优化框架，系统性解决逐维优化导致的次优解问题。四个核心组件：① <strong>Hardware-aware Model Customization</strong>——根据目标设备 NPU/CPU 规格自动裁剪模型结构；② <strong>Elastic Chunk-wise Pipeline</strong>——将 KV-Cache 序列拆分为弹性块，基于系统负载动态调整 pipeline 策略，避免内存峰值；③ <strong>Latency-guided Prompt Compression</strong>——推理前基于延迟预算自适应压缩输入 Prompt，减少 prefill 阶段 token 数量；④ <strong>Layer-wise Resource Scheduling</strong>——按 Transformer 层的计算/访存比动态分配 CPU/GPU/NPU 资源，最大化硬件利用率。工程信息：IEEE Transactions on PDS 正式发表，面向资源受限移动设备；在内存占用、推理延迟和能耗三个维度均有显著优化。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告端侧 LLM 推理路径中做到：以 Latency-guided Prompt Compression 在竞价时间窗口（&lt;50ms 预算）内自适应裁剪广告意图理解的上下文长度，动态平衡精度与实时性；Layer-wise Resource Scheduling 对广告 CTR 序列模型多层 Transformer 结构有直接适配性。可借鉴思路：m²LLM 的"四维联合优化"与当前广告 SDK 常见的"单独量化 + 单独剪枝"方案正交——建议在端侧广告模型优化实验中引入联合优化 baseline，与 INT4 量化对比延迟/精度 trade-off。</p>
+<hr />
+<h3>其他观察</h3>
+<p>本期呈现清晰的"双轴驱动"格局：<strong>软件生态侧</strong>，Qualcomm 在 48 小时内完成收购 Modular 并扩展 Hugging Face 合作，战略意图明确——以软件护城河（MAX Engine + Mojo + HuggingFace 生态）补齐此前的短板，从"硬件厂商"转型为"端到端 AI 平台"；<strong>算法研究侧</strong>，Meta RankGraph-2 和 eBay Representation Curriculum 均针对工业规模排序/推荐提出系统性优化框架，为广告全链路优化提供直接工程参考。中文源：本期主要动态集中在 Qualcomm Investor Day 生态（英文首发），中文媒体（36Kr、机器之心）尚未发布深度解读，预计 24-48 小时内将有中文跟进报道。</p>
+<h3>近期关注</h3>
+<ul>
+<li><strong>Qualcomm MAX Engine × Hexagon NPU 集成</strong>（预计 H2 2026）：关注开发者工具链更新节奏，届时 Mojo + MAX Engine 成为端侧广告推理开发的可选路径。</li>
+<li><strong>KDD 2026</strong>（2026-08，Barcelona）：AdKDD Workshop 是广告端侧算法最集中的学术场景，Meta RankGraph-2 等工业级工作的 demo 值得追踪。</li>
+<li><strong>Meta Dragonfly C1000 部署节点</strong>：Meta 采购 Qualcomm 服务器 CPU 的上线时间，与 ExecuTorch + MAX Engine 软件融合时间线强相关，影响 Meta 广告系统算力架构演进。</li>
+</ul>
+    </article>
+  </div>
+</body>
+</html>
