@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端智能日报 2026-06-28</title>
+  <style>
+:root{
+  --bg:#f4faf8;
+  --surface:#ffffff;
+  --surface-soft:#f8fcfb;
+  --text:#1f2f2b;
+  --muted:#5e726b;
+  --accent:#0f766e;
+  --accent-soft:#dcf2ee;
+  --border:#d8e8e2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #e9f7f2 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, #e5f4ef 0%, transparent 28%),
+    var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.8;
+}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px 56px}
+.top{
+  margin-bottom:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+}
+.brand{
+  margin:0;
+  font-size:14px;
+  letter-spacing:.08em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.back{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px 28px 20px;
+  box-shadow:0 10px 30px rgba(15,118,110,.08);
+}
+h1,h2,h3{line-height:1.35;margin:1.1em 0 .45em}
+h1{font-size:2rem;margin-top:.15em}
+h2{font-size:1.32rem}
+h3{font-size:1.08rem}
+p,li{font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+blockquote{
+  margin:1rem 0;
+  padding:.72rem .95rem;
+  background:var(--surface-soft);
+  border-left:4px solid var(--accent);
+  color:#28433d;
+  border-radius:8px;
+}
+hr{
+  border:none;
+  border-top:1px dashed var(--border);
+  margin:1.3rem 0;
+}
+code{
+  background:#eef7f5;
+  border:1px solid #d7e9e4;
+  color:#1f4f49;
+  border-radius:6px;
+  padding:.14em .42em;
+  font-size:.92em;
+}
+pre{
+  background:#0f1f1d;
+  color:#e9f4f2;
+  border-radius:12px;
+  overflow:auto;
+  padding:14px;
+}
+pre code{
+  background:transparent;
+  border:none;
+  color:inherit;
+  padding:0;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  overflow:hidden;
+  border-radius:12px;
+}
+th,td{
+  border:1px solid var(--border);
+  padding:.6rem .7rem;
+  text-align:left;
+  vertical-align:top;
+}
+th{background:#edf8f5}
+.footer{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:.88rem;
+}
+.list{
+  list-style:none;
+  margin:1rem 0 0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.list a.item{
+  display:block;
+  padding:14px 15px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-soft);
+  transition:.15s ease;
+}
+.item-title{
+  display:block;
+  font-weight:700;
+  margin-top:2px;
+}
+.focus{
+  display:block;
+  margin-top:8px;
+  font-size:.92rem;
+  color:#37524c;
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.list a.item:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(15,118,110,.09);
+  text-decoration:none;
+}
+.date{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  margin-bottom:2px;
+}
+@media (max-width:700px){
+  .wrap{padding:20px 12px 40px}
+  .card{padding:20px 16px 16px;border-radius:14px}
+  h1{font-size:1.62rem}
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <p class="brand">Edge AI Daily</p>
+      <a class="back" href="../index.html">← 返回目录</a>
+    </div>
+    <article class="card">
+      <h1>端智能日报 2026-06-28</h1>
+<blockquote>
+<p><strong>本期聚焦</strong>：端侧推理"能效工程"成今日主轴——EnerInfer（arXiv 2606.23001）首次将 NPU 频率调优、能效预测与热管理三维联合建模，手机端能效最高提升 65%；Quant.npu 打通 PTQ 向移动端 NPU 完全静态量化的最后一公里，解决 ExecuTorch 路径下 Hexagon NPU 部署的根本性障碍；工信部将"云网边端协同推理"写入 2026-2028 三年规划，政策层为端侧广告端云协同提供国家级背书。</p>
+</blockquote>
+<hr />
+<h2>1. 【EnerInfer：首个端侧 LLM 能效-吞吐-热管理三维联合优化框架——NPU 频率动态调优 + 轻量热预测，手机端能效最高提升 65%，无 QoE 违反（arXiv 2606.23001）】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/3 · S=9 · P1 · 价值类型：成本优化 / 用户体验</li>
+<li><strong>来源</strong>：Bohua Zou, Nian Liu, Binqi Sun 等 | <a href="https://arxiv.org/abs/2606.23001">arXiv 2606.23001</a> | 2026-06-22（修订 2026-06-24）</li>
+</ul>
+<p><strong>内容总结（约 140 字）</strong>：
+EnerInfer 是首个同时管理能效、吞吐量和热舒适度的端侧 LLM 推理框架。核心洞察："配置松弛空间"（Configuration Slack）——适度降低 NPU 和 DDR 频率，在满足用户体验质量（QoE）前提下可大幅节省能耗与散热。三大技术组件：① NPU/DDR 频率感知配置选择——ML 模型预测不同频率组合下的吞吐量与功耗，从候选配置中选取满足 QoS 的最高效点；② 运行时干扰感知 QoE 调度——兼顾后台应用负载对推理性能的动态影响；③ 轻量热预测控制器——前瞻有限步预测温度趋势，在热临界点前动态切换能效模式。关键指标：手机端能效最高提升 65%、笔记本 12%、开发板 24%，均无 QoE 违反。平台：Android + iOS 真实设备评测；部署信息：实验级，暂无公开代码仓库。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告端侧 LLM 推理（意图识别、素材理解）中做到：通过 NPU 频率动态调优，在广告竞价高峰（性能优先）与低峰（能效优先）之间自动切换，避免持续满频导致手机 CPU 节流，稳定端侧模型 P99 延迟。可借鉴思路："配置松弛空间"框架在广告场景同样成立——大量后台广告召回/精排推理（非实时竞价路径）QoS 可接受适度降频，能效提升直接转化为电池续航改善，有助于提高广告 SDK 在用户设备上的"存活时间"。</p>
+<hr />
+<h2>2. 【Quant.npu：打通 PTQ → 移动端 NPU 完全静态量化最后一公里——旋转矩阵 + 可学习量化参数联合优化，ExecuTorch 路径延迟降低 15.1%（arXiv 2605.20295）】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/3 · S=9 · P1 · 价值类型：成本优化</li>
+<li><strong>来源</strong>：Quant.npu 团队 | <a href="https://arxiv.org/abs/2605.20295">arXiv 2605.20295</a> | 2026-05-19</li>
+</ul>
+<p><strong>内容总结（约 140 字）</strong>：
+Quant.npu 解决 PTQ 方法向移动端 NPU 部署的根本性不兼容问题：主流 PTQ 方案（QuaRot、SpinQuant 等）使用动态激活量化，但移动 NPU 架构（Hexagon、Apple ANE、MediaTek APU 等）要求完全静态量化，以维持 systolic array 流水线效率并避免高开销的运行时 reduction 操作。Quant.npu 核心方法：联合优化旋转矩阵与静态量化参数——关键发现是初始化策略和选择性优化对量化参数稳定性至关重要，朴素联合优化会引发梯度不稳定，破坏旋转矩阵学习。实现平台：ExecuTorch（Meta 官方移动端推理框架）。关键指标：端侧推理延迟降低最高 15.1%；与朴素静态量化基线相比精度显著保留。补充：论文同时讨论 tile 量化方案与 LUT Softmax 等协同优化。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告模型的 Hexagon NPU 部署中做到：对 INT4/INT8 混合精度的 CTR/CVR 轻量模型和广告意图理解 LLM，用 Quant.npu 绕过"动态激活量化 vs. NPU 静态需求不兼容"的工程障碍，将 ExecuTorch 路径下 Android NPU 加速成功率从低于 50% 提升至接近 100%。可直接应用（ExecuTorch 部署模块）：将 Quant.npu 作为现有 QNN SDK INT8 量化的候选对比方案，重点测试旋转矩阵额外计算开销对 prefill 延迟的影响（当前无公开 end-to-end 延迟基准）。</p>
+<hr />
+<h2>3. 【工信部《"人工智能+信息通信"创新发展实施意见（2026—2028年）》：首次将"云网边端协同推理"写入国家三年规划——广告端云协同获政策级背书，三大运营商 MEC 边缘推理节点加速落地】</h2>
+<ul>
+<li><strong>评分</strong>：A/2 · I/4 · S=8 · P1 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：工业和信息化部 / 腾讯新闻 | <a href="https://news.qq.com/rain/a/20260612A055DG00">腾讯新闻原文</a> | 2026-06-12</li>
+</ul>
+<p><strong>内容总结（约 140 字）</strong>：
+工信部于 6 月 12 日正式印发《"人工智能+信息通信"创新发展实施意见（2026—2028年）》，首次在国家层面明确提出"探索云网边端协同推理技术，降低推理时延和终端算力需求，增强网络边缘推理能力"；同时要求为 AI 在文娱、制造、交通、低空经济等场景提供"通感算智一体边缘计算服务"。核心含义：端侧推理纳入主管部委三年规划，配套三大运营商边缘算力节点建设任务同步提出，形成政策驱动 + 基础设施保障双轮驱动。MEC（移动边缘计算）节点将加速部署 AI 能力开放接口（低延迟推理 API、数据不出域隐私保障）。工程信息：政策文件，无明确延迟/内存/算力指标，但将触发运营商侧 2026-2028 基础设施投资计划。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告端云协同架构立项中做到：以工信部政策为依据，加速内部"端侧广告 SDK + MEC 边缘竞价引擎"方向的合规对齐和立项审批——国家级背书显著降低跨部门沟通成本。可借鉴思路：三大运营商 MEC 节点开放后，广告实时竞价引擎可下沉至离用户最近的边缘节点，将端到云往返延迟（当前 P99 通常 50-100ms）压缩至&lt;10ms，与端侧 LLM 意图识别形成"端-边-云"三层协同闭环。</p>
+<hr />
+<h2>4. 【Qualcomm Snapdragon Reality Elite：XR 端侧 AI 新旗舰——48 TOPS NPU（较上代 +160%），端侧运行 3B Llama 模型，MAX Engine 软件栈统一 XR + 手机 NPU 生态】</h2>
+<ul>
+<li><strong>评分</strong>：A/2 · I/4 · S=8 · P2 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：Qualcomm 官方 / TechPowerUp / TelecomLead | <a href="https://www.qualcomm.com/news/releases/2026/06/qualcomm-takes-spatial-computing-into-the-ai-era-with-snapdragon">Qualcomm 新闻稿</a> | 2026-06-16</li>
+</ul>
+<p><strong>内容总结（约 140 字）</strong>：
+Qualcomm 于 2026 年 6 月 16 日（AWE 展会）发布 Snapdragon Reality Elite 空间计算平台，面向 XR 头显/AR 眼镜。AI 算力：48 TOPS Hexagon NPU（较 XR2 Gen2+ 提升 160%），可端侧运行 3B 参数 Llama 系列模型（2000 context window）。性能提升：GPU +60%、CPU +30%；热效率：同负载温度降低 12°C，续航延长 20%。关键工程信息：Reality Elite 与 Snapdragon 8 Elite Gen 2（旗舰手机端）将共享 MAX Engine 软件栈（来自 Qualcomm × Modular 收购，见 06-27 简报），意味着一次针对 NPU 的模型优化可跨 XR + 手机形态复用，大幅降低端侧 AI SDK 多形态维护成本。初始合作方：XREAL（Project Aura）、Play for Dream（混合现实设备）。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在 XR 广告场景（中长期布局）中做到：以 Reality Elite 的 3B 端侧 LLM 为基础，探索 AR 广告的"情境感知"——在 AR 眼镜上本地分析用户视场内容，实时匹配相关广告素材（如用户看向咖啡馆时弹出饮品广告），数据不出设备满足隐私合规。暂不适用于当前广告主链路（XR 设备渗透率有限），但 MAX Engine 的跨形态复用特性值得重点关注：手机端的广告模型一旦通过 MAX Engine 优化，可直接复用至 XR 形态，无额外适配成本，是 H2 2026 技术栈评估的关键变量。</p>
+<hr />
+<h3>其他观察</h3>
+<p>今日内容较近期（06-25 至 06-27）轻量，无明确 6 月 28 日重磅新发布；动态集中在<strong>推理效率的能效工程层面</strong>（EnerInfer 的频率调优 + EnerInfer 的热管理、Quant.npu 的 NPU 量化兼容性），而非广告系统直接对标算法。这与连续两周大厂发布后的"消化期"节奏吻合。两个值得重点跟进的信号：① Quant.npu 在 ExecuTorch 上的工程落地代码尚未公开，后续开源后可直接接入广告端侧模型优化流水线；② 工信部 MEC 政策落地节奏——运营商侧 2026H2 采购和建设计划将是判断"边缘广告竞价引擎"实际可行性的关键依据。中文来源：工信部政策（腾讯新闻）。</p>
+<h3>近期关注</h3>
+<ul>
+<li><strong>KDD 2026</strong>（2026-08-09~13，济州岛）：AdKDD Workshop 广告端侧论文主场，预印本持续释出，建议在 7 月下旬前完成重点论文前瞻。</li>
+<li><strong>Qualcomm MAX Engine 开发者工具集成</strong>（预计 H2 2026）：Modular 收购完成后 MAX Engine 整合至 Snapdragon 工具链的首批版本，是广告模型跨形态部署的核心测试窗口。</li>
+<li><strong>ExecuTorch + Quant.npu 代码开源</strong>：关注 arXiv 2605.20295 对应代码库，评估 INT4 静态量化在广告 CTR 模型上的端到端延迟 baseline。</li>
+</ul>
+    </article>
+  </div>
+</body>
+</html>
