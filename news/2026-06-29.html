@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端智能日报 2026-06-29</title>
+  <style>
+:root{
+  --bg:#f4faf8;
+  --surface:#ffffff;
+  --surface-soft:#f8fcfb;
+  --text:#1f2f2b;
+  --muted:#5e726b;
+  --accent:#0f766e;
+  --accent-soft:#dcf2ee;
+  --border:#d8e8e2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, #e9f7f2 0%, transparent 35%),
+    radial-gradient(circle at 90% 10%, #e5f4ef 0%, transparent 28%),
+    var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.8;
+}
+.wrap{max-width:960px;margin:0 auto;padding:28px 18px 56px}
+.top{
+  margin-bottom:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:16px;
+}
+.brand{
+  margin:0;
+  font-size:14px;
+  letter-spacing:.08em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+.back{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px 28px 20px;
+  box-shadow:0 10px 30px rgba(15,118,110,.08);
+}
+h1,h2,h3{line-height:1.35;margin:1.1em 0 .45em}
+h1{font-size:2rem;margin-top:.15em}
+h2{font-size:1.32rem}
+h3{font-size:1.08rem}
+p,li{font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+blockquote{
+  margin:1rem 0;
+  padding:.72rem .95rem;
+  background:var(--surface-soft);
+  border-left:4px solid var(--accent);
+  color:#28433d;
+  border-radius:8px;
+}
+hr{
+  border:none;
+  border-top:1px dashed var(--border);
+  margin:1.3rem 0;
+}
+code{
+  background:#eef7f5;
+  border:1px solid #d7e9e4;
+  color:#1f4f49;
+  border-radius:6px;
+  padding:.14em .42em;
+  font-size:.92em;
+}
+pre{
+  background:#0f1f1d;
+  color:#e9f4f2;
+  border-radius:12px;
+  overflow:auto;
+  padding:14px;
+}
+pre code{
+  background:transparent;
+  border:none;
+  color:inherit;
+  padding:0;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  overflow:hidden;
+  border-radius:12px;
+}
+th,td{
+  border:1px solid var(--border);
+  padding:.6rem .7rem;
+  text-align:left;
+  vertical-align:top;
+}
+th{background:#edf8f5}
+.footer{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:.88rem;
+}
+.list{
+  list-style:none;
+  margin:1rem 0 0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.list a.item{
+  display:block;
+  padding:14px 15px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface-soft);
+  transition:.15s ease;
+}
+.item-title{
+  display:block;
+  font-weight:700;
+  margin-top:2px;
+}
+.focus{
+  display:block;
+  margin-top:8px;
+  font-size:.92rem;
+  color:#37524c;
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.list a.item:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(15,118,110,.09);
+  text-decoration:none;
+}
+.date{
+  display:block;
+  color:var(--muted);
+  font-size:.88rem;
+  margin-bottom:2px;
+}
+@media (max-width:700px){
+  .wrap{padding:20px 12px 40px}
+  .card{padding:20px 16px 16px;border-radius:14px}
+  h1{font-size:1.62rem}
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <p class="brand">Edge AI Daily</p>
+      <a class="back" href="../index.html">← 返回目录</a>
+    </div>
+    <article class="card">
+      <h1>端智能日报 2026-06-29</h1>
+<blockquote>
+<p><strong>本期聚焦</strong>：双线工程进展——Google LiteRT-LM Gemma 4 MTP 2.2x 加速（52-76 tok/s）提供端侧 LLM 广告推理的 Android 主路径；真实设备持续推理基准（arXiv 2603.23640）揭示热管理才是当前最硬约束，iPhone 16 Pro 2 轮迭代内丢失 50% 吞吐。IJCAI-ECAI 2026 联邦推荐综述同步提供端侧隐私用户建模完整知识框架，三者共构 H2 2026 广告端侧化落地参考坐标。</p>
+</blockquote>
+<hr />
+<h2>1. 【联邦 Foundation Model 推荐综述（IJCAI-ECAI 2026 Survey Track）：端侧隐私用户建模 + 基础模型协同的完整知识框架——FedFM 解锁"数据不出设备 + 大模型语义能力"双赢路径（arXiv 2506.11563）】</h2>
+<ul>
+<li><strong>评分</strong>：A/4 · I/3 · S=11 · P1 · 价值类型：用户体验 / 新能力探索</li>
+<li><strong>来源</strong>：多机构合作 / IJCAI-ECAI 2026 Survey Track | <a href="https://arxiv.org/abs/2506.11563">arXiv 2506.11563</a> | 2025-06 投稿，2026 年接收（v2 最新修订）</li>
+</ul>
+<p><strong>内容总结（约 140 字）</strong>：
+本文系统综述"个性化联邦基础模型（FedFM）在隐私保护推荐"方向，填补联邦学习 × 推荐系统 × LLM 三角交叉的知识空白——核心矛盾：基础模型需要海量用户行为数据驱动，联邦学习要求原始数据永不离端，调和两者需要轻量化端侧适配器 + 跨设备联邦聚合的精细协同。综述归纳关键发现：单知识轻量模型内存占用低但知识替换质量差；双知识高性能模型精度强但内存太大难以在端侧部署——形成直接指导当前端侧广告用户建模的权衡框架。工程信息：端侧适配器（LoRA / Prompt Tuning 等）+ 联邦聚合服务器；无具体设备延迟数字，以隐私保障 + 个性化精度为主要指标。即将在 IJCAI-ECAI 2026（预计 2026 年 8 月）正式发表。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在端侧广告用户建模中做到：以联邦 LoRA 方式在用户设备上对基础模型（Qwen/MiniCPM 等）进行轻量个性化微调，生成每个用户私有的意图向量，再通过安全聚合上云更新全局 CTR/CVR 模型——实现"用户行为数据完全端侧，模型迭代能力保留云侧"。可借鉴思路：综述的双知识 vs 单知识权衡分析可直接用于端侧广告 embedding 设计的内存预算决策（当前主流旗舰手机 DRAM 8-12GB，能否承载双知识适配器是关键约束）。</p>
+<hr />
+<h2>2. 【Google LiteRT-LM Gemma 4 MTP：端侧 LLM 推理 2.2x 加速——Multi-Token Prediction 投产，Android GPU 52 tok/s、iOS Metal 56 tok/s、WebGPU 76 tok/s，Gemini Nano 生产路径正式开源】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/4 · S=10 · P0 · 价值类型：成本优化 / 用户体验</li>
+<li><strong>来源</strong>：Google AI Edge / InfoQ | <a href="https://www.infoq.com/news/2026/06/google-litertlm-gemma4/">InfoQ 报道</a> · <a href="https://developers.googleblog.com/blazing-fast-on-device-genai-with-litert-lm/">Google Developers Blog</a> · <a href="https://github.com/google-ai-edge/LiteRT-LM">GitHub</a> | 2026-05（v0.11.0）/ 2026-06（MTP 报道）</li>
+</ul>
+<p><strong>内容总结（约 140 字）</strong>：
+Google AI Edge 正式发布 LiteRT-LM，这是驱动 Gemini Nano 在 Chrome、ChromeOS、Pixel Watch 及 Google AI Edge Gallery 量产运行的同款开源推理框架。关键更新：新增对 Gemma 4 系列 Multi-Token Prediction（MTP）的原生支持，通过推测解码变体将解码速度最高提升 2.2x。性能基准：Gemma 4 E2B（有效参数 2B 的 MatFormer 版），Android OpenCL GPU 52 tok/s，iOS Metal 56 tok/s，MacBook Pro WebGPU 76 tok/s；更高端的 E4B 版（有效参数 4B）同样支持但速度更低。技术栈：XNNPACK（CPU）+ MLDrift（下一代 GPU 引擎，支持 OpenCL/OpenGL/Metal/WebGPU）+ 可选 QNN NPU backend；编排层通过优化管道避免 CPU/GPU 数据转移开销。工程信息：生产级、开源（Apache 2.0）；v0.11.0 版本，CLI 和移动端 SDK 均可下载。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在 Android 广告端侧推理中做到：以 LiteRT-LM 作为 Gemma 4 E2B/E4B 的推理底座，快速搭建广告意图理解（搜索词 → 广告类目映射）和轻量素材理解模块，并通过 MTP 将 token 生成延迟降低 2.2x——在 50ms 竞价窗口内完成更多语义处理步骤。可直接应用（端侧推理执行层）：LiteRT-LM 已是 Google 产品生产验证路径，开源且文档完整；建议 1-2 周内在测试机上运行 Gemma 4 E2B + 广告意图分类任务，以 52 tok/s baseline 为起点评估实际广告场景 P99 延迟。P0 核心理由：开源可用、文档齐全、有真实 tok/s 数据，是当前 Android 广告端侧 LLM 路径中最低试错成本的选择。</p>
+<hr />
+<h2>3. 【MediaTek NPU + LiteRT NeuroPilot Accelerator：数亿 Android 中端机获得生产级 NPU 加速——Gemma 3 全系原生支持，零拷贝 AHardwareBuffer，100× CPU 推理速度】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/3 · S=9 · P1 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：Google AI Edge / MediaTek | <a href="https://developers.googleblog.com/mediatek-npu-and-litert-powering-the-next-generation-of-on-device-ai/">Google Developers Blog</a> · <a href="https://www.mediatek.com/tek-talk-blogs/mediatek-npus-neuropilot-and-litert-are-ready-to-bring-power-ai-in-millions-of-devices">MediaTek Tek Talk</a></li>
+</ul>
+<p><strong>内容总结（约 130 字）</strong>：
+Google 与 MediaTek 联合宣布 LiteRT NeuroPilot Accelerator，TFLite NeuroPilot delegate 的全新一代替代方案，面向 MediaTek APU（天玑系列 SoC）的深度 NPU 加速。核心改进：① 统一开发工作流——开发者通过标准 LiteRT API 无需感知硬件差异即可调用 MediaTek NPU；② Gemma 3 全系原生支持（270M、1B、multimodal 3n E2B）；③ Native Hardware Buffer Interoperability——零拷贝 AHardwareBuffer 数据传递，消除 CPU/NPU 数据搬运开销；④ 性能：相较 CPU 高达 100x，相较 GPU 高达 10x。覆盖范围：天玑系列广泛搭载于中端 Android 机（国内市场份额约 40%），意味着端侧 AI 能力不再只限旗舰机。工程信息：已面向所有开发者开放，生产就绪。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告 SDK 的覆盖率中做到：以 LiteRT NeuroPilot Accelerator 覆盖天玑设备（国内大量中端机），将端侧广告推理的实际触达用户比例从当前高端 Snapdragon 专属提升至更广泛的 Android 生态。可借鉴思路：LiteRT API 统一旗舰机（Snapdragon+QNN）与中端机（MediaTek+NeuroPilot）的调用层，意味着广告 SDK 可以写一套代码适配两条 NPU 路径；结合 LiteRT-LM（上一条），形成从中端到高端 Android 机的完整端侧 LLM 覆盖链。</p>
+<hr />
+<h2>4. 【arXiv 2603.23640：端侧 LLM 推理的真正天花板——热管理 &gt; 算力峰值，iPhone 16 Pro 两轮内损失 50% 吞吐，S24 Ultra OS 强制终止 GPU 推理】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/3 · S=9 · P1 · 价值类型：成本优化 / 工程实践</li>
+<li><strong>来源</strong>：学术团队 | <a href="https://arxiv.org/abs/2603.23640">arXiv 2603.23640</a> | 2026-03-24</li>
+</ul>
+<p><strong>内容总结（约 140 字）</strong>：
+论文对四个平台进行了面向"持续推理负载"的系统基准测试，评估 Qwen 2.5 1.5B（4-bit 量化）在固定 258-token prompt 下持续 20 次热推理的吞吐量、延迟、功耗与热行为——刻意模拟"广告场景下 LLM 连续服务请求"这类 always-on 负载。关键发现（直接影响广告工程规划）：① <strong>iPhone 16 Pro</strong>：连续推理仅 2 轮后因热降频损失近 50% 吞吐量；② <strong>Samsung Galaxy S24 Ultra</strong>：OS 强制施加 GPU 频率下限，在持续高负载下直接终止推理；③ <strong>RTX 4050 (笔记本)</strong>：受限于电池功耗上限；④ <strong>Hailo-10H NPU</strong>：受限于板载内存带宽。核心结论："对于移动设备，热管理已取代算力峰值，成为持续推理的首要约束。"工程信息：真实设备 benchmark，Qwen 2.5 1.5B Q4，持续负载场景。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在广告端侧 LLM 工程规划中做到：在 SDK 设计阶段引入"热感知推理调度"——当检测到设备温度升高时主动降低推理频率或切换到更轻量模型，防止 S24 Ultra 类硬终止场景导致广告请求超时。可借鉴思路：这个基准强烈支持 EnerInfer（见 2026-06-28 简报）的"配置松弛空间"框架——广告后台请求（非实时竞价路径）主动降频能有效规避热降频引发的 P99 延迟波动，两者形成互补的工程解决方案。</p>
+<hr />
+<h2>5. 【MiniCPM5-1B（面壁智能 / 清华）：1B 参数级 SOTA 端侧 LLM——FlagOS 多芯片统一调度，4-5 款 AI 芯片极短时间完成适配，Hybrid Thinking 模式端侧可用】</h2>
+<ul>
+<li><strong>评分</strong>：A/3 · I/3 · S=9 · P2 · 价值类型：新能力探索</li>
+<li><strong>来源</strong>：OpenBMB / 面壁智能（清华大学）| <a href="https://github.com/OpenBMB/MiniCPM">GitHub OpenBMB/MiniCPM</a> · <a href="https://huggingface.co/openbmb/MiniCPM5-1B">HuggingFace openbmb/MiniCPM5-1B</a> | 2026-05（中文源：OpenBMB GitHub 中文文档）</li>
+</ul>
+<p><strong>内容总结（约 130 字）</strong>：
+面壁智能（OpenBMB，清华大学主导）发布 MiniCPM5-1B，1B 参数类目新 SOTA，专为本地部署、边缘 AI 和端侧 Agent 优化。核心亮点：① <strong>Hybrid Reasoning</strong>——通过 <code>&lt;think&gt;</code> 模板可切换快速回答 vs 深度推理两种模式，同一 checkpoint 兼容，适合广告意图理解（快速）和复杂素材分析（深度）场景；② <strong>多芯片适配</strong>——通过 FlagOS（智源研究院统一多芯片 AI 软件栈）仅用极短时间完成对 4-5 款不同 AI 芯片的适配并发布 FlagRelease，覆盖国产芯片生态；③ <strong>部署路径丰富</strong>：llama.cpp（CPU/Edge/Apple Silicon）、Apple MLX、vLLM、SGLang，GGUF 格式直接可用。关键指标：Agent 工具调用和代码生成优势最显著，超越同参数级对手。工程信息：已量产，多生态均有官方 cookbook。</p>
+<p><strong>业务价值与适配性</strong>：
+可以让我们在国产 AI 芯片生态的广告端侧推理中做到：以 MiniCPM5-1B + FlagOS 快速完成国产芯片（麒麟 / 天玑 / 自研 NPU）上的广告意图识别模块验证，绕过 Qualcomm QNN 生态限制，打通国内 Android 碎片化芯片的端侧覆盖。暂不适用于高质量广告素材理解（1B 参数语义能力不足），但其 Hybrid Thinking 模式可在意图识别（快速）和策略解释（深度）两条路径间动态切换，契合广告 SDK 的低延迟主路径 + 偶发深度分析双需求架构。</p>
+<hr />
+<h3>其他观察</h3>
+<p>今日内容以<strong>推理框架工程化成熟度</strong>为主轴：Google LiteRT-LM 的 MTP + MediaTek NeuroPilot 组合意味着 Android 端侧 LLM 推理已进入"多 NPU 生态统一调度"阶段；热管理基准数据补充了实验室数字背后的真实工程天花板。联邦推荐综述的 IJCAI-ECAI 2026 接收时间节点恰好与 KDD 2026 前夕重叠，端侧隐私用户建模方向的学术成熟度正在快速追上产业部署节奏。中文来源：OpenBMB 面壁智能 GitHub（MiniCPM5-1B）。</p>
+<h3>近期关注</h3>
+<ul>
+<li><strong>IJCAI-ECAI 2026</strong>（预计 2026 年 8 月）：联邦学习 × 推荐系统的学术集中发布窗口，建议同步关注 FedFM 相关接收论文列表（与广告端侧隐私建模直接相关）。</li>
+<li><strong>KDD 2026</strong>（2026-08-09~13，济州岛）：AdKDD Workshop 广告端侧论文主场，预印本持续释出，建议在 7 月下旬前完成重点论文前瞻。</li>
+<li><strong>LiteRT-LM 端侧广告推理 Demo</strong>（P0 行动项）：建议 1-2 周内在 Pixel 或 Snapdragon 旗舰测试机上运行 Gemma 4 E2B + 广告意图分类任务，验证 52 tok/s baseline 在实际广告 prompt 长度（约 100-200 tokens）下的 P99 延迟。</li>
+</ul>
+    </article>
+  </div>
+</body>
+</html>
